@@ -165,63 +165,63 @@
 
   # ACE3 Event system
   'ACE addEventHandler':
-    'prefix': 'ace_addEventHandler'
+    'prefix': 'addEventHandler_ace'
     'body': """
       ["${1:Event name}", ${2:code}] call EFUNC(common,addEventhandler);
     """
-    'description': 'Add ACE3 Eventhandler'
+    'description': 'adds an event handler with the event name and returns the event handler id'
     'descriptionMoreURL': 'http://ace3mod.com/wiki/development/ace3-events-system.html'
 
   'ACE removeEventHandler':
-    'prefix': 'ace_removeEventHandler'
+    'prefix': 'removeEventHandler_ace'
     'body': """
       ["${1:Event name}", ${2:eventId}] call EFUNC(common,removeEventHandler);
     """
-    'description': 'Remove an ACE3 Eventhandler'
+    'description': 'Remove a specific event handler of the event name, using the ID returned from addEventhandler'
     'descriptionMoreURL': 'http://ace3mod.com/wiki/development/ace3-events-system.html'
 
   'ACE removeAllEventHandlers':
-    'prefix': 'ace_removeAllEventHandlers'
+    'prefix': 'removeAllEventHandlers_ace'
     'body': """
       ["${1:Event name}"] call EFUNC(common,removeAllEventHandlers);
     """
-    'description': 'Removes all Eventhandler with given event name'
+    'description': 'Removes all Eventhandler for given type of event'
     'descriptionMoreURL': 'http://ace3mod.com/wiki/development/ace3-events-system.html'
 
   'ACE Local Event':
-    'prefix': 'localEvent'
+    'prefix': 'localEvent_ace'
     'body': """
       ["${1:Event name}", [${2:Parameters}]] call EFUNC(common,localEvent);
     """
-    'description': 'Raise an local ACE3 Eventhandler'
+    'description': 'Calls an event just on the local machine, useful for inter-module events'
     'descriptionMoreURL': 'http://ace3mod.com/wiki/development/ace3-events-system.html'
 
   'ACE Server Event':
-    'prefix': 'serverEvent'
+    'prefix': 'serverEvent_ace'
     'body': """
       ["${1:Event name}", [${2:Parameters}]] call EFUNC(common,serverEvent);
     """
-    'description': 'Raise a Server ACE3 Eventhandler'
+    'description': 'Calls an event just on the server computer (dedicated or self-hosted)'
     'descriptionMoreURL': 'http://ace3mod.com/wiki/development/ace3-events-system.html'
 
   'ACE Global Event':
-    'prefix': 'globalEvent'
+    'prefix': 'globalEvent_ace'
     'body': """
       ["${1:Event name}", [${2:Parameters}]] call EFUNC(common,globalEvent);
     """
-    'description': 'Raise a Global ACE3 Eventhandler'
+    'description': 'Calls an event with the listed args on all machines, the local machine, and the server'
     'descriptionMoreURL': 'http://ace3mod.com/wiki/development/ace3-events-system.html'
 
   'ACE Target Event':
-    'prefix': 'targetEvent'
+    'prefix': 'targetEvent_ace'
     'body': """
       ["${1:Event name}", ${2:Target(s)}, [${3:Parameters}]] call EFUNC(common,targetEvent);
     """
-    'description': 'Raise a Global ACE3 Eventhandler'
+    'description': 'Calls an event just on the targeted object or list of objects'
     'descriptionMoreURL': 'http://ace3mod.com/wiki/development/ace3-events-system.html'
 
   'ACE addSyncedEventHandler':
-    'prefix': 'ace_addSyncedEventHandler'
+    'prefix': 'addSyncedEventHandler_ace'
     'body': """
       ["${1:Event name}", ${2:code}, ${2:ttlNumberOrCodeBlock}] call EFUNC(common,addSyncedEventHandler);
     """
@@ -229,7 +229,7 @@
     'descriptionMoreURL': 'http://ace3mod.com/wiki/development/ace3-events-system.html#1-1-synchronized-events'
 
   'ACE removeSyncedEventHandler':
-    'prefix': 'ace_removeSyncedEventHandler'
+    'prefix': 'removeSyncedEventHandler_ace'
     'body': """
       ["${1:Event name}", ${2:eventId}] call EFUNC(common,removeSyncedEventHandler);
     """
@@ -237,7 +237,7 @@
     'descriptionMoreURL': 'http://ace3mod.com/wiki/development/ace3-events-system.html#1-1-synchronized-events'
 
   'ACE syncedEvent':
-    'prefix': 'syncedEvent'
+    'prefix': 'syncedEvent_ace'
     'body': """
       ["${1:Event name}", [${2:args}], ${3:ttlNumberOrCodeBlock}] call EFUNC(common,syncedEvent);
     """
