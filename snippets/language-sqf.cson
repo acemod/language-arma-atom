@@ -1,0 +1,36 @@
+'.source.sqf':
+  'ACE3 Function Header':
+    'prefix': 'ace_function_header'
+    'body': """
+      /*
+       * Author: ${1:[Name of Author(s)]}
+       * ${2:[Description]}
+       *
+       * Arguments:
+       * 0: ${3:Argument Name} <${4:TYPE}>
+       *
+       * Return Value:
+       * ${5:Return Name} <${6:TYPE}>
+       *
+       * Example:
+       * [${7:"example"}] call ace_${8:[module]}_fnc_${9:[functionName]}
+       *
+       * Public: ${10:[Yes/No]}
+       */
+      #include "script_component.hpp"
+    """
+    'description': 'Function Header per ACE3 guidelines.'
+    'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#3-1-function-definitions'
+  'ACE3 Settings Entry':
+    'prefix': 'ace_settings_entry'
+    'body': """
+      class GVAR(${1:name}) {
+          displayName = CSTRING(${2:stringDisplayName});
+          description = CSTRING(${3:stringDescription});
+          isClientSettable = ${4:[0/1]};
+          typeName = "${5:[BOOL/SCALAR/STRING/ARRAY/COLOR]]}";
+          value = ${6:[Number]};
+      };
+    """
+    'description': 'ACE_Settings Entry (without SCALAR values)'
+    'descriptionMoreURL': 'http://ace3mod.com/wiki/framework/settings.html'
