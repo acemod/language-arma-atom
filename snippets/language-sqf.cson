@@ -143,6 +143,7 @@
 
 
 '.source.cpp, .source.hpp':
+  # ACE3
   'ACE3 Settings Entry':
     'prefix': 'ace_settings_entry'
     'body': """
