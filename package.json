@@ -3,7 +3,7 @@
   "main": "./lib/language-arma-atom",
   "version": "1.0.0",
   "description": "Adds language support for .sqf, .sqm, .cfg and .ext files",
-  "keywords": [
+  "keywords": ["sqf", "arma", "ace3"
   ],
   "activationCommands": {
     "atom-workspace": "language-arma-atom:toggle"
@@ -15,12 +15,12 @@
   "dependencies": {
     "language-c": ""
   },
-  "homepage": "https://github.com/ACEmod/Atom-sqf-Language",
+  "homepage": "https://github.com/acemod/language-arma-atom",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ACEmod/Atom-sqf-Language.git"
+    "url": "https://github.com/acemod/language-arma-atom.git"
   },
   "bugs": {
-    "url": "https://github.com/ACEmod/Atom-sqf-Language/issues"
+    "url": "https://github.com/acemod/language-arma-atom/issues"
   }
 }
