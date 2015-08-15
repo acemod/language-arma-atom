@@ -1,6 +1,6 @@
 {
     "name": "language-arma-atom",
-    "version": "1.0.0",
+    "version": "0.1.0",
     "description": "Adds language support for .sqf, .sqm, .cfg and .ext files",
     "keywords": ["sqf", "arma", "ace3"],
     "activationCommands": {
