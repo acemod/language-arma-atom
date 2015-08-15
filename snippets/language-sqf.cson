@@ -140,6 +140,9 @@
     """
     'description': 'Function Header per ACE3 guidelines.'
     'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#3-1-function-definitions'
+
+
+'.source.cpp, .source.hpp':
   'ACE3 Settings Entry':
     'prefix': 'ace_settings_entry'
     'body': """
