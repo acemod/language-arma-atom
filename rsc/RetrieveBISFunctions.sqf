@@ -11,11 +11,3 @@ _arr = [];
 " configClasses (configFile >> "CfgFunctions");
 _arr sort true;
 copyToClipboard str(_arr);
-
-#define(var1,var2) myDefine \
-\
-my thigny \
-s
-
-#include "RandoMFile.sqf" \
-""
