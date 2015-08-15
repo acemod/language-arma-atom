@@ -1,6 +1,6 @@
 '.source.sqf':
   # BI Commands - Conditional Structures
-  'If then statement':
+  'If Then statement':
     'prefix': 'if_then'
     'body': """
       if (${1:CONDITION}) then {
@@ -9,7 +9,7 @@
     """
     'description': 'Conditional if statement'
     'descriptionMoreURL': 'https://community.bistudio.com/wiki/if'
-  'If-then-else statement':
+  'If Then Else statement':
     'prefix': 'if_then_else'
     'body': """
       if (${1:CONDITION}) then {
@@ -20,7 +20,7 @@
     """
     'description': 'Conditional if-else statement'
     'descriptionMoreURL': 'https://community.bistudio.com/wiki/else'
-  'If-then-else assignment':
+  'If Then Else assignment':
     'prefix': 'if_then_else_assign'
     'body': """
       ${1:VARIABLE} = if (${2:CONDITION}) then {${3:ASSIGNMENT_TRUE}} else {${4:ASSIGNMENT_FALSE}};
@@ -35,7 +35,7 @@
     """
     'description': 'Conditional switch statement'
     'descriptionMoreURL': 'https://community.bistudio.com/wiki/switch_do'
-  'Case block of switch':
+  'Case block of Switch':
     'prefix': 'case_switch'
     'body': """
       case (${1:VALUE}): {
@@ -44,7 +44,7 @@
     """
     'description': 'Case block inside switch statement'
     'descriptionMoreURL': 'https://community.bistudio.com/wiki/case'
-  'Default block of switch':
+  'Default block of Switch':
     'prefix': 'default_switch'
     'body': """
       default {
@@ -53,6 +53,24 @@
     """
     'description': 'Default block inside switch statement'
     'descriptionMoreURL': 'https://community.bistudio.com/wiki/default'
+  'If ExitWith statement':
+      'prefix': 'if_exitWith'
+      'body': """
+        if (${1:CONDITION) exitwith {
+            ${2://code}
+        };
+      """
+      'description': 'If exitwith'
+      'descriptionMoreURL': 'https://community.bistudio.com/wiki/exitwith'
+  'ExitWith statement':
+    'prefix': 'exitWith'
+    'body': """
+      if (${1:CONDITION) exitwith {
+          ${2://code}
+      };
+    """
+    'description': 'If exitwith'
+    'descriptionMoreURL': 'https://community.bistudio.com/wiki/exitwith'
 
   # BI Commands - Loops
   'ForEach Loop':
@@ -133,78 +151,12 @@
     """
     'description': 'Function Header per ACE3 guidelines.'
     'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#3-1-function-definitions'
-  # control blocks
-  'For Loop (ARRAY)':
-    'prefix': 'for_array'
-    'body': """
-    for [{${1:[variable]} = 0},{${1:[variable]} < ${2:[condition]}},{ ${1:[variable]} = ${1:[variable]} + ${3:[step]}}] do {
-        ${4:[code]}
-    };
-    """
-    'description': 'For loop (ARRAY)'
-    'descriptionMoreURL': 'https://community.bistudio.com/wiki/for'
-  'For loop (VAR)':
-    'prefix': 'for_var'
-    'body': """
-    for "${1:[variable]}" from ${2:[from]} to ${3:[to]} do {
-        ${4:[code]}
-    };
-    """
-    'description': 'For loop (VAR)'
-    'descriptionMoreURL': 'https://community.bistudio.com/wiki/for'
-  'ForEach Loop':
-    'prefix': 'forEach'
-    'body': """
-    {
-        ${2:[code]}
-    } forEach ${1:[variable]};
-    """
-    'description': 'ForEach loop'
-    'descriptionMoreURL': 'https://community.bistudio.com/wiki/foreach'
-  'If then':
-    'prefix': 'if_then'
-    'body': """
-    if (${1:[variable]}) then {
-        ${2:[code]}
-    };
-    """
-    'description': 'If then'
-    'descriptionMoreURL': 'https://community.bistudio.com/wiki/if'
-  'If then else':
-    'prefix': 'if_then_else'
-    'body': """
-    if (${1:[variable]}) then {
-        ${2:[code]}
-    } else {
 
-    };
-    """
-    'description': 'If then else'
-    'descriptionMoreURL': 'https://community.bistudio.com/wiki/if'
-  'If ExitWith statement':
-      'prefix': 'if_exitWith'
-      'body': """
-      if (${1:[variable]}) exitwith {
-          ${2:[code]}
-      };
-      """
-      'description': 'If exitwith'
-      'descriptionMoreURL': 'https://community.bistudio.com/wiki/exitwith'
-  'ExitWith statement':
-    'prefix': 'exitWith'
-    'body': """
-    if (${1:[variable]}) exitwith {
-        ${2:[code]}
-    };
-    """
-    'description': 'If exitwith'
-    'descriptionMoreURL': 'https://community.bistudio.com/wiki/exitwith'
-
-# Macros
+  # CBA/ACE Macros
   'GVAR':
     'prefix': 'GVAR'
     'body': """
-    GVAR(${1:[variable]})
+      GVAR(${1:[variable]})
     """
     'description': 'Expand to PREFIX_MODULE_variable'
     'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros'
@@ -212,7 +164,7 @@
   'QGVAR':
     'prefix': 'QGVAR'
     'body': """
-    QGVAR(${1:[variable]})
+      QGVAR(${1:[variable]})
     """
     'description': ''
     'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros'
@@ -220,7 +172,7 @@
   'EGVAR':
     'prefix': 'EGVAR'
     'body': """
-    EGVAR(${1:[component]}),${2:[variable]})
+      EGVAR(${1:[component]}),${2:[variable]})
     """
     'description': ''
     'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros'
@@ -228,7 +180,7 @@
   'QEGVAR':
     'prefix': 'QEGVAR'
     'body': """
-    QEGVAR(${1:[component]}),${2:[variable]})
+      QEGVAR(${1:[component]}),${2:[variable]})
     """
     'description': ''
     'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros'
@@ -236,7 +188,7 @@
   'FUNC':
     'prefix': 'FUNC'
     'body': """
-    FUNC(${1:[function name]})
+      FUNC(${1:[function name]})
     """
     'description': ''
     'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros'
@@ -244,7 +196,7 @@
   'EFUNC':
     'prefix': 'EFUNC'
     'body': """
-    EFUNC(${1:[component name]}),${2:[function name]})
+      EFUNC(${1:[component name]}),${2:[function name]})
     """
     'description': ''
     'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros'
@@ -252,7 +204,7 @@
   'DFUNC':
     'prefix': 'DFUNC'
     'body': """
-    DFUNC(${1:[function name]})
+      DFUNC(${1:[function name]})
     """
     'description': ''
     'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros'
@@ -260,7 +212,7 @@
   'DEFUNC':
     'prefix': 'DEFUNC'
     'body': """
-    DEFUNC(${1:[component name]}),${2:[function name]})
+      DEFUNC(${1:[component name]}),${2:[function name]})
     """
     'description': ''
     'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros'
@@ -268,7 +220,7 @@
   'QFUNC':
     'prefix': 'QFUNC'
     'body': """
-    QFUNC(${1:[function name]})
+      QFUNC(${1:[function name]})
     """
     'description': ''
     'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros'
@@ -276,7 +228,7 @@
   'QEFUNC':
     'prefix': 'QEFUNC'
     'body': """
-    QEFUNC(${1:[component name]}),${2:[function name]})
+      QEFUNC(${1:[component name]}),${2:[function name]})
     """
     'description': ''
     'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros'
@@ -284,7 +236,7 @@
   'QUOTE':
     'prefix': 'QUOTE'
     'body': """
-    QUOTE(${1:[Content]})
+      QUOTE(${1:[Content]})
     """
     'description': ''
     'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros'
@@ -292,7 +244,7 @@
   'LSTRING':
     'prefix': 'LSTRING'
     'body': """
-    LSTRING(${1:[String table entry]})
+      LSTRING(${1:[String table entry]})
     """
     'description': ''
     'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros'
@@ -300,7 +252,7 @@
   'ELSTRING':
     'prefix': 'ELSTRING'
     'body': """
-    ELSTRING(${1:[Component]}),${2:[String table entry]})
+      ELSTRING(${1:[Component]}),${2:[String table entry]})
     """
     'description': ''
     'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros'
@@ -308,7 +260,7 @@
   'CSTRING':
     'prefix': 'CSTRING'
     'body': """
-    CSTRING(${1:[String table entry]})
+      CSTRING(${1:[String table entry]})
     """
     'description': ''
     'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros'
@@ -316,7 +268,7 @@
   'ECSTRING':
     'prefix': 'ECSTRING'
     'body': """
-    ELSTRING(${1:[Component]}),${2:[String table entry]})
+      ELSTRING(${1:[Component]}),${2:[String table entry]})
     """
     'description': ''
     'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros'
@@ -340,11 +292,11 @@
     'description': 'ACE_Settings Entry (without SCALAR values)'
     'descriptionMoreURL': 'http://ace3mod.com/wiki/framework/settings.html'
 
-# Macros
+  # CBA/ACE Macros
   'GVAR':
     'prefix': 'GVAR'
     'body': """
-    GVAR(${1:[variable]})
+      GVAR(${1:[variable]})
     """
     'description': 'Expand to PREFIX_MODULE_variable'
     'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros'
@@ -352,7 +304,7 @@
   'QGVAR':
     'prefix': 'QGVAR'
     'body': """
-    QGVAR(${1:[variable]})
+      QGVAR(${1:[variable]})
     """
     'description': ''
     'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros'
@@ -360,7 +312,7 @@
   'EGVAR':
     'prefix': 'EGVAR'
     'body': """
-    EGVAR(${1:[component]}),${2:[variable]})
+      EGVAR(${1:[component]}),${2:[variable]})
     """
     'description': ''
     'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros'
@@ -368,7 +320,7 @@
   'QEGVAR':
     'prefix': 'QEGVAR'
     'body': """
-    QEGVAR(${1:[component]}),${2:[variable]})
+      QEGVAR(${1:[component]}),${2:[variable]})
     """
     'description': ''
     'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros'
@@ -376,7 +328,7 @@
   'FUNC':
     'prefix': 'FUNC'
     'body': """
-    FUNC(${1:[function name]})
+      FUNC(${1:[function name]})
     """
     'description': ''
     'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros'
@@ -384,7 +336,7 @@
   'EFUNC':
     'prefix': 'EFUNC'
     'body': """
-    EFUNC(${1:[component name]}),${2:[function name]})
+      EFUNC(${1:[component name]}),${2:[function name]})
     """
     'description': ''
     'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros'
@@ -392,7 +344,7 @@
   'DFUNC':
     'prefix': 'DFUNC'
     'body': """
-    DFUNC(${1:[function name]})
+      DFUNC(${1:[function name]})
     """
     'description': ''
     'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros'
@@ -400,7 +352,7 @@
   'DEFUNC':
     'prefix': 'DEFUNC'
     'body': """
-    DEFUNC(${1:[component name]}),${2:[function name]})
+      DEFUNC(${1:[component name]}),${2:[function name]})
     """
     'description': ''
     'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros'
@@ -408,7 +360,7 @@
   'QFUNC':
     'prefix': 'QFUNC'
     'body': """
-    QFUNC(${1:[function name]})
+      QFUNC(${1:[function name]})
     """
     'description': ''
     'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros'
@@ -416,7 +368,7 @@
   'QEFUNC':
     'prefix': 'QEFUNC'
     'body': """
-    QEFUNC(${1:[component name]}),${2:[function name]})
+      QEFUNC(${1:[component name]}),${2:[function name]})
     """
     'description': ''
     'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros'
@@ -424,7 +376,7 @@
   'QUOTE':
     'prefix': 'QUOTE'
     'body': """
-    QUOTE(${1:[Content]})
+      QUOTE(${1:[Content]})
     """
     'description': ''
     'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros'
@@ -432,7 +384,7 @@
   'LSTRING':
     'prefix': 'LSTRING'
     'body': """
-    LSTRING(${1:[String table entry]})
+      LSTRING(${1:[String table entry]})
     """
     'description': ''
     'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros'
@@ -440,7 +392,7 @@
   'ELSTRING':
     'prefix': 'ELSTRING'
     'body': """
-    ELSTRING(${1:[Component]}),${2:[String table entry]})
+      ELSTRING(${1:[Component]}),${2:[String table entry]})
     """
     'description': ''
     'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros'
@@ -448,7 +400,7 @@
   'CSTRING':
     'prefix': 'CSTRING'
     'body': """
-    CSTRING(${1:[String table entry]})
+      CSTRING(${1:[String table entry]})
     """
     'description': ''
     'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros'
@@ -456,7 +408,7 @@
   'ECSTRING':
     'prefix': 'ECSTRING'
     'body': """
-    ELSTRING(${1:[Component]}),${2:[String table entry]})
+      ELSTRING(${1:[Component]}),${2:[String table entry]})
     """
     'description': ''
     'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros'
