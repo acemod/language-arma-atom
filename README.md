@@ -32,4 +32,6 @@ Quick development also requires writing a lot of different blocks or combination
 
 ## Contributing
 
-Contributions are greatly appreciated, report issues, misspellings, request features or fork this repository and open a pull request to add new features or enhance existing features, fix bugs or anything you believe would benefit this package.
+Contributions are greatly appreciated. You can help out with the ongoing development by looking for potential bugs in our code base, or by contributing new features. To contribute something to the Arma Language Package, simply fork this repository and submit your pull requests for review by other collaborators.
+
+Please, use our [Issue Tracker](https://github.com/acemod/language-arma-atom/issues) to report a bug, propose a feature, or suggest changes to the existing ones.
