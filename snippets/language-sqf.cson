@@ -21,8 +21,64 @@
     """
     'description': 'Function Header per ACE3 guidelines.'
     'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#3-1-function-definitions'
+  # control blocks
+  'For Loop (ARRAY)':
+    'prefix': 'for_array'
+    'body': """
+    for [{${1:[variable]} = 0},{${1:[variable]} < ${2:[condition]}},{ ${1:[variable]} = ${1:[variable]} + ${3:[step]}}] do {
+        ${4:[code]}
+    };
+    """
+    'description': 'For loop (ARRAY)'
+    'descriptionMoreURL': 'https://community.bistudio.com/wiki/for'
+  'For loop (VAR)':
+    'prefix': 'for_var'
+    'body': """
+    for "${1:[variable]}" from ${2:[from]} to ${3:[to]} do {
+        ${4:[code]}
+    };
+    """
+    'description': 'For loop (VAR)'
+    'descriptionMoreURL': 'https://community.bistudio.com/wiki/for'
+  'ForEach Loop':
+    'prefix': 'forEach'
+    'body': """
+    {
+        ${2:[code]}
+    } forEach ${1:[variable]};
+    """
+    'description': 'ForEach loop'
+    'descriptionMoreURL': 'https://community.bistudio.com/wiki/foreach'
+  'If then':
+    'prefix': 'if_then'
+    'body': """
+    if (${1:[variable]}) then {
+        ${2:[code]}
+    };
+    """
+    'description': 'If then'
+    'descriptionMoreURL': 'https://community.bistudio.com/wiki/if'
+  'If then else':
+    'prefix': 'if_then_else'
+    'body': """
+    if (${1:[variable]}) then {
+        ${2:[code]}
+    } else {
 
-
+    };
+    """
+    'description': 'If then else'
+    'descriptionMoreURL': 'https://community.bistudio.com/wiki/if'
+  'ExitWith statement':
+    'prefix': 'exitWith'
+    'body': """
+    if (${1:[variable]}) exitwith {
+        ${2:[code]}
+    };
+    """
+    'description': 'If exitwith'
+    'descriptionMoreURL': 'https://community.bistudio.com/wiki/exitwith'
+# Config snippets
 '.source.cpp, .source.hpp':
   'ACE3 Settings Entry':
     'prefix': 'ace_settings_entry'
