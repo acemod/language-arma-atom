@@ -1,3 +1,4 @@
+# Code
 '.source.sqf':
   # BI Commands - Conditional Structures
   'If Then statement':
@@ -9,6 +10,7 @@
     """
     'description': 'Conditional if statement'
     'descriptionMoreURL': 'https://community.bistudio.com/wiki/if'
+
   'If Then Else statement':
     'prefix': 'if_then_else'
     'body': """
@@ -20,12 +22,14 @@
     """
     'description': 'Conditional if-else statement'
     'descriptionMoreURL': 'https://community.bistudio.com/wiki/else'
+
   'If Then Else assignment':
     'prefix': 'if_then_else_assign'
     'body': """
       ${1:VARIABLE} = if (${2:CONDITION}) then {${3:ASSIGNMENT_TRUE}} else {${4:ASSIGNMENT_FALSE}};
     """
     'description': 'Conditional if-else assignment'
+
   'Switch statement':
     'prefix': 'switch'
     'body': """
@@ -35,6 +39,7 @@
     """
     'description': 'Conditional switch statement'
     'descriptionMoreURL': 'https://community.bistudio.com/wiki/switch_do'
+
   'Case block of Switch':
     'prefix': 'case_switch'
     'body': """
@@ -44,6 +49,7 @@
     """
     'description': 'Case block inside switch statement'
     'descriptionMoreURL': 'https://community.bistudio.com/wiki/case'
+
   'Default block of Switch':
     'prefix': 'default_switch'
     'body': """
@@ -53,6 +59,7 @@
     """
     'description': 'Default block inside switch statement'
     'descriptionMoreURL': 'https://community.bistudio.com/wiki/default'
+
   'If ExitWith statement':
       'prefix': 'if_exitWith'
       'body': """
@@ -82,6 +89,7 @@
     """
     'description': 'Array incrementing loop'
     'descriptionMoreURL': 'https://community.bistudio.com/wiki/forEach'
+
   'For Loop (ARRAY)':
     'prefix': 'for_array'
     'body': """
@@ -91,6 +99,7 @@
     """
     'description': 'C-like for loop'
     'descriptionMoreURL': 'https://community.bistudio.com/wiki/for_forspec'
+
   'For Loop (VAR)':
     'prefix': 'for_var'
     'body': """
@@ -100,6 +109,7 @@
     """
     'description': 'Loop from value to value'
     'descriptionMoreURL': 'https://community.bistudio.com/wiki/for_var'
+
   'For Loop Step (VAR)':
     'prefix': 'for_var_step'
     'body': """
@@ -109,6 +119,7 @@
     """
     'description': 'Loop from value to value with custom step'
     'descriptionMoreURL': 'https://community.bistudio.com/wiki/for_var'
+
   'While Loop':
     'prefix': 'while'
     'body': """
@@ -152,130 +163,8 @@
     'description': 'Function Header per ACE3 guidelines.'
     'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#3-1-function-definitions'
 
-  # CBA/ACE Macros
-  'GVAR':
-    'prefix': 'GVAR'
-    'body': """
-      GVAR(${1:[variable]})
-    """
-    'description': 'Expand to PREFIX_MODULE_variable'
-    'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros'
 
-  'QGVAR':
-    'prefix': 'QGVAR'
-    'body': """
-      QGVAR(${1:[variable]})
-    """
-    'description': ''
-    'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros'
-
-  'EGVAR':
-    'prefix': 'EGVAR'
-    'body': """
-      EGVAR(${1:[component]}),${2:[variable]})
-    """
-    'description': ''
-    'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros'
-
-  'QEGVAR':
-    'prefix': 'QEGVAR'
-    'body': """
-      QEGVAR(${1:[component]}),${2:[variable]})
-    """
-    'description': ''
-    'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros'
-
-  'FUNC':
-    'prefix': 'FUNC'
-    'body': """
-      FUNC(${1:[function name]})
-    """
-    'description': ''
-    'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros'
-
-  'EFUNC':
-    'prefix': 'EFUNC'
-    'body': """
-      EFUNC(${1:[component name]}),${2:[function name]})
-    """
-    'description': ''
-    'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros'
-
-  'DFUNC':
-    'prefix': 'DFUNC'
-    'body': """
-      DFUNC(${1:[function name]})
-    """
-    'description': ''
-    'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros'
-
-  'DEFUNC':
-    'prefix': 'DEFUNC'
-    'body': """
-      DEFUNC(${1:[component name]}),${2:[function name]})
-    """
-    'description': ''
-    'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros'
-
-  'QFUNC':
-    'prefix': 'QFUNC'
-    'body': """
-      QFUNC(${1:[function name]})
-    """
-    'description': ''
-    'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros'
-
-  'QEFUNC':
-    'prefix': 'QEFUNC'
-    'body': """
-      QEFUNC(${1:[component name]}),${2:[function name]})
-    """
-    'description': ''
-    'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros'
-
-  'QUOTE':
-    'prefix': 'QUOTE'
-    'body': """
-      QUOTE(${1:[Content]})
-    """
-    'description': ''
-    'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros'
-
-  'LSTRING':
-    'prefix': 'LSTRING'
-    'body': """
-      LSTRING(${1:[String table entry]})
-    """
-    'description': ''
-    'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros'
-
-  'ELSTRING':
-    'prefix': 'ELSTRING'
-    'body': """
-      ELSTRING(${1:[Component]}),${2:[String table entry]})
-    """
-    'description': ''
-    'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros'
-
-  'CSTRING':
-    'prefix': 'CSTRING'
-    'body': """
-      CSTRING(${1:[String table entry]})
-    """
-    'description': ''
-    'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros'
-
-  'ECSTRING':
-    'prefix': 'ECSTRING'
-    'body': """
-      ELSTRING(${1:[Component]}),${2:[String table entry]})
-    """
-    'description': ''
-    'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros'
-
-
-
-# Config snippets
+# Config
 '.source.cpp, .source.hpp':
   # ACE3
   'ACE3 Settings Entry':
@@ -292,6 +181,9 @@
     'description': 'ACE_Settings Entry (without SCALAR values)'
     'descriptionMoreURL': 'http://ace3mod.com/wiki/framework/settings.html'
 
+
+# Code & Config
+'.source.sqf, .source.cpp, .source.hpp':
   # CBA/ACE Macros
   'GVAR':
     'prefix': 'GVAR'
