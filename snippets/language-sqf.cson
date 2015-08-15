@@ -163,6 +163,86 @@
     'description': 'Function Header per ACE3 guidelines.'
     'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#3-1-function-definitions'
 
+  # ACE3 Event system
+  'ACE3 addEventHandler':
+    'prefix': 'addEventHandler_ace'
+    'body': """
+      ["${1:Event name}", ${2:code}] call EFUNC(common,addEventhandler);
+    """
+    'description': 'adds an event handler with the event name and returns the event handler id'
+    'descriptionMoreURL': 'http://ace3mod.com/wiki/development/ace3-events-system.html'
+
+  'ACE3 removeEventHandler':
+    'prefix': 'removeEventHandler_ace'
+    'body': """
+      ["${1:Event name}", ${2:eventId}] call EFUNC(common,removeEventHandler);
+    """
+    'description': 'Remove a specific event handler of the event name, using the ID returned from addEventhandler'
+    'descriptionMoreURL': 'http://ace3mod.com/wiki/development/ace3-events-system.html'
+
+  'ACE3 removeAllEventHandlers':
+    'prefix': 'removeAllEventHandlers_ace'
+    'body': """
+      ["${1:Event name}"] call EFUNC(common,removeAllEventHandlers);
+    """
+    'description': 'Removes all Eventhandler for given type of event'
+    'descriptionMoreURL': 'http://ace3mod.com/wiki/development/ace3-events-system.html'
+
+  'ACE3 Local Event':
+    'prefix': 'localEvent_ace'
+    'body': """
+      ["${1:Event name}", [${2:Parameters}]] call EFUNC(common,localEvent);
+    """
+    'description': 'Calls an event just on the local machine, useful for inter-module events'
+    'descriptionMoreURL': 'http://ace3mod.com/wiki/development/ace3-events-system.html'
+
+  'ACE3 Server Event':
+    'prefix': 'serverEvent_ace'
+    'body': """
+      ["${1:Event name}", [${2:Parameters}]] call EFUNC(common,serverEvent);
+    """
+    'description': 'Calls an event just on the server computer (dedicated or self-hosted)'
+    'descriptionMoreURL': 'http://ace3mod.com/wiki/development/ace3-events-system.html'
+
+  'ACE3 Global Event':
+    'prefix': 'globalEvent_ace'
+    'body': """
+      ["${1:Event name}", [${2:Parameters}]] call EFUNC(common,globalEvent);
+    """
+    'description': 'Calls an event with the listed args on all machines, the local machine, and the server'
+    'descriptionMoreURL': 'http://ace3mod.com/wiki/development/ace3-events-system.html'
+
+  'ACE3 Target Event':
+    'prefix': 'targetEvent_ace'
+    'body': """
+      ["${1:Event name}", ${2:Target(s)}, [${3:Parameters}]] call EFUNC(common,targetEvent);
+    """
+    'description': 'Calls an event just on the targeted object or list of objects'
+    'descriptionMoreURL': 'http://ace3mod.com/wiki/development/ace3-events-system.html'
+
+  'ACE3 addSyncedEventHandler':
+    'prefix': 'addSyncedEventHandler_ace'
+    'body': """
+      ["${1:Event name}", ${2:code}, ${2:ttlNumberOrCodeBlock}] call EFUNC(common,addSyncedEventHandler);
+    """
+    'description': 'Adds a globally synchronized event handler which will expire events after the provided TTL, or the code returns true.'
+    'descriptionMoreURL': 'http://ace3mod.com/wiki/development/ace3-events-system.html#1-1-synchronized-events'
+
+  'ACE3 removeSyncedEventHandler':
+    'prefix': 'removeSyncedEventHandler_ace'
+    'body': """
+      ["${1:Event name}", ${2:eventId}] call EFUNC(common,removeSyncedEventHandler);
+    """
+    'description': 'will remove a specific event handler of the event name, using the ID returned from addSyncedEventHandler'
+    'descriptionMoreURL': 'http://ace3mod.com/wiki/development/ace3-events-system.html#1-1-synchronized-events'
+
+  'ACE3 syncedEvent':
+    'prefix': 'syncedEvent_ace'
+    'body': """
+      ["${1:Event name}", [${2:args}], ${3:ttlNumberOrCodeBlock}] call EFUNC(common,syncedEvent);
+    """
+    'description': 'Calls a global ACE3 Synchronized event, also runs on JIP players unless expired'
+    'descriptionMoreURL': 'http://ace3mod.com/wiki/development/ace3-events-system.html#1-1-synchronized-events'
 
 # Config
 '.source.cpp, .source.hpp':
