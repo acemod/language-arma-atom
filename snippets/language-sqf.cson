@@ -25,11 +25,11 @@
     'prefix': 'ace_settings_entry'
     'body': """
       class GVAR(${1:name}) {
-        displayName = CSTRING(${2:stringDisplayName});
-        description = CSTRING(${3:stringDescription});
-        isClientSettable = ${4:[0/1]};
-        typeName = "${5:[BOOL/SCALAR/STRING/ARRAY/COLOR]]}";
-        value = ${6:[Number]};
+          displayName = CSTRING(${2:stringDisplayName});
+          description = CSTRING(${3:stringDescription});
+          isClientSettable = ${4:[0/1]};
+          typeName = "${5:[BOOL/SCALAR/STRING/ARRAY/COLOR]]}";
+          value = ${6:[Number]};
       };
     """
     'description': 'ACE_Settings Entry (without SCALAR values)'
