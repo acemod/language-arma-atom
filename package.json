@@ -1,7 +1,7 @@
 {
   "name": "language-arma-atom",
   "version": "0.2.1",
-  "description": "Adds language support for .sqf, .sqm, .cfg and .ext files",
+  "description": "Syntax highlighting, auto-completions and snippets for sqf and other languages used within the Real Virtuality engine.",
   "keywords": [
     "sqf",
     "arma",
