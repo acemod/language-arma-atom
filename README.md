@@ -14,7 +14,7 @@ This package offers syntax highlighting and auto-completion for SQF.
 
 ### Syntax highlighting
 
-We support syntax highlighting all Bohemia Interactive functions and script commands. Next to that, we also support both CBA functions and Macros as well as ACE3 project macros.
+We support syntax highlighting for all Bohemia Interactive functions and script commands. Next to that, we also support both CBA functions and Macros as well as ACE3 project macros.
 
 ![Syntax highlighting](https://raw.github.com/acemod/language-arma-atom/master/syntax_highlighting.png)
 
