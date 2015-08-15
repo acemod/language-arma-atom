@@ -1,4 +1,123 @@
 '.source.sqf':
+  # BI Commands - Conditional Structures
+  'if statement':
+    'prefix': 'if'
+    'body': """
+      if (${1:CONDITION}) then {
+          ${2://code}
+      };
+    """
+    'description': 'Conditional if statement'
+    'descriptionMoreURL': 'https://community.bistudio.com/wiki/if'
+  'if-else statement':
+    'prefix': 'if-else'
+    'body': """
+      if (${1:CONDITION}) then {
+          ${2://code}
+      } else {
+          ${3://code}
+      };
+    """
+    'description': 'Conditional if-else statement'
+    'descriptionMoreURL': 'https://community.bistudio.com/wiki/else'
+  'if-else assignment':
+    'prefix': 'if-else_assign'
+    'body': """
+      ${1:VARIABLE} = if (${2:CONDITION}) then {${3:ASSIGNMENT_TRUE}} else {${4:ASSIGNMENT_FALSE}};
+    """
+    'description': 'Conditional if-else assignment'
+  'switch statement':
+    'prefix': 'switch'
+    'body': """
+      switch (${1:VARIABLE}) do {
+          ${2://cases (insertable by snippet)}
+      };
+    """
+    'description': 'Conditional switch statement'
+    'descriptionMoreURL': 'https://community.bistudio.com/wiki/switch_do'
+  'case block of switch':
+    'prefix': 'case_switch'
+    'body': """
+      case (${1:VALUE}): {
+          ${2://code}
+      };
+    """
+    'description': 'Case block inside switch statement'
+    'descriptionMoreURL': 'https://community.bistudio.com/wiki/case'
+  'default block of switch':
+    'prefix': 'default_switch'
+    'body': """
+      default {
+          ${1://code}
+      };
+    """
+    'description': 'Default block inside switch statement'
+    'descriptionMoreURL': 'https://community.bistudio.com/wiki/default'
+
+  # BI Commands - Loops
+  'forEach loop':
+    'prefix': 'forEach'
+    'body': """
+      {
+          ${2://code}
+      } forEach ${1:ARRAY};
+    """
+    'description': 'Array incrementing loop'
+    'descriptionMoreURL': 'https://community.bistudio.com/wiki/forEach'
+  'C-like for loop':
+    'prefix': 'for_c'
+    'body': """
+      for [{${1:BEGIN}}, {${2:CONDITION}}, {${3:STEP}}] do {
+          ${4://code}
+      };
+    """
+    'description': 'C-like style for loop'
+    'descriptionMoreURL': 'https://community.bistudio.com/wiki/for_forspec'
+  'for-from-to loop':
+    'prefix': 'for_from_to'
+    'body': """
+      for ${1:VALUE} from ${2:STARTVALUE} to ${3:ENDVALUE} do {
+          ${4://code}
+      };
+    """
+    'description': 'Loop from value to value'
+    'descriptionMoreURL': 'https://community.bistudio.com/wiki/for_var'
+  'for-from-to-step loop':
+    'prefix': 'for_from_to_step'
+    'body': """
+      for ${1:VALUE} from ${2:STARTVALUE} to ${3:ENDVALUE} step ${4:STEP} do {
+          ${5://code}
+      };
+    """
+    'description': 'Loop from value to value with custom step'
+    'descriptionMoreURL': 'https://community.bistudio.com/wiki/for_var'
+  'while loop':
+    'prefix': 'while'
+    'body': """
+      while {${1:CONDITION}} do {
+          ${2://code}
+      };
+    """
+    'description': 'Loop while condition is true'
+    'descriptionMoreURL': 'https://community.bistudio.com/wiki/while'
+  'waitUntil loop':
+    'prefix': 'waitUntil'
+    'body': """
+      waitUntil {${1:CONDITION}};
+    """
+    'description': 'Loop while condition is true'
+    'descriptionMoreURL': 'https://community.bistudio.com/wiki/while'
+
+  # CBA
+  'CBA PerFrameHandler Add':
+    'prefix': 'cba_pfh_add'
+    'body': """
+      [{${1:FUNCTION/CODE}}, ${2:DELAY}, [${3:PARAMETERS}]] call CBA_fnc_addPerFrameHandler;
+    """
+    'description': 'Add a handler that will execute every frame'
+    'descriptionMoreURL': 'https://dev.withsix.com/docs/cba/files/common/fnc_addPerFrameHandler-sqf.html'
+
+  # ACE3
   'ACE3 Function Header':
     'prefix': 'ace_function_header'
     'body': """
