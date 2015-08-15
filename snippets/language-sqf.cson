@@ -190,117 +190,117 @@
     'body': """
       GVAR(${1:[variable]})
     """
-    'description': 'Expand to PREFIX_MODULE_variable'
-    'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros'
+    'description': 'Expands to: prefix_component_variable'
+    'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-macro-usage'
 
   'QGVAR':
     'prefix': 'QGVAR'
     'body': """
       QGVAR(${1:[variable]})
     """
-    'description': ''
-    'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros'
+    'description': 'Expands to: "prefix_component_variable"'
+    'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-macro-usage'
 
   'EGVAR':
     'prefix': 'EGVAR'
     'body': """
       EGVAR(${1:[component]}),${2:[variable]})
     """
-    'description': ''
-    'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros'
+    'description': 'Expands to: prefix_component_variable'
+    'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-macro-usage'
 
   'QEGVAR':
     'prefix': 'QEGVAR'
     'body': """
       QEGVAR(${1:[component]}),${2:[variable]})
     """
-    'description': ''
-    'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros'
+    'description': 'Expands to: "prefix_component_variable"'
+    'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-macro-usage'
 
   'FUNC':
     'prefix': 'FUNC'
     'body': """
-      FUNC(${1:[function name]})
+      FUNC(${1:[functionName]})
     """
-    'description': ''
-    'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros'
+    'description': 'Expands to: prefix_component_fnc_functionName'
+    'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-macro-usage'
 
   'EFUNC':
     'prefix': 'EFUNC'
     'body': """
-      EFUNC(${1:[component name]}),${2:[function name]})
+      EFUNC(${1:[component]}),${2:[functionName]})
     """
-    'description': ''
-    'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros'
+    'description': 'Expands to: prefix_component_fnc_functionName'
+    'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-macro-usage'
 
   'DFUNC':
     'prefix': 'DFUNC'
     'body': """
-      DFUNC(${1:[function name]})
+      DFUNC(${1:[functionName]})
     """
-    'description': ''
-    'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros'
+    'description': 'Expands to: prefix_component_fnc_functionName'
+    'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-macro-usage'
 
   'DEFUNC':
     'prefix': 'DEFUNC'
     'body': """
-      DEFUNC(${1:[component name]}),${2:[function name]})
+      DEFUNC(${1:[component]}),${2:[functionName]})
     """
-    'description': ''
-    'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros'
+    'description': 'Expands to: prefix_component_fnc_functionName'
+    'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-macro-usage'
 
   'QFUNC':
     'prefix': 'QFUNC'
     'body': """
-      QFUNC(${1:[function name]})
+      QFUNC(${1:[functionName]})
     """
-    'description': ''
-    'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros'
+    'description': 'Expands to: "prefix_component_fnc_functionName"'
+    'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-macro-usage'
 
   'QEFUNC':
     'prefix': 'QEFUNC'
     'body': """
-      QEFUNC(${1:[component name]}),${2:[function name]})
+      QEFUNC(${1:[component]}),${2:[functionName]})
     """
-    'description': ''
-    'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros'
+    'description': 'Expands to: "prefix_component_fnc_functionName"'
+    'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-macro-usage'
 
   'QUOTE':
     'prefix': 'QUOTE'
     'body': """
-      QUOTE(${1:[Content]})
+      QUOTE(${1:[content]})
     """
-    'description': ''
-    'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros'
+    'description': 'Expands to: "content"'
+    'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-macro-usage'
 
   'LSTRING':
     'prefix': 'LSTRING'
     'body': """
-      LSTRING(${1:[String table entry]})
+      LSTRING(${1:[string]})
     """
-    'description': ''
-    'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros'
+    'description': 'Expands to: "STR_prefix_component_fnc_string"'
+    'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-macro-usage'
 
   'ELSTRING':
     'prefix': 'ELSTRING'
     'body': """
-      ELSTRING(${1:[Component]}),${2:[String table entry]})
+      ELSTRING(${1:[component]}),${2:[string]})
     """
-    'description': ''
-    'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros'
+    'description': 'Expands to: "STR_prefix_component_fnc_string"'
+    'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-macro-usage'
 
   'CSTRING':
     'prefix': 'CSTRING'
     'body': """
-      CSTRING(${1:[String table entry]})
+      CSTRING(${1:[string]})
     """
-    'description': ''
-    'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros'
+    'description': 'Expands to: "$STR_prefix_component_fnc_string"'
+    'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-macro-usage'
 
   'ECSTRING':
     'prefix': 'ECSTRING'
     'body': """
-      ELSTRING(${1:[Component]}),${2:[String table entry]})
+      ELSTRING(${1:[component]}),${2:[string]})
     """
-    'description': ''
-    'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros'
+    'description': 'Expands to: "$STR_prefix_component_fnc_string"'
+    'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-macro-usage'
