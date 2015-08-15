@@ -1,0 +1,19 @@
+{
+  "name": "language-arma",
+  "main": "./lib/language-arma",
+  "version": "1.0.0",
+  "description": "Adds language support for .sqf, .sqm, .cfg and .ext files",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-workspace": "language-arma:toggle"
+  },
+  "repository": "https://github.com/SilentSpike/language-arma",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "language-c": ""
+  }
+}

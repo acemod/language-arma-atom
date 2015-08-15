@@ -1,0 +1,12 @@
+'scopeName': 'source.arma.cfg'
+'name': 'Arma Config Format'
+'fileTypes': [
+  'cfg'
+  'sqm'
+  'ext'
+]
+'patterns': [
+  {
+    'include': 'source.cpp'
+  }
+]
