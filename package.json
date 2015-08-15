@@ -1,22 +1,26 @@
 {
-    "name": "language-arma-atom",
-    "version": "0.1.0",
-    "description": "Adds language support for .sqf, .sqm, .cfg and .ext files",
-    "keywords": ["sqf", "arma", "ace3"],
-    "activationCommands": {
-        "atom-workspace": "language-arma-atom:toggle"
-    },
-    "license": "MIT",
-    "engines": {
-        "atom": ">=1.0.0 <2.0.0",
-        "node": "*"
-    },
-    "homepage": "https://github.com/acemod/language-arma-atom",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/acemod/language-arma-atom.git"
-    },
-    "bugs": {
-        "url": "https://github.com/acemod/language-arma-atom/issues"
-    }
+  "name": "language-arma-atom",
+  "version": "0.2.0",
+  "description": "Adds language support for .sqf, .sqm, .cfg and .ext files",
+  "keywords": [
+    "sqf",
+    "arma",
+    "ace3"
+  ],
+  "activationCommands": {
+    "atom-workspace": "language-arma-atom:toggle"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0",
+    "node": "*"
+  },
+  "homepage": "https://github.com/acemod/language-arma-atom",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/acemod/language-arma-atom.git"
+  },
+  "bugs": {
+    "url": "https://github.com/acemod/language-arma-atom/issues"
+  }
 }
