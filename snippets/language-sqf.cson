@@ -100,13 +100,6 @@
     """
     'description': 'Loop while condition is true'
     'descriptionMoreURL': 'https://community.bistudio.com/wiki/while'
-  'waitUntil loop':
-    'prefix': 'waitUntil'
-    'body': """
-      waitUntil {${1:CONDITION}};
-    """
-    'description': 'Loop while condition is true'
-    'descriptionMoreURL': 'https://community.bistudio.com/wiki/while'
 
   # CBA
   'CBA PerFrameHandler Add':
