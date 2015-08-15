@@ -163,6 +163,47 @@
     'description': 'Function Header per ACE3 guidelines.'
     'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#3-1-function-definitions'
 
+  # ACE3 Event system
+  'ACE addEventHandler':
+    'prefix': 'ace_addEventHandler'
+    'body': """
+      ["${1:Event name}", ${2:code}] call EFUNC(common,addEventhandler);
+    """
+    'description': 'Add ACE3 Eventhandler'
+    'descriptionMoreURL': 'http://ace3mod.com/wiki/development/ace3-events-system.html'
+
+  'ACE Local Event':
+    'prefix': 'localEvent'
+    'body': """
+      ["${1:Event name}", [${2:Parameters}]] call EFUNC(common,localEvent);
+    """
+    'description': 'Raise an local ACE3 Eventhandler'
+    'descriptionMoreURL': 'http://ace3mod.com/wiki/development/ace3-events-system.html'
+
+  'ACE Server Event':
+    'prefix': 'serverEvent'
+    'body': """
+      ["${1:Event name}", [${2:Parameters}]] call EFUNC(common,serverEvent);
+    """
+    'description': 'Raise a Server ACE3 Eventhandler'
+    'descriptionMoreURL': 'http://ace3mod.com/wiki/development/ace3-events-system.html'
+
+  'ACE Global Event':
+    'prefix': 'globalEvent'
+    'body': """
+      ["${1:Event name}", [${2:Parameters}]] call EFUNC(common,globalEvent);
+    """
+    'description': 'Raise a Global ACE3 Eventhandler'
+    'descriptionMoreURL': 'http://ace3mod.com/wiki/development/ace3-events-system.html'
+
+  'ACE Target Event':
+    'prefix': 'targetEvent'
+    'body': """
+      ["${1:Event name}", ${2:Target(s)}, [${3:Parameters}]] call EFUNC(common,targetEvent);
+    """
+    'description': 'Raise a Global ACE3 Eventhandler'
+    'descriptionMoreURL': 'http://ace3mod.com/wiki/development/ace3-events-system.html'
+
 
 # Config
 '.source.cpp, .source.hpp':
