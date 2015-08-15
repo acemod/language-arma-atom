@@ -5,7 +5,6 @@
     'decreaseIndentPattern': '^\\s*(else|end|\\})\\s*'
     # Generated from https://community.bistudio.com/wiki/Category:Scripting_Commands_Arma_3
     'completions': [
-        '_',
         '_forEachIndex',
         '_this',
         '_x',
@@ -2027,7 +2026,7 @@
         '#define',
         '#undef',
         '#ifdef',
-        '#endif'
+        '#endif',
 
         # CBA and ACE Macros
         'GVAR',
