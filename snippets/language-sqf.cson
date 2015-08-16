@@ -268,7 +268,7 @@
   'GVAR':
     'prefix': 'GVAR'
     'body': """
-      GVAR(${1:[variable]})
+      GVAR(${1:variable})
     """
     'description': 'Expands to: prefix_component_variable'
     'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-macro-usage'
@@ -276,7 +276,7 @@
   'QGVAR':
     'prefix': 'QGVAR'
     'body': """
-      QGVAR(${1:[variable]})
+      QGVAR(${1:variable})
     """
     'description': 'Expands to: "prefix_component_variable"'
     'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-macro-usage'
@@ -284,7 +284,7 @@
   'EGVAR':
     'prefix': 'EGVAR'
     'body': """
-      EGVAR(${1:[component]}),${2:[variable]})
+      EGVAR(${1:component},${2:variable})
     """
     'description': 'Expands to: prefix_component_variable'
     'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-macro-usage'
@@ -292,7 +292,7 @@
   'QEGVAR':
     'prefix': 'QEGVAR'
     'body': """
-      QEGVAR(${1:[component]}),${2:[variable]})
+      QEGVAR(${1:component},${2:variable})
     """
     'description': 'Expands to: "prefix_component_variable"'
     'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-macro-usage'
@@ -300,7 +300,7 @@
   'FUNC':
     'prefix': 'FUNC'
     'body': """
-      FUNC(${1:[functionName]})
+      FUNC(${1:functionName})
     """
     'description': 'Expands to: prefix_component_fnc_functionName'
     'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-macro-usage'
@@ -308,7 +308,7 @@
   'EFUNC':
     'prefix': 'EFUNC'
     'body': """
-      EFUNC(${1:[component]}),${2:[functionName]})
+      EFUNC(${1:component},${2:functionName})
     """
     'description': 'Expands to: prefix_component_fnc_functionName'
     'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-macro-usage'
@@ -316,7 +316,7 @@
   'DFUNC':
     'prefix': 'DFUNC'
     'body': """
-      DFUNC(${1:[functionName]})
+      DFUNC(${1:functionName})
     """
     'description': 'Expands to: prefix_component_fnc_functionName'
     'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-macro-usage'
@@ -324,7 +324,7 @@
   'DEFUNC':
     'prefix': 'DEFUNC'
     'body': """
-      DEFUNC(${1:[component]}),${2:[functionName]})
+      DEFUNC(${1:component},${2:functionName})
     """
     'description': 'Expands to: prefix_component_fnc_functionName'
     'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-macro-usage'
@@ -332,7 +332,7 @@
   'QFUNC':
     'prefix': 'QFUNC'
     'body': """
-      QFUNC(${1:[functionName]})
+      QFUNC(${1:functionName})
     """
     'description': 'Expands to: "prefix_component_fnc_functionName"'
     'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-macro-usage'
@@ -340,7 +340,7 @@
   'QEFUNC':
     'prefix': 'QEFUNC'
     'body': """
-      QEFUNC(${1:[component]}),${2:[functionName]})
+      QEFUNC(${1:component},${2:functionName})
     """
     'description': 'Expands to: "prefix_component_fnc_functionName"'
     'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-macro-usage'
@@ -348,7 +348,7 @@
   'QUOTE':
     'prefix': 'QUOTE'
     'body': """
-      QUOTE(${1:[content]})
+      QUOTE(${1:content})
     """
     'description': 'Expands to: "content"'
     'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-macro-usage'
@@ -356,7 +356,7 @@
   'LSTRING':
     'prefix': 'LSTRING'
     'body': """
-      LSTRING(${1:[string]})
+      LSTRING(${1:string})
     """
     'description': 'Expands to: "STR_prefix_component_fnc_string"'
     'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-macro-usage'
@@ -364,7 +364,7 @@
   'ELSTRING':
     'prefix': 'ELSTRING'
     'body': """
-      ELSTRING(${1:[component]}),${2:[string]})
+      ELSTRING(${1:component},${2:string})
     """
     'description': 'Expands to: "STR_prefix_component_fnc_string"'
     'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-macro-usage'
@@ -372,7 +372,7 @@
   'CSTRING':
     'prefix': 'CSTRING'
     'body': """
-      CSTRING(${1:[string]})
+      CSTRING(${1:string})
     """
     'description': 'Expands to: "$STR_prefix_component_fnc_string"'
     'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-macro-usage'
@@ -380,7 +380,7 @@
   'ECSTRING':
     'prefix': 'ECSTRING'
     'body': """
-      ELSTRING(${1:[component]}),${2:[string]})
+      ELSTRING(${1:component},${2:string})
     """
     'description': 'Expands to: "$STR_prefix_component_fnc_string"'
     'descriptionMoreURL': 'http://ace3mod.com/wiki/development/coding-guidelines.html#4-macro-usage'
