@@ -253,9 +253,10 @@
       class GVAR(${1:name}) {
           displayName = CSTRING(${2:stringDisplayName});
           description = CSTRING(${3:stringDescription});
-          isClientSettable = ${4:[0/1]};
-          typeName = "${5:[BOOL/SCALAR/STRING/ARRAY/COLOR]]}";
-          value = ${6:[Number]};
+          category = CSTRING(${4:category});
+          isClientSettable = ${5:[0/1]};
+          typeName = "${6:[BOOL/SCALAR/STRING/ARRAY/COLOR]}";
+          value = ${7:[NUMBER]};
       };
     """
     'description': 'ACE_Settings Entry (without SCALAR values)'
