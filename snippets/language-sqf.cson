@@ -158,6 +158,7 @@
        *
        * Public: ${10:[Yes/No]}
        */
+       
       #include "script_component.hpp"
     """
     'description': 'Function Header per ACE3 guidelines.'
