@@ -3,8 +3,8 @@
     'commentStart': '// '
     'increaseIndentPattern': '^\\s*(else|elseif|for|(local\\s+)?function|if|repeat|until|while)\\b((?!end).)*$|\\{\\s*$'
     'decreaseIndentPattern': '^\\s*(else|end|\\})\\s*'
-    # Generated from https://community.bistudio.com/wiki/Category:Scripting_Commands_Arma_3
     'completions': [
+        # Generated from https://community.bistudio.com/wiki/Category:Scripting_Commands_Arma_3
         '_forEachIndex',
         '_this',
         '_x',
@@ -1806,13 +1806,8 @@
         'worldSize',
         'worldToModel',
         'worldToModelVisual',
-        'worldToScreen'
-
-    ]
-
-'.source.sqf .string.quoted':
-  'editor':
-    'completions': [
+        'worldToScreen',
+        
         'CfgMods',
         'CfgExperience',
         'CfgAISkill',
@@ -1938,8 +1933,7 @@
         'CfgSecOps',
         'CfgOO',
         'CfgTalkSentences_E',
-
-      # Generated from https://community.bistudio.com/wiki/Arma_3:_Event_Handlers
+        # Generated from https://community.bistudio.com/wiki/Arma_3:_Event_Handlers
         'AnimChanged',
         'AnimDone',
         'AnimStateChanged',
@@ -2015,12 +2009,8 @@
         'Action',
         'NextAction',
         'MusicStart',
-        'MusicStop'
-    ]
-
-'.source.sqf':
-  'editor':
-    'completions': [
+        'MusicStop',
+        
         # default Macros
         '#include',
         '#define',
