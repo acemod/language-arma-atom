@@ -47,6 +47,7 @@
       "description": "If exitwith",
       "descriptionMoreURL": "https://community.bistudio.com/wiki/exitwith"
     },
+
     "ForEach Loop": {
       "prefix": "forEach",
       "body": "{\n    ${2://code}\n} forEach ${1:ARRAY};",
@@ -77,18 +78,23 @@
       "description": "Loop while condition is true",
       "descriptionMoreURL": "https://community.bistudio.com/wiki/while"
     },
+
+
     "CBA addPerFrameHandler": {
       "prefix": "addPerFrameHandler_cba",
       "body": "[${1:FUNCTION/CODE}, ${2:DELAY}, [${3:PARAMETERS}]] call CBA_fnc_addPerFrameHandler;",
       "description": "Add a per-frame handler, return ID",
       "descriptionMoreURL": "https://dev.withsix.com/docs/cba/files/common/fnc_addPerFrameHandler-sqf.html"
     },
+
+
     "ACE3 Function Header": {
       "prefix": "header_function_ace",
-      "body": "/*\n * Author: ${1:[Name of Author(s)]}\n * ${2:[Description]}\n *\n * Arguments:\n * 0: ${3:Argument Name} <${4:TYPE}>\n *\n * Return Value:\n * ${5:Return Name} <${6:TYPE}>\n *\n * Example:\n * [${7:\"example\"}] call ace_${8:[module]}_fnc_${9:[functionName]}\n *\n * Public: ${10:[Yes/No]}\n */\n#include \"script_component.hpp\"",
+      "body": "/*\n * Author: ${1:[Name of Author(s)]}\n * ${2:[Description]}\n *\n * Arguments:\n * 0: ${3:Argument Name} <${4:TYPE}>\n *\n * Return Value:\n * ${5:Return Name} <${6:TYPE}>\n *\n * Example:\n * [${7:\"example\"}] call ace_${8:[module]}_fnc_${9:[functionName]}\n *\n * Public: ${10:[Yes/No]}\n */",
       "description": "Function Header per ACE3 guidelines.",
       "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#3-1-function-definitions"
     },
+
     "ACE3 addEventHandler": {
       "prefix": "addEventHandler_ace",
       "body": "[\"${1:EVENT_NAME}\", ${2:CODE}] call EFUNC(common,addEventhandler);",
@@ -150,6 +156,8 @@
       "descriptionMoreURL": "http://ace3mod.com/wiki/development/ace3-events-system.html#1-1-synchronized-events"
     }
   },
+
+
   ".source.cpp, .source.hpp": {
     "ACE3 Settings Entry": {
       "prefix": "settings_entry_ace",
@@ -158,6 +166,8 @@
       "descriptionMoreURL": "http://ace3mod.com/wiki/framework/settings.html"
     }
   },
+
+
   ".source.sqf, .source.cpp, .source.hpp": {
     "GVAR": {
       "prefix": "GVAR",
