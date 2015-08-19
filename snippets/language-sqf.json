@@ -35,17 +35,17 @@
       "description": "Default block inside switch statement",
       "descriptionMoreURL": "https://community.bistudio.com/wiki/default"
     },
-    "If ExitWith statement": {
+    "If ExitWith statement 1": {
       "prefix": "if_exitWith",
-      "body": "if (${1:CONDITION) exitwith {\n    ${2://code}\n};",
-      "description": "If exitwith",
-      "descriptionMoreURL": "https://community.bistudio.com/wiki/exitwith"
+      "body": "if (${1:CONDITION}) exitWith {\n    ${2://code}\n};",
+      "description": "Conditional if-exitWith statement",
+      "descriptionMoreURL": "https://community.bistudio.com/wiki/exitWith"
     },
-    "ExitWith statement": {
+    "If ExitWith statement 2": {
       "prefix": "exitWith",
-      "body": "if (${1:CONDITION) exitwith {\n    ${2://code}\n};",
-      "description": "If exitwith",
-      "descriptionMoreURL": "https://community.bistudio.com/wiki/exitwith"
+      "body": "if (${1:CONDITION}) exitWith {\n    ${2://code}\n};",
+      "description": "Conditional if-exitWith statement",
+      "descriptionMoreURL": "https://community.bistudio.com/wiki/exitWith"
     },
 
     "ForEach Loop": {
