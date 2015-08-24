@@ -182,6 +182,14 @@
   ".source.sqf": {
     "autocomplete": {
       "symbols": {
+        "variable": {
+          "typePriority": 1,
+          "suggestions": [
+            "_forEachIndex",
+            "_this",
+            "_x"
+          ]
+        },
         "value": {
           "typePriority": 1,
           "suggestions": [
