@@ -9,7 +9,7 @@ module.exports =
   config:
     appDataFolder:
       title: "Arma 3 AppData Folder",
-      description: "Location of the Arma 3 Application Data Folder. (Location of rpt-Files)",
+      description: "Location of the Arma 3 Application Data Folder (location of RPT files)",
       type: "string",
       default: "%localappdata%\\Arma 3\\"
 
