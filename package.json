@@ -5,7 +5,8 @@
   "keywords": [
     "sqf",
     "arma",
-    "ace3"
+    "ace3",
+    "cba"
   ],
   "activationCommands": {
     "atom-workspace": [
