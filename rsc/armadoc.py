@@ -2,9 +2,9 @@ import urllib
 import json
 import re
 
-params = {'format': 'json', 
-          'action': 'query', 
-          'list': 'categorymembers', 
+params = {'format': 'json',
+          'action': 'query',
+          'list': 'categorymembers',
           'cmtitle': 'Category:Scripting_Commands_Arma_3',
           'cmtype':'page',
           'cmlimit':500,
@@ -17,12 +17,12 @@ while content.has_key('query-continue'):
     params['cmcontinue'] = content['query-continue']['categorymembers']['cmcontinue']
     f = urllib.urlopen("https://community.bistudio.com/wikidata/api.php?%s" % urllib.urlencode(params))
     content = json.loads(f.read());
-    
+
 data = data + content['query']['categorymembers']
 
-params = {'format': 'json', 
-          'action': 'parse', 
-          'pageid': '', 
+params = {'format': 'json',
+          'action': 'parse',
+          'pageid': '',
           'prop': 'text'}
 
 output = [];
@@ -70,27 +70,27 @@ for item in data:
             syntax = re.sub(r'(<.*?>)','',syntaxRegex.group(1))
             syntax= re.sub(r'(\s*.*\s*[=])','',syntax)
             syntax= re.sub(r'(&#160;|   | \(.*?\)).*','',syntax)
-            
+
             returnValueRegex = re.search(r"<dt>Return Value:</dt>\s+<dd>(.+?)</dd>",text,re.DOTALL|re.MULTILINE)
-            
+
             #temp['replacementPrefix'] = str(item['title'])
-            temp['rightLabel'] = 'SQF command'
-            temp['type'] = 'function' 
+            temp['rightLabel'] = 'SQF Command'
+            temp['type'] = 'function'
             temp['leftLabel'] = ''
             if returnValueRegex:
                 temp['leftLabel'] = re.search(r'\s*(\w+).*?',re.sub(r'(<.*?>)','',returnValueRegex.group(1))).group(1).strip()
                 temp['leftLabel'] += ' ='
                 if temp['leftLabel']=='Nothing =':
                     temp['leftLabel'] = '';
-                    
+
             syntaxRegex2 = re.search(r'(.*?)\s?'+str(item['title']),syntax);
             if syntaxRegex2:
                 temp['leftLabel'] += ' '+syntaxRegex2.group(1).strip()
                 syntax = re.sub(re.escape(syntaxRegex2.group(1)),'',syntax,0,re.IGNORECASE)
-                    
+
             temp['description'] = re.sub(r'(<.*?>)','',description).strip()
             temp['descriptionMoreURL'] = 'http://community.bistudio.com/wiki/' + urllib.quote(str(item['title']))
-            
+
             cmdParamsRegex = re.search(r'<dt>Parameters:</dt>\s*(.+?)</dl>',text,re.DOTALL|re.MULTILINE)
             if cmdParamsRegex:
                 cmdParams = re.findall(r'<(?:dd class\="param"|dt.*?)>(.*?)[:]',cmdParamsRegex.group(1),re.DOTALL|re.MULTILINE)
@@ -104,13 +104,7 @@ for item in data:
                 print temp['snippet']
             else:
                 temp['text'] = str(item['title']).strip();
-                    
-            
+
+
             output.append(temp)
             syntaxRegex = re.search(r"<dt>Syntax:</dt>\s+<dd>(.+?)</dd>",text,re.DOTALL|re.MULTILINE)
-        
-
-
-    
-    
-    
