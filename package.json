@@ -8,7 +8,10 @@
     "ace3"
   ],
   "activationCommands": {
-    "atom-workspace": "language-arma-atom:toggle"
+    "atom-workspace": [
+      "language-arma-atom:toggle",
+      "language-arma-atom:open-rpt-file"
+    ]
   },
   "license": "MIT",
   "engines": {
