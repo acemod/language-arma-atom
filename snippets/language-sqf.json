@@ -23,13 +23,13 @@
       "description": "Conditional switch statement",
       "descriptionMoreURL": "https://community.bistudio.com/wiki/switch_do"
     },
-    "Case block of Switch": {
+    "Case inside Switch": {
       "prefix": "case_switch",
       "body": "case (${1:VALUE}): {\n    ${2://code}\n};",
       "description": "Case block inside switch statement",
       "descriptionMoreURL": "https://community.bistudio.com/wiki/case"
     },
-    "Default block of Switch": {
+    "Default inside Switch": {
       "prefix": "default_switch",
       "body": "default {\n    ${1://code}\n};",
       "description": "Default block inside switch statement",
@@ -74,7 +74,7 @@
     },
 
 
-    "CBA addPerFrameHandler": {
+    "CBA Add PFH": {
       "prefix": "addPerFrameHandler_cba",
       "body": "[${1:FUNCTION/CODE}, ${2:DELAY}, [${3:PARAMETERS}]] call CBA_fnc_addPerFrameHandler;",
       "description": "Add a per-frame handler, return ID",
@@ -89,19 +89,19 @@
       "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#3-1-function-definitions"
     },
 
-    "ACE3 addEventHandler": {
+    "ACE3 Add EH": {
       "prefix": "addEventHandler_ace",
       "body": "[\"${1:EVENT_NAME}\", ${2:CODE}] call EFUNC(common,addEventhandler);",
       "description": "Add an event handler, return ID",
       "descriptionMoreURL": "http://ace3mod.com/wiki/development/ace3-events-system.html"
     },
-    "ACE3 removeEventHandler": {
+    "ACE3 Remove EH": {
       "prefix": "removeEventHandler_ace",
       "body": "[\"${1:EVENT_NAME}\", ${2:ID}] call EFUNC(common,removeEventHandler);",
       "description": "Remove an event handler using the ID",
       "descriptionMoreURL": "http://ace3mod.com/wiki/development/ace3-events-system.html"
     },
-    "ACE3 removeAllEventHandlers": {
+    "ACE3 Remove All EHs": {
       "prefix": "removeAllEventHandlers_ace",
       "body": "[\"${1:EVENT_NAME}\"] call EFUNC(common,removeAllEventHandlers);",
       "description": "Remove all event handlers of given type",
@@ -131,19 +131,19 @@
       "description": "Call an event targeted (list of) object(s)",
       "descriptionMoreURL": "http://ace3mod.com/wiki/development/ace3-events-system.html"
     },
-    "ACE3 addSyncedEventHandler": {
+    "ACE3 Add Synced EH": {
       "prefix": "addSyncedEventHandler_ace",
       "body": "[\"${1:EVENT_NAME}\", ${2:CODE}, ${2:TTL_NUMBER_OR_CODE}] call EFUNC(common,addSyncedEventHandler);",
       "description": "Add a synchronized event handler",
       "descriptionMoreURL": "http://ace3mod.com/wiki/development/ace3-events-system.html#1-1-synchronized-events"
     },
-    "ACE3 removeSyncedEventHandler": {
+    "ACE3 Remove Synced EH": {
       "prefix": "removeSyncedEventHandler_ace",
       "body": "[\"${1:EVENT_NAME}\", ${2:ID}] call EFUNC(common,removeSyncedEventHandler);",
       "description": "Remove a synchronized event handler using the ID",
       "descriptionMoreURL": "http://ace3mod.com/wiki/development/ace3-events-system.html#1-1-synchronized-events"
     },
-    "ACE3 syncedEvent": {
+    "ACE3 Synced Event": {
       "prefix": "syncedEvent_ace",
       "body": "[\"${1:EVENT_NAME}\", [${2:PARAMETERS}], ${3:TTL_NUMBER_OR_CODE}] call EFUNC(common,syncedEvent);",
       "description": "Call a synchronized event (including JIP)",
