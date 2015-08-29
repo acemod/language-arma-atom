@@ -11,7 +11,9 @@
   "activationCommands": {
     "atom-workspace": [
       "language-arma-atom:toggle",
-      "language-arma-atom:open-rpt-file"
+      "language-arma-atom:open-rpt-file",
+      "language-arma-atom:Build",
+      "language-arma-atom:Make"
     ]
   },
   "license": "MIT",
