@@ -183,6 +183,7 @@
     "autocomplete": {
       "symbols": {
         "variable": {
+          "selector": ".variable",
           "typePriority": 1,
           "suggestions": [
             "_forEachIndex",
