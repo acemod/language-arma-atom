@@ -1,0 +1,79 @@
+{
+  ".source.sqf, .source.cpp, .source.hpp, .source.ext": {
+    "autocomplete": {
+      "symbols": {
+        "macro-cba": {
+          "typePriority": 0,
+          "suggestions": [{
+              "description": "Expands to: prefix_component",
+              "text": "ADDON",
+              "rightLabel": "CBA Macro"
+            }, {
+              "description": "Expands to: prefix",
+              "text": "PREFIX",
+              "rightLabel": "CBA Macro"
+            }, {
+              "description": "Expands to: component",
+              "text": "COMPONENT",
+              "rightLabel": "CBA Macro"
+            }, {
+              "description": "Expands to: function = compile preProcessFileLineNumbers \"functionPath\"",
+              "snippet": "PREP(${1:function})$0",
+              "rightLabel": "CBA Macro"
+            }, {
+              "description": "Expands to: prefix_component_variable",
+              "snippet": "GVAR(${1:variable})$0",
+              "rightLabel": "CBA Macro",
+              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#4-1-module-pbo-specific-macro-usage"
+            }, {
+              "description": "Expands to: \"prefix_component_variable\"",
+              "snippet": "QGVAR(${1:variable})$0",
+              "rightLabel": "CBA Macro",
+              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#4-1-module-pbo-specific-macro-usage"
+            }, {
+              "description": "Expands to: prefix_component_variable",
+              "snippet": "EGVAR(${1:component},${2:variable})$0",
+              "rightLabel": "CBA Macro",
+              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#4-1-module-pbo-specific-macro-usage"
+            }, {
+              "description": "Expands to: prefix_component_fnc_functionName",
+              "snippet": "FUNC(${1:functionName})$0",
+              "rightLabel": "CBA Macro",
+              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#4-1-module-pbo-specific-macro-usage"
+            }, {
+              "description": "Expands to: prefix_component_fnc_functionName",
+              "snippet": "EFUNC(${1:component},${2:functionName})$0",
+              "rightLabel": "CBA Macro",
+              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#4-1-module-pbo-specific-macro-usage"
+            }, {
+              "description": "Expands to: \"content\"",
+              "snippet": "QUOTE(${1:content})$0",
+              "rightLabel": "CBA Macro",
+              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros"
+            }, {
+              "description": "Expands to: \"STR_prefix_component_fnc_string\"",
+              "snippet": "LSTRING(${1:string})$0",
+              "rightLabel": "CBA Macro",
+              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-2-string-family-macros"
+            }, {
+              "description": "Expands to: \"STR_prefix_component_fnc_string\"",
+              "snippet": "ELSTRING(${1:component},${2:string})$0",
+              "rightLabel": "CBA Macro",
+              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-2-string-family-macros"
+            }, {
+              "description": "Expands to: \"$STR_prefix_component_fnc_string\"",
+              "snippet": "CSTRING(${1:string})$0",
+              "rightLabel": "CBA Macro",
+              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-2-string-family-macros"
+            }, {
+              "description": "Expands to: \"$STR_prefix_component_fnc_string\"",
+              "snippet": "ECSTRING(${1:component},${2:string})$0",
+              "rightLabel": "CBA Macro",
+              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-2-string-family-macros"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
