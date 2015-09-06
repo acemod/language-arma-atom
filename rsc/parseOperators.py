@@ -44,6 +44,8 @@ for cmd in data:
     returnValueStr = h.unescape(returnValueStr).encode('ascii', 'ignore')
     returnValue = []
     typeListRegex = re.search(typeExpr,returnValueStr)
+
+    
     while typeListRegex:
         t = typeListRegex.group(0)
         t = sqfTypeSub.get(t,t)
@@ -51,7 +53,7 @@ for cmd in data:
         returnValueStr = re.sub(re.escape(typeListRegex.group(0)),'',returnValueStr)
         typeListRegex = re.search(typeExpr,returnValueStr)
         
-    if not 'Nothing' in returnValue:
+    if (not 'Nothing' in returnValue) and len(returnValue)>0:
         cmdTemplateAutocomplete['leftLabel'] = '('+string.join(returnValue,', ')+') = '
 
     cmdTemplateParser['type'] = returnValue;
@@ -95,8 +97,8 @@ for cmd in data:
         
         snippet = syntaxFieldsRegex.group('right')
         k=1;
-        for para in parameters.iterkeys():
-            snippet = re.sub('(\W)('+re.escape(para)+')(\W)',r'\g<1>${'+str(k)+':\g<2>}\g<3>',' '+snippet+' ',0,re.IGNORECASE)
+        for para in parametersR:
+            snippet = re.sub('(\W)('+para+')(\W)',r'\g<1>${'+str(k)+':\g<2>}\g<3>',' '+snippet+' ',0,re.IGNORECASE)
             k=k+1;
             snippet = snippet.strip()
         
@@ -126,8 +128,8 @@ for cmd in data:
             
             snippet = syntaxFieldsRegex.group('right')
             k=1;
-            for para in parameters.iterkeys():
-                snippet = re.sub('(\W)('+re.escape(para)+')(\W)',r'\g<1>${'+str(k)+':\g<2>}\g<3>',' '+snippet+' ',0,re.IGNORECASE)
+            for para in parametersR:
+                snippet = re.sub('(\W)('+para+')(\W)',r'\g<1>${'+str(k)+':\g<2>}\g<3>',' '+snippet+' ',0,re.IGNORECASE)
                 k=k+1;
                 snippet = snippet.strip()
             

@@ -55,7 +55,7 @@ for item in data:
             syntax = re.sub(r'(<.*?>)','',syntaxRegex.group(1))
 
             returnValue = '';
-            returnValueRegex = re.search(r"<dt>Return Value:</dt>\s+<dd>(.+?)</dd>",text,re.DOTALL|re.MULTILINE)
+            returnValueRegex = re.search(r"<dt>Return Value:</dt>\s*(?:<p>)?\s*<dd>(.+?)</dd>",text,re.DOTALL|re.MULTILINE)
             if returnValueRegex:
                 returnValue = returnValueRegex.group(1)
 
