@@ -2329,7 +2329,7 @@
             "descriptionMoreURL": "http://community.bistudio.com/wiki/createDiarySubject"
           }, {
             "description": "Create child display of given display and load from \"resourceName\". The notable difference between createDisplay and createDialog is that if child display class has movingEnable = 1; param, the player would be able to move whilst having control of the mouse pointer.\nSince Arma 3 v1.49.131653 createDisplay returns Display and will first look in description.ext for resourceName config, if not found, it will then look in main config.",
-            "leftLabel": "parent ",
+            "leftLabel": "(Nothing, Display) = parent ",
             "snippet": "createDisplay ${2:resourceName}$0",
             "rightLabel": "SQF Command",
             "type": "function",
@@ -5199,7 +5199,7 @@
             "descriptionMoreURL": "http://community.bistudio.com/wiki/getObjectChildren"
           }, {
             "description": "Returns appID of the DLC the object belongs to or nil if object is vanilla.",
-            "leftLabel": "",
+            "leftLabel": "(Number, Nothing) = ",
             "snippet": "getObjectDLC ${1:obj}$0",
             "rightLabel": "SQF Command",
             "type": "function",
@@ -5381,7 +5381,7 @@
             "descriptionMoreURL": "http://community.bistudio.com/wiki/getText"
           }, {
             "description": "Return the value of variable in the variable space of given object or location.\n\n\nAll available data types combinations:\n Namespace getVariable String\n Namespace getVariable Array (since Arma 2 1.60)\n Control getVariable String\n Object getVariable String\n Object getVariable Array\n Group getVariable String\n Group getVariable Array\n Team_Member getVariable String\n Team_Member getVariable Array\n Task getVariable String\n Location getVariable String",
-            "leftLabel": "object ",
+            "leftLabel": "(Any Value, Nothing, Anything) = object ",
             "snippet": "getVariable ${2:name}$0",
             "rightLabel": "SQF Command",
             "type": "function",
@@ -6928,7 +6928,7 @@
             "descriptionMoreURL": "http://community.bistudio.com/wiki/linkItem"
           }, {
             "description": "List of units that would activate given Trigger.\n\nIt returns nothing before the simulation started, i.e. in (undelayed) init.sqf files. Returns a pointer to the trigger's list after the simulation started.Since this is just a reference this means that the value in your local variable will change as the content of the trigger area changes. To permanently copy the returned list to a different variable, use _mylist = +(list triggerOne).\n\nThe second example can be used inside the trigger (in that case, no need to name your trigger).\n\nThe list returned for trigger of type \"Not present\" is the same as that returned for type \"present\". \n\nNOTE: While the command can query any trigger, local or remote, the result will be only for the trigger condition set on the local client. See createTrigger for more info.",
-            "leftLabel": "",
+            "leftLabel": "(Array, Nothing) = ",
             "snippet": "list ${1:trigger}$0",
             "rightLabel": "SQF Command",
             "type": "function",
@@ -7733,7 +7733,7 @@
             "descriptionMoreURL": "http://community.bistudio.com/wiki/move"
           }, {
             "description": "Moves unit to the first available seat in a vehicle. The order of priorities is the same order used in squad command when you order subordinates to get in vehicle to any position and is the same order used in Zeus when you drag units to a vehicle. Seat assignment seems to use the following priority logic: \ndriver (moveInDriver) -> commander turret (moveInCommander) -> gunner turret (moveInGunner) -> remaining turrets (moveInTurret) -> cargo (moveInCargo).\nNOTE: This command will move player into the locked vehicle or seat just as well.",
-            "leftLabel": "unit ",
+            "leftLabel": "(Nothing, Boolean) = unit ",
             "snippet": "moveInAny ${2:vehicle}$0",
             "rightLabel": "SQF Command",
             "type": "function",
@@ -8279,14 +8279,14 @@
             "descriptionMoreURL": "http://community.bistudio.com/wiki/owner"
           }, {
             "description": "Extracts a single value with given index from input argument, similar to BIS_fnc_param.  When used without argument, as shown in main syntax, internal variable _this, which is usually available inside functions and event handlers, is used as argument. If input argument is not an array, it will be converted to 1 element array.\n\nIf extracted item of input with given index is undefined, of the wrong type or of the wrong length (if the item is an array), default value is used instead. To log these substitutes into .rpt file, set  allowFunctionsLog param in description.ext to 1.",
-            "leftLabel": "",
+            "leftLabel": "(Anything, Nothing) = ",
             "snippet": "param ${1:[${2:index}, ${3:defaultValue}, ${4:expectedDataTypes}, ${5:expectedArrayCount}]}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/param"
           }, {
             "description": "Extracts a single value with given index from input argument, similar to BIS_fnc_param.  When used without argument, as shown in main syntax, internal variable _this, which is usually available inside functions and event handlers, is used as argument. If input argument is not an array, it will be converted to 1 element array.\n\nIf extracted item of input with given index is undefined, of the wrong type or of the wrong length (if the item is an array), default value is used instead. To log these substitutes into .rpt file, set  allowFunctionsLog param in description.ext to 1.",
-            "leftLabel": "argument ",
+            "leftLabel": "(Anything, Nothing) = argument ",
             "snippet": "param ${2:[${3:index}, ${4:defaultValue}, ${5:expectedDataTypes}, ${6:expectedArrayCount}]}$0",
             "rightLabel": "SQF Command",
             "type": "function",
@@ -8573,7 +8573,7 @@
             "descriptionMoreURL": "http://community.bistudio.com/wiki/ppEffectCreate"
           }, {
             "description": "Creates Post process effects specified by effect name and priority. Supported effects are:\n\n \"RadialBlur\"\n \"ChromAberration\"\n \"WetDistortion\"\n \"ColorCorrections\"\n \"DynamicBlur\"\n \"FilmGrain\"\n \"ColorInversion\"",
-            "leftLabel": "",
+            "leftLabel": "(Array, Nothing) = ",
             "snippet": "ppEffectCreate [${1:[name1, priority1]},...]$0",
             "rightLabel": "SQF Command",
             "type": "function",
@@ -12402,7 +12402,7 @@
             "descriptionMoreURL": "http://community.bistudio.com/wiki/taskDescription"
           }, {
             "description": "Returns the position of the task (as specified by destination parameter in config).",
-            "leftLabel": "",
+            "leftLabel": "(Array, Nothing) = ",
             "snippet": "taskDestination ${1:task}$0",
             "rightLabel": "SQF Command",
             "type": "function",
@@ -12731,7 +12731,7 @@
             "descriptionMoreURL": "http://community.bistudio.com/wiki/try"
           }, {
             "description": "Checks if a turret is local.  \nSome info on turrets: A vehicle turret will change locality when player gunner gets in it, just like vehicle changes locality when player driver gets in it. Many commands for turrets work only where turret is local. When gunner leaves turret it is supposed to change locality to the locality of the vehicle.",
-            "leftLabel": "vehicle ",
+            "leftLabel": "(Boolean, Nothing) = vehicle ",
             "snippet": "turretLocal ${2:turretPath}$0",
             "rightLabel": "SQF Command",
             "type": "function",

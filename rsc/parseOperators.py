@@ -53,7 +53,7 @@ for cmd in data:
         returnValueStr = re.sub(re.escape(typeListRegex.group(0)),'',returnValueStr)
         typeListRegex = re.search(typeExpr,returnValueStr)
         
-    if (not 'Nothing' in returnValue) and len(returnValue)>0:
+    if ((not 'Nothing' in returnValue) and len(returnValue)==1) or len(returnValue)>1:
         cmdTemplateAutocomplete['leftLabel'] = '('+string.join(returnValue,', ')+') = '
 
     cmdTemplateParser['type'] = returnValue;
