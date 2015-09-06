@@ -5,7 +5,7 @@
         "builtin": {
           "typePriority": 0,
           "suggestions": [
-            "#include ",
+            "#include",
             "#define",
             "#undef",
             "#ifdef",
