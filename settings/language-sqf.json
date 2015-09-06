@@ -1,21 +1,20 @@
 {
-  ".source.sqf, .source.cpp, .source.hpp, .source.ext": {
+  ".source.sqf, .source.arma.cfg": {
     "autocomplete": {
       "symbols": {
         "builtin": {
           "typePriority": 0,
           "suggestions": [
-            "#include",
+            "#include ",
             "#define",
             "#undef",
             "#ifdef",
             "#endif"
           ]
         },
-        "function": {
+        "macro": {
           "typePriority": 0,
           "suggestions": [{
-              "type": "macro",
               "rightLabel": "ACE3 Macro",
               "snippet": "GVAR(${1:variable})$0",
               "description": "Expands to: prefix_component_variable",
@@ -184,7 +183,7 @@
       "symbols": {
         "variable": {
           "selector": ".variable",
-          "typePriority": 1,
+          "typePriority": 3,
           "suggestions": [
             "_forEachIndex",
             "_this",
@@ -192,7 +191,7 @@
           ]
         },
         "value": {
-          "typePriority": 1,
+          "typePriority": 2,
           "suggestions": [
             "CfgMods",
             "CfgExperience",
