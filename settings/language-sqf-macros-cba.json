@@ -51,22 +51,22 @@
               "rightLabel": "CBA Macro",
               "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-general-purpose-macros"
             }, {
-              "description": "Expands to: \"STR_prefix_component_fnc_string\"",
+              "description": "Expands to: \"STR_prefix_component_string\"",
               "snippet": "LSTRING(${1:string})$0",
               "rightLabel": "CBA Macro",
               "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-2-string-family-macros"
             }, {
-              "description": "Expands to: \"STR_prefix_component_fnc_string\"",
+              "description": "Expands to: \"STR_prefix_component_string\"",
               "snippet": "ELSTRING(${1:component},${2:string})$0",
               "rightLabel": "CBA Macro",
               "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-2-string-family-macros"
             }, {
-              "description": "Expands to: \"$STR_prefix_component_fnc_string\"",
+              "description": "Expands to: \"$STR_prefix_component_string\"",
               "snippet": "CSTRING(${1:string})$0",
               "rightLabel": "CBA Macro",
               "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-2-string-family-macros"
             }, {
-              "description": "Expands to: \"$STR_prefix_component_fnc_string\"",
+              "description": "Expands to: \"$STR_prefix_component_string\"",
               "snippet": "ECSTRING(${1:component},${2:string})$0",
               "rightLabel": "CBA Macro",
               "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-2-string-family-macros"
