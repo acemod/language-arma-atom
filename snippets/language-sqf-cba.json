@@ -1,0 +1,10 @@
+{
+  ".source.sqf": {
+    "CBA Add PFH": {
+      "prefix": "addPerFrameHandler_cba",
+      "body": "[${1:FUNCTION/CODE}, ${2:DELAY}, [${3:PARAMETERS}]] call CBA_fnc_addPerFrameHandler;",
+      "description": "Add a per-frame handler, return ID",
+      "descriptionMoreURL": "https://dev.withsix.com/docs/cba/files/common/fnc_addPerFrameHandler-sqf.html"
+    }
+  }
+}
