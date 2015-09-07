@@ -21,17 +21,17 @@ for macroContent in allMacros:
     c = re.search(r'(.*?)(<h4 class=CHeading>Parameters</h4>.*?)?(<h4 class=CHeading>Example</h4>.*?)?(?:<h4 class=CHeading>Author</h4>.*?)',macroContent[1],re.DOTALL)
     if c:
         description = c.group(1)
-        
-        descriptionTable = re.findall(r'<tr><td class=CDLEntry>(.*?)</td><td class=CDLDescription>(.*?)</td></tr>',macroContent[1],re.DOTALL)         
+
+        descriptionTable = re.findall(r'<tr><td class=CDLEntry>(.*?)</td><td class=CDLDescription>(.*?)</td></tr>',macroContent[1],re.DOTALL)
         for tableEntry in descriptionTable:
             re.search(r'(.*?)(<h4 class=CHeading>Parameters</h4>.*?)?(<h4 class=CHeading>Example</h4>.*?)?(?:<h4 class=CHeading>Author</h4>.*?)',macroContent[1],re.DOTALL)
-    
+
 
 
 f = urllib.urlopen(fnc_base_url + 'Functions.html')
 content = f.read()
 f.close()
-    
+
 allFunctions = re.findall(r'<a[^>]*href\s*=\s*"([^"]*)"[^>]*class=ISymbol[^>]*>([^<]*)',content)
 
 output = [];
@@ -50,13 +50,13 @@ for function in allFunctions:
     nameRegex = re.search(r'<a name="([^"]*)">',content)
     if nameRegex:
         outputTemplate['text'] = nameRegex.group(1)
-        
+
     descriptionRegex = re.search(r'<h4 class=CHeading>Description</h4>(.*)<h4 class=CHeading>Parameters</h4>',content)
     if descriptionRegex:
         outputTemplate['description'] = h.unescape(re.sub(r'(<[^<]+?>)','',descriptionRegex.group(1)).strip()).encode('ascii', 'ignore')
-        
+
     output.append(outputTemplate)
-    
+
 autocompleteDict = {
     '.source.sqf': {
         'autocomplete': {
@@ -69,13 +69,10 @@ autocompleteDict = {
         }
     }
 };
-    
-with open('language-sqf-cba-functions.json', 'w') as f:
+
+with open('language-sqf-functions-cba.json', 'w') as f:
     json.dump(autocompleteDict,f)
-    
+
 f = urllib.urlopen(fnc_base_url + 'Functions.html')
 content = f.read()
 f.close()
-
-
-        
