@@ -1,0 +1,11 @@
+'menu': [{
+  label: 'Packages'
+  submenu: [
+    label: 'Language ArmA Atom',
+    submenu: [
+        { label: 'Build', command: 'language-arma-atom:Build' },
+        {label: 'Make', command: 'language-arma-atom:Make' },
+        {label: 'Open RTP', command: 'language-arma-atom:open-rpt-file' },
+    ]
+  ]
+}]

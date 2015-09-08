@@ -9,14 +9,14 @@ module.exports =
     config:
         buildScript:
             title: "Build Script File",
-            description: "Localtion of the Build File",
+            description: "Localtion of the Build File (if PROJECTFOLDER then it use the path projectfolder/tool/build.py)",
             type: "string",
-            default: "p:\\z\\ace\\tools\\build.py"
+            default: "PROJECTFOLDER"
         makeScript:
             title: "Make Script File"
-            description: "Localtion of the Make File"
+            description: "Localtion of the Make File (if PROJECTFOLDER then it use the path projectfolder/tool/build.py)"
             type: "string"
-            default: "p:\\z\\ace\\tools\\make.py"
+            default: "PROJECTFOLDER"
         appDataFolder:
             title: "Arma 3 AppData Folder",
             description: "Location of the Arma 3 Application Data Folder (location of RPT files)",
