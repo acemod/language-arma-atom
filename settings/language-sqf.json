@@ -1,5 +1,5 @@
 {
-  ".source.sqf, .source.cpp, .source.hpp, .source.ext": {
+  ".source.sqf, .source.arma.cfg, .source.cpp, .source.hpp, .source.ext": {
     "autocomplete": {
       "symbols": {
         "builtin": {
@@ -20,7 +20,7 @@
       "symbols": {
         "variable": {
           "selector": ".variable",
-          "typePriority": 1,
+          "typePriority": 3,
           "suggestions": [
             "_forEachIndex",
             "_this",
@@ -28,7 +28,7 @@
           ]
         },
         "value": {
-          "typePriority": 1,
+          "typePriority": 2,
           "suggestions": [
             "CfgMods",
             "CfgExperience",

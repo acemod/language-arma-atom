@@ -1,6 +1,6 @@
 {
   "scopeName": "source.arma.cfg",
-  "name": "Arma Config Format",
+  "name": "Arma Config",
   "fileTypes": [
     "cfg",
     "sqm",

@@ -1,11 +1,15 @@
 ## 2.0.0
 - Added: Open RPT File command - @simon84
+- Added: BIS and CBA functions to autocomplete - @simon84
 - Added: URL, Label, Type and Description to all commands - @simon84
+- Added: Arma Config support to autocomplete - @jonpas @simon84
 - Changed: Autocomplete to use `autocomplete-plus` - @simon84
 - Changed: ACE3 and CBA Macros to autocomplete - @simon84
+- Changed: Renamed config language to "Arma Config" - @jonpas
 - Changed: Streamlined snippet names - @jonpas
 - Fixed: ECSTRING Macro typo - @jonpas
-- (Dev) Added: BI Community Wiki command crawler Python script - @simon84
+- (Dev) Added: BI Community Wiki command parser Python script - @simon84
+- (Dev) Added: CBA Wiki function parser Python script - @simon84
 
 ## 1.0.1
 - Changed: Renamed language to "SQF" - @SilentSpike

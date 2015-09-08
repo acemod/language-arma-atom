@@ -1,3 +1,5 @@
+__author__ = 'Simon'
+
 import urllib
 import json
 import re
@@ -25,34 +27,13 @@ params = {'format': 'json',
           'pageid': '',
           'prop': 'text'}
 
-output = [];
-blacklist = ["! a",
-"- a",
-"a != b",
-"a % b",
-"a && b",
-"a * b",
-"a - b",
-"a / b",
+blacklist = [
 "a = b",
-"a == b",
-"a greater b",
-"a greater= b",
-"a less b",
-"a less= b",
-"a or b",
-"a plus b",
-"a ^ b",
-"a:b",
-"config / name",
-"config greater greater name",
-"plus a",
-"valuea plus valueb",
 "for",
-"if",
 "in",
 "switch"]
 
+output = [];
 
 for item in data:
     if item['title'] not in blacklist:
@@ -61,50 +42,47 @@ for item in data:
         f = urllib.urlopen("https://community.bistudio.com/wikidata/api.php?%s" % urllib.urlencode(params))
         content = json.loads(f.read())['parse']
         text = content['text']['*'].encode("ascii", "ignore")
-        #fields = re.findall(r"^\|(?:\s*(\w+)\s*=|\s*)(.+?)\|=\s*([\w ]+)\s*\n",content['wikitext']['*'],re.DOTALL|re.MULTILINE);
+        rawText = text;
+
+        description = ''
         description = re.search(r"<dt>Description:</dt>\s+<dd>(.+?)</dd>",text,re.DOTALL|re.MULTILINE).group(1);
+        text = re.sub(r"(<dt>Description:</dt>\s+<dd>.+?</dd>)",'',text)
         syntaxRegex = re.search(r'<dt>Syntax:</dt>\s+<dd>(.+?)</dd>',text,re.DOTALL|re.MULTILINE)
         while syntaxRegex:
-            temp = {}
+            command = {};
             text = text[syntaxRegex.end():];
+            syntax=''
             syntax = re.sub(r'(<.*?>)','',syntaxRegex.group(1))
-            syntax= re.sub(r'(\s*.*\s*[=])','',syntax)
-            syntax= re.sub(r'(&#160;|   | \(.*?\)).*','',syntax)
 
-            returnValueRegex = re.search(r"<dt>Return Value:</dt>\s+<dd>(.+?)</dd>",text,re.DOTALL|re.MULTILINE)
-
-            #temp['replacementPrefix'] = str(item['title'])
-            temp['rightLabel'] = 'SQF Command'
-            temp['type'] = 'function'
-            temp['leftLabel'] = ''
+            returnValue = '';
+            returnValueRegex = re.search(r"<dt>Return Value:</dt>\s*(?:<p>)?\s*<dd>(.+?)</dd>",text,re.DOTALL|re.MULTILINE)
             if returnValueRegex:
-                temp['leftLabel'] = re.search(r'\s*(\w+).*?',re.sub(r'(<.*?>)','',returnValueRegex.group(1))).group(1).strip()
-                temp['leftLabel'] += ' ='
-                if temp['leftLabel']=='Nothing =':
-                    temp['leftLabel'] = '';
+                returnValue = returnValueRegex.group(1)
 
-            syntaxRegex2 = re.search(r'(.*?)\s?'+str(item['title']),syntax);
-            if syntaxRegex2:
-                temp['leftLabel'] += ' '+syntaxRegex2.group(1).strip()
-                syntax = re.sub(re.escape(syntaxRegex2.group(1)),'',syntax,0,re.IGNORECASE)
+            text = re.sub(r"(<dt>Return Value:</dt>\s+<dd>.+?</dd>)",'',text,1)
 
-            temp['description'] = re.sub(r'(<.*?>)','',description).strip()
-            temp['descriptionMoreURL'] = 'http://community.bistudio.com/wiki/' + urllib.quote(str(item['title']))
+            parameter = '';
+            parameterRegex = re.search(r'<dt>Parameters:</dt>\s*(.+?)</dl>',text,re.DOTALL|re.MULTILINE)
+            if parameterRegex:
+                parameter = parameterRegex.group(1)
+            text = re.sub(r"(<dt>Parameters:</dt>\s*(.+?)</dl>)",'',text,1)
 
-            cmdParamsRegex = re.search(r'<dt>Parameters:</dt>\s*(.+?)</dl>',text,re.DOTALL|re.MULTILINE)
-            if cmdParamsRegex:
-                cmdParams = re.findall(r'<(?:dd class\="param"|dt.*?)>(.*?)[:]',cmdParamsRegex.group(1),re.DOTALL|re.MULTILINE)
-                k=1;
-                for param in cmdParams:
-                    if param != 'Return Value':
-                        syntax = re.sub('(\W)('+re.escape(param.strip())+')(\W)',r'\g<1>${'+str(k)+':\g<2>}\g<3>',' '+syntax+' ',0,re.IGNORECASE)
-                        k=k+1;
-                syntax = re.sub(r'[.]{3}','${'+str(k)+':...}',' '+syntax+' ',0,re.IGNORECASE)
-                temp['snippet'] = syntax.strip()+"$0";
-                print temp['snippet']
-            else:
-                temp['text'] = str(item['title']).strip();
+            command['title'] = str(item['title'])
+            command['rawText'] = str(rawText);
+            command['description'] = str(description);
+            command['syntax'] = str(syntax);
+            command['parameter'] = str(parameter);
+            command['returnValue'] = str(returnValue);
 
+            output.append(command)
 
-            output.append(temp)
             syntaxRegex = re.search(r"<dt>Syntax:</dt>\s+<dd>(.+?)</dd>",text,re.DOTALL|re.MULTILINE)
+
+
+
+
+
+
+with open('bi-wiki-operator.json', 'w') as f:
+    json.dump(output,f)
+

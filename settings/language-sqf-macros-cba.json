@@ -1,5 +1,5 @@
 {
-  ".source.sqf, .source.cpp, .source.hpp, .source.ext": {
+  ".source.sqf, .source.arma.cfg, .source.cpp, .source.hpp, .source.ext": {
     "autocomplete": {
       "symbols": {
         "macro-cba": {
