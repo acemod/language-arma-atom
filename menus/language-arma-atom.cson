@@ -1,7 +1,7 @@
 'menu': [{
   label: 'Packages'
   submenu: [
-    label: 'Language ArmA Atom',
+    label: 'Language Arma Atom',
     submenu: [
         { label: 'Build', command: 'language-arma-atom:Build' },
         { label: 'Make', command: 'language-arma-atom:Make' },

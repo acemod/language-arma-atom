@@ -4,7 +4,7 @@ module.exports =
 
     build: ->
         # start Hint
-        atom.notifications.addInfo 'Build started', dismissable: true, detail: "Please don't start Arma until the build is completed."
+        atom.notifications.addInfo 'Build started', dismissable: true, detail: "Please don't load the project folder."
 
         # get Config Path
         path = atom.config.get('language-arma-atom.buildScript')
@@ -25,4 +25,4 @@ module.exports =
 
         buildProcess = spawn 'python', [path.replace /%([^%]+)%/g, (_,n) -> process.env[n]]
         buildProcess.stdout.on 'data', (data) -> atom.notifications.addSuccess 'Make is Done', dismissable: true, detail: data
-        buildProcess.stderr.on 'data', (data) -> atom.notifications.addError 'Make cant Finish', dismissable: true, detail: data
+        buildProcess.stderr.on 'data', (data) -> atom.notifications.addError "Make didn't finish", dismissable: true, detail: data
