@@ -1,4 +1,3 @@
-{CompositeDisposable} = require 'atom'
 spawn = require('child_process').spawn
 
 module.exports =
