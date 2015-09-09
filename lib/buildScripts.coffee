@@ -4,7 +4,7 @@ module.exports =
 
     build: ->
         # start Hint
-        atom.notifications.addInfo 'Build started', dismissable: true, detail: 'Please dont Start ArmA until the Build Progress is Done'
+        atom.notifications.addInfo 'Build started', dismissable: true, detail: "Please don't start Arma until the build is completed."
 
         # get Config Path
         path = atom.config.get('language-arma-atom.buildScript')
@@ -16,7 +16,7 @@ module.exports =
         buildProcess.stderr.on 'data', (data) -> atom.notifications.addError 'Build cant Finish' , dismissable: true, detail: data
 
     make: ->
-        atom.notifications.addInfo 'Make started', dismissable: true, detail: 'this Progress Need Some More Time'
+        atom.notifications.addInfo 'Make started', dismissable: true, detail: 'This may take some time.'
 
         # get Config Path
         path = atom.config.get('language-arma-atom.buildScript')

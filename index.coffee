@@ -8,13 +8,13 @@ module.exports =
 
     config:
         buildScript:
-            title: "Build Script File",
-            description: "Localtion of the Build File (if PROJECTFOLDER then it use the path projectfolder/tool/build.py)",
+            title: "Build Script",
+            description: "Location of the Build File (if PROJECTFOLDER then it uses the path: projectfolder/tools/build.py)",
             type: "string",
             default: "PROJECTFOLDER"
         makeScript:
-            title: "Make Script File"
-            description: "Localtion of the Make File (if PROJECTFOLDER then it use the path projectfolder/tool/build.py)"
+            title: "Make Script"
+            description: "Location of the Make File (if PROJECTFOLDER then it uses the path: projectfolder/tools/build.py)"
             type: "string"
             default: "PROJECTFOLDER"
         appDataFolder:
