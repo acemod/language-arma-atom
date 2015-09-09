@@ -16,7 +16,7 @@ module.exports =
         buildProcess.stderr.on 'data', (data) -> atom.notifications.addError 'Build cant Finish' , dismissable: true, detail: data
 
     make: ->
-        notifications.addInfo 'Make started', dismissable: true, detail: 'this Progress Need Some More Time'
+        atom.notifications.addInfo 'Make started', dismissable: true, detail: 'this Progress Need Some More Time'
 
         # get Config Path
         path = atom.config.get('language-arma-atom.buildScript')
