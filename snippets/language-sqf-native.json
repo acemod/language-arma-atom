@@ -72,5 +72,50 @@
       "description": "Loop while condition is true",
       "descriptionMoreURL": "https://community.bistudio.com/wiki/while"
     }
+  },
+
+  ".source.sqf, .source.arma.cfg": {
+    "#include \"\"": {
+      "prefix": "include",
+      "body": "#include \"${1:.hpp}\"",
+      "description": "Inserts the code from target file",
+      "descriptionMoreURL": "https://community.bistudio.com/wiki/PreProcessor_Commands#.23include"
+    },
+    "#include <>": {
+      "prefix": "Include",
+      "body": "#include <${1:.hpp}>",
+      "description": "Inserts the code from target file",
+      "descriptionMoreURL": "https://community.bistudio.com/wiki/PreProcessor_Commands#.23include"
+    },
+    "#define": {
+      "prefix": "define",
+      "body": "#define ${1:keyword} ${2:value}",
+      "description": "Defines a keyword and assigns a definition to it",
+      "descriptionMoreURL": "https://community.bistudio.com/wiki/PreProcessor_Commands#.23define"
+    },
+    "#undef": {
+      "prefix": "undef",
+      "body": "#undef ${1:keyword}",
+      "description": "Deletes a macro previously set by #define",
+      "descriptionMoreURL": "https://community.bistudio.com/wiki/PreProcessor_Commands#.23undef"
+    },
+    "#ifdef": {
+      "prefix": "ifdef",
+      "body": "#ifdef ${1:keyword}\n    ${2:text}\n#endif",
+      "description": "Defines if another macro already defined",
+      "descriptionMoreURL": "https://community.bistudio.com/wiki/PreProcessor_Commands#.23ifdef"
+    },
+    "#ifndef": {
+      "prefix": "ifndef",
+      "body": "#ifndef ${1:keyword}\n    ${2:text}\n#endif",
+      "description": "Defines if another macro is not yet defined",
+      "descriptionMoreURL": "https://community.bistudio.com/wiki/PreProcessor_Commands#.23ifndef"
+    },
+    "#else": {
+      "prefix": "else",
+      "body": "#else\n    ${1:text}",
+      "description": "Used inside #ifndef when another macro is defined",
+      "descriptionMoreURL": "https://community.bistudio.com/wiki/PreProcessor_Commands#.23else"
+    }
   }
 }

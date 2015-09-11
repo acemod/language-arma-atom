@@ -1,20 +1,4 @@
 {
-  ".source.sqf, .source.arma.cfg, .source.cpp, .source.hpp, .source.ext": {
-    "autocomplete": {
-      "symbols": {
-        "builtin": {
-          "typePriority": 0,
-          "suggestions": [
-            "#include",
-            "#define",
-            "#undef",
-            "#ifdef",
-            "#endif"
-          ]
-        }
-      }
-    }
-  },
   ".source.sqf": {
     "autocomplete": {
       "symbols": {

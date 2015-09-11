@@ -4,7 +4,9 @@
   "fileTypes": [
     "cfg",
     "sqm",
-    "ext"
+    "ext",
+    "cpp",
+    "hpp"
   ],
   "patterns": [
     {
