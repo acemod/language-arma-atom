@@ -3,9 +3,9 @@
   submenu: [
     label: 'Language Arma Atom',
     submenu: [
-        { label: 'Build', command: 'language-arma-atom:Build' },
-        { label: 'Make', command: 'language-arma-atom:Make' },
-        { label: 'Open RTP', command: 'language-arma-atom:open-rpt-file' },
+        { label: 'build', command: 'language-arma-atom:build' },
+        { label: 'make', command: 'language-arma-atom:make' },
+        { label: 'open RPT', command: 'language-arma-atom:open-rpt-file' },
     ]
   ]
 }]
