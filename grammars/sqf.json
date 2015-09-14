@@ -102,7 +102,7 @@
     },
     {
       "name": "variable.other.sqf",
-      "match": "\\b_[_a-zA-Z]\\w*\\b"
+      "match": "\\b_[_a-zA-Z0-9]\\w*\\b"
     }
   ]
 }
