@@ -13,8 +13,8 @@ module.exports =
 
     # Spawn development build process
     buildProcess = spawn 'python', [path.replace(/%([^%]+)%/g, (_,n) -> process.env[n])]
-    buildProcess.stdout.on 'data', (data) -> atom.notifications.addSuccess 'Build Passed', dismissable: true, detail: data
-    buildProcess.stderr.on 'data', (data) -> atom.notifications.addError 'Build Failed', dismissable: true, detail: data
+    buildProcess.stdout.on 'data', (data) -> atom.notifications.addSuccess 'Development Build Passed', dismissable: true, detail: data
+    buildProcess.stderr.on 'data', (data) -> atom.notifications.addError 'Development Build Failed', dismissable: true, detail: data
 
     # Hide start notification
     buildProcess.stdout.on 'close', => startNotification.dismiss()
@@ -30,8 +30,8 @@ module.exports =
 
     # Spawn release build process
     buildProcess = spawn 'python', [path.replace /%([^%]+)%/g, (_,n) -> process.env[n]]
-    buildProcess.stdout.on 'data', (data) -> atom.notifications.addSuccess 'Build Passed', dismissable: true, detail: data
-    buildProcess.stderr.on 'data', (data) -> atom.notifications.addError 'Build Failed', dismissable: true, detail: data
+    buildProcess.stdout.on 'data', (data) -> atom.notifications.addSuccess 'Release Build Passed', dismissable: true, detail: data
+    buildProcess.stderr.on 'data', (data) -> atom.notifications.addError 'Release Build Failed', dismissable: true, detail: data
 
     #@todo consolidate into 1 notification, it gets split currently, if not possible a workaround to display final "passed" notification should be added
 
