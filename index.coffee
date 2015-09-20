@@ -1,22 +1,22 @@
 {CompositeDisposable} = require 'atom'
 
-buildScripts = require './lib/buildScripts'
-rptfile = require './lib/rptfile'
+buildProject = require './lib/build-project'
+openLatestRptFile = require './lib/open-latest-rpt-file'
 
 module.exports =
   subscriptions: null
 
   config:
-    buildScript:
-      title: "Build Script",
-      description: "Location of the Build Script (if PROJECTFOLDER then it uses the path: projectfolder/tools/build.py)",
+    buildDevScript:
+      title: "Development Build Script",
+      description: "Location of the Development Build Script (requires a compatible script, such as CBA's or ACE3's build.py)",
       type: "string",
-      default: "PROJECTFOLDER"
-    makeScript:
-      title: "Make Script"
-      description: "Location of the Make Script (if PROJECTFOLDER then it uses the path: projectfolder/tools/build.py)"
+      default: "<current-project>/tools/build.py"
+    buildReleaseScript:
+      title: "Release Build Script"
+      description: "Location of the Release Build Script (requires a compatible script, such as CBA's or ACE3's make.py)"
       type: "string"
-      default: "PROJECTFOLDER"
+      default: "<current-project>/tools/make.py"
     appDataFolder:
       title: "Arma 3 AppData Folder",
       description: "Location of the Arma 3 Application Data Folder (location of RPT files)",
@@ -26,11 +26,11 @@ module.exports =
   activate: ->
     @subscriptions = new CompositeDisposable
     @subscriptions.add atom.commands.add 'atom-workspace',
-      'language-arma-atom:Build': => buildScripts.build()
+      'language-arma-atom:Build-Dev': => buildProject.dev()
     @subscriptions.add atom.commands.add 'atom-workspace',
-      'language-arma-atom:Make': => buildScripts.make()
+      'language-arma-atom:Build-Release': => buildProject.release()
     @subscriptions.add atom.commands.add 'atom-workspace',
-      'language-arma-atom:Open-Latest-RPT-File': => rptfile.open()
+      'language-arma-atom:Open-Latest-RPT-File': => openLatestRptFile.open()
 
   deactivate: ->
     @subscriptions.dispose()
