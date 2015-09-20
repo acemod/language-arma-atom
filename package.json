@@ -12,8 +12,8 @@
     "atom-workspace": [
       "language-arma-atom:toggle",
       "language-arma-atom:open-rpt-file",
-      "language-arma-atom:Build",
-      "language-arma-atom:Make"
+      "language-arma-atom:build",
+      "language-arma-atom:make"
     ]
   },
   "license": "MIT",
