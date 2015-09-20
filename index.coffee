@@ -26,11 +26,11 @@ module.exports =
   activate: ->
     @subscriptions = new CompositeDisposable
     @subscriptions.add atom.commands.add 'atom-workspace',
-      'language-arma-atom:Build-Dev': => buildProject.dev()
+      'language-arma-atom:build-dev': => buildProject.dev()
     @subscriptions.add atom.commands.add 'atom-workspace',
-      'language-arma-atom:Build-Release': => buildProject.release()
+      'language-arma-atom:build-release': => buildProject.release()
     @subscriptions.add atom.commands.add 'atom-workspace',
-      'language-arma-atom:Open-Latest-RPT-File': => openLatestRptFile.open()
+      'language-arma-atom:open-latest-RPT-file': => openLatestRptFile.open()
 
   deactivate: ->
     @subscriptions.dispose()
