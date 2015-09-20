@@ -10,7 +10,6 @@
   ],
   "activationCommands": {
     "atom-workspace": [
-      "language-arma-atom:toggle",
       "language-arma-atom:open-rpt-file"
     ]
   },
