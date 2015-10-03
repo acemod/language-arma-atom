@@ -15,26 +15,27 @@ module.exports =
     buildProcess = spawn 'python', [path.replace(/%([^%]+)%/g, (_,n) -> process.env[n])]
     buildProcess.stderr.on 'data', (data) -> atom.notifications.addError (text + ' Build Error'), dismissable: true, detail: data
 
-    return [buildProcess, startNotification]
+    buildProcess: buildProcess
+    startNotification: startNotification
 
   dev: ->
-    [buildProcess, startNotification] = @build("Dev", "Development", "build.py")
+    info = @build("Dev", "Development", "build.py")
 
     # Add Success notification handler
-    buildProcess.stdout.on 'data', (data) -> atom.notifications.addSuccess 'Development Build Passed', dismissable: true, detail: data
+    info.buildProcess.stdout.on 'data', (data) -> atom.notifications.addSuccess 'Development Build Passed', dismissable: true, detail: data
 
     # Hide start notification
-    buildProcess.stdout.on 'close', => startNotification.dismiss()
+    info.buildProcess.stdout.on 'close', => info.startNotification.dismiss()
 
   release: ->
-    [buildProcess, startNotification] = @build("Release", "Release", "make.py")
+    info = @build("Release", "Release", "make.py")
 
     # Add Info notification handler
-    buildProcess.stdout.on 'data', (data) -> atom.notifications.addInfo 'Release Build Progress', dismissable: true, detail: data
+    info.buildProcess.stdout.on 'data', (data) -> atom.notifications.addInfo 'Release Build Progress', dismissable: true, detail: data
 
     # Hide start notification, check output to determine if finished as make.py does not close automatically
-    buildProcess.stdout.on 'data', (data) ->
+    info.buildProcess.stdout.on 'data', (data) ->
       if /Press Enter to continue.../.test(data)
-        startNotification.dismiss()
+        info.startNotification.dismiss()
         # Display final Success notification as notificatons from make.py get splitted for some reason
         atom.notifications.addSuccess 'Release Build Passed', dismissable: true, detail: 'Release build finished successfully, refer to above progress/error notifications for more information.'
