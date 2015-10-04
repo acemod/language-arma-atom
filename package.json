@@ -10,7 +10,9 @@
   ],
   "activationCommands": {
     "atom-workspace": [
-      "language-arma-atom:open-rpt-file"
+      "language-arma-atom:open-latest-RPT-file",
+      "language-arma-atom:build-dev",
+      "language-arma-atom:build-release"
     ]
   },
   "license": "MIT",

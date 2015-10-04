@@ -1,0 +1,11 @@
+'menu': [{
+  label: 'Packages'
+  submenu: [
+    label: 'Language Arma Atom',
+    submenu: [
+        { label: 'Build Dev', command: 'language-arma-atom:build-dev' },
+        { label: 'Build Release', command: 'language-arma-atom:build-release' },
+        { label: 'Open Latest RPT File', command: 'language-arma-atom:open-latest-RPT-file' },
+    ]
+  ]
+}]
