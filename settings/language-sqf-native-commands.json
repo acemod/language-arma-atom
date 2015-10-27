@@ -286,7 +286,7 @@
           }, {
             "description": "Add code to be run when a 3DEN Editor event is triggered.\nEventhandlers can be found in: configFile >> \"Cfg3DEN\" >> \"EventHandlers\" >> \"BIS\"",
             "leftLabel": "(Number) = ",
-            "snippet": "DENEventHandler [${1:type},${2:code}]$0",
+            "snippet": "add3DENEventHandler [${1:type},${2:code}]$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/add3DENEventHandler"
@@ -796,7 +796,7 @@
             "descriptionMoreURL": "http://community.bistudio.com/wiki/alive"
           }, {
             "description": "Returns an array of all currently placed 3DEN Editor entities, including groups, waypoints, and markers.",
-            "text": "all",
+            "text": "all3DENEntities",
             "leftLabel": "(Array) = ",
             "rightLabel": "SQF Command",
             "type": "function",
@@ -866,8 +866,8 @@
             "descriptionMoreURL": "http://community.bistudio.com/wiki/allMissionObjects"
           }, {
             "description": "Allow/dissallow 3D mode.,",
-            "leftLabel": "",
-            "snippet": "DMode ${2:bool}$0",
+            "leftLabel": "map ",
+            "snippet": "allow3DMode ${2:bool}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/allow3DMode"
@@ -1216,8 +1216,8 @@
             "descriptionMoreURL": "http://community.bistudio.com/wiki/atan"
           }, {
             "description": "ArcTangent of x/y. Used to determine the angle of a vector [x,y]. Result in Degrees between -180 and 180.\n\nNote that this command can handle y being 0, unlike when using atan, and will return 90",
-            "text": "x",
-            "leftLabel": "(Number) = ",
+            "leftLabel": "(Number) = x ",
+            "snippet": "atan2 ${2:y}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/atan2"
@@ -2847,85 +2847,85 @@
             "descriptionMoreURL": "http://community.bistudio.com/wiki/ctrlSetFont"
           }, {
             "description": "Sets H1 font of given HTML control.",
-            "text": "controlName",
-            "leftLabel": "",
+            "leftLabel": "controlName ",
+            "snippet": "ctrlSetFontH1 ${2:fontName}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/ctrlSetFontH1"
           }, {
             "description": "Sets H1 bold font of given HTML control.",
-            "leftLabel": "",
-            "snippet": "B ${2:fontName}$0",
+            "leftLabel": "controlName ",
+            "snippet": "ctrlSetFontH1B ${2:fontName}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/ctrlSetFontH1B"
           }, {
             "description": "Sets H2 font of given HTML control",
-            "text": "controlName",
-            "leftLabel": "",
+            "leftLabel": "controlName ",
+            "snippet": "ctrlSetFontH2 ${2:fontName}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/ctrlSetFontH2"
           }, {
             "description": "Sets H2 bold font of given HTML control.",
-            "leftLabel": "",
-            "snippet": "B ${2:fontName}$0",
+            "leftLabel": "controlName ",
+            "snippet": "ctrlSetFontH2B ${2:fontName}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/ctrlSetFontH2B"
           }, {
             "description": "Sets H3 font of given HTML control.",
-            "text": "controlName",
-            "leftLabel": "",
+            "leftLabel": "controlName ",
+            "snippet": "ctrlSetFontH3 ${2:fontName}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/ctrlSetFontH3"
           }, {
             "description": "Sets H3 bold font of given HTML control.",
-            "leftLabel": "",
-            "snippet": "B ${2:fontName}$0",
+            "leftLabel": "controlName ",
+            "snippet": "ctrlSetFontH3B ${2:fontName}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/ctrlSetFontH3B"
           }, {
             "description": "Sets H4 font of given HTML control.",
-            "text": "controlName",
-            "leftLabel": "",
+            "leftLabel": "controlName ",
+            "snippet": "ctrlSetFontH4 ${2:fontName}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/ctrlSetFontH4"
           }, {
             "description": "Sets H4 bold font of given HTML control.",
-            "leftLabel": "",
-            "snippet": "B ${2:fontName}$0",
+            "leftLabel": "controlName ",
+            "snippet": "ctrlSetFontH4B ${2:fontName}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/ctrlSetFontH4B"
           }, {
             "description": "Sets H5 font of given HTML control.",
-            "text": "controlName",
-            "leftLabel": "",
+            "leftLabel": "controlName ",
+            "snippet": "ctrlSetFontH5 ${2:fontName}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/ctrlSetFontH5"
           }, {
             "description": "Sets H5 bold font of given HTML control.",
-            "leftLabel": "",
-            "snippet": "B ${2:fontName}$0",
+            "leftLabel": "controlName ",
+            "snippet": "ctrlSetFontH5B ${2:fontName}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/ctrlSetFontH5B"
           }, {
             "description": "Sets H6 font of given HTML control.",
-            "text": "controlName",
-            "leftLabel": "",
+            "leftLabel": "controlName ",
+            "snippet": "ctrlSetFontH6 ${2:fontName}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/ctrlSetFontH6"
           }, {
             "description": "Sets H6 bold font of given HTML control.",
-            "leftLabel": "",
-            "snippet": "B ${2:fontName}$0",
+            "leftLabel": "controlName ",
+            "snippet": "ctrlSetFontH6B ${2:fontName}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/ctrlSetFontH6B"
@@ -2938,43 +2938,43 @@
             "descriptionMoreURL": "http://community.bistudio.com/wiki/ctrlSetFontHeight"
           }, {
             "description": "Sets H1 font size of given HTML control.",
-            "text": "controlName",
-            "leftLabel": "",
+            "leftLabel": "controlName ",
+            "snippet": "ctrlSetFontHeightH1 ${2:height}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/ctrlSetFontHeightH1"
           }, {
             "description": "Sets H2 font size of given HTML control.",
-            "text": "controlName",
-            "leftLabel": "",
+            "leftLabel": "controlName ",
+            "snippet": "ctrlSetFontHeightH2 ${2:height}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/ctrlSetFontHeightH2"
           }, {
             "description": "Sets H3 font size of given HTML control.",
-            "text": "controlName",
-            "leftLabel": "",
+            "leftLabel": "controlName ",
+            "snippet": "ctrlSetFontHeightH3 ${2:height}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/ctrlSetFontHeightH3"
           }, {
             "description": "Sets H3 font size of given HTML control.",
-            "text": "controlName",
-            "leftLabel": "",
+            "leftLabel": "controlName ",
+            "snippet": "ctrlSetFontHeightH4 ${2:height}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/ctrlSetFontHeightH4"
           }, {
             "description": "Sets H5 font size of given HTML control.",
-            "text": "controlName",
-            "leftLabel": "",
+            "leftLabel": "controlName ",
+            "snippet": "ctrlSetFontHeightH5 ${2:height}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/ctrlSetFontHeightH5"
           }, {
             "description": "Sets H6 font size of given HTML control.",
-            "text": "controlName",
-            "leftLabel": "",
+            "leftLabel": "controlName ",
+            "snippet": "ctrlSetFontHeightH6 ${2:height}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/ctrlSetFontHeightH6"
@@ -3506,7 +3506,7 @@
           }, {
             "description": "Delete given entities in 3DEN Editor, including anything that can be placed in editor.",
             "leftLabel": "",
-            "snippet": "DENEntities ${1:entities}$0",
+            "snippet": "delete3DENEntities ${1:entities}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/delete3DENEntities"
@@ -3645,21 +3645,21 @@
             "descriptionMoreURL": "http://community.bistudio.com/wiki/detectedMines"
           }, {
             "description": "Returns array with active Mission FSMs. \n\n\n\n\n\n \n\n  Doesn't report all active FSMs despite the name",
-            "text": "diag",
+            "text": "diag_activeMissionFSMs",
             "leftLabel": "(Array, String) = ",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/diag%20activeMissionFSMs"
           }, {
             "description": "Returns an array with active SQFs.",
-            "text": "diag",
+            "text": "diag_activeSQFScripts",
             "leftLabel": "(Array, String, Boolean, Number) = ",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/diag%20activeSQFScripts"
           }, {
             "description": "Returns array with active SQSs.",
-            "text": "diag",
+            "text": "diag_activeSQSScripts",
             "leftLabel": "(Array, String, Boolean, Number) = ",
             "rightLabel": "SQF Command",
             "type": "function",
@@ -3667,34 +3667,34 @@
           }, {
             "description": "This command starts counting frames from the moment it is executed and when the count reaches the number passed as param, the current frame is captured and captured data UI dialog appears, similar to diag_captureSlowFrame.\nNote: Only available in specific builds. See Performance Profiling for details.",
             "leftLabel": "",
-            "snippet": "captureFrame ${1:frame}$0",
+            "snippet": "diag_captureFrame ${1:frame}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/diag%20captureFrame"
           }, {
             "description": "Opens \"capture frame\" dialog if current frame exceeds set threshold in seconds. One can indicate to either capture duration of a specific profiling selection or the total duration of the frame. The selection names can be obtained by expanding the profiling tree. Clicking on a tree item will highlight the item on the graph and vice versa. The GUI also provides method of copying of the displayed data to clipboard. Some of the selections:\nRender\n - bgD3D\nMain Thread\n - total\n - memAl\nVisualize\n - visul\nMjob\n - Mjob\nNote: Only available in specific builds. See Performance Profiling for details.",
             "leftLabel": "",
-            "snippet": "captureSlowFrame [${1:section}, ${2:threshold}]$0",
+            "snippet": "diag_captureSlowFrame [${1:section}, ${2:threshold}]$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/diag%20captureSlowFrame"
           }, {
             "description": "Returns average framerate calculated over last 16 frames.",
-            "text": "diag",
+            "text": "diag_fps",
             "leftLabel": "(Number) = ",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/diag%20fps"
           }, {
             "description": "Returns minimal framerate. Calculated from the longest frame over last 16 frames.",
-            "text": "diag",
+            "text": "diag_fpsMin",
             "leftLabel": "(Number) = ",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/diag%20fpsMin"
           }, {
             "description": "Returns number of frame currently displayed .",
-            "text": "diag",
+            "text": "diag_frameNo",
             "leftLabel": "(Number) = ",
             "rightLabel": "SQF Command",
             "type": "function",
@@ -3702,20 +3702,20 @@
           }, {
             "description": "Dumps the argument's value to the report file. Each call creates a new line in the file.",
             "leftLabel": "",
-            "snippet": "log ${1:anything}$0",
+            "snippet": "diag_log ${1:anything}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/diag%20log"
           }, {
             "description": "Log all frames, where section takes longer than the threshold (in seconds). \nNote: Only available in specific builds. See Performance Profiling for details.",
             "leftLabel": "",
-            "snippet": "logSlowFrame [${1:section}, ${2:threshold}]$0",
+            "snippet": "diag_logSlowFrame [${1:section}, ${2:threshold}]$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/diag%20logSlowFrame"
           }, {
             "description": "Real time spent from the start of the game. Expressed in fractions of second. Resolution of 1 tick is 1 ms.",
-            "text": "diag",
+            "text": "diag_tickTime",
             "leftLabel": "(Number) = ",
             "rightLabel": "SQF Command",
             "type": "function",
@@ -3918,8 +3918,8 @@
             "descriptionMoreURL": "http://community.bistudio.com/wiki/distance"
           }, {
             "description": "Returns a 2D distance (distance projected to X,Y plane) in meters between two Objects or two Positions or Object and Position.",
-            "leftLabel": "(Number) = ",
-            "snippet": "D ${2:param2}$0",
+            "leftLabel": "(Number) = param1 ",
+            "snippet": "distance2D ${2:param2}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/distance2D"
@@ -3947,7 +3947,7 @@
           }, {
             "description": "Performs given 3DEN Editor action.\nKnown actions:\n MissionNew\n MissionLoad\n MissionSave\n MissionPartIntro\n MissionPartOutroWin\n MissionPartOutroLoose\n MissionPreview\n MissionPreviewMP\n OpenIntelDisplay\n Undo\n Redo\n ToggleMap\n ToggleVision\n MoveGridToggle\n RotateGridToggle\n ScaleGridToggle\n SurfaceSnapToggle\n VerticalToggle\n WidgetToggle\n WidgetNone\n WidgetTranslation\n WidgetRotation\n WidgetScale\n WidgetCoord\n SelectGroupMode\n SelectMarkerMode\n SelectModuleMode\n SelectObjectMode\n SelectWaypointMode\n SelectSubmode1 - Blufor/Logic/Icons\n SelectSubmode2 - Opfor/Modules/Areas\n SelectSubmode3 - Independent\n SelectSubmode4 - Civilian\n SelectSubmode5 - Empty",
             "leftLabel": "",
-            "snippet": "DENAction ${1:operation}$0",
+            "snippet": "do3DENAction ${1:operation}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/do3DENAction"
@@ -4052,7 +4052,7 @@
           }, {
             "description": "Draws an ingame icon at a given position. Command has to be executed each frame. Use onEachFrame or addMissionEventHandler \"Draw3D\"",
             "leftLabel": "",
-            "snippet": "D ${1:[${2:texture}, ${3:color}, ${4:pos}, ${5:width}, ${6:height}, ${7:angle}, ${8:text}, ${9:shadow}, ${10:textSize}, ${11:font}, ${12:textAlign}, ${13:drawSideArrows}]}$0",
+            "snippet": "drawIcon3D ${1:[${2:texture}, ${3:color}, ${4:pos}, ${5:width}, ${6:height}, ${7:angle}, ${8:text}, ${9:shadow}, ${10:textSize}, ${11:font}, ${12:textAlign}, ${13:drawSideArrows}]}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/drawIcon3D"
@@ -4066,7 +4066,7 @@
           }, {
             "description": "Draws a line of a given color between two 3D positions. Command has to be executed each frame. Use onEachFrame or addMissionEventHandler \"Draw3D\".",
             "leftLabel": "",
-            "snippet": "D ${1:[${2:start}, ${3:end}, ${4:color}]}$0",
+            "snippet": "drawLine3D ${1:[${2:start}, ${3:end}, ${4:color}]}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/drawLine3D"
@@ -4948,20 +4948,20 @@
           }, {
             "description": "Returns state of given operation in the 3DEN Editor.\nKnown operations:\n History\n Init\n MissionNew\n MissionLoad\n MissionSave\n MissionPartIntro\n MissionPartOutroWin\n MissionPartOutroLoose\n MissionPreview\n MissionPreviewMP\n OpenIntelDisplay\n Undo\n Redo\n ToggleMap\n ToggleVision\n MoveGridToggle\n RotateGridToggle\n ScaleGridToggle\n SurfaceSnapToggle\n VerticalToggle\n WidgetToggle\n WidgetNone\n WidgetTranslation\n WidgetRotation\n WidgetScale\n WidgetCoord\n SelectGroupMode\n SelectMarkerMode\n SelectModuleMode\n SelectObjectMode\n SelectWaypointMode\n SelectSubmode1 - Blufor/Logic/Icons\n SelectSubmode2 - Opfor/Modules/Areas\n SelectSubmode3 - Independent\n SelectSubmode4 - Civilian\n SelectSubmode5 - Empty",
             "leftLabel": "(Number) = ",
-            "snippet": "DENActionState ${1:operation}$0",
+            "snippet": "get3DENActionState ${1:operation}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/get3DENActionState"
           }, {
             "description": "Returns value of a given entity's attribute in 3DEN Editor.",
             "leftLabel": "(Anything) = ",
-            "snippet": "DENAttribute ${1:attribute}$0",
+            "snippet": "get3DENAttribute ${1:attribute}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/get3DENAttribute"
           }, {
             "description": "Returns the camera object used by the 3DEN Editor.",
-            "text": "get",
+            "text": "get3DENCamera",
             "leftLabel": "(Object) = ",
             "rightLabel": "SQF Command",
             "type": "function",
@@ -4969,13 +4969,13 @@
           }, {
             "description": "Returns the grid increment for the given transformation type.\nTransformation types:\n Rotation - \"r\"\n Translation - \"t\"\n Scale - \"s\"",
             "leftLabel": "(Number) = ",
-            "snippet": "DENGrid ${1:type}$0",
+            "snippet": "get3DENGrid ${1:type}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/get3DENGrid"
           }, {
             "description": "Returns the 3DEN entity the mouse is hovering over in 3DEN Editor. Only returns items select-able in editor.",
-            "text": "get",
+            "text": "get3DENMouseOver",
             "leftLabel": "(Array, Object) = ",
             "rightLabel": "SQF Command",
             "type": "function",
@@ -4983,14 +4983,14 @@
           }, {
             "description": "Returns an array of all selected 3DEN Editor entities, including groups, waypoints, and markers.",
             "leftLabel": "(Array) = ",
-            "snippet": "DENSelected \"\"$0",
+            "snippet": "get3DENSelected \"\"$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/get3DENSelected"
           }, {
             "description": "Returns an array of all selected 3DEN Editor entities, including groups, waypoints, and markers.",
             "leftLabel": "(Array) = ",
-            "snippet": "DENSelected ${1:type}$0",
+            "snippet": "get3DENSelected ${1:type}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/get3DENSelected"
@@ -6018,14 +6018,14 @@
             "descriptionMoreURL": "http://community.bistudio.com/wiki/intersect"
           }, {
             "description": "Returns true if the 3DEN Editor is currently being used.",
-            "text": "is",
+            "text": "is3DEN",
             "leftLabel": "(Boolean) = ",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/is3DEN"
           }, {
             "description": "Returns true if the 3DEN Editor is in multiplayer mode.",
-            "text": "is",
+            "text": "is3DENMultiplayer",
             "leftLabel": "(Boolean) = ",
             "rightLabel": "SQF Command",
             "type": "function",
@@ -6362,7 +6362,7 @@
           }, {
             "description": "Returns true if the editor is set to draw 3D icons.",
             "leftLabel": "(Boolean) = ",
-            "snippet": "DIcons ${1:map}$0",
+            "snippet": "isShowing3DIcons ${1:map}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/isShowing3DIcons"
@@ -7909,7 +7909,7 @@
           }, {
             "description": "Moves 3DEN Editor camera to given position, with or without offset.\nDefault camera offset: [0,-25,25]",
             "leftLabel": "",
-            "snippet": "DENCamera [position,${1:useOffset}]$0",
+            "snippet": "move3DENCamera [position,${1:useOffset}]$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/move3DENCamera"
@@ -8658,7 +8658,7 @@
           }, {
             "description": "Plays positional sound with given filename on every computer on network. At least 2 parameters must be specified.",
             "leftLabel": "",
-            "snippet": "D ${1:[${2:filename}, ${3:soundSource}, ${4:isInside}, soundPosition, ${5:volume}, ${6:soundPitch}, ${7:distance}]}$0",
+            "snippet": "playSound3D ${1:[${2:filename}, ${3:soundSource}, ${4:isInside}, soundPosition, ${5:volume}, ${6:soundPitch}, ${7:distance}]}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/playSound3D"
@@ -9183,7 +9183,7 @@
           }, {
             "description": "Removes 3DEN event handler of given type and ID.",
             "leftLabel": "(Number) = ",
-            "snippet": "DENEventHandler [${1:type},${2:id}]$0",
+            "snippet": "remove3DENEventHandler [${1:type},${2:id}]$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/remove3DENEventHandler"
@@ -9889,29 +9889,29 @@
             "descriptionMoreURL": "http://community.bistudio.com/wiki/say"
           }, {
             "description": "Same as say only sound is mono.",
-            "leftLabel": "",
-            "snippet": "D ${2:speechName}$0",
+            "leftLabel": "unit ",
+            "snippet": "say2D ${2:speechName}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/say2D"
           }, {
             "description": "Same as say only sound is mono.",
-            "leftLabel": "",
-            "snippet": "D ${4:speechName}$0",
+            "leftLabel": "[unit, target] ",
+            "snippet": "say2D ${4:speechName}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/say2D"
           }, {
             "description": "Unit or object will say given sound in 3D Space.\n\nThis allows broadcasting of positional music or sound from a source, without having to script a fade sound or music command.\n\nCompare this with say2D which will always play a sound at the location of the player after he has been in the vicinity of a broadcasting sound.\n\nSound is defined in CfgSound of the Description.ext.",
-            "leftLabel": "",
-            "snippet": "D ${2:sound}$0",
+            "leftLabel": "unit ",
+            "snippet": "say3D ${2:sound}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/say3D"
           }, {
             "description": "Unit or object will say given sound in 3D Space.\n\nThis allows broadcasting of positional music or sound from a source, without having to script a fade sound or music command.\n\nCompare this with say2D which will always play a sound at the location of the player after he has been in the vicinity of a broadcasting sound.\n\nSound is defined in CfgSound of the Description.ext.",
-            "leftLabel": "",
-            "snippet": "D ${3:sound}$0",
+            "leftLabel": "[unit, target] ",
+            "snippet": "say3D ${3:sound}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/say3D"
@@ -10191,14 +10191,14 @@
           }, {
             "description": "Sets the grid increment for the given transformation type.\nTransformation types:\n Rotation - \"r\"\n Translation - \"t\"\n Scale - \"s\"",
             "leftLabel": "",
-            "snippet": "DENGrid [${1:type},${2:value}]$0",
+            "snippet": "set3DENGrid [${1:type},${2:value}]$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/set3DENGrid"
           }, {
             "description": "Sets the classname of a given 3DEN Editor object.",
-            "leftLabel": "",
-            "snippet": "DENObjectType ${2:classname}$0",
+            "leftLabel": "object ",
+            "snippet": "set3DENObjectType ${2:classname}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/set3DENObjectType"
@@ -11177,8 +11177,8 @@
             "descriptionMoreURL": "http://community.bistudio.com/wiki/setPosASL"
           }, {
             "description": "Sets the object position. The pos array uses the PositionASL format. The version of the command does not offset based on object center. \n\n\n\n\n \n\n  Appears to be broken",
-            "text": "obj",
-            "leftLabel": "",
+            "leftLabel": "obj ",
+            "snippet": "setPosASL2 ${2:pos}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/setPosASL2"
@@ -11821,8 +11821,8 @@
             "descriptionMoreURL": "http://community.bistudio.com/wiki/setWPPos"
           }, {
             "description": "Toggle the drawing of 3D icons.",
-            "leftLabel": "",
-            "snippet": "DIcons ${2:bool}$0",
+            "leftLabel": "map ",
+            "snippet": "show3DIcons ${2:bool}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/show3DIcons"
