@@ -284,6 +284,13 @@
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/activateKey"
           }, {
+            "description": "Add code to be run when a 3DEN Editor event is triggered.\nEventhandlers can be found in: configFile >> \"Cfg3DEN\" >> \"EventHandlers\" >> \"BIS\"",
+            "leftLabel": "(Number) = ",
+            "snippet": "add3DENEventHandler [${1:type},${2:code}]$0",
+            "rightLabel": "SQF Command",
+            "type": "function",
+            "descriptionMoreURL": "http://community.bistudio.com/wiki/add3DENEventHandler"
+          }, {
             "description": "Adds an entry to the action menu of an object (scroll wheel menu). The action can only be activated when in proximity to the object (eg: building). Adding an action to the player obviously makes that action available to the player at all times. \n\nThis command has local effect. Created action is only available on the computer where command was executed. To make action available to all players, command must be executed on all connected clients.\n\nNote: addAction will be ignored on dedicated server, probably because no UI.",
             "leftLabel": "(Number) = unit ",
             "snippet": "addAction [${2:title}, ${3:script}, arguments, priority, showWindow, hideOnUse, shortcut, condition, positionInModel, radius, radiusView, showIn3D, available, textDefault, textToolTip]$0",
@@ -648,7 +655,7 @@
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/addUniform"
           }, {
-            "description": "Adds a specified vehicle for use by a specified AI led group. The vehicle will be considered as an available vehicle for use by his group.",
+            "description": "Adds a specified vehicle for use by a specified AI led group taking into account vehicle's cost. The vehicle will be considered as an available vehicle for use by this group. \nWhen vehicle is added in this way, it can appear as a target for the enemy even if the vehicle is currently free of the crew. Vehicles with crew, which are placed in the editor, get automatically added to the group. To remove vehicle from a group, use leaveVehicle.",
             "leftLabel": "groupName ",
             "snippet": "addVehicle ${2:vehicleName}$0",
             "rightLabel": "SQF Command",
@@ -696,6 +703,20 @@
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/addWeaponGlobal"
+          }, {
+            "description": "Adds a weapon item to the specified weapon. The item can be weapon magazine, in which case the amount of ammo and target muzzle could also be specified.",
+            "leftLabel": "unit ",
+            "snippet": "addWeaponItem ${2:[${3:weaponName}, ${4:itemName}]}$0",
+            "rightLabel": "SQF Command",
+            "type": "function",
+            "descriptionMoreURL": "http://community.bistudio.com/wiki/addWeaponItem"
+          }, {
+            "description": "Adds a weapon item to the specified weapon. The item can be weapon magazine, in which case the amount of ammo and target muzzle could also be specified.",
+            "leftLabel": "unit ",
+            "snippet": "addWeaponItem [${3:weaponName}, ${4:[${5:itemName}, ${6:ammoCount}, ${7:muzzleName}]}]$0",
+            "rightLabel": "SQF Command",
+            "type": "function",
+            "descriptionMoreURL": "http://community.bistudio.com/wiki/addWeaponItem"
           }, {
             "description": "Add weapons to the weapon pool, of which the player may choose in the following mission. Available in campaigns only.",
             "leftLabel": "",
@@ -774,6 +795,13 @@
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/alive"
           }, {
+            "description": "Returns an array of all currently placed 3DEN Editor entities, including groups, waypoints, and markers.",
+            "text": "all3DENEntities",
+            "leftLabel": "(Array) = ",
+            "rightLabel": "SQF Command",
+            "type": "function",
+            "descriptionMoreURL": "http://community.bistudio.com/wiki/all3DENEntities"
+          }, {
             "description": "Returns a list of all controls for desired existing display. Returned controls also include controls from control groups",
             "leftLabel": "(Array, Control) = ",
             "snippet": "allControls ${1:display}$0",
@@ -809,7 +837,7 @@
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/allDisplays"
           }, {
-            "description": "Return a list of all groups.",
+            "description": "Return a list of all groups created on the following sides east, west, resistance/independent and civilian only. Does not contain groups of sideLogic.",
             "text": "allGroups",
             "leftLabel": "(Array) = ",
             "rightLabel": "SQF Command",
@@ -830,7 +858,7 @@
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/allMines"
           }, {
-            "description": "Returns all mission objects (created by or during a mission) with given type (or its subtype).",
+            "description": "Returns all mission objects (created by or during a mission) with given type (or its subtype). In some cases allMissionObjects could be substituted with entities, which would be much much faster alternative.",
             "leftLabel": "(Array, Object) = ",
             "snippet": "allMissionObjects ${1:type}$0",
             "rightLabel": "SQF Command",
@@ -838,8 +866,8 @@
             "descriptionMoreURL": "http://community.bistudio.com/wiki/allMissionObjects"
           }, {
             "description": "Allow/dissallow 3D mode.,",
-            "leftLabel": "",
-            "snippet": "DMode ${2:bool}$0",
+            "leftLabel": "map ",
+            "snippet": "allow3DMode ${2:bool}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/allow3DMode"
@@ -893,7 +921,7 @@
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/allowGetIn"
           }, {
-            "description": "Returns a list of all human players including dead players.",
+            "description": "Returns a list of all human players including dead players. The command also returns all connected headless clients. To filter headless clients out:\n_justPlayers = allPlayers - entities \"HeadlessClient_F\";",
             "text": "allPlayers",
             "leftLabel": "(Array) = ",
             "rightLabel": "SQF Command",
@@ -921,7 +949,7 @@
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/allTurrets"
           }, {
-            "description": "Return a list of all units (all persons except agents). Dead units and units waiting to respawn are excluded.",
+            "description": "Return a list of all units (all persons except agents) created on the following sides east, west, resistance/independent and civilian only. Does not contain units of sideLogic. Dead units and units awaiting for respawn are also excluded.",
             "text": "allUnits",
             "leftLabel": "(Array) = ",
             "rightLabel": "SQF Command",
@@ -1145,9 +1173,9 @@
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/assignedTeam"
           }, {
-            "description": "Return the vehicle a unit is assigned to.If no vehicle is assigned objNull is returned.",
+            "description": "Returns the vehicle a unit is assigned to. If no vehicle is assigned objNull is returned.",
             "leftLabel": "(Object) = ",
-            "snippet": "assignedVehicle ${1:unitName}$0",
+            "snippet": "assignedVehicle ${1:unit}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/assignedVehicle"
@@ -1188,8 +1216,8 @@
             "descriptionMoreURL": "http://community.bistudio.com/wiki/atan"
           }, {
             "description": "ArcTangent of x/y. Used to determine the angle of a vector [x,y]. Result in Degrees between -180 and 180.\n\nNote that this command can handle y being 0, unlike when using atan, and will return 90",
-            "text": "x",
-            "leftLabel": "(Number) = ",
+            "leftLabel": "(Number) = x ",
+            "snippet": "atan2 ${2:y}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/atan2"
@@ -1313,7 +1341,7 @@
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/blufor"
           }, {
-            "description": "Returns a bounding box of given object in model coordinate space.",
+            "description": "Returns a bounding box of given object in model coordinate space. This command is rather generous on the size estimation, for more precise coordinates use boundingBoxReal",
             "leftLabel": "(Array) = ",
             "snippet": "boundingBox ${1:model}$0",
             "rightLabel": "SQF Command",
@@ -2370,7 +2398,7 @@
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/createMarker"
           }, {
-            "description": "Creates a new marker at the given position. The marker name has to be unique.",
+            "description": "Creates a local marker at the given position. Marker exists only on PC that created it. The marker name has to be unique.\n\nNOTE: Local markers have own set of local commands \"XXXXLocal\" to work with. If you use global marker command on a local marker, the local marker will become global marker.",
             "leftLabel": "(String) = ",
             "snippet": "createMarkerLocal ${1:[${2:name}, ${3:position}]}$0",
             "rightLabel": "SQF Command",
@@ -2433,7 +2461,7 @@
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/createTeam"
           }, {
-            "description": "Creates a sensor (trigger) of the given type and at the given position. The type must be a class name in CfgNonAIVehicles or CfgVehicles with simulation = detector. An array containing all units that have activated the trigger is available via list triggerobj. Created triggers can be deleted using deleteVehicle.\n\nNOTE: Since Arma 3 v1.43.129935 triggers can be created locally on clients using the alternative syntax.\n\nTriggers are created with default params, which are:\n a - 50.0\n b - 50.0\n angle - 0\n rectangular - false\n activationBy - None\n activationType - Present\n repeating - false\n timeoutMin - 0\n timeoutMid - 0\n timeoutMax - 0\n interruptable - true\n type - None\n text - \"\"\n name - \"\"\n expCond - \"this\"\n expActiv - \"\"\n expDesactiv - \"\"",
+            "description": "Creates a sensor (trigger) of the given type and at the given position. The type must be a class name in CfgNonAIVehicles or CfgVehicles with simulation = detector. An array containing all units that have activated the trigger is available via list triggerobj. Created triggers can be deleted using deleteVehicle.\n\nNOTE1: Since Arma 3 v1.43.129935 triggers can be created locally on clients using the alternative syntax.\nNOTE2: Since Arma 3 v1.53.132440 triggers can be disabled/enabled using enableSimulation command.\n\nTriggers are created with default params, which are:\n a - 50.0\n b - 50.0\n angle - 0\n rectangular - false\n activationBy - None\n activationType - Present\n repeating - false\n timeoutMin - 0\n timeoutMid - 0\n timeoutMax - 0\n interruptable - true\n type - None\n text - \"\"\n name - \"\"\n expCond - \"this\"\n expActiv - \"\"\n expDesactiv - \"\"",
             "leftLabel": "(Object) = ",
             "snippet": "createTrigger ${1:[${2:type}, position, makeGlobal]}$0",
             "rightLabel": "SQF Command",
@@ -2475,7 +2503,7 @@
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/createVehicle%20array"
           }, {
-            "description": "Creates crew to given empty vehicle. Crew members are default crew defined in config. Crew side will also correspond to vehicle's faction.",
+            "description": "Creates crew to given empty vehicle. Crew members are default crew defined in config. Crew side will also correspond to vehicle's faction. This command does not addVehicle to the created crew in the same way this normally happens when crewed vehicle created in the editor.",
             "leftLabel": "",
             "snippet": "createVehicleCrew ${1:vehicle}$0",
             "rightLabel": "SQF Command",
@@ -2819,85 +2847,85 @@
             "descriptionMoreURL": "http://community.bistudio.com/wiki/ctrlSetFont"
           }, {
             "description": "Sets H1 font of given HTML control.",
-            "text": "controlName",
-            "leftLabel": "",
+            "leftLabel": "controlName ",
+            "snippet": "ctrlSetFontH1 ${2:fontName}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/ctrlSetFontH1"
           }, {
             "description": "Sets H1 bold font of given HTML control.",
-            "leftLabel": "",
-            "snippet": "B ${2:fontName}$0",
+            "leftLabel": "controlName ",
+            "snippet": "ctrlSetFontH1B ${2:fontName}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/ctrlSetFontH1B"
           }, {
             "description": "Sets H2 font of given HTML control",
-            "text": "controlName",
-            "leftLabel": "",
+            "leftLabel": "controlName ",
+            "snippet": "ctrlSetFontH2 ${2:fontName}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/ctrlSetFontH2"
           }, {
             "description": "Sets H2 bold font of given HTML control.",
-            "leftLabel": "",
-            "snippet": "B ${2:fontName}$0",
+            "leftLabel": "controlName ",
+            "snippet": "ctrlSetFontH2B ${2:fontName}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/ctrlSetFontH2B"
           }, {
             "description": "Sets H3 font of given HTML control.",
-            "text": "controlName",
-            "leftLabel": "",
+            "leftLabel": "controlName ",
+            "snippet": "ctrlSetFontH3 ${2:fontName}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/ctrlSetFontH3"
           }, {
             "description": "Sets H3 bold font of given HTML control.",
-            "leftLabel": "",
-            "snippet": "B ${2:fontName}$0",
+            "leftLabel": "controlName ",
+            "snippet": "ctrlSetFontH3B ${2:fontName}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/ctrlSetFontH3B"
           }, {
             "description": "Sets H4 font of given HTML control.",
-            "text": "controlName",
-            "leftLabel": "",
+            "leftLabel": "controlName ",
+            "snippet": "ctrlSetFontH4 ${2:fontName}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/ctrlSetFontH4"
           }, {
             "description": "Sets H4 bold font of given HTML control.",
-            "leftLabel": "",
-            "snippet": "B ${2:fontName}$0",
+            "leftLabel": "controlName ",
+            "snippet": "ctrlSetFontH4B ${2:fontName}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/ctrlSetFontH4B"
           }, {
             "description": "Sets H5 font of given HTML control.",
-            "text": "controlName",
-            "leftLabel": "",
+            "leftLabel": "controlName ",
+            "snippet": "ctrlSetFontH5 ${2:fontName}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/ctrlSetFontH5"
           }, {
             "description": "Sets H5 bold font of given HTML control.",
-            "leftLabel": "",
-            "snippet": "B ${2:fontName}$0",
+            "leftLabel": "controlName ",
+            "snippet": "ctrlSetFontH5B ${2:fontName}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/ctrlSetFontH5B"
           }, {
             "description": "Sets H6 font of given HTML control.",
-            "text": "controlName",
-            "leftLabel": "",
+            "leftLabel": "controlName ",
+            "snippet": "ctrlSetFontH6 ${2:fontName}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/ctrlSetFontH6"
           }, {
             "description": "Sets H6 bold font of given HTML control.",
-            "leftLabel": "",
-            "snippet": "B ${2:fontName}$0",
+            "leftLabel": "controlName ",
+            "snippet": "ctrlSetFontH6B ${2:fontName}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/ctrlSetFontH6B"
@@ -2910,43 +2938,43 @@
             "descriptionMoreURL": "http://community.bistudio.com/wiki/ctrlSetFontHeight"
           }, {
             "description": "Sets H1 font size of given HTML control.",
-            "text": "controlName",
-            "leftLabel": "",
+            "leftLabel": "controlName ",
+            "snippet": "ctrlSetFontHeightH1 ${2:height}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/ctrlSetFontHeightH1"
           }, {
             "description": "Sets H2 font size of given HTML control.",
-            "text": "controlName",
-            "leftLabel": "",
+            "leftLabel": "controlName ",
+            "snippet": "ctrlSetFontHeightH2 ${2:height}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/ctrlSetFontHeightH2"
           }, {
             "description": "Sets H3 font size of given HTML control.",
-            "text": "controlName",
-            "leftLabel": "",
+            "leftLabel": "controlName ",
+            "snippet": "ctrlSetFontHeightH3 ${2:height}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/ctrlSetFontHeightH3"
           }, {
             "description": "Sets H3 font size of given HTML control.",
-            "text": "controlName",
-            "leftLabel": "",
+            "leftLabel": "controlName ",
+            "snippet": "ctrlSetFontHeightH4 ${2:height}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/ctrlSetFontHeightH4"
           }, {
             "description": "Sets H5 font size of given HTML control.",
-            "text": "controlName",
-            "leftLabel": "",
+            "leftLabel": "controlName ",
+            "snippet": "ctrlSetFontHeightH5 ${2:height}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/ctrlSetFontHeightH5"
           }, {
             "description": "Sets H6 font size of given HTML control.",
-            "text": "controlName",
-            "leftLabel": "",
+            "leftLabel": "controlName ",
+            "snippet": "ctrlSetFontHeightH6 ${2:height}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/ctrlSetFontHeightH6"
@@ -3343,7 +3371,7 @@
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/currentZeroing"
           }, {
-            "description": "Returns the entity pointed at by player (usually with cross-hair).",
+            "description": "Returns the target pointed at by the player (usually with cross-hairs). The target has to be known to the player to some degree (knowsAbout > 0). If target is completely unknown, command returns objNull.\nA valid target could belong to an enemy or a friendly side. Buildings are normally known to player and so are valid targets. Try nearTargets to see what else is considered a target. While friendly targets are usually known to the player, enemy targets can be totally unknown, especially if \"auto-spotting\" (or sometimes called \"auto-reporting\") is switched off. To check if auto-spotting is enabled:difficultyEnabled \"autospot\"\ncursorTarget also returns locked target for the duration of the lock even if there is another target under the cursor. As soon as missile is fired, cursorTarget switches to current known target under cursor or objNull. Targeting (currently \"T\" in Arma 3) works regardless of the state of \"auto-spotting\".\nAdding a target to the known list could be done with reveal command. When auto-spotting is enabled, zooming on the enemy target with cross-hairs usually reveals the target. As friendly targets are always known, zooming on friendly target could improve knowsAbout value.\nSide relations can also influence target knowledge. For example east target is unknown target for civilian, but making them friends with setFriend instantly improves civilian knowledge of the east.",
             "text": "cursorTarget",
             "leftLabel": "(Object) = ",
             "rightLabel": "SQF Command",
@@ -3475,6 +3503,13 @@
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/deg"
+          }, {
+            "description": "Delete given entities in 3DEN Editor, including anything that can be placed in editor.",
+            "leftLabel": "",
+            "snippet": "delete3DENEntities ${1:entities}$0",
+            "rightLabel": "SQF Command",
+            "type": "function",
+            "descriptionMoreURL": "http://community.bistudio.com/wiki/delete3DENEntities"
           }, {
             "description": "Removes array element at the given index and returns removed element (modifies the original array, just like resize or set).",
             "leftLabel": "(Anything) = array ",
@@ -3610,21 +3645,21 @@
             "descriptionMoreURL": "http://community.bistudio.com/wiki/detectedMines"
           }, {
             "description": "Returns array with active Mission FSMs. \n\n\n\n\n\n \n\n  Doesn't report all active FSMs despite the name",
-            "text": "diag",
+            "text": "diag_activeMissionFSMs",
             "leftLabel": "(Array, String) = ",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/diag%20activeMissionFSMs"
           }, {
             "description": "Returns an array with active SQFs.",
-            "text": "diag",
+            "text": "diag_activeSQFScripts",
             "leftLabel": "(Array, String, Boolean, Number) = ",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/diag%20activeSQFScripts"
           }, {
             "description": "Returns array with active SQSs.",
-            "text": "diag",
+            "text": "diag_activeSQSScripts",
             "leftLabel": "(Array, String, Boolean, Number) = ",
             "rightLabel": "SQF Command",
             "type": "function",
@@ -3632,34 +3667,34 @@
           }, {
             "description": "This command starts counting frames from the moment it is executed and when the count reaches the number passed as param, the current frame is captured and captured data UI dialog appears, similar to diag_captureSlowFrame.\nNote: Only available in specific builds. See Performance Profiling for details.",
             "leftLabel": "",
-            "snippet": "captureFrame ${1:frame}$0",
+            "snippet": "diag_captureFrame ${1:frame}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/diag%20captureFrame"
           }, {
             "description": "Opens \"capture frame\" dialog if current frame exceeds set threshold in seconds. One can indicate to either capture duration of a specific profiling selection or the total duration of the frame. The selection names can be obtained by expanding the profiling tree. Clicking on a tree item will highlight the item on the graph and vice versa. The GUI also provides method of copying of the displayed data to clipboard. Some of the selections:\nRender\n - bgD3D\nMain Thread\n - total\n - memAl\nVisualize\n - visul\nMjob\n - Mjob\nNote: Only available in specific builds. See Performance Profiling for details.",
             "leftLabel": "",
-            "snippet": "captureSlowFrame [${1:section}, ${2:threshold}]$0",
+            "snippet": "diag_captureSlowFrame [${1:section}, ${2:threshold}]$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/diag%20captureSlowFrame"
           }, {
             "description": "Returns average framerate calculated over last 16 frames.",
-            "text": "diag",
+            "text": "diag_fps",
             "leftLabel": "(Number) = ",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/diag%20fps"
           }, {
             "description": "Returns minimal framerate. Calculated from the longest frame over last 16 frames.",
-            "text": "diag",
+            "text": "diag_fpsMin",
             "leftLabel": "(Number) = ",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/diag%20fpsMin"
           }, {
             "description": "Returns number of frame currently displayed .",
-            "text": "diag",
+            "text": "diag_frameNo",
             "leftLabel": "(Number) = ",
             "rightLabel": "SQF Command",
             "type": "function",
@@ -3667,20 +3702,20 @@
           }, {
             "description": "Dumps the argument's value to the report file. Each call creates a new line in the file.",
             "leftLabel": "",
-            "snippet": "log ${1:anything}$0",
+            "snippet": "diag_log ${1:anything}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/diag%20log"
           }, {
             "description": "Log all frames, where section takes longer than the threshold (in seconds). \nNote: Only available in specific builds. See Performance Profiling for details.",
             "leftLabel": "",
-            "snippet": "logSlowFrame [${1:section}, ${2:threshold}]$0",
+            "snippet": "diag_logSlowFrame [${1:section}, ${2:threshold}]$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/diag%20logSlowFrame"
           }, {
             "description": "Real time spent from the start of the game. Expressed in fractions of second. Resolution of 1 tick is 1 ms.",
-            "text": "diag",
+            "text": "diag_tickTime",
             "leftLabel": "(Number) = ",
             "rightLabel": "SQF Command",
             "type": "function",
@@ -3721,7 +3756,7 @@
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/difficulty"
           }, {
-            "description": "Checks specific difficulty settings of the current user. Difficulty flag names can be found in the ArmA profile file under class Difficulties/xxx/Flags (xxx being regular or veteran).",
+            "description": "Checks specific difficulty settings of the current user. Difficulty flag names can be found in the ArmA profile file under class Difficulties/xxx/Flags (xxx being regular or veteran).\n\nNote: stress damage for some reason is a separate difficulty so difficultyEnabled \"stressDamageEnabled\" might not return correct set value. There are however 2 dedicated commands for it:\n enableStressDamage\n isStressDamageEnabled\n\nNote: auto trim is also for some reason a separate difficulty so difficultyEnabled \"autoTrimEnabled\" might not return correct set value. There are also 2 dedicated commands for it:\n enableAutoTrimRTD\n isAutoTrimOnRTD",
             "leftLabel": "(Boolean) = ",
             "snippet": "difficultyEnabled ${1:flagName}$0",
             "rightLabel": "SQF Command",
@@ -3777,6 +3812,20 @@
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/disableDebriefingStats"
           }, {
+            "description": "Enables or disables transport NV (Night Vision). To disable TI (Thermal Imaging) use disableTIEquipment.",
+            "leftLabel": "vehicle ",
+            "snippet": "disableNVGEquipment ${2:state}$0",
+            "rightLabel": "SQF Command",
+            "type": "function",
+            "descriptionMoreURL": "http://community.bistudio.com/wiki/disableNVGEquipment"
+          }, {
+            "description": "This command will halt raycasting calculations (on the local machine only) for all groups which don't contain any local entities. If a group contains a single local entity then calculations will still be performed for the entire group.\n\nThese raycasts are used to determine what other entities an entity can see, and they take a lot of CPU time. This is of course a bit of a trick, because rather than a true optimization, it disables part of the simulation. However, there are certainly types of scenarios where these raycasts are not needed. An example is a fully Player-versus-Player scenario, where the visibility between every combination of player entity is not needed. So why not disable this by default? There are cases where you do require these raycasts, for example in stealth scenarios. Without them, commands like knowsAbout, nearTargets and targetKnowledge will only function for local units! The commands themselves are local, can be used on servers and clients, and the state is reset when the scenario ends. So, carefully consider whether your scenario can benefit from this method.",
+            "text": "disableRemoteSensors",
+            "leftLabel": "",
+            "rightLabel": "SQF Command",
+            "type": "function",
+            "descriptionMoreURL": "http://community.bistudio.com/wiki/disableRemoteSensors"
+          }, {
             "description": "Disable saving of script containing this command. After this script can work with the data types which do not support serialization (UI types).",
             "text": "disableSerialization",
             "leftLabel": "",
@@ -3784,7 +3833,7 @@
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/disableSerialization"
           }, {
-            "description": "Disables TI (Thermal) equipment for given vehicle. Will also disable NV (Night Vision).",
+            "description": "Disables TI (Thermal Imaging) equipment for given vehicle. In older versions of Arma this command would also disable NV (Night Vision), but since Arma 3 v1.52.132676 this command disables only TI. Use disableNVGEquipment to disable NV.",
             "leftLabel": "vehicle ",
             "snippet": "disableTIEquipment ${2:state}$0",
             "rightLabel": "SQF Command",
@@ -3869,8 +3918,8 @@
             "descriptionMoreURL": "http://community.bistudio.com/wiki/distance"
           }, {
             "description": "Returns a 2D distance (distance projected to X,Y plane) in meters between two Objects or two Positions or Object and Position.",
-            "leftLabel": "(Number) = ",
-            "snippet": "D ${2:param2}$0",
+            "leftLabel": "(Number) = param1 ",
+            "snippet": "distance2D ${2:param2}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/distance2D"
@@ -3895,6 +3944,13 @@
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/do"
+          }, {
+            "description": "Performs given 3DEN Editor action.\nKnown actions:\n MissionNew\n MissionLoad\n MissionSave\n MissionPartIntro\n MissionPartOutroWin\n MissionPartOutroLoose\n MissionPreview\n MissionPreviewMP\n OpenIntelDisplay\n Undo\n Redo\n ToggleMap\n ToggleVision\n MoveGridToggle\n RotateGridToggle\n ScaleGridToggle\n SurfaceSnapToggle\n VerticalToggle\n WidgetToggle\n WidgetNone\n WidgetTranslation\n WidgetRotation\n WidgetScale\n WidgetCoord\n SelectGroupMode\n SelectMarkerMode\n SelectModuleMode\n SelectObjectMode\n SelectWaypointMode\n SelectSubmode1 - Blufor/Logic/Icons\n SelectSubmode2 - Opfor/Modules/Areas\n SelectSubmode3 - Independent\n SelectSubmode4 - Civilian\n SelectSubmode5 - Empty",
+            "leftLabel": "",
+            "snippet": "do3DENAction ${1:operation}$0",
+            "rightLabel": "SQF Command",
+            "type": "function",
+            "descriptionMoreURL": "http://community.bistudio.com/wiki/do3DENAction"
           }, {
             "description": "Orders a unit to reload defined magazine commence fire burst on the given position (silently).",
             "leftLabel": "unit ",
@@ -3996,7 +4052,7 @@
           }, {
             "description": "Draws an ingame icon at a given position. Command has to be executed each frame. Use onEachFrame or addMissionEventHandler \"Draw3D\"",
             "leftLabel": "",
-            "snippet": "D ${1:[${2:texture}, ${3:color}, ${4:pos}, ${5:width}, ${6:height}, ${7:angle}, ${8:text}, ${9:shadow}, ${10:textSize}, ${11:font}, ${12:textAlign}, ${13:drawSideArrows}]}$0",
+            "snippet": "drawIcon3D ${1:[${2:texture}, ${3:color}, ${4:pos}, ${5:width}, ${6:height}, ${7:angle}, ${8:text}, ${9:shadow}, ${10:textSize}, ${11:font}, ${12:textAlign}, ${13:drawSideArrows}]}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/drawIcon3D"
@@ -4010,7 +4066,7 @@
           }, {
             "description": "Draws a line of a given color between two 3D positions. Command has to be executed each frame. Use onEachFrame or addMissionEventHandler \"Draw3D\".",
             "leftLabel": "",
-            "snippet": "D ${1:[${2:start}, ${3:end}, ${4:color}]}$0",
+            "snippet": "drawLine3D ${1:[${2:start}, ${3:end}, ${4:color}]}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/drawLine3D"
@@ -4568,7 +4624,7 @@
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/findEmptyPositionReady"
           }, {
-            "description": "Find the nearest enemy to the specified position. Returns a null object if the object's group does not know about any enemies.",
+            "description": "Finds the nearest enemy to the specified position. Returns a null object if the object's group does not know about any enemies. This command will return nearest object that is known to the unit and is considered enemy. An empty vehicle that is part of enemy group assets (see addVehicle) can be returned as valid nearest target.",
             "leftLabel": "(Object) = object ",
             "snippet": "findNearestEnemy ${2:position}$0",
             "rightLabel": "SQF Command",
@@ -4617,19 +4673,33 @@
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/firstBackpack"
           }, {
-            "description": "Returns the flag the unit is carrying.",
+            "description": "Returns the original flag pole of the flag the unit is carrying.",
             "leftLabel": "(Object) = ",
-            "snippet": "flag ${1:unitName}$0",
+            "snippet": "flag ${1:unit}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/flag"
           }, {
-            "description": "Returns the owner of a flag.",
+            "description": "Returns the global owner of a flag. A getter for setFlagOwner.",
             "leftLabel": "(Object) = ",
             "snippet": "flagOwner ${1:flag}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/flagOwner"
+          }, {
+            "description": "Returns Side of the local instance of the flag. A getter for setFlagSide.",
+            "leftLabel": "(Side) = ",
+            "snippet": "flagSide ${1:flag}$0",
+            "rightLabel": "SQF Command",
+            "type": "function",
+            "descriptionMoreURL": "http://community.bistudio.com/wiki/flagSide"
+          }, {
+            "description": "Returns texture of the local instance of the flag. A getter for setFlagTexture.",
+            "leftLabel": "(Side) = ",
+            "snippet": "flagTexture ${1:flagCarrier}$0",
+            "rightLabel": "SQF Command",
+            "type": "function",
+            "descriptionMoreURL": "http://community.bistudio.com/wiki/flagTexture"
           }, {
             "description": "Checks if a unit is fleeing.",
             "leftLabel": "(Boolean) = ",
@@ -4694,7 +4764,7 @@
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/forceMap"
           }, {
-            "description": "Forces unit to respawn. The effect as if the player pressed RESPAWN button in the game pause menu only there is no \"so and so was killed\" message.",
+            "description": "Forces unit to respawn. The effect as if the player pressed RESPAWN button in the game pause menu, the unit is killed only there is no \"so and so was killed\" message and no score adjustment.",
             "leftLabel": "",
             "snippet": "forceRespawn ${1:unit}$0",
             "rightLabel": "SQF Command",
@@ -4876,8 +4946,57 @@
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/gearSlotData"
           }, {
-            "description": "Returns 3 arrays for easy cross reference: 1st - array of hit point names, 2nd - array of hit selection names, 3rd - array of damage values. All values in all arrays are ordered accordingly to hit part index for convenience and for use in setHitIndex and getHitIndex. Levels of damage are:\n 0: no damage\n 1: full damage",
+            "description": "Returns state of given operation in the 3DEN Editor.\nKnown operations:\n History\n Init\n MissionNew\n MissionLoad\n MissionSave\n MissionPartIntro\n MissionPartOutroWin\n MissionPartOutroLoose\n MissionPreview\n MissionPreviewMP\n OpenIntelDisplay\n Undo\n Redo\n ToggleMap\n ToggleVision\n MoveGridToggle\n RotateGridToggle\n ScaleGridToggle\n SurfaceSnapToggle\n VerticalToggle\n WidgetToggle\n WidgetNone\n WidgetTranslation\n WidgetRotation\n WidgetScale\n WidgetCoord\n SelectGroupMode\n SelectMarkerMode\n SelectModuleMode\n SelectObjectMode\n SelectWaypointMode\n SelectSubmode1 - Blufor/Logic/Icons\n SelectSubmode2 - Opfor/Modules/Areas\n SelectSubmode3 - Independent\n SelectSubmode4 - Civilian\n SelectSubmode5 - Empty",
             "leftLabel": "(Number) = ",
+            "snippet": "get3DENActionState ${1:operation}$0",
+            "rightLabel": "SQF Command",
+            "type": "function",
+            "descriptionMoreURL": "http://community.bistudio.com/wiki/get3DENActionState"
+          }, {
+            "description": "Returns value of a given entity's attribute in 3DEN Editor.",
+            "leftLabel": "(Anything) = ",
+            "snippet": "get3DENAttribute ${1:attribute}$0",
+            "rightLabel": "SQF Command",
+            "type": "function",
+            "descriptionMoreURL": "http://community.bistudio.com/wiki/get3DENAttribute"
+          }, {
+            "description": "Returns the camera object used by the 3DEN Editor.",
+            "text": "get3DENCamera",
+            "leftLabel": "(Object) = ",
+            "rightLabel": "SQF Command",
+            "type": "function",
+            "descriptionMoreURL": "http://community.bistudio.com/wiki/get3DENCamera"
+          }, {
+            "description": "Returns the grid increment for the given transformation type.\nTransformation types:\n Rotation - \"r\"\n Translation - \"t\"\n Scale - \"s\"",
+            "leftLabel": "(Number) = ",
+            "snippet": "get3DENGrid ${1:type}$0",
+            "rightLabel": "SQF Command",
+            "type": "function",
+            "descriptionMoreURL": "http://community.bistudio.com/wiki/get3DENGrid"
+          }, {
+            "description": "Returns the 3DEN entity the mouse is hovering over in 3DEN Editor. Only returns items select-able in editor.",
+            "text": "get3DENMouseOver",
+            "leftLabel": "(Array, Object) = ",
+            "rightLabel": "SQF Command",
+            "type": "function",
+            "descriptionMoreURL": "http://community.bistudio.com/wiki/get3DENMouseOver"
+          }, {
+            "description": "Returns an array of all selected 3DEN Editor entities, including groups, waypoints, and markers.",
+            "leftLabel": "(Array) = ",
+            "snippet": "get3DENSelected \"\"$0",
+            "rightLabel": "SQF Command",
+            "type": "function",
+            "descriptionMoreURL": "http://community.bistudio.com/wiki/get3DENSelected"
+          }, {
+            "description": "Returns an array of all selected 3DEN Editor entities, including groups, waypoints, and markers.",
+            "leftLabel": "(Array) = ",
+            "snippet": "get3DENSelected ${1:type}$0",
+            "rightLabel": "SQF Command",
+            "type": "function",
+            "descriptionMoreURL": "http://community.bistudio.com/wiki/get3DENSelected"
+          }, {
+            "description": "Returns 3 arrays for easy cross reference: 1st - array of hit point names, 2nd - array of hit selection names, 3rd - array of damage values. All values in all arrays are ordered accordingly to hit part index for convenience and for use in setHitIndex and getHitIndex. Levels of damage are:\n 0: no damage\n 1: full damage",
+            "leftLabel": "(Array) = ",
             "snippet": "getAllHitPointsDamage ${1:vehicle}$0",
             "rightLabel": "SQF Command",
             "type": "function",
@@ -5101,21 +5220,21 @@
             "descriptionMoreURL": "http://community.bistudio.com/wiki/getHideFrom"
           }, {
             "description": "Returns selection damage. Same as getHitPointDamage only argument is selection part instead of hit point. Note: Some part names are in Czech; see translation table.",
-            "leftLabel": "(Number) = vehicle ",
+            "leftLabel": "(Number, Nothing) = vehicle ",
             "snippet": "getHit ${2:selection}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/getHit"
           }, {
             "description": "Return current level of damage for a specific Hit Point (specified by its hit part index). All hit points can be obtained with getAllHitPointsDamage command.\n 0: no damage\n 1: full damage",
-            "leftLabel": "(Number) = vehicle ",
+            "leftLabel": "(Number, Nothing) = vehicle ",
             "snippet": "getHitIndex ${2:hitPartIndex}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/getHitIndex"
           }, {
             "description": "Return current level of damage for a specific Hit Point (specified by its config class). If you need to get damage of a selection instead of hit point, use getHit.\n 0: no damage\n 1: full damage",
-            "leftLabel": "(Number) = vehicle ",
+            "leftLabel": "(Number, Nothing) = vehicle ",
             "snippet": "getHitPointDamage ${2:hitPointName}$0",
             "rightLabel": "SQF Command",
             "type": "function",
@@ -5324,6 +5443,13 @@
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/getPosWorld"
           }, {
+            "description": "Get status of disabled raycasts for remote entities. See disableRemoteSensors for detailed description.",
+            "text": "getRemoteSensorsDisabled",
+            "leftLabel": "(Boolean) = ",
+            "rightLabel": "SQF Command",
+            "type": "function",
+            "descriptionMoreURL": "http://community.bistudio.com/wiki/getRemoteSensorsDisabled"
+          }, {
             "description": "Returns the amount of repair resources from empty (0) to full (1) in the cargo space of a repair vehicle.",
             "leftLabel": "(Number) = ",
             "snippet": "getRepairCargo ${1:vehicle}$0",
@@ -5506,9 +5632,9 @@
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/groupSelectedUnits"
           }, {
-            "description": "Select unit from unit's group.",
-            "leftLabel": "unitName ",
-            "snippet": "groupSelectUnit ${2:[${3:unit}, ${4:booleanValue}]}$0",
+            "description": "Selects a unit from player's group. If player is the leader, the effect of this command is similar to player pressing F1, F2, F3... buttons to highlight units in his squad, after which the unit command menu is shown. If leader is AI, player will get usual communication menu to interact with the leader.",
+            "leftLabel": "player ",
+            "snippet": "groupSelectUnit ${2:[${3:unit}, ${4:select}]}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/groupSelectUnit"
@@ -5891,6 +6017,20 @@
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/intersect"
           }, {
+            "description": "Returns true if the 3DEN Editor is currently being used.",
+            "text": "is3DEN",
+            "leftLabel": "(Boolean) = ",
+            "rightLabel": "SQF Command",
+            "type": "function",
+            "descriptionMoreURL": "http://community.bistudio.com/wiki/is3DEN"
+          }, {
+            "description": "Returns true if the 3DEN Editor is in multiplayer mode.",
+            "text": "is3DENMultiplayer",
+            "leftLabel": "(Boolean) = ",
+            "rightLabel": "SQF Command",
+            "type": "function",
+            "descriptionMoreURL": "http://community.bistudio.com/wiki/is3DENMultiplayer"
+          }, {
             "description": "Returns whether the unit is diving.",
             "leftLabel": "(Boolean) = ",
             "snippet": "isAbleToBreathe ${1:unit}$0",
@@ -5995,6 +6135,34 @@
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/isEqualTo"
+          }, {
+            "description": "Compares 2 values by their type. A much faster alternative to typeName a == typeName b.",
+            "leftLabel": "(Boolean) = val1 ",
+            "snippet": "isEqualType ${2:val2}$0",
+            "rightLabel": "SQF Command",
+            "type": "function",
+            "descriptionMoreURL": "http://community.bistudio.com/wiki/isEqualType"
+          }, {
+            "description": "Compares types of all elements of an array to the type of a single value.",
+            "leftLabel": "(Boolean) = arr ",
+            "snippet": "isEqualTypeAll ${2:val}$0",
+            "rightLabel": "SQF Command",
+            "type": "function",
+            "descriptionMoreURL": "http://community.bistudio.com/wiki/isEqualTypeAll"
+          }, {
+            "description": "Compares types of all elements of one array to types of all elements of another array.",
+            "leftLabel": "(Boolean) = arr1 ",
+            "snippet": "isEqualTypeArray ${2:arr2}$0",
+            "rightLabel": "SQF Command",
+            "type": "function",
+            "descriptionMoreURL": "http://community.bistudio.com/wiki/isEqualTypeArray"
+          }, {
+            "description": "Compares types of all elements of input array to types of all elements of template array. Similar to isEqualTypeArray however this command is designed for fast validation of functions params, so there are differences:\n Input can be anything but will be expected to be an Array, otherwise false is returned\n Input array can be longer but not shorter than template array, will return false if shorter\n nil could be used in template type array as a wild card to allow any type match",
+            "leftLabel": "(Boolean) = input ",
+            "snippet": "isEqualTypeParams ${2:template}$0",
+            "rightLabel": "SQF Command",
+            "type": "function",
+            "descriptionMoreURL": "http://community.bistudio.com/wiki/isEqualTypeParams"
           }, {
             "description": "Returns true if there is a linked and enabled flashlight on a given weapon.",
             "leftLabel": "(Boolean) = unit ",
@@ -6164,7 +6332,7 @@
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/isOnRoad"
           }, {
-            "description": "Returns true if PiP is enabled.",
+            "description": "Returns true if Picture in Picture (Render to Texture) is enabled.",
             "text": "isPipEnabled",
             "leftLabel": "(Boolean) = ",
             "rightLabel": "SQF Command",
@@ -6194,7 +6362,7 @@
           }, {
             "description": "Returns true if the editor is set to draw 3D icons.",
             "leftLabel": "(Boolean) = ",
-            "snippet": "DIcons ${1:map}$0",
+            "snippet": "isShowing3DIcons ${1:map}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/isShowing3DIcons"
@@ -6409,8 +6577,15 @@
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/keyName"
           }, {
-            "description": "Check if (and by how much) unit knows about target. If unit is vehicle, vehicle commander is considered.",
-            "leftLabel": "(Number) = unit ",
+            "description": "Checks if a group or a side knows about target. If who is a unit, unit's group is considered, if who is a vehicle, commander's group is considered.",
+            "leftLabel": "(Number) = who ",
+            "snippet": "knowsAbout ${2:target}$0",
+            "rightLabel": "SQF Command",
+            "type": "function",
+            "descriptionMoreURL": "http://community.bistudio.com/wiki/knowsAbout"
+          }, {
+            "description": "Checks if a group or a side knows about target. If who is a unit, unit's group is considered, if who is a vehicle, commander's group is considered.",
+            "leftLabel": "(Number) = side ",
             "snippet": "knowsAbout ${2:target}$0",
             "rightLabel": "SQF Command",
             "type": "function",
@@ -6815,7 +6990,7 @@
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/leaderboardInit"
           }, {
-            "description": "Ceases the using of the vehicle by either a unit or a group. It unassigns them from the vehicle.",
+            "description": "Ceases the using of the vehicle by a group and unassigns vehicle from the group. If the argument is a single unit, the vehicle will be unassigned from unit's group. After vehicle is unassigned from the group, each individual crew member then unassigned from the vehicle.\nIn short the command could be hypothetically presented as:\nleaveVehicle = un-addVehicle + unassignVehicle forEach crew",
             "leftLabel": "group ",
             "snippet": "leaveVehicle ${2:vehicle}$0",
             "rightLabel": "SQF Command",
@@ -7284,7 +7459,7 @@
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/loadVest"
           }, {
-            "description": "Check if given unit is local on the computer in Multiplayer games (see Locality in Multiplayer for general concepts).\n\nThis can be used when some activation fields or scripts need to be performed only on one computer. In Singleplayer all objects are local. \n\nNote: Map created objects (those placed in Visitor) are local everywhere.",
+            "description": "Check if given unit is local on the computer in Multiplayer games (see Locality in Multiplayer for general concepts).\n\nThis can be used when some activation fields or scripts need to be performed only on one computer. In Single player all objects are local. \n\nNote1: Map created objects (those placed in Visitor) are local everywhere.\nNote2: Since Arma 3 v1.53.132932 keyword local has been renamed to private for consistency and to avoid any confusion.",
             "leftLabel": "(Boolean) = ",
             "snippet": "local ${1:object}$0",
             "rightLabel": "SQF Command",
@@ -7732,6 +7907,13 @@
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/move"
           }, {
+            "description": "Moves 3DEN Editor camera to given position, with or without offset.\nDefault camera offset: [0,-25,25]",
+            "leftLabel": "",
+            "snippet": "move3DENCamera [position,${1:useOffset}]$0",
+            "rightLabel": "SQF Command",
+            "type": "function",
+            "descriptionMoreURL": "http://community.bistudio.com/wiki/move3DENCamera"
+          }, {
             "description": "Moves unit to the first available seat in a vehicle. The order of priorities is the same order used in squad command when you order subordinates to get in vehicle to any position and is the same order used in Zeus when you drag units to a vehicle. Seat assignment seems to use the following priority logic: \ndriver (moveInDriver) -> commander turret (moveInCommander) -> gunner turret (moveInGunner) -> remaining turrets (moveInTurret) -> cargo (moveInCargo).\nNOTE: This command will move player into the locked vehicle or seat just as well.",
             "leftLabel": "(Nothing, Boolean) = unit ",
             "snippet": "moveInAny ${2:vehicle}$0",
@@ -7851,14 +8033,14 @@
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/nameSound"
           }, {
-            "description": "Find entities in the circle with given radius. If typeName(s) is (are) given, only entities of given type (or its subtype) are listed.\n\nThis command returns only alive entities. If you need to return dead entities as well use entities command.",
+            "description": "Find entities in the sphere with given radius. If typeName(s) is (are) given, only entities of given type (or its subtype) are listed.\nThis command returns only alive entities. If you need to return dead entities as well use entities command.",
             "leftLabel": "(Array, Object) = position ",
             "snippet": "nearEntities ${2:radius}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/nearEntities"
           }, {
-            "description": "Find entities in the circle with given radius. If typeName(s) is (are) given, only entities of given type (or its subtype) are listed.\n\nThis command returns only alive entities. If you need to return dead entities as well use entities command.",
+            "description": "Find entities in the sphere with given radius. If typeName(s) is (are) given, only entities of given type (or its subtype) are listed.\nThis command returns only alive entities. If you need to return dead entities as well use entities command.",
             "leftLabel": "(Array, Object) = position ",
             "snippet": "nearEntities ${2:[${3:typeName}, ${4:radius}]}$0",
             "rightLabel": "SQF Command",
@@ -7867,21 +8049,14 @@
           }, {
             "description": "Finds the nearest building to a given object or position. A \"building\" is defined as an object that is of class \"House\" and contains a path LOD.",
             "leftLabel": "(Object) = ",
-            "snippet": "nearestBuilding ${1:object}$0",
-            "rightLabel": "SQF Command",
-            "type": "function",
-            "descriptionMoreURL": "http://community.bistudio.com/wiki/nearestBuilding"
-          }, {
-            "description": "Finds the nearest building to a given object or position. A \"building\" is defined as an object that is of class \"House\" and contains a path LOD.",
-            "text": "nearestBuilding",
-            "leftLabel": "(Object) = ",
+            "snippet": "nearestBuilding ${1:position}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/nearestBuilding"
           }, {
             "description": "Return the closest location of specified class to a given position.Checked range is unlimited (i.e. covers the whole map).",
             "leftLabel": "(Location) = ",
-            "snippet": "nearestLocation ${1:[position, ${2:locationClass}]}$0",
+            "snippet": "nearestLocation ${1:[${2:position}, ${3:locationClass}]}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/nearestLocation"
@@ -7929,8 +8104,8 @@
             "descriptionMoreURL": "http://community.bistudio.com/wiki/nearObjects"
           }, {
             "description": "Find objects in the circle with given radius.\nIf typeName is given, only objects of given type (or its subtype) are listed.\nThe first object in the returned array is not necessarily the closest one (like it is in nearestObjects for example).",
-            "leftLabel": "(Array) = ",
-            "snippet": "nearObjects ${1:[${2:typeName}, ${3:radius}]}$0",
+            "leftLabel": "(Array) = position ",
+            "snippet": "nearObjects ${2:[${3:typeName}, ${4:radius}]}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/nearObjects"
@@ -8278,28 +8453,28 @@
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/owner"
           }, {
-            "description": "Extracts a single value with given index from input argument, similar to BIS_fnc_param.  When used without argument, as shown in main syntax, internal variable _this, which is usually available inside functions and event handlers, is used as argument. If input argument is not an array, it will be converted to 1 element array.\n\nIf extracted item of input with given index is undefined, of the wrong type or of the wrong length (if the item is an array), default value is used instead. To log these substitutes into .rpt file, set  allowFunctionsLog param in description.ext to 1.",
+            "description": "Extracts a single value with given index from input argument, similar to BIS_fnc_param.  When used without argument, as shown in main syntax, internal variable _this, which is usually available inside functions and event handlers, is used as argument. If input argument is not an array, it will be converted to 1 element array.\n\nIf extracted item of input with given index is undefined, of the wrong type or of the wrong length (if the item is an array), default value is used instead. Since Arma 3 v1.53.132691, onscreen errors are displayed for when the input is of the wrong type or size.",
             "leftLabel": "(Anything, Nothing) = ",
             "snippet": "param ${1:[${2:index}, ${3:defaultValue}, ${4:expectedDataTypes}, ${5:expectedArrayCount}]}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/param"
           }, {
-            "description": "Extracts a single value with given index from input argument, similar to BIS_fnc_param.  When used without argument, as shown in main syntax, internal variable _this, which is usually available inside functions and event handlers, is used as argument. If input argument is not an array, it will be converted to 1 element array.\n\nIf extracted item of input with given index is undefined, of the wrong type or of the wrong length (if the item is an array), default value is used instead. To log these substitutes into .rpt file, set  allowFunctionsLog param in description.ext to 1.",
+            "description": "Extracts a single value with given index from input argument, similar to BIS_fnc_param.  When used without argument, as shown in main syntax, internal variable _this, which is usually available inside functions and event handlers, is used as argument. If input argument is not an array, it will be converted to 1 element array.\n\nIf extracted item of input with given index is undefined, of the wrong type or of the wrong length (if the item is an array), default value is used instead. Since Arma 3 v1.53.132691, onscreen errors are displayed for when the input is of the wrong type or size.",
             "leftLabel": "(Anything, Nothing) = argument ",
             "snippet": "param ${2:[${3:index}, ${4:defaultValue}, ${5:expectedDataTypes}, ${6:expectedArrayCount}]}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/param"
           }, {
-            "description": "Parses input argument into array of private variables, similar to BIS_fnc_param. When used without argument, as shown in main syntax, internal variable _this, which is usually available inside functions and event handlers, is used as argument.\n\nIn addition to simple parsing directly into variables, input can be tested in case it is undefined, of the wrong type or of the wrong size (if array) and substituted if necessary with default values. Substitutes can also be logged into .rpt file, if  allowFunctionsLog param in description.ext is set to 1.",
+            "description": "Parses input argument into array of private variables, similar to BIS_fnc_param. When used without argument, as shown in main syntax, internal variable _this, which is usually available inside functions and event handlers, is used as argument.\n\nIn addition to simple parsing directly into variables, input can be tested in case it is undefined, of the wrong type or of the wrong size (if array) and substituted if necessary with default values. Since Arma 3 v1.53.132691, onscreen errors are displayed for when the input is of the wrong type or size.",
             "leftLabel": "(Boolean) = ",
             "snippet": "params ${1:[element1, element2,...${2:elementN}]}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/params"
           }, {
-            "description": "Parses input argument into array of private variables, similar to BIS_fnc_param. When used without argument, as shown in main syntax, internal variable _this, which is usually available inside functions and event handlers, is used as argument.\n\nIn addition to simple parsing directly into variables, input can be tested in case it is undefined, of the wrong type or of the wrong size (if array) and substituted if necessary with default values. Substitutes can also be logged into .rpt file, if  allowFunctionsLog param in description.ext is set to 1.",
+            "description": "Parses input argument into array of private variables, similar to BIS_fnc_param. When used without argument, as shown in main syntax, internal variable _this, which is usually available inside functions and event handlers, is used as argument.\n\nIn addition to simple parsing directly into variables, input can be tested in case it is undefined, of the wrong type or of the wrong size (if array) and substituted if necessary with default values. Since Arma 3 v1.53.132691, onscreen errors are displayed for when the input is of the wrong type or size.",
             "leftLabel": "(Boolean) = argument ",
             "snippet": "params ${2:[element1, element2,...${3:elementN}]}$0",
             "rightLabel": "SQF Command",
@@ -8369,7 +8544,7 @@
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/playableSlotsNumber"
           }, {
-            "description": "Returns a list of playable units (occupied by both AI or players) in a multiplayer game. This does not include dead players awaiting respawn.",
+            "description": "Returns a list of playable units in a multiplayer game (occupied by both AI or players), created on the following sides east, west, resistance/independent and civilian only. Does not contain units of sideLogic. This does not include dead players awaiting for respawn.",
             "text": "playableUnits",
             "leftLabel": "(Array) = ",
             "rightLabel": "SQF Command",
@@ -8483,7 +8658,7 @@
           }, {
             "description": "Plays positional sound with given filename on every computer on network. At least 2 parameters must be specified.",
             "leftLabel": "",
-            "snippet": "D ${1:[${2:filename}, ${3:soundSource}, ${4:isInside}, soundPosition, ${5:volume}, ${6:soundPitch}, ${7:distance}]}$0",
+            "snippet": "playSound3D ${1:[${2:filename}, ${3:soundSource}, ${4:isInside}, soundPosition, ${5:volume}, ${6:soundPitch}, ${7:distance}]}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/playSound3D"
@@ -8719,16 +8894,23 @@
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/priority"
           }, {
-            "description": "Sets a variable to the innermost scope. The variable has to be local.",
+            "description": "Sets a variable to the innermost scope as demonstrated in Example 3.\nSince Arma 3 v1.53.132932 private can be used as keyword as shown in Example 4.",
             "leftLabel": "",
             "snippet": "private ${1:variableName}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/private"
           }, {
-            "description": "Sets a variable to the innermost scope. The variable has to be local.",
+            "description": "Sets a variable to the innermost scope as demonstrated in Example 3.\nSince Arma 3 v1.53.132932 private can be used as keyword as shown in Example 4.",
             "leftLabel": "",
             "snippet": "private ${1:variableNameList}$0",
+            "rightLabel": "SQF Command",
+            "type": "function",
+            "descriptionMoreURL": "http://community.bistudio.com/wiki/private"
+          }, {
+            "description": "Sets a variable to the innermost scope as demonstrated in Example 3.\nSince Arma 3 v1.53.132932 private can be used as keyword as shown in Example 4.",
+            "text": "private",
+            "leftLabel": "",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/private"
@@ -8985,19 +9167,26 @@
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/remoteControl"
           }, {
-            "description": "Asks server to execute a command or scripted function remotely by spawning it. In SP, it executes the command locally (the same restrictions apply both to SP and MP). For more information about the usage, security features and advanced jip techniques check the remote execution dedicated section.\n\n\n\n\n \n\n  W.I.P\n Functionality of the command is being extended for 1.48+.\n The goal is to provide full control over its behavior to content authors.\n The command will use new structure that defines different operation modes and white-lists for clients and server separately (already true for  dev.).\n White-lists defined in CfgRemoteExecCommands and CfgRemoteExecFunctions are no longer supported in  dev.. They have been replaced with CfgRemoteExec",
+            "description": "Asks server to execute a command or scripted function remotely by spawning it. In SP, it executes the command locally (the same restrictions apply both to SP and MP). For more information about the usage, security features and advanced jip techniques check the remote execution dedicated section.",
             "leftLabel": "(Anything, String) = params ",
             "snippet": "remoteExec ${2:[${3:functionName}, targets, jip]}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/remoteExec"
           }, {
-            "description": "Asks server to execute a command remotely by calling it. In SP, it executes the command locally (the same restrictions apply both to SP and MP). For more information about the usage, security features and advanced jip techniques check the remote execution dedicated section.\n\n\n\n\n \n\n  W.I.P\n Functionality of the command is being extended for 1.48+.\n The goal is to provide full control over its behavior to content authors.\n The command will use new structure that defines different operation modes and white-lists for clients and server separately (already true for  dev.).\n White-lists defined in CfgRemoteExecCommands and CfgRemoteExecFunctions are no longer supported in  dev.. They have been replaced with CfgRemoteExec\n\n\n\n\n \nWhile it is true that this function executes the desired scripted command/function by calling it, it does not mean remoteExecCall itself will be executed right away. Therefore, calling remoteExecCall is by no means a replacement for calling scripted commands/functions directly.\nExample:\nremoteExecCall [\"func1\"]; call func2; // func2 can be executed sooner than func1\ncall func1; call func2; // func2 will always execute after func1.",
+            "description": "Asks server to execute a command remotely by calling it. In SP, it executes the command locally (the same restrictions apply both to SP and MP). For more information about the usage, security features and advanced jip techniques check the remote execution dedicated section.\n\n\n\n\n \nWhile it is true that this function executes the desired scripted command/function by calling it, it does not mean remoteExecCall itself will be executed right away. Therefore, calling remoteExecCall is by no means a replacement for calling scripted commands/functions directly.\nExample:\nremoteExecCall [\"func1\"]; call func2; // func2 can be executed sooner than func1\ncall func1; call func2; // func2 will always execute after func1.",
             "leftLabel": "(Anything, String) = params ",
             "snippet": "remoteExecCall ${2:[${3:functionName}, targets, JIP]}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/remoteExecCall"
+          }, {
+            "description": "Removes 3DEN event handler of given type and ID.",
+            "leftLabel": "(Number) = ",
+            "snippet": "remove3DENEventHandler [${1:type},${2:id}]$0",
+            "rightLabel": "SQF Command",
+            "type": "function",
+            "descriptionMoreURL": "http://community.bistudio.com/wiki/remove3DENEventHandler"
           }, {
             "description": "Removes user added action with given id index. This only removes actions added with the addAction command. You cannot remove default game actions, such as reload.\n\nThis command has local effect. The action will only be removed on the computer that executes the command.",
             "leftLabel": "unit ",
@@ -9433,16 +9622,16 @@
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/restartEditorCamera"
           }, {
-            "description": "Reveals a unit to a group or another unit. \n\nThe knowledge value will be set to the highest level any unit of the revealing side has about the revealed unit. If the revealing side has no knowledge about the revealed unit, the value will be set to 1.\n\nSince ARMA 2 OA 1.60 the alternative syntax is available. Values greater than or equal 1.5 reveal the side of the unit, too.\n\nThe knowledge level can only be increased, not decreased by this command.",
-            "leftLabel": "groupName ",
-            "snippet": "reveal ${2:unitName}$0",
+            "description": "Reveals a target to a group. If toWhom is a unit, unit's group is considered. If toWhom is a vehicle, vehicle commander's group is considered.  \n\nThe knowledge value will be set to the highest level any unit of the revealing side has about the revealed target. If the revealing side has no knowledge about the revealed target, the value will be set to 1.\n\nSince ARMA 2 OA 1.60 the alternative syntax is available. Values greater than or equal 1.5 reveal the side of the target, too.\n\nThe knowledge level can only be increased, not decreased by this command.\n\nIn MP targetKnowledge and knowsAbout infos get updated only on the PC where command was executed.",
+            "leftLabel": "toWhom ",
+            "snippet": "reveal ${2:target}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/reveal"
           }, {
-            "description": "Reveals a unit to a group or another unit. \n\nThe knowledge value will be set to the highest level any unit of the revealing side has about the revealed unit. If the revealing side has no knowledge about the revealed unit, the value will be set to 1.\n\nSince ARMA 2 OA 1.60 the alternative syntax is available. Values greater than or equal 1.5 reveal the side of the unit, too.\n\nThe knowledge level can only be increased, not decreased by this command.",
-            "leftLabel": "groupName ",
-            "snippet": "reveal [${2:unitName}, ${3:accuracy}]$0",
+            "description": "Reveals a target to a group. If toWhom is a unit, unit's group is considered. If toWhom is a vehicle, vehicle commander's group is considered.  \n\nThe knowledge value will be set to the highest level any unit of the revealing side has about the revealed target. If the revealing side has no knowledge about the revealed target, the value will be set to 1.\n\nSince ARMA 2 OA 1.60 the alternative syntax is available. Values greater than or equal 1.5 reveal the side of the target, too.\n\nThe knowledge level can only be increased, not decreased by this command.\n\nIn MP targetKnowledge and knowsAbout infos get updated only on the PC where command was executed.",
+            "leftLabel": "toWhom ",
+            "snippet": "reveal [${2:target}, ${3:accuracy}]$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/reveal"
@@ -9700,29 +9889,29 @@
             "descriptionMoreURL": "http://community.bistudio.com/wiki/say"
           }, {
             "description": "Same as say only sound is mono.",
-            "leftLabel": "",
-            "snippet": "D ${2:speechName}$0",
+            "leftLabel": "unit ",
+            "snippet": "say2D ${2:speechName}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/say2D"
           }, {
             "description": "Same as say only sound is mono.",
-            "leftLabel": "",
-            "snippet": "D ${4:speechName}$0",
+            "leftLabel": "[unit, target] ",
+            "snippet": "say2D ${4:speechName}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/say2D"
           }, {
             "description": "Unit or object will say given sound in 3D Space.\n\nThis allows broadcasting of positional music or sound from a source, without having to script a fade sound or music command.\n\nCompare this with say2D which will always play a sound at the location of the player after he has been in the vicinity of a broadcasting sound.\n\nSound is defined in CfgSound of the Description.ext.",
-            "leftLabel": "",
-            "snippet": "D ${2:sound}$0",
+            "leftLabel": "unit ",
+            "snippet": "say3D ${2:sound}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/say3D"
           }, {
             "description": "Unit or object will say given sound in 3D Space.\n\nThis allows broadcasting of positional music or sound from a source, without having to script a fade sound or music command.\n\nCompare this with say2D which will always play a sound at the location of the player after he has been in the vicinity of a broadcasting sound.\n\nSound is defined in CfgSound of the Description.ext.",
-            "leftLabel": "",
-            "snippet": "D ${3:sound}$0",
+            "leftLabel": "[unit, target] ",
+            "snippet": "say3D ${3:sound}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/say3D"
@@ -9881,7 +10070,7 @@
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/selectionPosition"
           }, {
-            "description": "Select a group's leader.",
+            "description": "Select a group's leader. In MP the group has to be local to the PC executing the command. Locality of the group can be checked with local command and group ownership with groupOwner command.",
             "leftLabel": "groupName ",
             "snippet": "selectLeader ${2:unitName}$0",
             "rightLabel": "SQF Command",
@@ -9999,6 +10188,20 @@
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/set"
+          }, {
+            "description": "Sets the grid increment for the given transformation type.\nTransformation types:\n Rotation - \"r\"\n Translation - \"t\"\n Scale - \"s\"",
+            "leftLabel": "",
+            "snippet": "set3DENGrid [${1:type},${2:value}]$0",
+            "rightLabel": "SQF Command",
+            "type": "function",
+            "descriptionMoreURL": "http://community.bistudio.com/wiki/set3DENGrid"
+          }, {
+            "description": "Sets the classname of a given 3DEN Editor object.",
+            "leftLabel": "object ",
+            "snippet": "set3DENObjectType ${2:classname}$0",
+            "rightLabel": "SQF Command",
+            "type": "function",
+            "descriptionMoreURL": "http://community.bistudio.com/wiki/set3DENObjectType"
           }, {
             "description": "Set time acceleration coefficient. May be also used to slow time in cutscenes. This command does NOT work in multiplayer. accFactor is clamped to [1/128; 4].",
             "leftLabel": "",
@@ -10322,21 +10525,21 @@
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/setFatigue"
           }, {
-            "description": "Set flag owner. When owner is set to objNull or any object other than a unit of class man or logic, flag is returned to the flagpole.\n\nA flag owned by a logic has no visual representation.",
+            "description": "Sets flag owner. When owner is set to objNull or any object other than a unit of class man or logic, flag is returned to the flagpole. A flag owned by a logic has no visual representation.",
             "leftLabel": "flag ",
             "snippet": "setFlagOwner ${2:owner}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/setFlagOwner"
           }, {
-            "description": "Set flag side. A flag may be taken by any unit that is enemy to the side that owns the flag.",
+            "description": "Sets flag Side. A flag may be taken by any unit that is enemy to the side that owns the flag. Just like with setFlagTexture, if the command executed where unit is local effect of the command will be global and JIP compatible.",
             "leftLabel": "flag ",
             "snippet": "setFlagSide ${2:side}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/setFlagSide"
           }, {
-            "description": "Set flag texture.\n\nIf texture is \"\", flag is not drawn.\nCustom texture can be used, as long as it is in *.jpg format, and has dimensions of 200px*200px.\nThe page Flag Textures shows which textures are available in each game.\n\nNOTE: In MP this command has to be executed where Flag Pole is local. If you add Flag Pole in the editor, it will be local to the server, so executing setFlagTexture on the server will change flag texture on all clients. The command is also persistent and is synchronised for JIP clients.",
+            "description": "Sets flag texture.\n\nIf texture is \"\", flag is not drawn.\nCustom texture can be used, as long as it is in *.jpg format, and has dimensions of 200px*200px.\nThe page Flag Textures shows which textures are available in each game.\n\nNOTE: In MP this command has to be executed where Flag Pole is local. If you add Flag Pole in the editor, it will be local to the server, so executing setFlagTexture on the server will change flag texture on all clients. The command is also persistent and is synchronised for JIP clients.",
             "leftLabel": "flag ",
             "snippet": "setFlagTexture ${2:texture}$0",
             "rightLabel": "SQF Command",
@@ -10602,7 +10805,7 @@
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/setLightUseFlare"
           }, {
-            "description": "Sets parameters for local wind emiters (like helicopters). Default [1.0, 1.0].",
+            "description": "Sets parameters for helicopter rotor wash. Visually it affects how much the grass and bushes bend under a helicopter and how big is the area of the effect. Default [1.0, 1.0].",
             "leftLabel": "",
             "snippet": "setLocalWindParams ${1:[${2:strength}, ${3:diameter}]}$0",
             "rightLabel": "SQF Command",
@@ -10630,7 +10833,7 @@
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/setMarkerAlphaLocal"
           }, {
-            "description": "Selects the fill texture for the marker (\"RECTANGLE\" or \"ELLIPSE\"). Brush is the name of the subclass in CfgMarkerBrushes.\n\n\nbrush can be:\n \"Solid\"\n \"SolidFull\" (A3 only)\n \"Horizontal\"\n \"Vertical\"\n \"Grid\"\n \"FDiagonal\"\n \"BDiagonal\"\n \"DiagGrid\"\n \"Cross\"\n \"Border\" (ArmA2 only)\n \"SolidBorder\" (OA only)",
+            "description": "Selects the fill texture for the marker (\"RECTANGLE\" or \"ELLIPSE\"). Brush is the name of the subclass in CfgMarkerBrushes.\n\n\nbrush can be:\n \"Solid\"\n \"SolidFull\" (A3 only)\n \"Horizontal\"\n \"Vertical\"\n \"Grid\"\n \"FDiagonal\"\n \"BDiagonal\"\n \"DiagGrid\"\n \"Cross\"\n \"Border\"\n \"SolidBorder\"",
             "leftLabel": "markerName ",
             "snippet": "setMarkerBrush ${2:brush}$0",
             "rightLabel": "SQF Command",
@@ -10826,6 +11029,13 @@
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/setObjectMaterial"
           }, {
+            "description": "Set the material of the given selection on all computers in a network session.",
+            "leftLabel": "obj ",
+            "snippet": "setObjectMaterialGlobal [${3:selection}, ${4:material}]$0",
+            "rightLabel": "SQF Command",
+            "type": "function",
+            "descriptionMoreURL": "http://community.bistudio.com/wiki/setObjectMaterialGlobal"
+          }, {
             "description": "Set the proxy object associated with the given editor object.",
             "leftLabel": "map ",
             "snippet": "setObjectProxy ${2:[object,proxy object]}$0",
@@ -10967,8 +11177,8 @@
             "descriptionMoreURL": "http://community.bistudio.com/wiki/setPosASL"
           }, {
             "description": "Sets the object position. The pos array uses the PositionASL format. The version of the command does not offset based on object center. \n\n\n\n\n \n\n  Appears to be broken",
-            "text": "obj",
-            "leftLabel": "",
+            "leftLabel": "obj ",
+            "snippet": "setPosASL2 ${2:pos}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/setPosASL2"
@@ -11246,9 +11456,9 @@
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/setTriggerArea"
           }, {
-            "description": "Defines a trigger's condition, and executable code for its activation and deactivation events.",
+            "description": "Defines trigger condition, activation and deactivation statements. Trigger condition has to return Boolean. true will activate the trigger, false will deactivate it (only if activation is set to repeat). thisList returns the same result as list command, which includes all entities in the trigger area that are capable of activating the trigger. Dead entities are excluded as well as crew in vehicles, vehicles themselves are included.",
             "leftLabel": "trigger ",
-            "snippet": "setTriggerStatements [${2:condition}, ${3:activation}, deactivation]$0",
+            "snippet": "setTriggerStatements ${2:[${3:condition}, ${4:activation}, deactivation]}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/setTriggerStatements"
@@ -11611,8 +11821,8 @@
             "descriptionMoreURL": "http://community.bistudio.com/wiki/setWPPos"
           }, {
             "description": "Toggle the drawing of 3D icons.",
-            "leftLabel": "",
-            "snippet": "DIcons ${2:bool}$0",
+            "leftLabel": "map ",
+            "snippet": "show3DIcons ${2:bool}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/show3DIcons"
@@ -12373,9 +12583,9 @@
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/targetsAggregate"
           }, {
-            "description": "Find all targets known to sender matching given query.",
-            "leftLabel": "(Array) = speaker ",
-            "snippet": "targetsQuery ${2:[receiver,side,unit,place,time]}$0",
+            "description": "Returns sorted array of targets, known to the enquirer (including own troops), where the accuracy coefficient reflects how close the result matches the query. This command could be CPU intensive.",
+            "leftLabel": "(Array, Side, Number, Object, String) = enquirer ",
+            "snippet": "targetsQuery ${2:[${3:targetIgnore}, ${4:targetSide}, ${10:targetType}, ${5:targetPosition}, ${6:targetMaxAge}]}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/targetsQuery"
@@ -12555,6 +12765,13 @@
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/throw"
           }, {
+            "description": "Throws an exception. The exception is processed by first catch block.",
+            "leftLabel": "(condition) ",
+            "snippet": "throw ${2:exception}$0",
+            "rightLabel": "SQF Command",
+            "type": "function",
+            "descriptionMoreURL": "http://community.bistudio.com/wiki/throw"
+          }, {
             "description": "Returns time elapsed since mission started (in seconds). The value is different on each client. If you need unified time, use serverTime.",
             "text": "time",
             "leftLabel": "(Number) = ",
@@ -12726,6 +12943,13 @@
             "description": "Defines a try-catch structure. This sets up an exception handling block. Any thrown exception in a try block is caught in a catch block. The structured exception block has following form:\n try //begin of try-catch block \n  { //block, that can throw exception } \n catch\n  { //block, that process an exception. Exception is described in _exception variable };",
             "leftLabel": "",
             "snippet": "try ${1:code}$0",
+            "rightLabel": "SQF Command",
+            "type": "function",
+            "descriptionMoreURL": "http://community.bistudio.com/wiki/try"
+          }, {
+            "description": "Defines a try-catch structure. This sets up an exception handling block. Any thrown exception in a try block is caught in a catch block. The structured exception block has following form:\n try //begin of try-catch block \n  { //block, that can throw exception } \n catch\n  { //block, that process an exception. Exception is described in _exception variable };",
+            "leftLabel": "args ",
+            "snippet": "try ${2:code}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/try"
@@ -13059,7 +13283,7 @@
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/unassignTeam"
           }, {
-            "description": "Unassigns a unit from whichever vehicle that unit is currently assigned to. If the unit is currently in that vehicle, the group leader will issue an order to disembark.",
+            "description": "Unassigns individual unit from a vehicle, i.e removes assignedVehicleRole of the unit. If the unit is currently in that vehicle, the group leader will issue an order to disembark.",
             "leftLabel": "",
             "snippet": "unassignVehicle ${1:unitName}$0",
             "rightLabel": "SQF Command",
@@ -13668,14 +13892,14 @@
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/weapons"
           }, {
-            "description": "Returns an array with subarrays contains class names and also names of connected items of all the vehicle's weapons.\nSince Arma 3 v1.21.124406 it is possible to query weapon holders and ammo crates with this command.",
+            "description": "Returns an array with subarrays contains class names and also names of connected items of all the vehicle's weapons.\nSince Arma 3 v1.21.124406 it is possible to query weapon holders and ammo crates with this command. If weapon has no magazine, an empty array [] is returned instead of magazine info.",
             "leftLabel": "(Array) = ",
             "snippet": "weaponsItems ${1:vehicle}$0",
             "rightLabel": "SQF Command",
             "type": "function",
             "descriptionMoreURL": "http://community.bistudio.com/wiki/weaponsItems"
           }, {
-            "description": "Returns an array with subarrays contains class names and also names of connected items of all the vehicle's cargo weapons like [['arifle_MX_ACO_pointer_F','','acc_pointer_IR','optic_Aco',['30Rnd_65x39_caseless_mag',29],'bipod_01_F_blk']].",
+            "description": "Returns an array with subarrays contains class names and also names of connected items of all the vehicle's cargo weapons in weaponsItems format. If weapon has no magazine, an empty array [] is returned instead of magazine info.",
             "leftLabel": "(Array) = ",
             "snippet": "weaponsItemsCargo ${1:vehicle}$0",
             "rightLabel": "SQF Command",
