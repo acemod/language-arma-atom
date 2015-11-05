@@ -55,6 +55,6 @@ scrapeURL(URL_FNC, (err, fncs) => {
     }
   }
 
-  write(OUTPUT_FILE, JSON.stringify(data, null, 2), 'utf-8')
+  write(OUTPUT_FILE, JSON.stringify(data, null, 2))
   console.log(chalk.green(`Done, created ${OUTPUT_FILE}`))
 })
