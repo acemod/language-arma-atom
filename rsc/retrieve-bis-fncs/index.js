@@ -28,10 +28,10 @@ let parseMainTable = (html, callback) => {
       let descriptionMoreURL = URL_BASE + $(this).attr('href').trim()
       ret.push({
         text,
-        descriptionMoreURL,
         rightLabel: 'BIS Function',
         type: 'function',
-        description: ''
+        description: '',
+        descriptionMoreURL
       })
     })
   })
