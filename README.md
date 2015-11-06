@@ -10,11 +10,11 @@ Support for the following file types used by the Real Virtuality engine has been
 - ext
 - cfg
 
-### Syntax highlighting
+### Syntax Highlighting
 
 Syntax highlighting for all functions and script commands by Bohemia Interactive is supported. Next to that, functions and macros from CBA and ACE3 projects are also supported.
 
-![Syntax highlighting](rsc/images/syntax_highlighting.png)
+![Syntax Highlighting](rsc/images/syntax_highlighting.png)
 
 ### Autocomplete
 
