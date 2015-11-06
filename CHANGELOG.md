@@ -1,5 +1,6 @@
 ## 2.0.0
-- Added: Open RPT File command - @simon84
+- Added: Open Latest RPT File command - @simon84
+- Added: Build Project tool shortcuts - @jokoho48 @mikematrix @jonpas
 - Added: BIS and CBA functions to autocomplete - @simon84
 - Added: URL, Label, Type and Description to all commands - @simon84
 - Added: Arma Config (ext, cpp, hpp) support to autocomplete - @jonpas @simon84
@@ -9,7 +10,10 @@
 - Changed: Pre-Processor Definitions to autocomplete - @jonpas
 - Changed: Streamlined snippet names - @jonpas
 - Fixed: ECSTRING Macro typo - @jonpas
+- Fixed: Missing magic variable "paramsArray"
+- Removed: Toggle command - @jonpas
 - (Dev) Added: BI Community Wiki command parser Python script - @simon84
+- (Dev) Added: BI Community Wiki functions parser Node.js script - @Cuel
 - (Dev) Added: CBA Wiki function parser Python script - @simon84
 
 ## 1.0.1
