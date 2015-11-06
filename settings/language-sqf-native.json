@@ -6,9 +6,12 @@
           "selector": ".variable",
           "typePriority": 3,
           "suggestions": [
-            "_forEachIndex",
             "_this",
-            "_x"
+            "thisTrigger",
+            "thisList",
+            "_forEachIndex",
+            "_x",
+            "paramsArray"
           ]
         },
         "value": {

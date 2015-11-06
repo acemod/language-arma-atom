@@ -1,0 +1,22 @@
+{
+  "name": "bi-fnc-scraper",
+  "version": "1.0.0",
+  "description": "Parses BI functions from BIKI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bi",
+    "functions",
+    "bohemia",
+    "biki"
+  ],
+  "author": "Cuel",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^1.1.1",
+    "cheerio": "^0.19.0",
+    "request": "^2.65.0"
+  }
+}

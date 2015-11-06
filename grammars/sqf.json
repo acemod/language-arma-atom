@@ -98,7 +98,7 @@
     },
     {
       "name": "variable.language.sqf",
-      "match": "\\b(?i:_?this|thisTrigger|thisList|_forEachIndex|_x)\\b"
+      "match": "\\b(?i:_?this|thisTrigger|thisList|_forEachIndex|_x|paramsArray)\\b"
     },
     {
       "name": "variable.other.sqf",
