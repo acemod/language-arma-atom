@@ -10,7 +10,7 @@
 - Changed: Pre-Processor Definitions to autocomplete - @jonpas
 - Changed: Streamlined snippet names - @jonpas
 - Fixed: ECSTRING Macro typo - @jonpas
-- Fixed: Missing magic variable "paramsArray"
+- Fixed: Missing magic variable "paramsArray" - @jonpas
 - Removed: Toggle command - @jonpas
 - (Dev) Added: BI Community Wiki command parser Python script - @simon84
 - (Dev) Added: BI Community Wiki functions parser Node.js script - @Cuel
