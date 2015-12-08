@@ -1,5 +1,5 @@
 {
-  ".source.sqf, .source.arma.cfg, .source.cpp, .source.hpp": {
+  ".source.sqf, .source.arma.cfg": {
     "autocomplete": {
       "symbols": {
         "macro-ace3": {
