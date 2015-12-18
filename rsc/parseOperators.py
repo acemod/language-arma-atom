@@ -14,7 +14,7 @@ typeExpr = r'(' + '|'.join(sqfTypes)+')'
 arrayExpr = r'(\[[^=\n]*\])'
 strExpr = r'(".*?")'
 paramExpr = arrayExpr+'|'+strExpr+'|[\w_\-0-9()]+'
-opExpr = r'([|&+\-><!%*/\^:]{1,2}|==|<=|>=|!=|[a-zA-Z0-9]+)'
+opExpr = r'([|&+\-><!%*/\^:]{1,2}|==|<=|>=|!=|[a-zA-Z0-9_]+)'
 
 data = {};
 with open('bi-wiki-operator.json', 'r') as f:
