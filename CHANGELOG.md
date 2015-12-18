@@ -1,3 +1,7 @@
+## 2.1.0
+- Added: New BIS commands - @simon84
+- Added: headerfiles to armaconfig - @jokoho48
+
 ## 2.0.0
 - Added: Open Latest RPT File command - @simon84
 - Added: Build Project tool shortcuts - @jokoho48 @mikematrix @jonpas
