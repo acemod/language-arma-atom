@@ -9,7 +9,7 @@ describe "SQF grammar", ->
       grammar = atom.grammars.grammarForScopeName("source.sqf")
 
   it "parses the grammar", ->
-    expect(grammar).toBeDefined()
+    expect(grammar).toBeTruthy()
     expect(grammar.scopeName).toBe "source.sqf"
 
   it "tokenizes multi-line strings", ->
