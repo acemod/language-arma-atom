@@ -1,6 +1,7 @@
 ## 2.1.0
-- Added: New BIS commands - @simon84
-- Added: headerfiles to armaconfig - @jokoho48
+- Added: Support for .h file type to Arma Config - @jokoho48
+- Updated: BIS commands from Arma 3 (1.54) - @simon84
+- (Dev) Updated: BI Community Wiki command parser to Python 3 - @simon84
 
 ## 2.0.0
 - Added: Open Latest RPT File command - @simon84
