@@ -11,6 +11,16 @@
   ],
   "patterns": [
     {
+      "name": "string.single.sqf",
+      "begin": "'",
+      "end": "'"
+    },
+    {
+      "name": "string.double.sqf",
+      "begin": "\"",
+      "end": "\""
+    },
+    {
       "include": "source.cpp"
     }
   ]
