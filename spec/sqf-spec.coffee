@@ -1,36 +1,28 @@
+util = require('util')
+
 describe "SQF grammar", ->
   grammar = null
+  workspaceElement = atom.views.getView(atom.workspace)
 
-  beforeEach ->
-    atom.project.setPaths([path.join(__dirname, 'sample')])
-    workspaceElement = atom.views.getView(atom.workspace)
+#  executeCommand = (callback) ->
+#    atom.commands.dispatch(workspaceElement, 'language-arma-atom:toggle')
+#    waitsForPromise ->
+#      activationPromise
+#    grammar = atom.grammars.grammarForScopeName("source.sqf")
+#    runs(callback)
 
-    ## Open our sample init.sqf file
-    waitsForPromise ->
-      atom.workspace.open('init.sqf')
-
+#  beforeEach ->
     ## active our sqf package
-    #waitsForPromise ->
-    #  atom.packages.activatePackage("language-arma-atom")
+#    activationPromise  = atom.packages.activatePackage("language-arma-atom")
 
-    runs ->
-      activationPromise = atom.packages.activatePackage('language-arma-atom')
-      activationPromise.fail (reason) ->
-        throw reason
+#  it "parses the grammar", ->
+#    executeCommand >
+#      expect(grammar).toBeDefined()
+#      expect(grammar.scopeName).toBe "source.sqf"
 
-      grammar = atom.grammars.grammarForScopeName("source.sqf")
-
-  it "parses the grammar", ->
-    expect(grammar).toBeTruthy()
-    expect(grammar.scopeName).toBe "source.sqf"
-
-  it "tokenizes multi-line strings", ->
-    tokens = grammar.tokenizeLines('"1\\\n2"')
-
-    expect(tokens[0][0].value).toBe '"'
-    expect(tokens[0][0].scopes).toEqual ['source.sqf', 'string.quoted.double.single-line.sqf', 'punctuation.definition.string.begin.sqf']
-    expect(tokens[0][1].value).toBe '1'
-    expect(tokens[0][1].scopes).toEqual ['source.sqf', 'string.quoted.double.single-line.sqf']
-    expect(tokens[0][2].value).toBe '\\'
-    expect(tokens[0][2].scopes).toEqual ['source.sqf', 'string.quoted.double.single-line.sqf', 'constant.character.escape.newline.sqf']
-    expect(tokens[0][3]).not.toBeDefined()
+#  it "tokenizes multi-line strings", ->
+#    executeCommand >
+#      tokens = grammar.tokenizeLines('"12"')
+#      expect(tokens[0][0].value).toBe '"'
+#      expect(tokens[0][1].value).toBe '12'
+#      expect(tokens[0][2].value).toBe '"'
