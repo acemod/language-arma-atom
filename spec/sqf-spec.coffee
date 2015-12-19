@@ -2,10 +2,22 @@ describe "SQF grammar", ->
   grammar = null
 
   beforeEach ->
+    atom.project.setPaths([path.join(__dirname, 'sample')])
+    workspaceElement = atom.views.getView(atom.workspace)
+
+    ## Open our sample init.sqf file
     waitsForPromise ->
-      atom.packages.activatePackage("language-arma-atom")
+      atom.workspace.open('init.sqf')
+
+    ## active our sqf package
+    #waitsForPromise ->
+    #  atom.packages.activatePackage("language-arma-atom")
 
     runs ->
+      activationPromise = atom.packages.activatePackage('language-arma-atom')
+      activationPromise.fail (reason) ->
+        throw reason
+
       grammar = atom.grammars.grammarForScopeName("source.sqf")
 
   it "parses the grammar", ->
