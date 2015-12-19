@@ -1,3 +1,7 @@
+## 2.1.1
+- Fixed: Missing BIS commands containing underscores - @simon84
+- Fixed: Syntax highlighting for strings ending with backslash - @simon84
+
 ## 2.1.0
 - Added: Support for .h file type to Arma Config - @jokoho48
 - Updated: BIS commands from Arma 3 (1.54) - @simon84
