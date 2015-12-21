@@ -7,7 +7,7 @@ import re
 params = {'format': 'json',
           'action': 'query',
           'list': 'categorymembers',
-          'cmtitle': 'Category:Scripting_Commands_Arma_3',
+          'cmtitle': 'Category:Scripting_Commands',
           'cmtype':'page',
           'cmlimit':500,
           'cmcontinue':0}
@@ -31,8 +31,8 @@ params = {'format': 'json',
 blacklist = [
 "a = b",
 "for",
-"in",
-"switch"]
+"switch",
+"switch do"]
 
 output = [];
 
