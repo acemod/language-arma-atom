@@ -7,13 +7,13 @@ import string
 import urllib
 #h = HTMLParser.HTMLParser()
 
-sqfTypes = ['Array','Boolean','Group','Number','Object','Side','String','Code','Config','Control','Display','Script','Structured Text','Task','Team Member','Namespace','Trans','Orient','Target','Vector','Editor Object','Any Value','Anything','Nothing','Void','If Type','While Type','Switch Type','For Type','Waypoint','Location','PositionAGL','PositionATL','PositionASLW','Color']
-sqfTypeSub = {'Waypoint': 'Array','PositionAGL': 'Array', 'PositionASLW': 'Array', 'PositionATL': 'Array','Color': 'Array'}
+sqfTypes = ['Array','Boolean','Bool','Group','Number','Object','Side','String','Code','Config','Control','Display','Script','Structured Text','Task','Team Member','Namespace','Trans','Orient','Target','Vector','Editor Object','Any Value','Anything','Any','Nothing','Void','If Type','While Type','Switch Type','For Type','Waypoint','Location','PositionAGL','PositionATL','PositionASLW','Color','Position','Eden Entity']
+sqfTypeSub = {'Waypoint': 'Array','PositionAGL': 'Array', 'PositionASLW': 'Array', 'PositionATL': 'Array','Color': 'Array','Any': 'Any Value','Bool':'Boolean'}
 
 typeExpr = r'(' + '|'.join(sqfTypes)+')'
 arrayExpr = r'(\[[^=\n]*\])'
 strExpr = r'(".*?")'
-paramExpr = arrayExpr+'|'+strExpr+'|[\w_\-0-9()]+'
+paramExpr = arrayExpr+'|'+strExpr+'|[\w_\-0-9()]+|for /\.\.\./'
 opExpr = r'([|&+\-><!%*/\^:]{1,2}|==|<=|>=|!=|[a-zA-Z0-9_]+)'
 
 data = {};
@@ -36,7 +36,6 @@ for cmd in data:
     cmdTemplateAutocomplete['description'] = re.sub(r'(<[^<]+?>)','',cmd['description']).strip()
     cmdTemplateAutocomplete['description'] = str(html.unescape(cmdTemplateAutocomplete['description']))
     
-
     syntax = re.sub(r'(<[^<]+?>)','',cmd['syntax']).strip()
     syntax = re.sub(r'(&#160;|   ).*','',syntax)
     syntax = str(html.unescape(syntax))
@@ -64,7 +63,7 @@ for cmd in data:
     params = str(html.unescape(params))
 
     params = params + '\n'
-    paramListExpr = r'(?P<name>'+paramExpr+')\s*(\(Optional\))?\s*[:]\s*(?P<type>('+typeExpr+'(,\s*| or )?)+)';
+    paramListExpr = r'(?P<name>'+paramExpr+')\s*(\(Optional\))?\s*[:]\s*(\([^)]+\))?\s*(?P<type>('+typeExpr+'(,\s*| or )?)+)';
     paramRegex = re.search(paramListExpr,params)
     parameters = {}
     parametersR = []
@@ -162,7 +161,7 @@ for cmd in data:
     else:
         cmdTemplateAutocomplete['text'] = cmdTemplateParser['op']
         
-    if re.match(r"[a-zA-Z0-9]+",cmdTemplateParser['op']):
+    if re.match(r"[a-zA-Z0-9_]+",cmdTemplateParser['op']):
         outputSyntaxStr.append(cmdTemplateParser['op'])
         
 
@@ -186,7 +185,7 @@ autocompleteDict = {
 };
 
 with open('language-sqf-native-commands.json', 'w') as f:
-    json.dump(autocompleteDict,f)
+    json.dump(autocompleteDict,f,indent=4)
     
 with open('syntax_cmd_string.json', 'w') as f:
     f.write('|'.join(outputSyntaxStr))
