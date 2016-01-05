@@ -10,6 +10,7 @@
   ],
   "activationCommands": {
     "atom-workspace": [
+      "language-arma-atom:toggle",
       "language-arma-atom:open-latest-RPT-file",
       "language-arma-atom:build-dev",
       "language-arma-atom:build-release"
