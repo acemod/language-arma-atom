@@ -138,6 +138,13 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_addVirtualItemCargo"
             },
             {
+              "text": "BIS_fnc_garage",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_garage"
+            },
+            {
               "text": "BIS_fnc_addVirtualMagazineCargo",
               "rightLabel": "BIS Function",
               "type": "function",
