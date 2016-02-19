@@ -9,23 +9,30 @@ const URL_BASE = 'http://community.bistudio.com'
 const URL_FNC = `${URL_BASE}/wiki/Category:Arma_3:_Functions`
 const OUTPUT_FILE = normalize(`${__dirname}/../../settings/language-sqf-functions-bis.json`)
 
-let scrapeURL = (siteUrl, callback) => {
-  request(siteUrl, (err, res, html) => {
-    if (err) return callback(err)
-    if (res.statusCode === 200) parseMainTable(html, callback)
-    else callback(new Error(`Did not get expected status code (200) for URL ${siteUrl}, was ${res.statusCode}`))
+let scrapeURL = (siteUrl) => {
+  return new Promise((resolve, reject) => {
+    request(siteUrl, (err, res, html) => {
+      if (err) return reject(err)
+      if (res.statusCode !== 200) {
+        return reject(new Error(`Wrong HTTP code ${res.statusCode} for URL ${siteUrl}, expected 200`))
+      }
+
+      resolve(html)
+    })
   })
 }
 
-let parseMainTable = (html, callback) => {
+let parseMainTable = (html) => {
   let $ = cheerio.load(html)
   let root = $('#mw-pages table').first()
   let ret = []
 
   root.find('h3').each(function () {
     $(this).next().find('li a[href]').each(function () {
-      let text = $(this).attr('title').trim().replace(/\s/g, '_')
-      let descriptionMoreURL = URL_BASE + $(this).attr('href').trim()
+      let $this = $(this)
+      let text = $this.attr('title').trim().replace(/\s/g, '_')
+      let descriptionMoreURL = URL_BASE + $this.attr('href').trim()
+
       ret.push({
         text,
         rightLabel: 'BIS Function',
@@ -36,11 +43,12 @@ let parseMainTable = (html, callback) => {
     })
   })
 
-  callback(null, ret)
+  return ret
 }
 
-scrapeURL(URL_FNC, (err, fncs) => {
-  if (err) throw err
+scrapeURL(URL_FNC)
+.then(html => {
+  let fncs = parseMainTable(html)
   console.log(chalk.green(`Found ${fncs.length} functions`))
 
   let data = {
@@ -57,4 +65,7 @@ scrapeURL(URL_FNC, (err, fncs) => {
 
   write(OUTPUT_FILE, JSON.stringify(data, null, 2))
   console.log(chalk.green(`Done, created ${OUTPUT_FILE}`))
+})
+.catch((err) => {
+  console.log(chalk.red(err))
 })
