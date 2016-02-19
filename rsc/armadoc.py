@@ -7,18 +7,19 @@ import re
 params = {'format': 'json',
           'action': 'query',
           'list': 'categorymembers',
-          'cmtitle': 'Category:Scripting_Commands_Arma_3',
+          'cmtitle': 'Category:Scripting_Commands',
           'cmtype':'page',
           'cmlimit':500,
           'cmcontinue':0}
-f = urllib.urlopen("https://community.bistudio.com/wikidata/api.php?%s" % urllib.urlencode(params))
-content = json.loads(f.read());
+#f = urllib.urlopen("https://community.bistudio.com/wikidata/api.php?%s" % urllib.urlencode(params))
+f = urllib.request.urlopen("https://community.bistudio.com/wikidata/api.php?%s" % urllib.parse.urlencode(params))
+content = json.loads(f.read().decode('utf-8'));
 data = []
-while content.has_key('query-continue'):
+while 'query-continue' in content:
     data = data + content['query']['categorymembers']
     params['cmcontinue'] = content['query-continue']['categorymembers']['cmcontinue']
-    f = urllib.urlopen("https://community.bistudio.com/wikidata/api.php?%s" % urllib.urlencode(params))
-    content = json.loads(f.read());
+    f = urllib.request.urlopen("https://community.bistudio.com/wikidata/api.php?%s" % urllib.parse.urlencode(params))
+    content = json.loads(f.read().decode('utf-8'));
 
 data = data + content['query']['categorymembers']
 
@@ -30,22 +31,23 @@ params = {'format': 'json',
 blacklist = [
 "a = b",
 "for",
-"in",
-"switch"]
+"switch",
+"switch do"]
 
 output = [];
 
 for item in data:
     if item['title'] not in blacklist:
-        print item['title']
+        print (item['title'])
         params['pageid'] = item['pageid']
-        f = urllib.urlopen("https://community.bistudio.com/wikidata/api.php?%s" % urllib.urlencode(params))
-        content = json.loads(f.read())['parse']
-        text = content['text']['*'].encode("ascii", "ignore")
+        #f = urllib.urlopen("https://community.bistudio.com/wikidata/api.php?%s" % urllib.urlencode(params))
+        f = urllib.request.urlopen("https://community.bistudio.com/wikidata/api.php?%s" % urllib.parse.urlencode(params))
+        content = json.loads(str(f.read().decode()))['parse']
+        text = str(content['text']['*'])
         rawText = text;
 
         description = ''
-        description = re.search(r"<dt>Description:</dt>\s+<dd>(.+?)</dd>",text,re.DOTALL|re.MULTILINE).group(1);
+        description = re.search(r"<dt>Description:</dt>[\s]+<dd>(.+?)</dd>",text,re.DOTALL|re.MULTILINE).group(1);
         text = re.sub(r"(<dt>Description:</dt>\s+<dd>.+?</dd>)",'',text)
         syntaxRegex = re.search(r'<dt>Syntax:</dt>\s+<dd>(.+?)</dd>',text,re.DOTALL|re.MULTILINE)
         while syntaxRegex:

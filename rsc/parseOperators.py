@@ -2,19 +2,19 @@ __author__ = 'Simon'
 
 import json
 import re
-import HTMLParser
+import html
 import string
 import urllib
-h = HTMLParser.HTMLParser()
+#h = HTMLParser.HTMLParser()
 
-sqfTypes = ['Array','Boolean','Group','Number','Object','Side','String','Code','Config','Control','Display','Script','Structured Text','Task','Team Member','Namespace','Trans','Orient','Target','Vector','Editor Object','Any Value','Anything','Nothing','Void','If Type','While Type','Switch Type','For Type','Waypoint','Location','PositionAGL','PositionATL','PositionASLW','Color']
-sqfTypeSub = {'Waypoint': 'Array','PositionAGL': 'Array', 'PositionASLW': 'Array', 'PositionATL': 'Array','Color': 'Array'}
+sqfTypes = ['Array','Boolean','Bool','Group','Number','Object','Side','String','Code','Config','Control','Display','Script','Structured Text','Task','Team Member','Namespace','Trans','Orient','Target','Vector','Editor Object','Any Value','Anything','Any','Nothing','Void','If Type','While Type','Switch Type','For Type','Waypoint','Location','PositionAGL','PositionATL','PositionASLW','Color','Position','Eden Entity']
+sqfTypeSub = {'Waypoint': 'Array','PositionAGL': 'Array', 'PositionASLW': 'Array', 'PositionATL': 'Array','Color': 'Array','Any': 'Any Value','Bool':'Boolean'}
 
-typeExpr = r'(' + string.join(sqfTypes,'|')+')'
+typeExpr = r'(' + '|'.join(sqfTypes)+')'
 arrayExpr = r'(\[[^=\n]*\])'
 strExpr = r'(".*?")'
-paramExpr = arrayExpr+'|'+strExpr+'|[\w_\-0-9()]+'
-opExpr = r'([|&+\-><!%*/\^:]{1,2}|==|<=|>=|!=|[a-zA-Z]+)'
+paramExpr = arrayExpr+'|'+strExpr+'|[\w_\-0-9()]+|for /\.\.\./'
+opExpr = r'([|&+\-><!%*/\^:]{1,2}|==|<=|>=|!=|[a-zA-Z0-9_]+)'
 
 data = {};
 with open('bi-wiki-operator.json', 'r') as f:
@@ -23,6 +23,7 @@ with open('bi-wiki-operator.json', 'r') as f:
 
 outputParser = {'null':{},'unary':{},'binary':{}};
 outputAutocomplete = [];
+outputSyntaxStr = [];
 
 for cmd in data:
     cmdTemplateParser = {};
@@ -30,18 +31,17 @@ for cmd in data:
     cmdTemplateAutocomplete['rightLabel'] = 'SQF Command'
     cmdTemplateAutocomplete['type'] = 'function'
     cmdTemplateAutocomplete['leftLabel'] = ''
-    cmdTemplateAutocomplete['descriptionMoreURL'] = 'http://community.bistudio.com/wiki/' + urllib.quote(str(cmd['title']))
+    cmdTemplateAutocomplete['descriptionMoreURL'] = 'http://community.bistudio.com/wiki/' + urllib.parse.quote(str(cmd['title']))
     
     cmdTemplateAutocomplete['description'] = re.sub(r'(<[^<]+?>)','',cmd['description']).strip()
-    cmdTemplateAutocomplete['description'] = h.unescape(cmdTemplateAutocomplete['description']).encode('ascii', 'ignore')
+    cmdTemplateAutocomplete['description'] = str(html.unescape(cmdTemplateAutocomplete['description']))
     
-
     syntax = re.sub(r'(<[^<]+?>)','',cmd['syntax']).strip()
     syntax = re.sub(r'(&#160;|   ).*','',syntax)
-    syntax = h.unescape(syntax).encode('ascii', 'ignore')
+    syntax = str(html.unescape(syntax))
 
     returnValueStr = re.sub(r'(<[^<]+?>)','',cmd['returnValue']).strip()
-    returnValueStr = h.unescape(returnValueStr).encode('ascii', 'ignore')
+    returnValueStr = str(html.unescape(returnValueStr))
     returnValue = []
     typeListRegex = re.search(typeExpr,returnValueStr)
 
@@ -54,16 +54,16 @@ for cmd in data:
         typeListRegex = re.search(typeExpr,returnValueStr)
         
     if ((not 'Nothing' in returnValue) and len(returnValue)==1) or len(returnValue)>1:
-        cmdTemplateAutocomplete['leftLabel'] = '('+string.join(returnValue,', ')+') = '
+        cmdTemplateAutocomplete['leftLabel'] = '('+', '.join(returnValue)+') = '
 
     cmdTemplateParser['type'] = returnValue;
 
     params = re.sub(r'</dd>','\n',cmd['parameter']).strip()
     params = re.sub(r'(<[^<]+?>)','',params).strip()
-    params = h.unescape(params).encode('ascii', 'ignore')
+    params = str(html.unescape(params))
 
     params = params + '\n'
-    paramListExpr = r'(?P<name>'+paramExpr+')\s*(\(Optional\))?\s*[:]\s*(?P<type>('+typeExpr+'(,\s*| or )?)+)';
+    paramListExpr = r'(?P<name>'+paramExpr+')\s*(\(Optional\))?\s*[:]\s*(\([^)]+\))?\s*(?P<type>('+typeExpr+'(,\s*| or )?)+)';
     paramRegex = re.search(paramListExpr,params)
     parameters = {}
     parametersR = []
@@ -87,7 +87,7 @@ for cmd in data:
         paramRegex = re.search(paramListExpr,params)
 
 
-    sParaExpr = r'((?i)'+string.join(parametersR,'|')+')'
+    sParaExpr = r'((?i)'+'|'.join(parametersR)+')'
     syntaxFieldsRegex = re.search(r'('+typeExpr+'\s+=\s+)?(?P<left>'+sParaExpr+'|'+arrayExpr+'|'+strExpr+')\s+(?P<op>'+opExpr+')\s+(\()?(?P<right>'+sParaExpr+'|'+arrayExpr+'|'+strExpr+')(\))?',syntax)
     snippet = ''
     
@@ -105,14 +105,14 @@ for cmd in data:
         snippet = snippet.strip()+"$0"; 
         
         
-        if parameters.has_key(syntaxFieldsRegex.group('left')):
+        if syntaxFieldsRegex.group('left') in parameters:
             cmdTemplateParser['left'] = parameters[syntaxFieldsRegex.group('left')]['type']
         if re.match(strExpr,syntaxFieldsRegex.group('left')):
             cmdTemplateParser['left'] = ['String']
         if re.match(arrayExpr,syntaxFieldsRegex.group('left')):
             cmdTemplateParser['left'] = ['Array']
             
-        if parameters.has_key(syntaxFieldsRegex.group('right')):
+        if syntaxFieldsRegex.group('right') in parameters:
             cmdTemplateParser['right'] = parameters[syntaxFieldsRegex.group('right')]['type']
         if re.match(strExpr,syntaxFieldsRegex.group('right')):
             cmdTemplateParser['right'] = ['String']
@@ -120,7 +120,7 @@ for cmd in data:
             cmdTemplateParser['right'] = ['Array']
 
 
-    if not cmdTemplateParser.has_key('optype') and len(parametersR)>0:
+    if not ('optype' in cmdTemplateParser) and len(parametersR)>0:
         syntaxFieldsRegex = re.search(r'('+typeExpr+'\s+=\s+)?(?P<op>'+opExpr+')\s+(\()?(?P<right>'+sParaExpr+'|'+arrayExpr+'|'+strExpr+')(\))?',syntax)
         if syntaxFieldsRegex:
             cmdTemplateParser['optype'] = 'unary'
@@ -135,7 +135,7 @@ for cmd in data:
             
             snippet = snippet.strip()+"$0";             
             
-            if parameters.has_key(syntaxFieldsRegex.group('right')):
+            if syntaxFieldsRegex.group('right') in parameters:
                 cmdTemplateParser['right'] = parameters[syntaxFieldsRegex.group('right')]['type']
             if re.match(strExpr,syntaxFieldsRegex.group('right')):
                 cmdTemplateParser['right'] = ['String']
@@ -145,13 +145,13 @@ for cmd in data:
 
 
 
-    if not cmdTemplateParser.has_key('optype'):
+    if not ('optype' in cmdTemplateParser):
         syntaxFieldsRegex = re.search(r'('+typeExpr+'\s+=\s+)?(?P<op>'+opExpr+')',syntax)
         if syntaxFieldsRegex:
             cmdTemplateParser['optype'] = 'null'
             cmdTemplateParser['op'] = syntaxFieldsRegex.group('op')
 
-    if not outputParser[cmdTemplateParser['optype']].has_key(cmdTemplateParser['op']):
+    if not (cmdTemplateParser['op'] in outputParser[cmdTemplateParser['optype']]):
         outputParser[cmdTemplateParser['optype']][cmdTemplateParser['op'].lower()] = []
         
     if cmdTemplateParser['optype']!='null':
@@ -161,7 +161,9 @@ for cmd in data:
     else:
         cmdTemplateAutocomplete['text'] = cmdTemplateParser['op']
         
-    
+    if re.match(r"[a-zA-Z0-9_]+",cmdTemplateParser['op']):
+        outputSyntaxStr.append(cmdTemplateParser['op'])
+        
 
     outputParser[cmdTemplateParser['optype']][cmdTemplateParser['op'].lower()].append(cmdTemplateParser)
     outputAutocomplete.append(cmdTemplateAutocomplete)
@@ -183,6 +185,9 @@ autocompleteDict = {
 };
 
 with open('language-sqf-native-commands.json', 'w') as f:
-    json.dump(autocompleteDict,f)
+    json.dump(autocompleteDict,f,indent=4)
+    
+with open('syntax_cmd_string.json', 'w') as f:
+    f.write('|'.join(outputSyntaxStr))
 
 

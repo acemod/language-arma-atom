@@ -70,7 +70,7 @@
   },
 
 
-  ".source.arma.cfg, .source.cpp, .source.hpp": {
+  ".source.arma.cfg": {
     "ACE3 Settings Entry": {
       "prefix": "settings_entry_ace",
       "body": "class GVAR(${1:name}) {\n    displayName = CSTRING(${2:stringDisplayName});\n    description = CSTRING(${3:stringDescription});\n    category = CSTRING(${4:category});\n    isClientSettable = ${5:[0/1]};\n    typeName = \"${6:[BOOL/SCALAR/STRING/ARRAY/COLOR]}\";\n    value = ${7:[NUMBER]};\n};",

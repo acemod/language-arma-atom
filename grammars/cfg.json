@@ -6,9 +6,20 @@
     "sqm",
     "ext",
     "cpp",
-    "hpp"
+    "hpp",
+    "h"
   ],
   "patterns": [
+    {
+      "name": "string.single.sqf",
+      "begin": "'",
+      "end": "'"
+    },
+    {
+      "name": "string.double.sqf",
+      "begin": "\"",
+      "end": "\""
+    },
     {
       "include": "source.cpp"
     }
