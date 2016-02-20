@@ -43,7 +43,7 @@ let parseFunctionsFromMainTable = (html) => {
 
       // Skip BIS_fnc_module**, BIS_fnc_VRCourse and duplicates
       let name = text.substr(8)
-      if (name.includes('module') || name.includes('VRCourse') || added.has(text.toLowerCase())) return
+      if (name.startsWith('module') || name.startsWith('VRCourse') || added.has(text.toLowerCase())) return
       added.add(text.toLowerCase())
 
       let descriptionMoreURL = URL_BASE + $this.attr('href').trim()
