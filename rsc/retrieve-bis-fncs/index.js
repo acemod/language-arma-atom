@@ -146,12 +146,12 @@ const ELLIPSIS = ` ${String.fromCharCode(8230)}`
 const REG_LAST_WORD = /\W*\s(\S)*$/
 const REG_DO_NOT_INCLUDE = /www\.|http:|parameters?\s*:|parameter\(s\)?\s*:|arguments?\s*:|modes?\s*:|remarks?\s*:/i
 let findDescriptionEnd = str => {
-  let i = findFirstDot(str)
-  let idxParams = str.search(REG_DO_NOT_INCLUDE)
+  let dotIdx = findFirstDot(str)
+  let noInclude = str.search(REG_DO_NOT_INCLUDE)
 
   let end = str.length
-  if (idxParams > -1) end = idxParams
-  if (i !== -1 && (i < idxParams || idxParams === -1)) end = i
+  if (noInclude > -1) end = noInclude
+  if (dotIdx !== -1 && (dotIdx < noInclude || noInclude === -1)) end = dotIdx
 
   let newStr = str.slice(0, end).trim()
   if (newStr.length > MAX_DESC_LENGTH) return newStr.slice(0, MAX_DESC_LENGTH).replace(REG_LAST_WORD, ELLIPSIS)
