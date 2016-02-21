@@ -204,10 +204,10 @@ scrapeURL(URL_FNC)
   Promise.all(scrapeFunctions(fncs))
   .then(() => {
     // Make sure descriptions ends with a dot
-    let isLastAChar = /[a-zA-Z\d\)]$/
+    let addDot = /[a-zA-Z\d\)]$/
     fncs.forEach(v => {
       let desc = v.description
-      if (desc.length && isLastAChar.test(desc)) {
+      if (desc.length && addDot.test(desc)) {
         v.description = `${desc}.`
       }
     })
