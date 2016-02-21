@@ -229,12 +229,12 @@ scrapeURL(URL_FNC)
     // write('./out.txt', d)
 
     write(OUTPUT_FILE, JSON.stringify(data, null, 2))
-    console.log(chalk.green(`\nDone, created ${OUTPUT_FILE}`))
+    console.info(chalk.green(`\nDone, created ${OUTPUT_FILE}`))
   })
   .catch(err => {
-    console.log(chalk.red(err))
+    console.error(chalk.red(err))
   })
 })
 .catch((err) => {
-  console.log(chalk.red(err))
+  console.error(chalk.red(err))
 })
