@@ -1436,7 +1436,7 @@
               "text": "BIS_fnc_distance2Dsqr",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Distance 2D Squared.",
+              "description": "DEPRECATED, use 'distanceSqr' command.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_distance2Dsqr"
             },
             {
