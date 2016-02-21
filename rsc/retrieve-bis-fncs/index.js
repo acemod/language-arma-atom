@@ -10,11 +10,14 @@ const progressBar = require('progress-bar')
 const URL_BASE = 'http://community.bistudio.com'
 const URL_FNC = `${URL_BASE}/wiki/Category:Arma_3:_Functions`
 const OUTPUT_FILE = normalize(`${__dirname}/../../settings/language-sqf-functions-bis.json`)
+
+const MAX_DESC_LENGTH = 128
 const MAX_REQUEST_RETRIES = 10
+const ELLIPSIS = `${String.fromCharCode(8230)}`
 
 const hardcodedDescriptions = require('./hardcoded_descriptions.json')
 
-// custom agent for max concurrent requests
+// Custom agent for max concurrent requests
 let agent = new http.Agent({maxSockets: 6})
 
 let scrapeURL = (url) => {
@@ -30,6 +33,9 @@ let scrapeURL = (url) => {
   })
 }
 
+/*
+  Extracts all functions from the main index page
+*/
 let parseFunctionsFromMainTable = (html) => {
   let $ = cheerio.load(html)
   let root = $('#mw-pages table').first()
@@ -60,6 +66,9 @@ let parseFunctionsFromMainTable = (html) => {
   return ret
 }
 
+/*
+  HTTP GET for all functions after they are parsed from the main table
+*/
 let scrapeFunctions = (fncs) => {
   let completed = 0
   let expected = fncs.length
@@ -87,6 +96,9 @@ let scrapeFunctions = (fncs) => {
   })
 }
 
+/*
+  HTTP GET for a function, with retry if fail
+*/
 let getFunctionHtml = (url) => {
   return new Promise((resolve, reject) => {
     let tryRequest = (amountAttempts) => {
@@ -106,13 +118,15 @@ let getFunctionHtml = (url) => {
   })
 }
 
+/*
+  Finds the function description inside html, clean it up a bit and try to figure out the format
+*/
 const REG_LF = /\r?\n/g
 const REG_NA = /^n\/a/i
 const REG_CONTAINS_WORD = /[A-Za-z]/
 const REG_PURPOSE = /purpose?\s*:/i
 const REG_DESCRIPTION = /description?\s*:/i
 const REG_COMMENT = /\/\*\*.*|\/\/|\*.*\//g
-
 let parseFunctionDescription = (html) => {
   let $ = cheerio.load(html)
   let element = $('._description').find('dl > dt:contains("Description:")').next('dd')
@@ -141,10 +155,16 @@ let parseFunctionDescription = (html) => {
   return findDescriptionEnd(cleaned)
 }
 
-const MAX_DESC_LENGTH = 128
-const ELLIPSIS = ` ${String.fromCharCode(8230)}`
+/*
+  Figure out the end of a description
+  Can be three things:
+  1) The first dot encountered if it's before any words in REG_DO_NOT_INCLUDE
+  2) The first occurence of a word from REG_DO_NOT_INCLUDE
+  3) MAX_DESC_LENGTH characters (always checked)
+  if > MAX_DESC_LENGTH, replace last word with ellipsis
+*/
 const REG_LAST_WORD = /\W*\s(\S)*$/
-const REG_DO_NOT_INCLUDE = /www\.|http:|parameters?\s*:|parameter\(s\)?\s*:|arguments?\s*:|modes?\s*:|remarks?\s*:/i
+const REG_DO_NOT_INCLUDE = /www\.|http:|example?\s:|parameters?\s*:|parameter\(s\)?\s*:|arguments?\s*:|modes?\s*:|remarks?\s*:/i
 let findDescriptionEnd = str => {
   let dotIdx = findFirstDot(str)
   let noInclude = str.search(REG_DO_NOT_INCLUDE)
@@ -154,11 +174,15 @@ let findDescriptionEnd = str => {
   if (dotIdx !== -1 && (dotIdx < noInclude || noInclude === -1)) end = dotIdx
 
   let newStr = str.slice(0, end).trim()
-  if (newStr.length > MAX_DESC_LENGTH) return newStr.slice(0, MAX_DESC_LENGTH).replace(REG_LAST_WORD, ELLIPSIS)
+  if (newStr.length > MAX_DESC_LENGTH) return newStr.slice(0, MAX_DESC_LENGTH).replace(REG_LAST_WORD, ` ${ELLIPSIS}`)
   return newStr
 }
 
-// ignore i.e and e.g and .,
+/*
+    Finds the first dot in a string
+    ignoring i.e and e.g and .,
+    loop because no lookbehind
+*/
 const BLACKLIST_DOTS = ['.e', '.g', '.,']
 let findFirstDot = str => {
   let idx = -1
@@ -179,6 +203,14 @@ scrapeURL(URL_FNC)
 
   Promise.all(scrapeFunctions(fncs))
   .then(() => {
+    // Make sure descriptions ends with a dot
+    let isLastAChar = /[a-zA-Z]$/
+    fncs.forEach(v => {
+      if (v.description.length && isLastAChar.test(v.description)) {
+        v.description += '.'
+      }
+    })
+
     let data = {
       '.source.sqf': {
         'autocomplete': {
