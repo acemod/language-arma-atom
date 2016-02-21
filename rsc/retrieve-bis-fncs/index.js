@@ -13,7 +13,7 @@ const OUTPUT_FILE = normalize(`${__dirname}/../../settings/language-sqf-function
 
 const MAX_DESC_LENGTH = 128
 const MAX_REQUEST_RETRIES = 10
-const ELLIPSIS = `${String.fromCharCode(8230)}`
+const ELLIPSIS = String.fromCharCode(8230)
 
 const hardcodedDescriptions = require('./hardcoded_descriptions.json')
 
