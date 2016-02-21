@@ -92,7 +92,7 @@
               "text": "BIS_fnc_addScore",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Adds a set amount of points to the score of a unit (MP only)",
+              "description": "Adds a set amount of points to the score of a unit (MP only).",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_addScore"
             },
             {
@@ -491,7 +491,7 @@
               "text": "BIS_fnc_boundingCircle",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Returns size of bounding circle (calculated from X and Y coordinates)",
+              "description": "Returns size of bounding circle (calculated from X and Y coordinates).",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_boundingCircle"
             },
             {
@@ -694,14 +694,14 @@
               "text": "BIS_fnc_counter",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Modify the given counter (create it if doesn't exist)",
+              "description": "Modify the given counter (create it if doesn't exist).",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_counter"
             },
             {
               "text": "BIS_fnc_createLogRecord",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Create diary record in unified \"Log\" subject (create it when it doesn't exist yet)",
+              "description": "Create diary record in unified \"Log\" subject (create it when it doesn't exist yet).",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_createLogRecord"
             },
             {
@@ -1485,7 +1485,7 @@
               "text": "BIS_fnc_drawRespawnPositions",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Draw respawn positions on the map (added by BIS_fnc_addRespawnPosition)",
+              "description": "Draw respawn positions on the map (added by BIS_fnc_addRespawnPosition).",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_drawRespawnPositions"
             },
             {
@@ -1590,7 +1590,7 @@
               "text": "BIS_fnc_effectKilledSecondaries",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Small secondary fuel explosions By Maddmatt for ArmA 2",
+              "description": "Small secondary fuel explosions By Maddmatt for ArmA 2.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_effectKilledSecondaries"
             },
             {
@@ -2542,7 +2542,7 @@
               "text": "BIS_fnc_isCuratorEditable",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Return if given object is editable by player (when he's curator)",
+              "description": "Return if given object is editable by player (when he's curator).",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_isCuratorEditable"
             },
             {
@@ -2556,7 +2556,7 @@
               "text": "BIS_fnc_isForcedCuratorInterface",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Return if curator interface is forced (user cannot leav it by pressing Zeus key)",
+              "description": "Return if curator interface is forced (user cannot leav it by pressing Zeus key).",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_isForcedCuratorInterface"
             },
             {
@@ -2612,7 +2612,7 @@
               "text": "BIS_fnc_isUnitVirtual",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Return if unit is virtual (used for example for Zeus players)",
+              "description": "Return if unit is virtual (used for example for Zeus players).",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_isUnitVirtual"
             },
             {
@@ -3067,7 +3067,7 @@
               "text": "BIS_fnc_moveAction",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Return current move action (used in playAction, playActionNow and switchAction)",
+              "description": "Return current move action (used in playAction, playActionNow and switchAction).",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_moveAction"
             },
             {
@@ -3172,7 +3172,7 @@
               "text": "BIS_fnc_numberText",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Convert a number into string (avoiding scientific notation)",
+              "description": "Convert a number into string (avoiding scientific notation).",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_numberText"
             },
             {
@@ -3193,7 +3193,7 @@
               "text": "BIS_fnc_objectSide",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Returns object side as defined in config (i.e., not affected by dynamic changing)",
+              "description": "Returns object side as defined in config (i.e., not affected by dynamic changing).",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_objectSide"
             },
             {
@@ -3431,7 +3431,7 @@
               "text": "BIS_fnc_playEndMusic",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Play mission end music (when it's nearing the end)",
+              "description": "Play mission end music (when it's nearing the end).",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_playEndMusic"
             },
             {
@@ -3963,7 +3963,7 @@
               "text": "BIS_fnc_roundDir",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Round direction to nearest limit (used for determining cardinal direction)",
+              "description": "Round direction to nearest limit (used for determining cardinal direction).",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_roundDir"
             },
             {
@@ -4054,7 +4054,7 @@
               "text": "BIS_fnc_sceneGetParticipants",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "gets members of group who is in range (_MAXDISTANCE)",
+              "description": "gets members of group who is in range (_MAXDISTANCE).",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_sceneGetParticipants"
             },
             {
@@ -4187,7 +4187,7 @@
               "text": "BIS_fnc_setCuratorVisionModes",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Set which vision modes curator can access Supported modes are: -2: NVG -1: Normal 0,1,.",
+              "description": "Set which vision modes curator can access Supported modes are: -2: NVG -1: Normal 0,1,",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_setCuratorVisionModes"
             },
             {

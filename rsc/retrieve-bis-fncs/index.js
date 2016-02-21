@@ -188,7 +188,7 @@ let findFirstDot = str => {
   let idx = -1
   for (var i = 0; i < str.length; i++) {
     if (str[i] === '.' && BLACKLIST_DOTS.indexOf(str.slice(i, i + 2)) === -1) {
-      idx = i + 1 // include dot
+      idx = i
       break
     }
   }
@@ -204,10 +204,11 @@ scrapeURL(URL_FNC)
   Promise.all(scrapeFunctions(fncs))
   .then(() => {
     // Make sure descriptions ends with a dot
-    let isLastAChar = /[a-zA-Z]$/
+    let isLastAChar = /[a-zA-Z\d\)]$/
     fncs.forEach(v => {
-      if (v.description.length && isLastAChar.test(v.description)) {
-        v.description += '.'
+      let desc = v.description
+      if (desc.length && isLastAChar.test(desc)) {
+        v.description = `${desc}.`
       }
     })
 
