@@ -1,6 +1,6 @@
 'use strict'
 const http = require('http')
-const write = require('fs').writeFileSync
+const write = require('fs').writeFile
 const normalize = require('path').normalize
 const request = require('request')
 const cheerio = require('cheerio')
@@ -9,7 +9,10 @@ const progressBar = require('progress-bar')
 
 const URL_BASE = 'http://community.bistudio.com'
 const URL_FNC = `${URL_BASE}/wiki/Category:Arma_3:_Functions`
-const OUTPUT_FILE = normalize(`${__dirname}/../../settings/language-sqf-functions-bis.json`)
+
+const OUTPUT_FILE_PATH = normalize(`${__dirname}/../../settings/language-sqf-functions-bis.json`)
+const GRAMMAR_FILE_PATH = normalize(`${__dirname}/../../grammars/sqf.json`)
+const GRAMMAR_FILE = require(GRAMMAR_FILE_PATH)
 
 const MAX_DESC_LENGTH = 128
 const MAX_REQUEST_RETRIES = 10
@@ -189,6 +192,38 @@ let findFirstDot = str => {
   return -1
 }
 
+/*
+  Creates syntax highlightning for sqf.json
+*/
+let createSyntaxHighlightString = fncs => {
+  let str = '\\b(?i:BIS_fnc_('
+  let l = fncs.length - 1
+
+  fncs.forEach((fnc, i) => {
+    str += fnc.text.substr(8)
+    if (i < l) str += '|'
+  })
+
+  str += '))\\b'
+  return str
+}
+
+/*
+  Write sqf.json
+*/
+let writeSyntaxHighlightning = str => {
+  GRAMMAR_FILE.patterns.some(pattern => {
+    if (pattern.name === 'support.function.bis.sqf') {
+      pattern.match = str
+      write(GRAMMAR_FILE_PATH, JSON.stringify(GRAMMAR_FILE, null, 2), err => {
+        if (err) throw err
+        console.log(chalk.green('\nWrote grammar file %s'), GRAMMAR_FILE_PATH)
+      })
+      return true
+    }
+  })
+}
+
 /* Main */
 scrapeURL(URL_FNC)
 .then(html => {
@@ -222,8 +257,13 @@ scrapeURL(URL_FNC)
     // let d = fncs.map(v => `${v.text}: ${v.description}`).join('\n')
     // write('./out.txt', d)
 
-    write(OUTPUT_FILE, JSON.stringify(data, null, 2))
-    console.info(chalk.green(`\nDone, created ${OUTPUT_FILE}`))
+    let syntax = createSyntaxHighlightString(fncs)
+    writeSyntaxHighlightning(syntax)
+
+    write(OUTPUT_FILE_PATH, JSON.stringify(data, null, 2), err => {
+      if (err) throw err
+      console.info(chalk.green(`\nDone, created ${OUTPUT_FILE_PATH}`))
+    })
   })
   .catch(err => {
     console.error(chalk.red(err))
