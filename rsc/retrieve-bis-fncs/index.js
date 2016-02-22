@@ -179,20 +179,14 @@ let findDescriptionEnd = str => {
 }
 
 /*
-    Finds the first dot in a string
-    ignoring i.e and e.g and .,
-    loop because no lookbehind
+    Finds the first dot in a string where the char after the dot is space or tab
 */
-const BLACKLIST_DOTS = ['.e', '.g', '.,']
+const REG_VALID_AFTER_DOT = /[ \s\t]/
 let findFirstDot = str => {
-  let idx = -1
   for (var i = 0; i < str.length; i++) {
-    if (str[i] === '.' && BLACKLIST_DOTS.indexOf(str.slice(i, i + 2)) === -1) {
-      idx = i
-      break
-    }
+    if (str[i] === '.' && REG_VALID_AFTER_DOT.test(str[i + 1])) return i
   }
-  return idx
+  return -1
 }
 
 /* Main */

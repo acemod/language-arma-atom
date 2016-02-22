@@ -1051,7 +1051,7 @@
               "text": "BIS_fnc_dbPrint",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Copy Scripted Database content into clipoboard for evaluation.",
+              "description": "Copy Scripted Database content into clipboard for evaluation.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_dbPrint"
             },
             {
@@ -1345,7 +1345,7 @@
               "text": "BIS_fnc_dirIndicator",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Direction indicator.",
+              "description": "Direction indicator.GUI layer for indicator is 17.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_dirIndicator"
             },
             {
@@ -2430,7 +2430,7 @@
               "text": "BIS_fnc_initVirtualUnit",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Initialize virtual unit Disable it, turn the camera upwards and save its correct side.",
+              "description": "Initialize virtual unit. Disable it, turn the camera upwards and save its correct side.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_initVirtualUnit"
             },
             {
@@ -3088,7 +3088,7 @@
               "text": "BIS_fnc_MP",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "this function was obsoleted since 1.",
+              "description": "this function was obsoleted since 1.50; use the engine based commands remoteExec or  remoteExecCall instead.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_MP"
             },
             {
@@ -3361,7 +3361,7 @@
               "text": "BIS_fnc_param",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Load a script parameter.",
+              "description": "DEPRECATED. Use 'param' and 'params'.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_param"
             },
             {
@@ -4187,7 +4187,7 @@
               "text": "BIS_fnc_setCuratorVisionModes",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Set which vision modes curator can access Supported modes are: -2: NVG -1: Normal 0,1,",
+              "description": "Set which vision modes curator can access Supported modes are: -2: NVG -1: Normal 0,1,...: Thermal (number represents type, see …",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_setCuratorVisionModes"
             },
             {
