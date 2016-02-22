@@ -43,7 +43,7 @@ for function in allFunctions:
     outputTemplate['description'] = ''
     outputTemplate['type'] = 'function'
     outputTemplate['descriptionMoreURL'] = fnc_base_url + function[0]
-    print function[1]
+    print(function[1])
     f = urllib.urlopen(outputTemplate['descriptionMoreURL'])
     content = f.read()
     f.close()

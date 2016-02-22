@@ -1,6 +1,6 @@
 __author__ = 'Simon'
 
-import urllib
+import urllib.request
 import json
 import re
 
@@ -11,7 +11,7 @@ params = {'format': 'json',
           'cmtype':'page',
           'cmlimit':500,
           'cmcontinue':0}
-#f = urllib.urlopen("https://community.bistudio.com/wikidata/api.php?%s" % urllib.urlencode(params))
+
 f = urllib.request.urlopen("https://community.bistudio.com/wikidata/api.php?%s" % urllib.parse.urlencode(params))
 content = json.loads(f.read().decode('utf-8'));
 data = []
@@ -80,11 +80,5 @@ for item in data:
 
             syntaxRegex = re.search(r"<dt>Syntax:</dt>\s+<dd>(.+?)</dd>",text,re.DOTALL|re.MULTILINE)
 
-
-
-
-
-
 with open('bi-wiki-operator.json', 'w') as f:
     json.dump(output,f)
-
