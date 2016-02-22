@@ -58,14 +58,14 @@ for item in data:
       returnValue = '';
       returnValueRegex = re.search(r"<dt>Return Value:</dt>\s*(?:<p>)?\s*<dd>(.+?)</dd>",text,re.DOTALL|re.MULTILINE)
       if returnValueRegex:
-          returnValue = returnValueRegex.group(1)
+        returnValue = returnValueRegex.group(1)
 
       text = re.sub(r"(<dt>Return Value:</dt>\s+<dd>.+?</dd>)",'',text,1)
 
       parameter = '';
       parameterRegex = re.search(r'<dt>Parameters:</dt>\s*(.+?)</dl>',text,re.DOTALL|re.MULTILINE)
       if parameterRegex:
-          parameter = parameterRegex.group(1)
+        parameter = parameterRegex.group(1)
       text = re.sub(r"(<dt>Parameters:</dt>\s*(.+?)</dl>)",'',text,1)
 
       command['title'] = str(item['title'])
