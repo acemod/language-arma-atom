@@ -215,7 +215,7 @@ let writeSyntaxHighlightning = str => {
   GRAMMAR_FILE.patterns.some(pattern => {
     if (pattern.name === 'support.function.bis.sqf') {
       pattern.match = str
-      write(GRAMMAR_FILE_PATH, JSON.stringify(GRAMMAR_FILE, null, 2), err => {
+      write(GRAMMAR_FILE_PATH, JSON.stringify(GRAMMAR_FILE, null, 2).replace(/\n/gm, '\r\n'), err => {
         if (err) throw err
         console.log(chalk.green('\nWrote grammar file %s'), GRAMMAR_FILE_PATH)
       })
@@ -260,7 +260,7 @@ scrapeURL(URL_FNC)
     let syntax = createSyntaxHighlightString(fncs)
     writeSyntaxHighlightning(syntax)
 
-    write(OUTPUT_FILE_PATH, JSON.stringify(data, null, 2), err => {
+    write(OUTPUT_FILE_PATH, JSON.stringify(data, null, 2).replace(/\n/gm, '\r\n'), err => {
       if (err) throw err
       console.info(chalk.green(`\nDone, created ${OUTPUT_FILE_PATH}`))
     })
