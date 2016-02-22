@@ -1,8 +1,8 @@
 __author__ = 'Simon'
 
-import urllib.request
 import json
 import re
+import urllib.request
 
 params = {'format': 'json',
           'action': 'query',

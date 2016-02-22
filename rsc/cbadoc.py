@@ -3,9 +3,7 @@ __author__ = 'Simon'
 import json
 import re
 import urllib.request
-from html.parser import HTMLParser
-h = HTMLParser()
-
+import html
 
 fnc_base_url = 'http://cbateam.github.io/CBA_A3/docs/index/'
 fncPrefix = 'CBA_fnc_'
@@ -55,7 +53,7 @@ for function in allFunctions:
 
   descriptionRegex = re.search(r'<h4 class=CHeading>Description</h4>(.*)<h4 class=CHeading>Parameters</h4>',content)
   if descriptionRegex:
-    outputTemplate['description'] = h.unescape(re.sub(r'(<[^<]+?>)','',descriptionRegex.group(1)).strip())
+    outputTemplate['description'] = str(html.unescape(re.sub(r'(<[^<]+?>)','',descriptionRegex.group(1)).strip()))
 
   output.append(outputTemplate)
 

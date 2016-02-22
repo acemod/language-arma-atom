@@ -2,9 +2,9 @@ __author__ = 'Simon'
 
 import json
 import re
+import urllib.parse
 import html
 import string
-import urllib.parse
 
 sqfTypes = ['Array','Boolean','Bool','Group','Number','Object','Side','String','Code','Config','Control','Display','Script','Structured Text','Task','Team Member','Namespace','Trans','Orient','Target','Vector','Editor Object','Any Value','Anything','Any','Nothing','Void','If Type','While Type','Switch Type','For Type','Waypoint','Location','PositionAGL','PositionATL','PositionASLW','Color','Position','Eden Entity']
 sqfTypeSub = {'Waypoint': 'Array','PositionAGL': 'Array', 'PositionASLW': 'Array', 'PositionATL': 'Array','Color': 'Array','Any': 'Any Value','Bool':'Boolean'}
