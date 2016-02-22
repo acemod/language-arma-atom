@@ -40,7 +40,6 @@ for item in data:
     if item['title'] not in blacklist:
         print (item['title'])
         params['pageid'] = item['pageid']
-        #f = urllib.urlopen("https://community.bistudio.com/wikidata/api.php?%s" % urllib.urlencode(params))
         f = urllib.request.urlopen("https://community.bistudio.com/wikidata/api.php?%s" % urllib.parse.urlencode(params))
         content = json.loads(str(f.read().decode()))['parse']
         text = str(content['text']['*'])
@@ -82,3 +81,5 @@ for item in data:
 
 with open('bi-wiki-operator.json', 'w') as f:
     json.dump(output,f)
+
+print("\nExecute parseOperators.py to parse the retrieved information.")

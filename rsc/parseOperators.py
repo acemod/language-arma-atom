@@ -167,24 +167,21 @@ for cmd in data:
     outputParser[cmdTemplateParser['optype']][cmdTemplateParser['op'].lower()].append(cmdTemplateParser)
     outputAutocomplete.append(cmdTemplateAutocomplete)
 
-with open('operatorParser.json', 'w') as f:
-    json.dump(outputParser,f)
-
 autocompleteDict = {
-    '.source.sqf': {
-        'autocomplete': {
-            'symbols':{
-                'builtin':{
-                    'typePriority': 4,
-                    'suggestions': outputAutocomplete
-                }
-            }
+  '.source.sqf': {
+    'autocomplete': {
+      'symbols':{
+        'builtin':{
+          'typePriority': 4,
+          'suggestions': outputAutocomplete
         }
+      }
     }
+  }
 };
 
 with open('language-sqf-native-commands.json', 'w') as f:
     json.dump(autocompleteDict,f,indent=2)
 
-with open('syntax_cmd_string.json', 'w') as f:
+with open('grammars-sqf-native-commands.json', 'w') as f:
     f.write('|'.join(outputSyntaxStr))

@@ -60,24 +60,20 @@ for function in allFunctions:
     output.append(outputTemplate)
 
 autocompleteDict = {
-    '.source.sqf': {
-        'autocomplete': {
-            'symbols':{
-                'CBAfunctions':{
-                    'typePriority': 4,
-                    'suggestions': output
-                }
-            }
+  '.source.sqf': {
+    'autocomplete': {
+      'symbols':{
+        'CBAfunctions':{
+          'typePriority': 4,
+          'suggestions': output
         }
+      }
     }
+  }
 };
 
 with open('language-sqf-functions-cba.json', 'w') as f:
     json.dump(autocompleteDict,f,indent=2)
 
-with open('syntax_cmd_string.json', 'w') as f:
+with open('grammars-sqf-functions-cba.json', 'w') as f:
     f.write('|'.join(functionList))
-
-f = urllib.request.urlopen(fnc_base_url + 'Functions.html')
-content = f.read()
-f.close()
