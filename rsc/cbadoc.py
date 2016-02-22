@@ -18,13 +18,13 @@ f.close()
 allMacros = re.findall(r'<div class=CTopic><h3 class=CTitle><a name="[^"]*"></a>([^<]*)</h3><div class=CBody>(.*?)</div>',content,re.DOTALL)
 
 for macroContent in allMacros:
-    c = re.search(r'(.*?)(<h4 class=CHeading>Parameters</h4>.*?)?(<h4 class=CHeading>Example</h4>.*?)?(?:<h4 class=CHeading>Author</h4>.*?)',macroContent[1],re.DOTALL)
-    if c:
-        description = c.group(1)
+  c = re.search(r'(.*?)(<h4 class=CHeading>Parameters</h4>.*?)?(<h4 class=CHeading>Example</h4>.*?)?(?:<h4 class=CHeading>Author</h4>.*?)',macroContent[1],re.DOTALL)
+  if c:
+    description = c.group(1)
 
-        descriptionTable = re.findall(r'<tr><td class=CDLEntry>(.*?)</td><td class=CDLDescription>(.*?)</td></tr>',macroContent[1],re.DOTALL)
-        for tableEntry in descriptionTable:
-            re.search(r'(.*?)(<h4 class=CHeading>Parameters</h4>.*?)?(<h4 class=CHeading>Example</h4>.*?)?(?:<h4 class=CHeading>Author</h4>.*?)',macroContent[1],re.DOTALL)
+    descriptionTable = re.findall(r'<tr><td class=CDLEntry>(.*?)</td><td class=CDLDescription>(.*?)</td></tr>',macroContent[1],re.DOTALL)
+    for tableEntry in descriptionTable:
+      re.search(r'(.*?)(<h4 class=CHeading>Parameters</h4>.*?)?(<h4 class=CHeading>Example</h4>.*?)?(?:<h4 class=CHeading>Author</h4>.*?)',macroContent[1],re.DOTALL)
 
 
 
@@ -38,26 +38,26 @@ output = []
 functionList = []
 
 for function in allFunctions:
-    outputTemplate = {}
-    outputTemplate['rightLabel'] = "CBA Function"
-    outputTemplate['text'] = ''
-    outputTemplate['description'] = ''
-    outputTemplate['type'] = 'function'
-    outputTemplate['descriptionMoreURL'] = fnc_base_url + function[0]
-    print(function[1])
-    functionList.append(function[1])
-    f = urllib.request.urlopen(outputTemplate['descriptionMoreURL'])
-    content = f.read().decode("utf-8")
-    f.close()
-    nameRegex = re.search(r'<a name="([^"]*)">',content)
-    if nameRegex:
-        outputTemplate['text'] = nameRegex.group(1)
+  outputTemplate = {}
+  outputTemplate['rightLabel'] = "CBA Function"
+  outputTemplate['text'] = ''
+  outputTemplate['description'] = ''
+  outputTemplate['type'] = 'function'
+  outputTemplate['descriptionMoreURL'] = fnc_base_url + function[0]
+  print(function[1])
+  functionList.append(function[1])
+  f = urllib.request.urlopen(outputTemplate['descriptionMoreURL'])
+  content = f.read().decode("utf-8")
+  f.close()
+  nameRegex = re.search(r'<a name="([^"]*)">',content)
+  if nameRegex:
+    outputTemplate['text'] = nameRegex.group(1)
 
-    descriptionRegex = re.search(r'<h4 class=CHeading>Description</h4>(.*)<h4 class=CHeading>Parameters</h4>',content)
-    if descriptionRegex:
-        outputTemplate['description'] = h.unescape(re.sub(r'(<[^<]+?>)','',descriptionRegex.group(1)).strip())
+  descriptionRegex = re.search(r'<h4 class=CHeading>Description</h4>(.*)<h4 class=CHeading>Parameters</h4>',content)
+  if descriptionRegex:
+    outputTemplate['description'] = h.unescape(re.sub(r'(<[^<]+?>)','',descriptionRegex.group(1)).strip())
 
-    output.append(outputTemplate)
+  output.append(outputTemplate)
 
 autocompleteDict = {
   '.source.sqf': {
@@ -73,7 +73,7 @@ autocompleteDict = {
 };
 
 with open('language-sqf-functions-cba.json', 'w') as f:
-    json.dump(autocompleteDict,f,indent=2)
+  json.dump(autocompleteDict,f,indent=2)
 
 with open('grammars-sqf-functions-cba.json', 'w') as f:
-    f.write('|'.join(functionList))
+  f.write('|'.join(functionList))
