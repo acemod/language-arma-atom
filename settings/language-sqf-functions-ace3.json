@@ -5,1834 +5,1834 @@
         "ACE3functions": {
           "suggestions": [
             {
-              "text": "ACE_backpacks_fnc_isBackpack",
+              "text": "ace_backpacks_fnc_isBackpack",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Check if the given backpack is an actual backpack that can store items. Parachute, static weapon packs, etc. will return false.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/backpacks/functions/fnc_isBackpack.sqf"
             },
             {
-              "text": "ACE_cargo_fnc_makeLoadable",
+              "text": "ace_cargo_fnc_makeLoadable",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Makes any object loadable.  Needs to be called on all machines.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/cargo/functions/fnc_makeLoadable.sqf"
             },
             {
-              "text": "ACE_common_fnc_addEventHandler",
+              "text": "ace_common_fnc_addEventHandler",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Add an event handler.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_addEventHandler.sqf"
             },
             {
-              "text": "ACE_common_fnc_addMapMarkerCreatedEventHandler",
+              "text": "ace_common_fnc_addMapMarkerCreatedEventHandler",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Add a map marker creation event handler.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_addMapMarkerCreatedEventHandler.sqf"
             },
             {
-              "text": "ACE_common_fnc_addScrollWheelEventHandler",
+              "text": "ace_common_fnc_addScrollWheelEventHandler",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Add an event handler that executes every time the scroll wheel is used. This is needed, because adding a MouseZ display event …",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_addScrollWheelEventHandler.sqf"
             },
             {
-              "text": "ACE_common_fnc_addSyncedEventHandler",
+              "text": "ace_common_fnc_addSyncedEventHandler",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Register an event handler for an ACE synced event.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_addSyncedEventHandler.sqf"
             },
             {
-              "text": "ACE_common_fnc_addToInventory",
+              "text": "ace_common_fnc_addToInventory",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Adds an item, weapon, or magazine to the unit's inventory or places it in a weaponHolder if no space.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_addToInventory.sqf"
             },
             {
-              "text": "ACE_common_fnc_ambientBrightness",
+              "text": "ace_common_fnc_ambientBrightness",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Returns a brightness value depending on the sun and moon state. Ranges from 0 to 1 (dark ... bright).",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_ambientBrightness.sqf"
             },
             {
-              "text": "ACE_common_fnc_binarizeNumber",
+              "text": "ace_common_fnc_binarizeNumber",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Get a binary equivalent of a decimal number.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_binarizeNumber.sqf"
             },
             {
-              "text": "ACE_common_fnc_binocularMagazine",
+              "text": "ace_common_fnc_binocularMagazine",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Returns the magazine of the units rangefinder.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_binocularMagazine.sqf"
             },
             {
-              "text": "ACE_common_fnc_blurScreen",
+              "text": "ace_common_fnc_blurScreen",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_blurScreen.sqf"
             },
             {
-              "text": "ACE_common_fnc_canInteractWith",
+              "text": "ace_common_fnc_canInteractWith",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Check if the unit can interact.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_canInteractWith.sqf"
             },
             {
-              "text": "ACE_common_fnc_checkPBOs",
+              "text": "ace_common_fnc_checkPBOs",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Used to execute the checkPBOs module without placing the module. Don't use this together with the module.\r\nChecks PBO versions …",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_checkPBOs.sqf"
             },
             {
-              "text": "ACE_common_fnc_codeToString",
+              "text": "ace_common_fnc_codeToString",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Removes the brackets around a code and returns the code as a string. It does nothing if the code is already a string.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_codeToString.sqf"
             },
             {
-              "text": "ACE_common_fnc_createOrthonormalReference",
+              "text": "ace_common_fnc_createOrthonormalReference",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Returns a orthonormal system of reference aligned with the supplied vector.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_createOrthonormalReference.sqf"
             },
             {
-              "text": "ACE_common_fnc_currentChannel",
+              "text": "ace_common_fnc_currentChannel",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Returns the current radio / chat / marker channel.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_currentChannel.sqf"
             },
             {
-              "text": "ACE_common_fnc_debug",
+              "text": "ace_common_fnc_debug",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Print logging messages through the ACE framework.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_debug.sqf"
             },
             {
-              "text": "ACE_common_fnc_defineVariable",
+              "text": "ace_common_fnc_defineVariable",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Define a variable for the ACE variable framework.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_defineVariable.sqf"
             },
             {
-              "text": "ACE_common_fnc_displayIcon",
+              "text": "ace_common_fnc_displayIcon",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Draw progress bar and execute given function if succesful.\r\nFinish/Failure/Conditional are all passed [args, elapsedTime …",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_displayIcon.sqf"
             },
             {
-              "text": "ACE_common_fnc_displayText",
+              "text": "ace_common_fnc_displayText",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Display a message.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_displayText.sqf"
             },
             {
-              "text": "ACE_common_fnc_displayTextPicture",
+              "text": "ace_common_fnc_displayTextPicture",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Display a structured text with image.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_displayTextPicture.sqf"
             },
             {
-              "text": "ACE_common_fnc_displayTextStructured",
+              "text": "ace_common_fnc_displayTextStructured",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Display a structured text.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_displayTextStructured.sqf"
             },
             {
-              "text": "ACE_common_fnc_doAnimation",
+              "text": "ace_common_fnc_doAnimation",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Execute an animation. This is used to not break things like the unconsciousness animation.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_doAnimation.sqf"
             },
             {
-              "text": "ACE_common_fnc_dropBackpack",
+              "text": "ace_common_fnc_dropBackpack",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Drops a backback. Also returns the ground wepaon holder object of the dropped backpack.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_dropBackpack.sqf"
             },
             {
-              "text": "ACE_common_fnc_execNextFrame",
+              "text": "ace_common_fnc_execNextFrame",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Executes a code on the next frame.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_execNextFrame.sqf"
             },
             {
-              "text": "ACE_common_fnc_filter",
+              "text": "ace_common_fnc_filter",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Filters array and removes every element not fitting the condition.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_filter.sqf"
             },
             {
-              "text": "ACE_common_fnc_getAllDefinedSetVariables",
+              "text": "ace_common_fnc_getAllDefinedSetVariables",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Returns an 2d array of all variables that have been set on the object.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getAllDefinedSetVariables.sqf"
             },
             {
-              "text": "ACE_common_fnc_getAllGear",
+              "text": "ace_common_fnc_getAllGear",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Returns an array containing all items of a given unit.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getAllGear.sqf"
             },
             {
-              "text": "ACE_common_fnc_getCaptivityStatus",
+              "text": "ace_common_fnc_getCaptivityStatus",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Return the captivity status of an unit.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getCaptivityStatus.sqf"
             },
             {
-              "text": "ACE_common_fnc_getChildren",
+              "text": "ace_common_fnc_getChildren",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Obtain children of a config entry.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getChildren.sqf"
             },
             {
-              "text": "ACE_common_fnc_getConfigCommander",
+              "text": "ace_common_fnc_getConfigCommander",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Get the commander config of a vehicles turret.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getConfigCommander.sqf"
             },
             {
-              "text": "ACE_common_fnc_getConfigGunner",
+              "text": "ace_common_fnc_getConfigGunner",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Get the gunner config of a vehicles turret.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getConfigGunner.sqf"
             },
             {
-              "text": "ACE_common_fnc_getConfigType",
+              "text": "ace_common_fnc_getConfigType",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Determins type of item. Can be CfgMagaines, CfgWeapons or CfgGlasses.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getConfigType.sqf"
             },
             {
-              "text": "ACE_common_fnc_getConfigTypeObject",
+              "text": "ace_common_fnc_getConfigTypeObject",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Determins type of object. Can be CfgVehicles or CfgAmmo.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getConfigTypeObject.sqf"
             },
             {
-              "text": "ACE_common_fnc_getDefinedVariableDefault",
+              "text": "ace_common_fnc_getDefinedVariableDefault",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Get the variable default value.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getDefinedVariableDefault.sqf"
             },
             {
-              "text": "ACE_common_fnc_getDisplayConfigName",
+              "text": "ace_common_fnc_getDisplayConfigName",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Get display classnames from config with given idd.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getDisplayConfigName.sqf"
             },
             {
-              "text": "ACE_common_fnc_getDoorTurrets",
+              "text": "ace_common_fnc_getDoorTurrets",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Returns all turret indecies of door gunners.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getDoorTurrets.sqf"
             },
             {
-              "text": "ACE_common_fnc_getFirstObjectIntersection",
+              "text": "ace_common_fnc_getFirstObjectIntersection",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Returns the the first intersection with terrain between two positions. @todo rewrite using lineIntersectsSurfaces?.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getFirstObjectIntersection.sqf"
             },
             {
-              "text": "ACE_common_fnc_getFirstTerrainIntersection",
+              "text": "ace_common_fnc_getFirstTerrainIntersection",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Returns the the first intersection with an object between two positions. @todo rewrite using lineIntersectsSurfaces?.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getFirstTerrainIntersection.sqf"
             },
             {
-              "text": "ACE_common_fnc_getForceWalkStatus",
+              "text": "ace_common_fnc_getForceWalkStatus",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Returns reasons why the unit is forceWalk-ing.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getForceWalkStatus.sqf"
             },
             {
-              "text": "ACE_common_fnc_getGunner",
+              "text": "ace_common_fnc_getGunner",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Returns gunner using specified weapon type in vehicle. Only works if all turrets have different weapons.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getGunner.sqf"
             },
             {
-              "text": "ACE_common_fnc_getInPosition",
+              "text": "ace_common_fnc_getInPosition",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Move unit into given vehicle position or switch to that position if the unit is already inside the vehicle.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getInPosition.sqf"
             },
             {
-              "text": "ACE_common_fnc_getItemType",
+              "text": "ace_common_fnc_getItemType",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Returns item type of given classname.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getItemType.sqf"
             },
             {
-              "text": "ACE_common_fnc_getLightProperties",
+              "text": "ace_common_fnc_getLightProperties",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Read properties of given vehicles light.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getLightProperties.sqf"
             },
             {
-              "text": "ACE_common_fnc_getLightPropertiesWeapon",
+              "text": "ace_common_fnc_getLightPropertiesWeapon",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Read properties of given flashlight.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getLightPropertiesWeapon.sqf"
             },
             {
-              "text": "ACE_common_fnc_getMapGridFromPos",
+              "text": "ace_common_fnc_getMapGridFromPos",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Gets a 10-digit map grid for the given world position.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getMapGridFromPos.sqf"
             },
             {
-              "text": "ACE_common_fnc_getMapPosFromGrid",
+              "text": "ace_common_fnc_getMapPosFromGrid",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Gets position from grid cords.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getMapPosFromGrid.sqf"
             },
             {
-              "text": "ACE_common_fnc_getName",
+              "text": "ace_common_fnc_getName",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Returns the name of the object. Used to prevent issues with the name command.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getName.sqf"
             },
             {
-              "text": "ACE_common_fnc_getPitchBankYaw",
+              "text": "ace_common_fnc_getPitchBankYaw",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Returns pitch, bank, yaw for given vehicle in degrees.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getPitchBankYaw.sqf"
             },
             {
-              "text": "ACE_common_fnc_getReflectorsWithSelections",
+              "text": "ace_common_fnc_getReflectorsWithSelections",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Returns all lighting hitpoints of any vehicle.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getReflectorsWithSelections.sqf"
             },
             {
-              "text": "ACE_common_fnc_getTargetAzimuthAndInclination",
+              "text": "ace_common_fnc_getTargetAzimuthAndInclination",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Get players viewing direction and slope.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getTargetAzimuthAndInclination.sqf"
             },
             {
-              "text": "ACE_common_fnc_getTargetDistance",
+              "text": "ace_common_fnc_getTargetDistance",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Get the distance to the next object the player is looking at. Used for laser distance measurements.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getTargetDistance.sqf"
             },
             {
-              "text": "ACE_common_fnc_getTargetObject",
+              "text": "ace_common_fnc_getTargetObject",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Get the nearest object the player is looking at. Used for laser designator instead of cursorTarget.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getTargetObject.sqf"
             },
             {
-              "text": "ACE_common_fnc_getTurnedOnLights",
+              "text": "ace_common_fnc_getTurnedOnLights",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Returns all turned on lights of any vehicle or streetlamp.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getTurnedOnLights.sqf"
             },
             {
-              "text": "ACE_common_fnc_getTurretCommander",
+              "text": "ace_common_fnc_getTurretCommander",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Get the turret index of a vehicles commander.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getTurretCommander.sqf"
             },
             {
-              "text": "ACE_common_fnc_getTurretConfigPath",
+              "text": "ace_common_fnc_getTurretConfigPath",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Get the config path of a vehicles turret.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getTurretConfigPath.sqf"
             },
             {
-              "text": "ACE_common_fnc_getTurretCopilot",
+              "text": "ace_common_fnc_getTurretCopilot",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Get the turret index of a vehicles copilot.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getTurretCopilot.sqf"
             },
             {
-              "text": "ACE_common_fnc_getTurretDirection",
+              "text": "ace_common_fnc_getTurretDirection",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Get the absolute turret direction for FOV/PIP turret.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getTurretDirection.sqf"
             },
             {
-              "text": "ACE_common_fnc_getTurretGunner",
+              "text": "ace_common_fnc_getTurretGunner",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Get the turret index of a vehicles gunner.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getTurretGunner.sqf"
             },
             {
-              "text": "ACE_common_fnc_getTurretIndex",
+              "text": "ace_common_fnc_getTurretIndex",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Get the turret index of a units current turret.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getTurretIndex.sqf"
             },
             {
-              "text": "ACE_common_fnc_getTurrets",
+              "text": "ace_common_fnc_getTurrets",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Get all turret indicies of a vehicle type.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getTurrets.sqf"
             },
             {
-              "text": "ACE_common_fnc_getTurretsFFV",
+              "text": "ace_common_fnc_getTurretsFFV",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Get the turret indices of ffv turrets.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getTurretsFFV.sqf"
             },
             {
-              "text": "ACE_common_fnc_getTurretsOther",
+              "text": "ace_common_fnc_getTurretsOther",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Get the turret indices of other turrets (not gunner, commander, copilot or ffv).",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getTurretsOther.sqf"
             },
             {
-              "text": "ACE_common_fnc_getUavControlPosition",
+              "text": "ace_common_fnc_getUavControlPosition",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Returns the seat position of a UAV that the unit is activly controling.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getUavControlPosition.sqf"
             },
             {
-              "text": "ACE_common_fnc_getVehicleCargo",
+              "text": "ace_common_fnc_getVehicleCargo",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Get the vehicle cargo positions. Codrivers and ffv positions are not listed.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getVehicleCargo.sqf"
             },
             {
-              "text": "ACE_common_fnc_getVehicleCodriver",
+              "text": "ace_common_fnc_getVehicleCodriver",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Get the vehicle codriver positions.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getVehicleCodriver.sqf"
             },
             {
-              "text": "ACE_common_fnc_getVehicleCrew",
+              "text": "ace_common_fnc_getVehicleCrew",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Returns array of crew member objects.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getVehicleCrew.sqf"
             },
             {
-              "text": "ACE_common_fnc_getVehicleUAVCrew",
+              "text": "ace_common_fnc_getVehicleUAVCrew",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Returns array of uav dummy ais.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getVehicleUAVCrew.sqf"
             },
             {
-              "text": "ACE_common_fnc_getVersion",
+              "text": "ace_common_fnc_getVersion",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Get the version number of the current ACE build.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getVersion.sqf"
             },
             {
-              "text": "ACE_common_fnc_getWeaponAzimuthAndInclination",
+              "text": "ace_common_fnc_getWeaponAzimuthAndInclination",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Get local players weapon direction and slope.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getWeaponAzimuthAndInclination.sqf"
             },
             {
-              "text": "ACE_common_fnc_getWeaponIndex",
+              "text": "ace_common_fnc_getWeaponIndex",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Get the index of the weapon.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getWeaponIndex.sqf"
             },
             {
-              "text": "ACE_common_fnc_getWeaponModes",
+              "text": "ace_common_fnc_getWeaponModes",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Get the available firing modes of a weapon. Will ignore the AI helper modes.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getWeaponModes.sqf"
             },
             {
-              "text": "ACE_common_fnc_getWeaponMuzzles",
+              "text": "ace_common_fnc_getWeaponMuzzles",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Get the muzzles of a weapon.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getWeaponMuzzles.sqf"
             },
             {
-              "text": "ACE_common_fnc_getWeaponState",
+              "text": "ace_common_fnc_getWeaponState",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Return current state of the weapon. Attachments and magazines with ammo.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getWeaponState.sqf"
             },
             {
-              "text": "ACE_common_fnc_getWeaponType",
+              "text": "ace_common_fnc_getWeaponType",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Check what kind of weapon the given class name is.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getWeaponType.sqf"
             },
             {
-              "text": "ACE_common_fnc_getWindDirection",
+              "text": "ace_common_fnc_getWindDirection",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Get the compass direction the wind is blowing from.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getWindDirection.sqf"
             },
             {
-              "text": "ACE_common_fnc_getZoom",
+              "text": "ace_common_fnc_getZoom",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Returns a value depending on current zoom level.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getZoom.sqf"
             },
             {
-              "text": "ACE_common_fnc_globalEvent",
+              "text": "ace_common_fnc_globalEvent",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Execute a global event on all clients, including self.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_globalEvent.sqf"
             },
             {
-              "text": "ACE_common_fnc_hadamardProduct",
+              "text": "ace_common_fnc_hadamardProduct",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Returns the Hadamard Product of two vectors.\r\n(x hadamard y) = [x1*y1, x2*y2, x3*y3].",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_hadamardProduct.sqf"
             },
             {
-              "text": "ACE_common_fnc_hasHatch",
+              "text": "ace_common_fnc_hasHatch",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Check if unit is in a vehicle position where it can turn in or out.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_hasHatch.sqf"
             },
             {
-              "text": "ACE_common_fnc_hasItem",
+              "text": "ace_common_fnc_hasItem",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Check if unit has item.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_hasItem.sqf"
             },
             {
-              "text": "ACE_common_fnc_hasMagazine",
+              "text": "ace_common_fnc_hasMagazine",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Check if given unit has a magazine of given classname.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_hasMagazine.sqf"
             },
             {
-              "text": "ACE_common_fnc_headBugFix",
+              "text": "ace_common_fnc_headBugFix",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Fixes animation issues that may get you stuck.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_headBugFix.sqf"
             },
             {
-              "text": "ACE_common_fnc_hideUnit",
+              "text": "ace_common_fnc_hideUnit",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Globally hides a unit. This allows the handling of more than one reason to hide an object globally.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_hideUnit.sqf"
             },
             {
-              "text": "ACE_common_fnc_insertionSort",
+              "text": "ace_common_fnc_insertionSort",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Sorts an array of numbers.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_insertionSort.sqf"
             },
             {
-              "text": "ACE_common_fnc_interpolateFromArray",
+              "text": "ace_common_fnc_interpolateFromArray",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Interpolates between two set points in a curve.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_interpolateFromArray.sqf"
             },
             {
-              "text": "ACE_common_fnc_inTransitionAnim",
+              "text": "ace_common_fnc_inTransitionAnim",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Check if given unit is in a transitional animation.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_inTransitionAnim.sqf"
             },
             {
-              "text": "ACE_common_fnc_isAutoWind",
+              "text": "ace_common_fnc_isAutoWind",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Check if wind is set on auto.\r\nArguments\r\nNone\r\nReturn Value:\r\nThis mission has automatic wind? <BOOL>.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_isAutoWind.sqf"
             },
             {
-              "text": "ACE_common_fnc_isAwake",
+              "text": "ace_common_fnc_isAwake",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Check if unit is awake. Will be false when death or unit is unconscious.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_isAwake.sqf"
             },
             {
-              "text": "ACE_common_fnc_isEngineer",
+              "text": "ace_common_fnc_isEngineer",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Checks if a unit is an engineer.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_isEngineer.sqf"
             },
             {
-              "text": "ACE_common_fnc_isEOD",
+              "text": "ace_common_fnc_isEOD",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Checks whether the passed unit is an explosive specialist.\r\nEither through config entry: \"canDeactivateMines\"\r\nor\r\nunit …",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_isEOD.sqf"
             },
             {
-              "text": "ACE_common_fnc_isFeatureCameraActive",
+              "text": "ace_common_fnc_isFeatureCameraActive",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Checks if one of the following common feature cameras is active:\r\n- Curator\r\n- ACE Spectator\r\n- Arsenal camera …",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_isFeatureCameraActive.sqf"
             },
             {
-              "text": "ACE_common_fnc_isInBuilding",
+              "text": "ace_common_fnc_isInBuilding",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Check if the unit is in a building. Will return true if the unit is sitting in a bush.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_isInBuilding.sqf"
             },
             {
-              "text": "ACE_common_fnc_isModLoaded",
+              "text": "ace_common_fnc_isModLoaded",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Check in cfgPatches if modification is loaded.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_isModLoaded.sqf"
             },
             {
-              "text": "ACE_common_fnc_isPlayer",
+              "text": "ace_common_fnc_isPlayer",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Checks if a unit is a player / curator controlled unit.\r\nThis now includes both local and non-local remote controlled zeus …",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_isPlayer.sqf"
             },
             {
-              "text": "ACE_common_fnc_isUnderwater",
+              "text": "ace_common_fnc_isUnderwater",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Check if unit's head is underwater.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_isUnderwater.sqf"
             },
             {
-              "text": "ACE_common_fnc_lightIntensityFromObject",
+              "text": "ace_common_fnc_lightIntensityFromObject",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Calculate light intensity object 1 recieves from object 2.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_lightIntensityFromObject.sqf"
             },
             {
-              "text": "ACE_common_fnc_loadPerson",
+              "text": "ace_common_fnc_loadPerson",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Loads a specified unit into any nearby vehicle.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_loadPerson.sqf"
             },
             {
-              "text": "ACE_common_fnc_loadPersonLocal",
+              "text": "ace_common_fnc_loadPersonLocal",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Load a person, local.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_loadPersonLocal.sqf"
             },
             {
-              "text": "ACE_common_fnc_map",
+              "text": "ace_common_fnc_map",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Applies given code to every element in an array, LIKE SOMETHING SQF SHOULD HAVE BY DEFAULT. <- :kappa:.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_map.sqf"
             },
             {
-              "text": "ACE_common_fnc_monitor",
+              "text": "ace_common_fnc_monitor",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "hint retun value of given function every frame.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_monitor.sqf"
             },
             {
-              "text": "ACE_common_fnc_muteUnit",
+              "text": "ace_common_fnc_muteUnit",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Mutes the unit. It won't trigger auto generated chat messages either.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_muteUnit.sqf"
             },
             {
-              "text": "ACE_common_fnc_numberToDigits",
+              "text": "ace_common_fnc_numberToDigits",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Transforms a number to an array of the correspondending digits.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_numberToDigits.sqf"
             },
             {
-              "text": "ACE_common_fnc_numberToDigitsString",
+              "text": "ace_common_fnc_numberToDigitsString",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Transforms a number to an string of the correspondending digits.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_numberToDigitsString.sqf"
             },
             {
-              "text": "ACE_common_fnc_numberToString",
+              "text": "ace_common_fnc_numberToString",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Converts a number to a string without losing as much precission as str or format.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_numberToString.sqf"
             },
             {
-              "text": "ACE_common_fnc_objectEvent",
+              "text": "ace_common_fnc_objectEvent",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Execute an event where object is local.\r\nIf local there is no network traffic/delay (Unlike targetEvent).",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_objectEvent.sqf"
             },
             {
-              "text": "ACE_common_fnc_player",
+              "text": "ace_common_fnc_player",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Returns the player or curator controlled unit.\r\nUse this in INIT and RESPAWN eh scripts, because ACE_player isn't reset yet.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_player.sqf"
             },
             {
-              "text": "ACE_common_fnc_playerSide",
+              "text": "ace_common_fnc_playerSide",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Return the current side of the player.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_playerSide.sqf"
             },
             {
-              "text": "ACE_common_fnc_positionToASL",
+              "text": "ace_common_fnc_positionToASL",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Converts Arma \"Position\" to ASL.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_positionToASL.sqf"
             },
             {
-              "text": "ACE_common_fnc_progressBar",
+              "text": "ace_common_fnc_progressBar",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Draw progress bar and execute given function if succesful.\r\nFinish/Failure/Conditional are all passed [_args, _elapsedTime …",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_progressBar.sqf"
             },
             {
-              "text": "ACE_common_fnc_removeAllEventHandlers",
+              "text": "ace_common_fnc_removeAllEventHandlers",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Remove all events of a certain event type.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_removeAllEventHandlers.sqf"
             },
             {
-              "text": "ACE_common_fnc_removeBinocularMagazine",
+              "text": "ace_common_fnc_removeBinocularMagazine",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Removes the magazine of the units rangefinder.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_removeBinocularMagazine.sqf"
             },
             {
-              "text": "ACE_common_fnc_removeEventHandler",
+              "text": "ace_common_fnc_removeEventHandler",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Remove an event handler.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_removeEventHandler.sqf"
             },
             {
-              "text": "ACE_common_fnc_removeMapMarkerCreatedEventHandler",
+              "text": "ace_common_fnc_removeMapMarkerCreatedEventHandler",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Remove a map marker creation event handler.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_removeMapMarkerCreatedEventHandler.sqf"
             },
             {
-              "text": "ACE_common_fnc_removeScrollWheelEventHandler",
+              "text": "ace_common_fnc_removeScrollWheelEventHandler",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Remove a scroll wheel event handler.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_removeScrollWheelEventHandler.sqf"
             },
             {
-              "text": "ACE_common_fnc_sanitizeString",
+              "text": "ace_common_fnc_sanitizeString",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Removes quotation marks to avoid exploits and optionally html tags from text to avoid conflicts with structured text.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_sanitizeString.sqf"
             },
             {
-              "text": "ACE_common_fnc_sendRequest",
+              "text": "ace_common_fnc_sendRequest",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Send a request to an unit and execute code based upon results.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_sendRequest.sqf"
             },
             {
-              "text": "ACE_common_fnc_serverEvent",
+              "text": "ace_common_fnc_serverEvent",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Execute a event only on the server.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_serverEvent.sqf"
             },
             {
-              "text": "ACE_common_fnc_setAllGear",
+              "text": "ace_common_fnc_setAllGear",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Applies gear to unit. It must be called in the machine in which the unit is local.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_setAllGear.sqf"
             },
             {
-              "text": "ACE_common_fnc_setCaptivityStatus",
+              "text": "ace_common_fnc_setCaptivityStatus",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Set the captivity status of an unit. This allows the handling of more than one reason to set a unit captive.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_setCaptivityStatus.sqf"
             },
             {
-              "text": "ACE_common_fnc_setDefinedVariable",
+              "text": "ace_common_fnc_setDefinedVariable",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "setVariable value.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_setDefinedVariable.sqf"
             },
             {
-              "text": "ACE_common_fnc_setDisableUserInputStatus",
+              "text": "ace_common_fnc_setDisableUserInputStatus",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Disables the user input. Works stacked.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_setDisableUserInputStatus.sqf"
             },
             {
-              "text": "ACE_common_fnc_setForceWalkStatus",
+              "text": "ace_common_fnc_setForceWalkStatus",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Sets the forceWalk status of an unit. This allows the handling of more than one reason to set forceWalk.\r\nUnit will force walk …",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_setForceWalkStatus.sqf"
             },
             {
-              "text": "ACE_common_fnc_setHearingCapability",
+              "text": "ace_common_fnc_setHearingCapability",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Handle set volume calls. Will use the lowest available volume setting.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_setHearingCapability.sqf"
             },
             {
-              "text": "ACE_common_fnc_setParameter",
+              "text": "ace_common_fnc_setParameter",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Sets the value of an ACE_Parameter and makes it public.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_setParameter.sqf"
             },
             {
-              "text": "ACE_common_fnc_setPitchBankYaw",
+              "text": "ace_common_fnc_setPitchBankYaw",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Sets the value of an ACE_Parameter and makes it public.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_setPitchBankYaw.sqf"
             },
             {
-              "text": "ACE_common_fnc_setProne",
+              "text": "ace_common_fnc_setProne",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Force a unit to go prone.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_setProne.sqf"
             },
             {
-              "text": "ACE_common_fnc_setVolume",
+              "text": "ace_common_fnc_setVolume",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Sets the volume of the game, including third party radio modifications such as TFAR and ACRE.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_setVolume.sqf"
             },
             {
-              "text": "ACE_common_fnc_showHud",
+              "text": "ace_common_fnc_showHud",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Allows multiple sources to not overwrite showHud command\r\nBitwise AND Logic (a single false in a mask will make it false).",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_showHud.sqf"
             },
             {
-              "text": "ACE_common_fnc_statusEffect_get",
+              "text": "ace_common_fnc_statusEffect_get",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Retrives list of current status effects.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_statusEffect_get.sqf"
             },
             {
-              "text": "ACE_common_fnc_statusEffect_set",
+              "text": "ace_common_fnc_statusEffect_set",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Adds or removes an id to a status effect and will send an event to apply.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_statusEffect_set.sqf"
             },
             {
-              "text": "ACE_common_fnc_stringCompare",
+              "text": "ace_common_fnc_stringCompare",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Determines whether one string matches another and how many characters match. Case insensitive.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_stringCompare.sqf"
             },
             {
-              "text": "ACE_common_fnc_stringRemoveWhiteSpace",
+              "text": "ace_common_fnc_stringRemoveWhiteSpace",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Removes white spaces from string.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_stringRemoveWhiteSpace.sqf"
             },
             {
-              "text": "ACE_common_fnc_stringToColoredText",
+              "text": "ace_common_fnc_stringToColoredText",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Create a centered, colored text.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_stringToColoredText.sqf"
             },
             {
-              "text": "ACE_common_fnc_switchToGroupSide",
+              "text": "ace_common_fnc_switchToGroupSide",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Stack group switches. Will always trace back to original group.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_switchToGroupSide.sqf"
             },
             {
-              "text": "ACE_common_fnc_targetEvent",
+              "text": "ace_common_fnc_targetEvent",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Execute a event only on specific clients.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_targetEvent.sqf"
             },
             {
-              "text": "ACE_common_fnc_toBin",
+              "text": "ace_common_fnc_toBin",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Converts number to binary number.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_toBin.sqf"
             },
             {
-              "text": "ACE_common_fnc_toBitmask",
+              "text": "ace_common_fnc_toBitmask",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Convert an array of booleans into a number.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_toBitmask.sqf"
             },
             {
-              "text": "ACE_common_fnc_toHex",
+              "text": "ace_common_fnc_toHex",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Converts number to hexadecimal number.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_toHex.sqf"
             },
             {
-              "text": "ACE_common_fnc_toNumber",
+              "text": "ace_common_fnc_toNumber",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Takes a string/number and returns the number.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_toNumber.sqf"
             },
             {
-              "text": "ACE_common_fnc_unhideUnit",
+              "text": "ace_common_fnc_unhideUnit",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Globally unhides a unit. Only unhides if the last reason was removed.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_unhideUnit.sqf"
             },
             {
-              "text": "ACE_common_fnc_uniqueElements",
+              "text": "ace_common_fnc_uniqueElements",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Make a copy of an array with only the unique elements.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_uniqueElements.sqf"
             },
             {
-              "text": "ACE_common_fnc_unmuteUnit",
+              "text": "ace_common_fnc_unmuteUnit",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Unmutes the unit. Only unmutes if the last reason was removed.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_unmuteUnit.sqf"
             },
             {
-              "text": "ACE_common_fnc_useItem",
+              "text": "ace_common_fnc_useItem",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Use item.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_useItem.sqf"
             },
             {
-              "text": "ACE_common_fnc_useMagazine",
+              "text": "ace_common_fnc_useMagazine",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Use magazine.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_useMagazine.sqf"
             },
             {
-              "text": "ACE_common_fnc_waitAndExecute",
+              "text": "ace_common_fnc_waitAndExecute",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Executes a code once with a given game time delay, using a PFH.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_waitAndExecute.sqf"
             },
             {
-              "text": "ACE_dragging_fnc_setCarryable",
+              "text": "ace_dragging_fnc_setCarryable",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Enable the object to be carried.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/dragging/functions/fnc_setCarryable.sqf"
             },
             {
-              "text": "ACE_dragging_fnc_setDraggable",
+              "text": "ace_dragging_fnc_setDraggable",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Enable the object to be dragged.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/dragging/functions/fnc_setDraggable.sqf"
             },
             {
-              "text": "ACE_explosives_fnc_addClacker",
+              "text": "ace_explosives_fnc_addClacker",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Adds an explosive as a clacker item to the passed unit if the unit has the required item.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/explosives/functions/fnc_addClacker.sqf"
             },
             {
-              "text": "ACE_explosives_fnc_addToSpeedDial",
+              "text": "ace_explosives_fnc_addToSpeedDial",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Sets the speed dial for the UI.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/explosives/functions/fnc_addToSpeedDial.sqf"
             },
             {
-              "text": "ACE_explosives_fnc_canDefuse",
+              "text": "ace_explosives_fnc_canDefuse",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Whether a unit can perform the defuse action.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/explosives/functions/fnc_canDefuse.sqf"
             },
             {
-              "text": "ACE_explosives_fnc_canDetonate",
+              "text": "ace_explosives_fnc_canDetonate",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Whether the unit is able to detonate explosives.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/explosives/functions/fnc_canDetonate.sqf"
             },
             {
-              "text": "ACE_explosives_fnc_connectExplosive",
+              "text": "ace_explosives_fnc_connectExplosive",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Add preplaced explosives to a unit's detonator.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/explosives/functions/fnc_connectExplosive.sqf"
             },
             {
-              "text": "ACE_explosives_fnc_defuseExplosive",
+              "text": "ace_explosives_fnc_defuseExplosive",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Causes the unit to defuse the passed explosive.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/explosives/functions/fnc_defuseExplosive.sqf"
             },
             {
-              "text": "ACE_explosives_fnc_detonateExplosive",
+              "text": "ace_explosives_fnc_detonateExplosive",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Causes the unit to detonate the passed explosive.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/explosives/functions/fnc_detonateExplosive.sqf"
             },
             {
-              "text": "ACE_explosives_fnc_dialPhone",
+              "text": "ace_explosives_fnc_dialPhone",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Dials the number passed and detonates the explosive.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/explosives/functions/fnc_dialPhone.sqf"
             },
             {
-              "text": "ACE_explosives_fnc_getDetonators",
+              "text": "ace_explosives_fnc_getDetonators",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Returns all the detonators of the unit.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/explosives/functions/fnc_getDetonators.sqf"
             },
             {
-              "text": "ACE_explosives_fnc_getPlacedExplosives",
+              "text": "ace_explosives_fnc_getPlacedExplosives",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Gets all placed explosives by unit, optionally filtered by specific trigger type.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/explosives/functions/fnc_getPlacedExplosives.sqf"
             },
             {
-              "text": "ACE_explosives_fnc_getSpeedDialExplosive",
+              "text": "ace_explosives_fnc_getSpeedDialExplosive",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Gets the explosive from the speed dial entry.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/explosives/functions/fnc_getSpeedDialExplosive.sqf"
             },
             {
-              "text": "ACE_explosives_fnc_hasExplosives",
+              "text": "ace_explosives_fnc_hasExplosives",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Whether the passed unit has any explosives on them.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/explosives/functions/fnc_hasExplosives.sqf"
             },
             {
-              "text": "ACE_explosives_fnc_hasPlacedExplosives",
+              "text": "ace_explosives_fnc_hasPlacedExplosives",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Whether the passed unit has placed any explosives or has a clacker that was used when explosives were placed.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/explosives/functions/fnc_hasPlacedExplosives.sqf"
             },
             {
-              "text": "ACE_explosives_fnc_interactEH",
+              "text": "ace_explosives_fnc_interactEH",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "When interact_menu starts rendering (from \"interact_keyDown\" event)\r\nAdd defuse helpers to all nearby mines.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/explosives/functions/fnc_interactEH.sqf"
             },
             {
-              "text": "ACE_explosives_fnc_placeExplosive",
+              "text": "ace_explosives_fnc_placeExplosive",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Places an explosive at the requested position.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/explosives/functions/fnc_placeExplosive.sqf"
             },
             {
-              "text": "ACE_explosives_fnc_removeFromSpeedDial",
+              "text": "ace_explosives_fnc_removeFromSpeedDial",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Removes the specified speed dial from unit's speed dial.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/explosives/functions/fnc_removeFromSpeedDial.sqf"
             },
             {
-              "text": "ACE_explosives_fnc_scriptedExplosive",
+              "text": "ace_explosives_fnc_scriptedExplosive",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Detonate explosives via script, for use in triggers or mission scripts to\r\ndetonate editor-placed explosives.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/explosives/functions/fnc_scriptedExplosive.sqf"
             },
             {
-              "text": "ACE_explosives_fnc_setupExplosive",
+              "text": "ace_explosives_fnc_setupExplosive",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Starts the setup process for the passed explosive. Player only.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/explosives/functions/fnc_setupExplosive.sqf"
             },
             {
-              "text": "ACE_explosives_fnc_startDefuse",
+              "text": "ace_explosives_fnc_startDefuse",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Starts defusing an explosive.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/explosives/functions/fnc_startDefuse.sqf"
             },
             {
-              "text": "ACE_explosives_fnc_startTimer",
+              "text": "ace_explosives_fnc_startTimer",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Starts a timer for an explosive.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/explosives/functions/fnc_startTimer.sqf"
             },
             {
-              "text": "ACE_explosives_fnc_triggerType",
+              "text": "ace_explosives_fnc_triggerType",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Gets the types of triggers associated with the explosive.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/explosives/functions/fnc_triggerType.sqf"
             },
             {
-              "text": "ACE_goggles_fnc_applyDirtEffect",
+              "text": "ace_goggles_fnc_applyDirtEffect",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Adds dirt effect to the glasses.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/goggles/functions/fnc_applyDirtEffect.sqf"
             },
             {
-              "text": "ACE_goggles_fnc_applyDustEffect",
+              "text": "ace_goggles_fnc_applyDustEffect",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Applies dust to screen.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/goggles/functions/fnc_applyDustEffect.sqf"
             },
             {
-              "text": "ACE_goggles_fnc_clearGlasses",
+              "text": "ace_goggles_fnc_clearGlasses",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Clears all dirt, rain, dust from glasses.\r\nRemoves glasses effect (PP, overlay) and then puts it back.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/goggles/functions/fnc_clearGlasses.sqf"
             },
             {
-              "text": "ACE_goggles_fnc_externalCamera",
+              "text": "ace_goggles_fnc_externalCamera",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Returns if the camera is external or not.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/goggles/functions/fnc_externalCamera.sqf"
             },
             {
-              "text": "ACE_goggles_fnc_isDivingGoggles",
+              "text": "ace_goggles_fnc_isDivingGoggles",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Determines whether passed goggles is diving goggles or a variant of them.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/goggles/functions/fnc_isDivingGoggles.sqf"
             },
             {
-              "text": "ACE_goggles_fnc_isGogglesVisible",
+              "text": "ace_goggles_fnc_isGogglesVisible",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Determines if goggles are visible on passed unit.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/goggles/functions/fnc_isGogglesVisible.sqf"
             },
             {
-              "text": "ACE_goggles_fnc_isInRotorWash",
+              "text": "ace_goggles_fnc_isInRotorWash",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Checks for nearby running helicopters (within 15m).",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/goggles/functions/fnc_isInRotorWash.sqf"
             },
             {
-              "text": "ACE_goggles_fnc_removeDirtEffect",
+              "text": "ace_goggles_fnc_removeDirtEffect",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Removes dirt from the glasses.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/goggles/functions/fnc_removeDirtEffect.sqf"
             },
             {
-              "text": "ACE_goggles_fnc_removeDustEffect",
+              "text": "ace_goggles_fnc_removeDustEffect",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Removes dust from the glasses.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/goggles/functions/fnc_removeDustEffect.sqf"
             },
             {
-              "text": "ACE_goggles_fnc_removeGlassesEffect",
+              "text": "ace_goggles_fnc_removeGlassesEffect",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Removes the glasses effect from the screen, removes dirt effect, removes rain effect, removes dust effect. Does not reset array …",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/goggles/functions/fnc_removeGlassesEffect.sqf"
             },
             {
-              "text": "ACE_goggles_fnc_removeRainEffect",
+              "text": "ace_goggles_fnc_removeRainEffect",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Removes rain effects from the screen.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/goggles/functions/fnc_removeRainEffect.sqf"
             },
             {
-              "text": "ACE_logistics_wirecutter_fnc_interactEH",
+              "text": "ace_logistics_wirecutter_fnc_interactEH",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "When interact_menu starts rendering (from \"interact_keyDown\" event).",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/logistics_wirecutter/functions/fnc_interactEH.sqf"
             },
             {
-              "text": "ACE_medical_fnc_actionPlaceInBodyBag",
+              "text": "ace_medical_fnc_actionPlaceInBodyBag",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Replace a (dead) body by a body bag.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/medical/functions/fnc_actionPlaceInBodyBag.sqf"
             },
             {
-              "text": "ACE_medical_fnc_actionRemoveTourniquet",
+              "text": "ace_medical_fnc_actionRemoveTourniquet",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Action for removing the tourniquet on specified selection.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/medical/functions/fnc_actionRemoveTourniquet.sqf"
             },
             {
-              "text": "ACE_medical_fnc_addDamageToUnit",
+              "text": "ace_medical_fnc_addDamageToUnit",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Manually Apply Damage to a unit (can cause lethal damage).",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/medical/functions/fnc_addDamageToUnit.sqf"
             },
             {
-              "text": "ACE_medical_fnc_addHeartRateAdjustment",
+              "text": "ace_medical_fnc_addHeartRateAdjustment",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Increase the Heart Rate of a local unit by given number within given amount of seconds.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/medical/functions/fnc_addHeartRateAdjustment.sqf"
             },
             {
-              "text": "ACE_medical_fnc_addToInjuredCollection",
+              "text": "ace_medical_fnc_addToInjuredCollection",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Enabled the vitals loop for a unit.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/medical/functions/fnc_addToInjuredCollection.sqf"
             },
             {
-              "text": "ACE_medical_fnc_addToLog",
+              "text": "ace_medical_fnc_addToLog",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Add an entry to the specified log.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/medical/functions/fnc_addToLog.sqf"
             },
             {
-              "text": "ACE_medical_fnc_addToTriageCard",
+              "text": "ace_medical_fnc_addToTriageCard",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Add an entry to the triage card.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/medical/functions/fnc_addToTriageCard.sqf"
             },
             {
-              "text": "ACE_medical_fnc_addUnconsciousCondition",
+              "text": "ace_medical_fnc_addUnconsciousCondition",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Adds new condition for the unconscious state. Conditions are not actively checked for units unless unit is in unconscious state.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/medical/functions/fnc_addUnconsciousCondition.sqf"
             },
             {
-              "text": "ACE_medical_fnc_adjustPainLevel",
+              "text": "ace_medical_fnc_adjustPainLevel",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Interface to allow external modules to safely adjust pain levels.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/medical/functions/fnc_adjustPainLevel.sqf"
             },
             {
-              "text": "ACE_medical_fnc_canAccessMedicalEquipment",
+              "text": "ace_medical_fnc_canAccessMedicalEquipment",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Check if caller can access targets medical equipment, based upon accessLevel.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/medical/functions/fnc_canAccessMedicalEquipment.sqf"
             },
             {
-              "text": "ACE_medical_fnc_canTreat",
+              "text": "ace_medical_fnc_canTreat",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Check if the treatment action can be performed.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/medical/functions/fnc_canTreat.sqf"
             },
             {
-              "text": "ACE_medical_fnc_displayTriageCard",
+              "text": "ace_medical_fnc_displayTriageCard",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Display triage card for a unit.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/medical/functions/fnc_displayTriageCard.sqf"
             },
             {
-              "text": "ACE_medical_fnc_dropDownTriageCard",
+              "text": "ace_medical_fnc_dropDownTriageCard",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Display triage card for a unit.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/medical/functions/fnc_dropDownTriageCard.sqf"
             },
             {
-              "text": "ACE_medical_fnc_getTriageStatus",
+              "text": "ace_medical_fnc_getTriageStatus",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Get the triage status and information from a unit.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/medical/functions/fnc_getTriageStatus.sqf"
             },
             {
-              "text": "ACE_medical_fnc_getUnconsciousCondition",
+              "text": "ace_medical_fnc_getUnconsciousCondition",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Get whatever or not a unit should be or stay unconscious.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/medical/functions/fnc_getUnconsciousCondition.sqf"
             },
             {
-              "text": "ACE_medical_fnc_hasItem",
+              "text": "ace_medical_fnc_hasItem",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Check if the item is present between the patient and the medic.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/medical/functions/fnc_hasItem.sqf"
             },
             {
-              "text": "ACE_medical_fnc_hasItems",
+              "text": "ace_medical_fnc_hasItems",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Check if all items are present between the patient and the medic.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/medical/functions/fnc_hasItems.sqf"
             },
             {
-              "text": "ACE_medical_fnc_hasTourniquetAppliedTo",
+              "text": "ace_medical_fnc_hasTourniquetAppliedTo",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Check if unit has a tourniquet applied to the specified bodypart.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/medical/functions/fnc_hasTourniquetAppliedTo.sqf"
             },
             {
-              "text": "ACE_medical_fnc_isInMedicalFacility",
+              "text": "ace_medical_fnc_isInMedicalFacility",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Checks if a unit is in a designated medical facility.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/medical/functions/fnc_isInMedicalFacility.sqf"
             },
             {
-              "text": "ACE_medical_fnc_isInMedicalVehicle",
+              "text": "ace_medical_fnc_isInMedicalVehicle",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Checks if a unit is in a medical vehicle.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/medical/functions/fnc_isInMedicalVehicle.sqf"
             },
             {
-              "text": "ACE_medical_fnc_isMedic",
+              "text": "ace_medical_fnc_isMedic",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Check if a unit is any medical class.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/medical/functions/fnc_isMedic.sqf"
             },
             {
-              "text": "ACE_medical_fnc_isMedicalVehicle",
+              "text": "ace_medical_fnc_isMedicalVehicle",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Check if vehicle is a medical vehicle.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/medical/functions/fnc_isMedicalVehicle.sqf"
             },
             {
-              "text": "ACE_medical_fnc_itemCheck",
+              "text": "ace_medical_fnc_itemCheck",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Replaces vanilla items with ACE ones.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/medical/functions/fnc_itemCheck.sqf"
             },
             {
-              "text": "ACE_medical_fnc_onWoundUpdateRequest",
+              "text": "ace_medical_fnc_onWoundUpdateRequest",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Handles an wound update request.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/medical/functions/fnc_onWoundUpdateRequest.sqf"
             },
             {
-              "text": "ACE_medical_fnc_requestWoundSync",
+              "text": "ace_medical_fnc_requestWoundSync",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Ask for the latest wound information.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/medical/functions/fnc_requestWoundSync.sqf"
             },
             {
-              "text": "ACE_medical_fnc_selectionNameToNumber",
+              "text": "ace_medical_fnc_selectionNameToNumber",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Get the number representation of a selection name.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/medical/functions/fnc_selectionNameToNumber.sqf"
             },
             {
-              "text": "ACE_medical_fnc_setCardiacArrest",
+              "text": "ace_medical_fnc_setCardiacArrest",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Triggers a unit into the Cardiac Arrest state from CMS. Will put the unit in an unconscious state and run a countdown timer …",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/medical/functions/fnc_setCardiacArrest.sqf"
             },
             {
-              "text": "ACE_medical_fnc_setDead",
+              "text": "ace_medical_fnc_setDead",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Either kills a unit or puts the unit in a revivable state, depending on the settings.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/medical/functions/fnc_setDead.sqf"
             },
             {
-              "text": "ACE_medical_fnc_setHitPointDamage",
+              "text": "ace_medical_fnc_setHitPointDamage",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "My very own setHitPointDamage since BIS' one is buggy when affecting a remote unit.\r\nIt also doesn't change the overall damage …",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/medical/functions/fnc_setHitPointDamage.sqf"
             },
             {
-              "text": "ACE_medical_fnc_setUnconscious",
+              "text": "ace_medical_fnc_setUnconscious",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Sets a unit in the unconscious state.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/medical/functions/fnc_setUnconscious.sqf"
             },
             {
-              "text": "ACE_medical_fnc_treatment",
+              "text": "ace_medical_fnc_treatment",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Starts the treatment process.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/medical/functions/fnc_treatment.sqf"
             },
             {
-              "text": "ACE_medical_fnc_treatmentAdvanced_bandage",
+              "text": "ace_medical_fnc_treatmentAdvanced_bandage",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "IV Treatment callback.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/medical/functions/fnc_treatmentAdvanced_bandage.sqf"
             },
             {
-              "text": "ACE_medical_fnc_treatmentAdvanced_CPR",
+              "text": "ace_medical_fnc_treatmentAdvanced_CPR",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Callback for the CPR treatment action on success.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/medical/functions/fnc_treatmentAdvanced_CPR.sqf"
             },
             {
-              "text": "ACE_medical_fnc_treatmentAdvanced_CPRLocal",
+              "text": "ace_medical_fnc_treatmentAdvanced_CPRLocal",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "local Callback for the CPR treatment action on success.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/medical/functions/fnc_treatmentAdvanced_CPRLocal.sqf"
             },
             {
-              "text": "ACE_medical_fnc_treatmentAdvanced_medication",
+              "text": "ace_medical_fnc_treatmentAdvanced_medication",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "IV Treatment callback.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/medical/functions/fnc_treatmentAdvanced_medication.sqf"
             },
             {
-              "text": "ACE_medical_fnc_treatmentAdvanced_medicationLocal",
+              "text": "ace_medical_fnc_treatmentAdvanced_medicationLocal",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Handles the medication given to a patient.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/medical/functions/fnc_treatmentAdvanced_medicationLocal.sqf"
             },
             {
-              "text": "ACE_medical_fnc_treatmentIV",
+              "text": "ace_medical_fnc_treatmentIV",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Patient IV Treatment callback.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/medical/functions/fnc_treatmentIV.sqf"
             },
             {
-              "text": "ACE_medical_fnc_treatmentIVLocal",
+              "text": "ace_medical_fnc_treatmentIVLocal",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "IV Treatment local callback.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/medical/functions/fnc_treatmentIVLocal.sqf"
             },
             {
-              "text": "ACE_medical_fnc_unconsciousPFH",
+              "text": "ace_medical_fnc_unconsciousPFH",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "PFH logic for unconscious state.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/medical/functions/fnc_unconsciousPFH.sqf"
             },
             {
-              "text": "ACE_medical_fnc_useItem",
+              "text": "ace_medical_fnc_useItem",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Use Equipment if any is available. Priority: 1) Medic, 2) Patient. If in vehicle: 3) Crew.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/medical/functions/fnc_useItem.sqf"
             },
             {
-              "text": "ACE_medical_fnc_useItems",
+              "text": "ace_medical_fnc_useItems",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Use Equipment items if any is available. Priority: 1) Medic, 2) Patient. If in vehicle: 3) Crew.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/medical/functions/fnc_useItems.sqf"
             },
             {
-              "text": "ACE_mk6mortar_fnc_canLoadMagazine",
+              "text": "ace_mk6mortar_fnc_canLoadMagazine",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Checks whether magazine can be loaded into static weapon.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/mk6mortar/functions/fnc_canLoadMagazine.sqf"
             },
             {
-              "text": "ACE_mk6mortar_fnc_canUnloadMagazine",
+              "text": "ace_mk6mortar_fnc_canUnloadMagazine",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Checks whether magazine can be unloaded from static weapon.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/mk6mortar/functions/fnc_canUnloadMagazine.sqf"
             },
             {
-              "text": "ACE_mk6mortar_fnc_loadMagazine",
+              "text": "ace_mk6mortar_fnc_loadMagazine",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Loads Magazine into static weapon.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/mk6mortar/functions/fnc_loadMagazine.sqf"
             },
             {
-              "text": "ACE_mk6mortar_fnc_loadMagazineTimer",
+              "text": "ace_mk6mortar_fnc_loadMagazineTimer",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Loads Magazine into static weapon using a timer.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/mk6mortar/functions/fnc_loadMagazineTimer.sqf"
             },
             {
-              "text": "ACE_mk6mortar_fnc_unloadMagazine",
+              "text": "ace_mk6mortar_fnc_unloadMagazine",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Unload current magazine from static weapon.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/mk6mortar/functions/fnc_unloadMagazine.sqf"
             },
             {
-              "text": "ACE_mk6mortar_fnc_unloadMagazineTimer",
+              "text": "ace_mk6mortar_fnc_unloadMagazineTimer",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Unload current magazine from static weapon using a timer.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/mk6mortar/functions/fnc_unloadMagazineTimer.sqf"
             },
             {
-              "text": "ACE_parachute_fnc_showAltimeter",
+              "text": "ace_parachute_fnc_showAltimeter",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Displays the altimeter on screen.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/parachute/functions/fnc_showAltimeter.sqf"
             },
             {
-              "text": "ACE_rearm_fnc_disable",
+              "text": "ace_rearm_fnc_disable",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Disables rearm for a vehicle.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/rearm/functions/fnc_disable.sqf"
             },
             {
-              "text": "ACE_refuel_fnc_getFuel",
+              "text": "ace_refuel_fnc_getFuel",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Get the remaining fuel amount.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/refuel/functions/fnc_getFuel.sqf"
             },
             {
-              "text": "ACE_refuel_fnc_makeJerryCan",
+              "text": "ace_refuel_fnc_makeJerryCan",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Makes an object into a jerry can.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/refuel/functions/fnc_makeJerryCan.sqf"
             },
             {
-              "text": "ACE_refuel_fnc_reset",
+              "text": "ace_refuel_fnc_reset",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Resets a fuel vehicle in case is got bugged.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/refuel/functions/fnc_reset.sqf"
             },
             {
-              "text": "ACE_refuel_fnc_setFuel",
+              "text": "ace_refuel_fnc_setFuel",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Set the remaining fuel amount.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/refuel/functions/fnc_setFuel.sqf"
             },
             {
-              "text": "ACE_repair_fnc_canRepair",
+              "text": "ace_repair_fnc_canRepair",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Check if the repair action can be performed.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/repair/functions/fnc_canRepair.sqf"
             },
             {
-              "text": "ACE_repair_fnc_getClaimObjects",
+              "text": "ace_repair_fnc_getClaimObjects",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Returns array of required nearby repair objects (wheels/tracks).",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/repair/functions/fnc_getClaimObjects.sqf"
             },
             {
-              "text": "ACE_repair_fnc_hasItems",
+              "text": "ace_repair_fnc_hasItems",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Check if the engineer has all items.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/repair/functions/fnc_hasItems.sqf"
             },
             {
-              "text": "ACE_repair_fnc_isEngineer",
+              "text": "ace_repair_fnc_isEngineer",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Check if a unit is any engineer class.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/repair/functions/fnc_isEngineer.sqf"
             },
             {
-              "text": "ACE_repair_fnc_isInRepairFacility",
+              "text": "ace_repair_fnc_isInRepairFacility",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Checks if a unit is in a repair facility.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/repair/functions/fnc_isInRepairFacility.sqf"
             },
             {
-              "text": "ACE_repair_fnc_isNearRepairVehicle",
+              "text": "ace_repair_fnc_isNearRepairVehicle",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Checks if a unit is near an engineering vehicle.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/repair/functions/fnc_isNearRepairVehicle.sqf"
             },
             {
-              "text": "ACE_repair_fnc_isRepairVehicle",
+              "text": "ace_repair_fnc_isRepairVehicle",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Check if vehicle is a engineering vehicle.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/repair/functions/fnc_isRepairVehicle.sqf"
             },
             {
-              "text": "ACE_repair_fnc_repair",
+              "text": "ace_repair_fnc_repair",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Starts the repair process.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/repair/functions/fnc_repair.sqf"
             },
             {
-              "text": "ACE_repair_fnc_useItem",
+              "text": "ace_repair_fnc_useItem",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Use Equipment if any is available.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/repair/functions/fnc_useItem.sqf"
             },
             {
-              "text": "ACE_repair_fnc_useItems",
+              "text": "ace_repair_fnc_useItems",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Use Equipment items if any is available.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/repair/functions/fnc_useItems.sqf"
             },
             {
-              "text": "ACE_slideshow_fnc_createSlideshow",
+              "text": "ace_slideshow_fnc_createSlideshow",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Prepares necessary variables and default image.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/slideshow/functions/fnc_createSlideshow.sqf"
             },
             {
-              "text": "ACE_spectator_fnc_interrupt",
+              "text": "ace_spectator_fnc_interrupt",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Interrupts the spectator interface for external systems.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/spectator/functions/fnc_interrupt.sqf"
             },
             {
-              "text": "ACE_spectator_fnc_setCameraAttributes",
+              "text": "ace_spectator_fnc_setCameraAttributes",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Sets the spectator camera attributes as desired\r\nAll values are optional and default to whatever the current value is.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/spectator/functions/fnc_setCameraAttributes.sqf"
             },
             {
-              "text": "ACE_spectator_fnc_setSpectator",
+              "text": "ace_spectator_fnc_setSpectator",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Sets local client to the given spectator state (virtually)\r\nTo physically handle a spectator see …",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/spectator/functions/fnc_setSpectator.sqf"
             },
             {
-              "text": "ACE_spectator_fnc_stageSpectator",
+              "text": "ace_spectator_fnc_stageSpectator",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Sets target unit to the given spectator state (physically)\r\nTo virtually handle a spectator see ace_spectator_fnc_setSpectator …",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/spectator/functions/fnc_stageSpectator.sqf"
             },
             {
-              "text": "ACE_spectator_fnc_updateCameraModes",
+              "text": "ace_spectator_fnc_updateCameraModes",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Adds or removes spectator camera modes from the selection available to the local player.\r\nPossible camera modes are:\r\n- 0: Free …",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/spectator/functions/fnc_updateCameraModes.sqf"
             },
             {
-              "text": "ACE_spectator_fnc_updateSpectatableSides",
+              "text": "ace_spectator_fnc_updateSpectatableSides",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Adds or removes sides from the selection available to spectate by the local player.\r\nNote that the side filter setting is …",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/spectator/functions/fnc_updateSpectatableSides.sqf"
             },
             {
-              "text": "ACE_spectator_fnc_updateUnits",
+              "text": "ace_spectator_fnc_updateUnits",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Adds units to spectator whitelist/blacklist and refreshes the filter units.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/spectator/functions/fnc_updateUnits.sqf"
             },
             {
-              "text": "ACE_spectator_fnc_updateVisionModes",
+              "text": "ace_spectator_fnc_updateVisionModes",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Adds or removes spectator vision modes from the selection available to the local player.\r\nThe default selection is [-2,-1,0,1 …",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/spectator/functions/fnc_updateVisionModes.sqf"
             },
             {
-              "text": "ACE_switchunits_fnc_isValidAi",
+              "text": "ace_switchunits_fnc_isValidAi",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Checks if AI is a valid target for switching.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/switchunits/functions/fnc_isValidAi.sqf"
             },
             {
-              "text": "ACE_switchunits_fnc_nearestPlayers",
+              "text": "ace_switchunits_fnc_nearestPlayers",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Returns an array of alive players in a given radius around a given location.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/switchunits/functions/fnc_nearestPlayers.sqf"
             },
             {
-              "text": "ACE_switchunits_fnc_switchBack",
+              "text": "ace_switchunits_fnc_switchBack",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Switches back to the original player unit.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/switchunits/functions/fnc_switchBack.sqf"
             },
             {
-              "text": "ACE_switchunits_fnc_switchUnit",
+              "text": "ace_switchunits_fnc_switchUnit",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Switches to the new given player unit.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/switchunits/functions/fnc_switchUnit.sqf"
             },
             {
-              "text": "ACE_vehiclelock_fnc_addKeyForVehicle",
+              "text": "ace_vehiclelock_fnc_addKeyForVehicle",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Adds a key to a unit that will open a vehicle.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/vehiclelock/functions/fnc_addKeyForVehicle.sqf"
             },
             {
-              "text": "ACE_vehiclelock_fnc_serverSetupCustomKeyEH",
+              "text": "ace_vehiclelock_fnc_serverSetupCustomKeyEH",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "On the server: Adds a key (magazineDetail name) to approved keys for a vehicle.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/vehiclelock/functions/fnc_serverSetupCustomKeyEH.sqf"
             },
             {
-              "text": "ACE_vehiclelock_fnc_setVehicleLockEH",
+              "text": "ace_vehiclelock_fnc_setVehicleLockEH",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Sets a vehicle lock state because of a \"VehicleLock_SetVehicleLock\" event.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/vehiclelock/functions/fnc_setVehicleLockEH.sqf"
             },
             {
-              "text": "ACE_weaponselect_fnc_putWeaponAway",
+              "text": "ace_weaponselect_fnc_putWeaponAway",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "The unit will put its current weapon away.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/weaponselect/functions/fnc_putWeaponAway.sqf"
             },
             {
-              "text": "ACE_weaponselect_fnc_selectNextGrenade",
+              "text": "ace_weaponselect_fnc_selectNextGrenade",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Select the next grenade.",

@@ -8,7 +8,7 @@
   },
   "author": "Cuel",
   "dependencies": {
-    "ace3-functions-reader": "^0.1.1",
+    "ace3-functions-reader": "^0.1.2",
     "chalk": "^1.1.1"
   }
 }

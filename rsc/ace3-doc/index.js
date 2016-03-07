@@ -51,7 +51,7 @@ function getDescription (text) {
   Create syntax highlightning for sqf.json
 */
 function createSyntaxHighlightString (fncs) {
-  let str = '\\b(?i:ACE_('
+  let str = '\\b(?i:ace_('
   let l = fncs.length - 1
 
   fncs.forEach((fnc, i) => {
