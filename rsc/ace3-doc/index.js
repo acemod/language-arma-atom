@@ -33,7 +33,9 @@ function getDescription (text) {
       return
     }
     if (tokens > 1) return true
-    strs.push(v)
+    if (tokens === 1) {
+      strs.push(v)
+    }
     return false
   })
 
