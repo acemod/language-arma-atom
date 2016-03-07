@@ -1,0 +1,14 @@
+{
+  "name": "ace3-doc",
+  "version": "1.0.0",
+  "description": "Read ace3 public functions and their descriptions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cuel",
+  "dependencies": {
+    "ace3-functions-reader": "^0.1.1",
+    "chalk": "^1.1.1"
+  }
+}
