@@ -17,6 +17,7 @@
   "dependencies": {
     "chalk": "^1.1.1",
     "cheerio": "^0.19.0",
+    "progress-bar": "^0.1.1",
     "request": "^2.65.0"
   }
 }
