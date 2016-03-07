@@ -78,7 +78,7 @@
               "text": "ACE_common_fnc_blurScreen",
               "rightLabel": "ACE3 Function",
               "type": "function",
-              "description": ".",
+              "description": "",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_blurScreen.sqf"
             },
             {

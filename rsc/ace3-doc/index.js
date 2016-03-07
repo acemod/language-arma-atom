@@ -33,11 +33,11 @@ function getDescription (text) {
       return
     }
     if (tokens > 1) return true
-    if (tokens === 1) {
-      strs.push(v)
-      return
-    }
+    strs.push(v)
+    return false
   })
+
+  if (!strs.length) return ''
 
   let str = strs.join('\r\n')
   if (str.length > MAX_DESC_LENGTH) return str.slice(0, MAX_DESC_LENGTH).replace(/\W*\s(\S)*$/, ` ${ELLIPSIS}`)
