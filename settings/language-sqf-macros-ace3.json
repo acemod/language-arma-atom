@@ -8,117 +8,117 @@
               "description": "Expands to: [] call CALLSTACK(prefix_component_functionName)",
               "snippet": "CALLSTACK(${1:functionName})$0",
               "rightLabel": "ACE3 Macro",
-              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#4-1-1-func-macros-call-tracing-and-non-ace3-anonymous-functions"
+              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#func-macros-call-tracing-and-non-ace3-anonymous-functions"
             }, {
               "description": "Expands to: [] call CALLSTACK_NAMED(function,\"My function\")",
               "snippet": "CALLSTACK_NAMED(${1:function},${2:functionName})$0",
               "rightLabel": "ACE3 Macro",
-              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#4-1-1-func-macros-call-tracing-and-non-ace3-anonymous-functions"
+              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#func-macros-call-tracing-and-non-ace3-anonymous-functions"
             }, {
               "description": "Expands to: prefix_component_fnc_functionName",
               "snippet": "DFUNC(${1:functionName})$0",
               "rightLabel": "ACE3 Macro",
-              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#4-macro-usage"
+              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#modulepbo-specific-macro-usage"
             }, {
               "description": "Expands to: prefix_component_fnc_functionName",
               "snippet": "DEFUNC(${1:component},${2:functionName})$0",
               "rightLabel": "ACE3 Macro",
-              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#4-macro-usage"
+              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#modulepbo-specific-macro-usage"
             }, {
               "description": "Expands to: \"prefix_component_fnc_functionName\"",
               "snippet": "QFUNC(${1:functionName})$0",
               "rightLabel": "ACE3 Macro",
-              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#4-macro-usage"
+              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#modulepbo-specific-macro-usage"
             }, {
               "description": "Expands to: \"prefix_component_fnc_functionName\"",
               "snippet": "QEFUNC(${1:component},${2:functionName})$0",
               "rightLabel": "ACE3 Macro",
-              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#4-macro-usage"
+              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#modulepbo-specific-macro-usage"
             }, {
               "description": "Expands to: obj getVariable [\"varName\", default]",
               "snippet": "GETVAR(${1:obj},${2:varName},${3:default})$0",
               "rightLabel": "ACE3 Macro",
-              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-1-setvariable-getvariable-family-macros"
+              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#setvariable-getvariable-family-macros"
             }, {
               "description": "Expands to: missionNamespace getVariable [\"varName\", default]",
               "snippet": "GETMVAR(${1:varName},${2:default})$0",
               "rightLabel": "ACE3 Macro",
-              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-1-setvariable-getvariable-family-macros"
+              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#setvariable-getvariable-family-macros"
             }, {
               "description": "Expands to: uiNamespace getVariable [\"varName\", default]",
               "snippet": "GETUVAR(${1:varName},${2:default})$0",
               "rightLabel": "ACE3 Macro",
-              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-1-setvariable-getvariable-family-macros"
+              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#setvariable-getvariable-family-macros"
             }, {
               "description": "Expands to: obj setVariable [\"varName\", value]",
               "snippet": "SETVAR(${1:obj},${2:varName},${3:value})$0",
               "rightLabel": "ACE3 Macro",
-              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-1-setvariable-getvariable-family-macros"
+              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#setvariable-getvariable-family-macros"
             }, {
               "description": "Expands to: obj setVariable [\"varName\", value, true]",
               "snippet": "SETPVAR(${1:obj},${2:varName},${3:value})$0",
               "rightLabel": "ACE3 Macro",
-              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-1-setvariable-getvariable-family-macros"
+              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#setvariable-getvariable-family-macros"
             }, {
               "description": "Expands to: missionNamespace setVariable [\"varName\", value]",
               "snippet": "SETMVAR(${1:varName},${2:value})$0",
               "rightLabel": "ACE3 Macro",
-              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-1-setvariable-getvariable-family-macros"
+              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#setvariable-getvariable-family-macros"
             }, {
               "description": "Expands to: uiNamespace setVariable [\"varName\", value]",
               "snippet": "SETUVAR(${1:varName},${2:value})$0",
               "rightLabel": "ACE3 Macro",
-              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#4-2-1-setvariable-getvariable-family-macros"
+              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#setvariable-getvariable-family-macros"
             }, {
               "description": "Creates an empty hash",
               "text": "HASHCREATE",
               "rightLabel": "ACE3 Macro",
-              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#6-hashes"
+              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#hashes"
             }, {
               "description": "Sets hash key to that value",
               "snippet": "HASH_SET(${1:hash},${2:key},${3:val})$0",
               "rightLabel": "ACE3 Macro",
-              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#6-hashes"
+              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#hashes"
             }, {
               "description": "Returns the value of the key (or nil if it inexistent)",
               "snippet": "HASH_GET(${1:hash},${2:key})$0",
               "rightLabel": "ACE3 Macro",
-              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#6-hashes"
+              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#hashes"
             }, {
               "description": "Returns true/false if that key exists in the hash",
               "snippet": "HASH_HASKEY(${1:hash},${2:key})$0",
               "rightLabel": "ACE3 Macro",
-              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#6-hashes"
+              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#hashes"
             }, {
               "description": "Removes the hash key",
               "snippet": "HASH_REM(${1:hash},${2:key})$0",
               "rightLabel": "ACE3 Macro",
-              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#6-hashes"
+              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#hashes"
             }, {
               "description": "Creates a new hashlist with the default keys ([] for no default keys)",
               "snippet": "HASHLIST_CREATELIST(${1:keys})$0",
               "rightLabel": "ACE3 Macro",
-              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#6-1-hashlists"
+              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#hashlists"
             }, {
               "description": "Returns a blank hash template from a hashlist",
               "snippet": "HASHLIST_CREATEHASH(${1:hashlist})$0",
               "rightLabel": "ACE3 Macro",
-              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#6-1-hashlists"
+              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#hashlists"
             }, {
               "description": "Pushes a new hash onto the end of the list",
               "snippet": "HASHLIST_PUSH(${1:hashList},${2:hash})$0",
               "rightLabel": "ACE3 Macro",
-              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#6-1-hashlists"
+              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#hashlists"
             }, {
               "description": "Returns the hash at that index in the list",
               "snippet": "HASHLIST_SELECT(${1:hashList},${2:index})$0",
               "rightLabel": "ACE3 Macro",
-              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#6-1-hashlists"
+              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#hashlists"
             }, {
               "description": "Sets a specific index to that hash",
               "snippet": "HASHLIST_SET(${1:hashList},${2:index},${3:hash})$0",
               "rightLabel": "ACE3 Macro",
-              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#6-1-hashlists"
+              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#hashlists"
             }
           ]
         }
