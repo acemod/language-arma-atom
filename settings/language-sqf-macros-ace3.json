@@ -15,11 +15,6 @@
               "rightLabel": "ACE3 Macro",
               "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#4-1-1-func-macros-call-tracing-and-non-ace3-anonymous-functions"
             }, {
-              "description": "Expands to: \"prefix_component_variable\"",
-              "snippet": "QEGVAR(${1:component},${2:variable})$0",
-              "rightLabel": "ACE3 Macro",
-              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#4-macro-usage"
-            }, {
               "description": "Expands to: prefix_component_fnc_functionName",
               "snippet": "DFUNC(${1:functionName})$0",
               "rightLabel": "ACE3 Macro",

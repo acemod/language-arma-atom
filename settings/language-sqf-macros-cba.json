@@ -36,6 +36,11 @@
               "rightLabel": "CBA Macro",
               "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#4-1-module-pbo-specific-macro-usage"
             }, {
+              "description": "Expands to: \"prefix_component_variable\"",
+              "snippet": "QEGVAR(${1:component},${2:variable})$0",
+              "rightLabel": "CBA Macro",
+              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#4-1-module-pbo-specific-macro-usage"
+            }, {
               "description": "Expands to: prefix_component_fnc_functionName",
               "snippet": "FUNC(${1:functionName})$0",
               "rightLabel": "CBA Macro",
