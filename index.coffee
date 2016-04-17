@@ -21,7 +21,7 @@ module.exports =
       title: "Arma 3 AppData Folder",
       description: "Location of the Arma 3 Application Data Folder (location of RPT files)",
       type: "string",
-      default: "%localappdata%\\Arma 3\\"
+      default: "%LOCALAPPDATA%\\Arma 3\\"
 
   activate: ->
     @subscriptions = new CompositeDisposable
