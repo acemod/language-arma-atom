@@ -1,0 +1,3 @@
+'atom-workspace':
+  'alt-a r': 'language-arma-atom:open-latest-RPT-file'
+  'alt-a b': 'language-arma-atom:build-dev'
