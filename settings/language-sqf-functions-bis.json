@@ -22,7 +22,7 @@
               "text": "BIS_fnc_absSpeed",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "This function returns the absolute speed of a vehicle in km/h.",
+              "description": "Returns absolute speed of a vehicle in kilometers per hour (km/h).",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_absSpeed"
             },
             {
@@ -1492,7 +1492,7 @@
               "text": "BIS_fnc_dynamicText",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Dynamic opening credits.",
+              "description": "",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_dynamicText"
             },
             {
@@ -2161,6 +2161,13 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_greatestNum"
             },
             {
+              "text": "BIS_fnc_groupFromNetId",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Extends MP-only groupFromNetId functionality to SP.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_groupFromNetId"
+            },
+            {
               "text": "BIS_fnc_groupIndicator",
               "rightLabel": "BIS Function",
               "type": "function",
@@ -2577,7 +2584,7 @@
               "text": "BIS_fnc_isInZoom",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "",
+              "description": "Checks if map zoom level is in between given interval (min,max).",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_isInZoom"
             },
             {
@@ -2738,7 +2745,7 @@
               "text": "BIS_fnc_linearConversion",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Linear conversion of a value from one set to another.",
+              "description": "Linear conversion of a value from one set to another This function became obsolete with the introduction of linearConversion.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_linearConversion"
             },
             {
@@ -3088,7 +3095,7 @@
               "text": "BIS_fnc_MP",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "this function was obsoleted since 1.50; use the engine based commands remoteExec or  remoteExecCall instead.",
+              "description": "This function is now provided for backward compatibility only.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_MP"
             },
             {
@@ -3134,6 +3141,13 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_nearestRoad"
             },
             {
+              "text": "BIS_fnc_netId",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Extends MP-only netId functionality to SP.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_netId"
+            },
+            {
               "text": "BIS_fnc_neutralizeUnit",
               "rightLabel": "BIS Function",
               "type": "function",
@@ -3174,6 +3188,13 @@
               "type": "function",
               "description": "Convert a number into string (avoiding scientific notation).",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_numberText"
+            },
+            {
+              "text": "BIS_fnc_objectFromNetId",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Extends MP-only objectFromNetId functionality to SP.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_objectFromNetId"
             },
             {
               "text": "BIS_fnc_objectHeight",
@@ -4243,7 +4264,7 @@
               "text": "BIS_fnc_setOvercast",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Sets overcast based on number (ranging from 0 to 1) passed onto function.",
+              "description": "Instantly set weather conditions and share it across network.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_setOvercast"
             },
             {
@@ -4406,6 +4427,20 @@
               "type": "function",
               "description": "Returns side ID (as used in config).",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_sideID"
+            },
+            {
+              "text": "BIS_fnc_sideIsEnemy",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Determines if side B is enemy to side A the way the game engine does it.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_sideIsEnemy"
+            },
+            {
+              "text": "BIS_fnc_sideIsFriendly",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Determines if side B is friendly to side A the way the game engine does it.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_sideIsFriendly"
             },
             {
               "text": "BIS_fnc_sideName",
