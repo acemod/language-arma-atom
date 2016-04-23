@@ -122,25 +122,23 @@ for cmd in data:
     syntaxFieldsRegex = re.search(r'('+typeExpr+'\s+=\s+)?(?P<op>'+opExpr+')\s+(\()?(?P<right>'+sParaExpr+'|'+arrayExpr+'|'+strExpr+')(\))?',syntax)
     if syntaxFieldsRegex:
       cmdTemplateParser['optype'] = 'unary'
-        cmdTemplateParser['op'] = syntaxFieldsRegex.group('op')
+      cmdTemplateParser['op'] = syntaxFieldsRegex.group('op')
 
-        snippet = syntaxFieldsRegex.group('right')
-        k=1;
-        for para in parametersR:
-          snippet = re.sub('(\W)('+para+')(\W)',r'\g<1>${'+str(k)+':\g<2>}\g<3>',' '+snippet+' ',0,re.IGNORECASE)
-          k=k+1;
-          snippet = snippet.strip()
+      snippet = syntaxFieldsRegex.group('right')
+      k=1;
+      for para in parametersR:
+        snippet = re.sub('(\W)('+para+')(\W)',r'\g<1>${'+str(k)+':\g<2>}\g<3>',' '+snippet+' ',0,re.IGNORECASE)
+        k=k+1;
+        snippet = snippet.strip()
 
-        snippet = snippet.strip()+"$0";
+      snippet = snippet.strip()+"$0";
 
-        if syntaxFieldsRegex.group('right') in parameters:
-          cmdTemplateParser['right'] = parameters[syntaxFieldsRegex.group('right')]['type']
-        if re.match(strExpr,syntaxFieldsRegex.group('right')):
-          cmdTemplateParser['right'] = ['String']
-        if re.match(arrayExpr,syntaxFieldsRegex.group('right')):
-          cmdTemplateParser['right'] = ['Array']
-
-
+      if syntaxFieldsRegex.group('right') in parameters:
+        cmdTemplateParser['right'] = parameters[syntaxFieldsRegex.group('right')]['type']
+      if re.match(strExpr,syntaxFieldsRegex.group('right')):
+        cmdTemplateParser['right'] = ['String']
+      if re.match(arrayExpr,syntaxFieldsRegex.group('right')):
+        cmdTemplateParser['right'] = ['Array']
 
 
   if not ('optype' in cmdTemplateParser):
