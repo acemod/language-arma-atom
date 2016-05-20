@@ -9,7 +9,7 @@ const MAX_DESC_LENGTH = 128
 const ELLIPSIS = String.fromCharCode(8230)
 
 const URL_BASE = 'https://github.com/acemod/ACE3/tree/release/addons/'
-const OUTPUT_FILE_PATH = normalize(`${__dirname}/../../settings/language-sqf-functions-ace3.json`)
+const OUTPUT_FILE_PATH = normalize(`${__dirname}/../../settingsAvailable/language-sqf-functions-ace3.json`)
 const GRAMMAR_FILE_PATH = normalize(`${__dirname}/../../grammars/sqf.json`)
 const GRAMMAR_FILE = require(GRAMMAR_FILE_PATH)
 

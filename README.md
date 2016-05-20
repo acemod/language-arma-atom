@@ -22,11 +22,15 @@ With a goal of faster development in SQF, auto-completion for all BIS functions 
 
 ![Autocomplete](https://raw.githubusercontent.com/acemod/language-arma-atom/master/rsc/images/autocomplete.png)
 
+> CBA and ACE3 commands are optional, but enabled by default.
+
 ### Snippets
 
 Quick development also requires writing a lot of different blocks or combinations of code. A handful of useful snippets ranging from BIS conditional structures and loops through CBA macros and ACE3 function headers were added to help you with this.
 
 ![Snippets](https://raw.githubusercontent.com/acemod/language-arma-atom/master/rsc/images/snippets.png)
+
+> CBA and ACE3 snippets are optional, but enabled by default.
 
 ### Open Latest RPT File
 

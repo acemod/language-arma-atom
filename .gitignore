@@ -6,3 +6,5 @@ node_modules
 *.cfg
 *.ext
 Thumbs.db
+/settings
+/snippets
