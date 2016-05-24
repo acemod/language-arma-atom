@@ -3,7 +3,7 @@ copyNewer = require 'copy-newer'
 
 buildProject = require './lib/build-project'
 openLatestRptFile = require './lib/open-latest-rpt-file'
-optionalAutosuggests = require './lib/optional-autosuggests'
+optionalAutocomplete = require './lib/optional-autocomplete'
 
 module.exports =
   subscriptions: null
@@ -27,20 +27,20 @@ module.exports =
       type: "string"
       default: "<current-project>/tools/make.py"
       order: 3
-    autosuggest:
-      title: "Autosuggestions"
+    autocomplete:
+      title: "Autocomplete"
       type: "object"
       order: 4
       properties:
         includeCba:
           title: "Include CBA"
-          description: "Autosuggestions will include CBA specific commands and snippets"
+          description: "Include CBA commands and snippets in autocomplete suggestions (requires restart)"
           type: "boolean"
           default: true
           order: 1
         includeAce:
-          title: "Include ACE"
-          description: "Autosuggestions will include ACE specific commands and snippets"
+          title: "Include ACE3"
+          description: "Include ACE3 commands and snippets in autocomplete suggestions (requires restart)"
           type: "boolean"
           default: true
           order: 2
@@ -63,10 +63,10 @@ module.exports =
     }
 
     # Copy optional autosuggest files
-    atom.config.observe 'language-arma-atom.autosuggest.includeCba', (checked) ->
-      optionalAutosuggests.set('cba', checked)
-    atom.config.observe 'language-arma-atom.autosuggest.includeAce', (checked) ->
-      optionalAutosuggests.set('ace', checked)
+    atom.config.observe 'language-arma-atom.autocomplete.includeCba', (checked) ->
+      optionalAutocomplete.set('cba', checked)
+    atom.config.observe 'language-arma-atom.autocomplete.includeAce', (checked) ->
+      optionalAutocomplete.set('ace', checked)
 
   deactivate: ->
     @subscriptions.dispose()
