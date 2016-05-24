@@ -62,7 +62,6 @@ autocompleteDict = {
     'autocomplete': {
       'symbols':{
         'CBAfunctions':{
-          'typePriority': 4,
           'suggestions': output
         }
       }
@@ -70,8 +69,10 @@ autocompleteDict = {
   }
 };
 
-with open('language-sqf-functions-cba.json', 'w') as f:
+with open('../settingsAvailable/language-sqf-functions-cba.json', 'w') as f:
   json.dump(autocompleteDict,f,indent=2)
 
 with open('grammars-sqf-functions-cba.json', 'w') as f:
   f.write('|'.join(functionList))
+
+print("\nCopy contents of 'grammars-sqf-functions-cba.json' into the 'support.function.cba.sqf' section of 'grammars/sqf.json'")

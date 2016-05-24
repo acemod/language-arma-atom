@@ -82,4 +82,4 @@ for item in data:
 with open('bi-wiki-operator.json', 'w') as f:
   json.dump(output,f)
 
-print("\nExecute parseOperators.py to parse the retrieved information.")
+print("\nExecute 'parseOperators.py' to parse the retrieved information.")

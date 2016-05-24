@@ -169,7 +169,6 @@ autocompleteDict = {
     'autocomplete': {
       'symbols':{
         'builtin':{
-          'typePriority': 4,
           'suggestions': outputAutocomplete
         }
       }
@@ -177,8 +176,10 @@ autocompleteDict = {
   }
 };
 
-with open('language-sqf-native-commands.json', 'w') as f:
+with open('../settingsAvailable/language-sqf-native-commands.json', 'w') as f:
   json.dump(autocompleteDict,f,indent=2)
 
 with open('grammars-sqf-native-commands.json', 'w') as f:
   f.write('|'.join(outputSyntaxStr))
+
+print("\nCopy contents of 'grammars-sqf-native-commands.json' into the 'support.function.sqf' section of 'grammars/sqf.json' without leading 'a|a|")
