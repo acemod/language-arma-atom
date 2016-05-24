@@ -16,6 +16,9 @@
       "language-arma-atom:build-release"
     ]
   },
+  "activationHooks": [
+    "language-arma-atom:grammar-used"
+  ],
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0",
@@ -28,5 +31,8 @@
   },
   "bugs": {
     "url": "https://github.com/acemod/language-arma-atom/issues"
+  },
+  "dependencies": {
+    "copy-newer": "^2.1.1"
   }
 }
