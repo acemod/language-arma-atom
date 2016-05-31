@@ -1625,7 +1625,7 @@
               "text": "BIS_fnc_endMissionServer",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "End the mission on all computers.",
+              "description": "Ends the mission properly for all players in a multiplayer environment.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_endMissionServer"
             },
             {

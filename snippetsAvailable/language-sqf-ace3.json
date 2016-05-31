@@ -5,70 +5,8 @@
       "body": "/*\n * Author: ${1:[Name of Author(s)]}\n * ${2:[Description]}\n *\n * Arguments:\n * 0: ${3:Argument Name} <${4:TYPE}>\n *\n * Return Value:\n * ${5:Return Name} <${6:TYPE}>\n *\n * Example:\n * [${7:\"example\"}] call ace_${8:[module]}_fnc_${9:[functionName]}\n *\n * Public: ${10:[Yes/No]}\n */",
       "description": "Function Header per ACE3 guidelines.",
       "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#headers"
-    },
-
-    "ACE3 Add EH": {
-      "prefix": "addEventHandler_ace",
-      "body": "[\"${1:EVENT_NAME}\", ${2:CODE}] call EFUNC(common,addEventhandler);",
-      "description": "Add an event handler, return ID",
-      "descriptionMoreURL": "http://ace3mod.com/wiki/framework/events-framework.html#add-event"
-    },
-    "ACE3 Remove EH": {
-      "prefix": "removeEventHandler_ace",
-      "body": "[\"${1:EVENT_NAME}\", ${2:ID}] call EFUNC(common,removeEventHandler);",
-      "description": "Remove an event handler using the ID",
-      "descriptionMoreURL": "http://ace3mod.com/wiki/framework/events-framework.html#remove-event"
-    },
-    "ACE3 Remove All EHs": {
-      "prefix": "removeAllEventHandlers_ace",
-      "body": "[\"${1:EVENT_NAME}\"] call EFUNC(common,removeAllEventHandlers);",
-      "description": "Remove all event handlers of given type",
-      "descriptionMoreURL": "http://ace3mod.com/wiki/framework/events-framework.html#remove-all-events"
-    },
-    "ACE3 Local Event": {
-      "prefix": "localEvent_ace",
-      "body": "[\"${1:EVENT_NAME}\", [${2:PARAMETERS}]] call EFUNC(common,localEvent);",
-      "description": "Call an event on the local machine",
-      "descriptionMoreURL": "http://ace3mod.com/wiki/framework/events-framework.html#local-event"
-    },
-    "ACE3 Server Event": {
-      "prefix": "serverEvent_ace",
-      "body": "[\"${1:Event name}\", [${2:PARAMETERS}]] call EFUNC(common,serverEvent);",
-      "description": "Call an event on server machine",
-      "descriptionMoreURL": "http://ace3mod.com/wiki/framework/events-framework.html#server-event"
-    },
-    "ACE3 Global Event": {
-      "prefix": "globalEvent_ace",
-      "body": "[\"${1:EVENT_NAME}\", [${2:PARAMETERS}]] call EFUNC(common,globalEvent);",
-      "description": "Call an event on all machines",
-      "descriptionMoreURL": "http://ace3mod.com/wiki/framework/events-framework.html#global-event"
-    },
-    "ACE3 Target Event": {
-      "prefix": "targetEvent_ace",
-      "body": "[\"${1:EVENT_NAME}\", ${2:TARGET(S)}, [${3:PARAMETERS}]] call EFUNC(common,targetEvent);",
-      "description": "Call an event targeted (list of) object(s)",
-      "descriptionMoreURL": "http://ace3mod.com/wiki/framework/events-framework.html#target-event"
-    },
-    "ACE3 Add Synced EH": {
-      "prefix": "addSyncedEventHandler_ace",
-      "body": "[\"${1:EVENT_NAME}\", ${2:CODE}, ${2:TTL_NUMBER_OR_CODE}] call EFUNC(common,addSyncedEventHandler);",
-      "description": "Add a synchronized event handler",
-      "descriptionMoreURL": "http://ace3mod.com/wiki/framework/events-framework.html#synchronized-events"
-    },
-    "ACE3 Remove Synced EH": {
-      "prefix": "removeSyncedEventHandler_ace",
-      "body": "[\"${1:EVENT_NAME}\", ${2:ID}] call EFUNC(common,removeSyncedEventHandler);",
-      "description": "Remove a synchronized event handler using the ID",
-      "descriptionMoreURL": "http://ace3mod.com/wiki/framework/events-framework.html#synchronized-events"
-    },
-    "ACE3 Synced Event": {
-      "prefix": "syncedEvent_ace",
-      "body": "[\"${1:EVENT_NAME}\", [${2:PARAMETERS}], ${3:TTL_NUMBER_OR_CODE}] call EFUNC(common,syncedEvent);",
-      "description": "Call a synchronized event (including JIP)",
-      "descriptionMoreURL": "http://ace3mod.com/wiki/framework/events-framework.html#synchronized-events"
     }
   },
-
 
   ".source.arma.cfg": {
     "ACE3 Settings Entry": {

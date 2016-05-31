@@ -25,16 +25,6 @@
               "rightLabel": "ACE3 Macro",
               "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#modulepbo-specific-macro-usage"
             }, {
-              "description": "Expands to: \"prefix_component_fnc_functionName\"",
-              "snippet": "QFUNC(${1:functionName})$0",
-              "rightLabel": "ACE3 Macro",
-              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#modulepbo-specific-macro-usage"
-            }, {
-              "description": "Expands to: \"prefix_component_fnc_functionName\"",
-              "snippet": "QEFUNC(${1:component},${2:functionName})$0",
-              "rightLabel": "ACE3 Macro",
-              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#modulepbo-specific-macro-usage"
-            }, {
               "description": "Expands to: obj getVariable [\"varName\", default]",
               "snippet": "GETVAR(${1:obj},${2:varName},${3:default})$0",
               "rightLabel": "ACE3 Macro",
