@@ -6,6 +6,7 @@ import urllib.request
 import html
 
 fnc_base_url = 'http://cbateam.github.io/CBA_A3/docs/index/'
+fnc_page_names = ['Functions', 'Functions2']
 fncPrefix = 'CBA_fnc_'
 macro_base_url = 'http://cbateam.github.io/CBA_A3/docs/files/main/script_macros_common-hpp.html'
 
@@ -25,37 +26,37 @@ for macroContent in allMacros:
       re.search(r'(.*?)(<h4 class=CHeading>Parameters</h4>.*?)?(<h4 class=CHeading>Example</h4>.*?)?(?:<h4 class=CHeading>Author</h4>.*?)',macroContent[1],re.DOTALL)
 
 
-
-f = urllib.request.urlopen(fnc_base_url + 'Functions.html')
-content = f.read().decode("utf-8")
-f.close()
-
-allFunctions = re.findall(r'<a[^>]*href\s*=\s*"([^"]*)"[^>]*class=ISymbol[^>]*>([^<]*)',content)
-
 output = []
 functionList = []
 
-for function in allFunctions:
-  outputTemplate = {}
-  outputTemplate['rightLabel'] = "CBA Function"
-  outputTemplate['text'] = ''
-  outputTemplate['description'] = ''
-  outputTemplate['type'] = 'function'
-  outputTemplate['descriptionMoreURL'] = fnc_base_url + function[0]
-  print(function[1])
-  functionList.append(function[1])
-  f = urllib.request.urlopen(outputTemplate['descriptionMoreURL'])
+for fnc_page in fnc_page_names:
+  f = urllib.request.urlopen(fnc_base_url + fnc_page + '.html')
   content = f.read().decode("utf-8")
   f.close()
-  nameRegex = re.search(r'<a name="([^"]*)">',content)
-  if nameRegex:
-    outputTemplate['text'] = nameRegex.group(1)
 
-  descriptionRegex = re.search(r'<h4 class=CHeading>Description</h4>(.*)<h4 class=CHeading>Parameters</h4>',content)
-  if descriptionRegex:
-    outputTemplate['description'] = str(html.unescape(re.sub(r'(<[^<]+?>)','',descriptionRegex.group(1)).strip()))
+  allFunctions = re.findall(r'<a[^>]*href\s*=\s*"([^"]*)"[^>]*class=ISymbol[^>]*>([^<]*)',content)
 
-  output.append(outputTemplate)
+  for function in allFunctions:
+    outputTemplate = {}
+    outputTemplate['rightLabel'] = "CBA Function"
+    outputTemplate['text'] = ''
+    outputTemplate['description'] = ''
+    outputTemplate['type'] = 'function'
+    outputTemplate['descriptionMoreURL'] = fnc_base_url + function[0]
+    print(function[1])
+    functionList.append(function[1])
+    f = urllib.request.urlopen(outputTemplate['descriptionMoreURL'])
+    content = f.read().decode("utf-8")
+    f.close()
+    nameRegex = re.search(r'<a name="([^"]*)">',content)
+    if nameRegex:
+      outputTemplate['text'] = nameRegex.group(1)
+
+    descriptionRegex = re.search(r'<h4 class=CHeading>Description</h4>(.*)<h4 class=CHeading>Parameters</h4>',content)
+    if descriptionRegex:
+      outputTemplate['description'] = str(html.unescape(re.sub(r'(<[^<]+?>)','',descriptionRegex.group(1)).strip()))
+
+    output.append(outputTemplate)
 
 autocompleteDict = {
   '.source.sqf': {
