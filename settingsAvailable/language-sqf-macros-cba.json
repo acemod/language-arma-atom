@@ -31,6 +31,11 @@
               "rightLabel": "CBA Macro",
               "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#modulepbo-specific-macro-usage"
             }, {
+              "description": "Expands to: \"\"prefix_component_variable\"\"",
+              "snippet": "QQGVAR(${1:variable})$0",
+              "rightLabel": "CBA Macro",
+              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#modulepbo-specific-macro-usage"
+            }, {
               "description": "Expands to: prefix_component_variable",
               "snippet": "EGVAR(${1:component},${2:variable})$0",
               "rightLabel": "CBA Macro",
@@ -38,6 +43,11 @@
             }, {
               "description": "Expands to: \"prefix_component_variable\"",
               "snippet": "QEGVAR(${1:component},${2:variable})$0",
+              "rightLabel": "CBA Macro",
+              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#modulepbo-specific-macro-usage"
+            }, {
+              "description": "Expands to: \"\"prefix_component_variable\"\"",
+              "snippet": "QQEGVAR(${1:component},${2:variable})$0",
               "rightLabel": "CBA Macro",
               "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#modulepbo-specific-macro-usage"
             }, {
@@ -56,8 +66,18 @@
               "rightLabel": "CBA Macro",
               "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#modulepbo-specific-macro-usage"
             }, {
+              "description": "Expands to: \"\"prefix_component_fnc_functionName\"\"",
+              "snippet": "QQFUNC(${1:functionName})$0",
+              "rightLabel": "CBA Macro",
+              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#modulepbo-specific-macro-usage"
+            }, {
               "description": "Expands to: \"prefix_component_fnc_functionName\"",
               "snippet": "QEFUNC(${1:component},${2:functionName})$0",
+              "rightLabel": "CBA Macro",
+              "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#modulepbo-specific-macro-usage"
+            }, {
+              "description": "Expands to: \"\"prefix_component_fnc_functionName\"\"",
+              "snippet": "QQEFUNC(${1:component},${2:functionName})$0",
               "rightLabel": "CBA Macro",
               "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#modulepbo-specific-macro-usage"
             }, {
@@ -65,6 +85,26 @@
               "snippet": "QUOTE(${1:content})$0",
               "rightLabel": "CBA Macro",
               "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#general-purpose-macros"
+            }, {
+              "description": "Expands to: \"prefix\\addons\\component\\path\"",
+              "snippet": "PATHTOF(${1:path})$0",
+              "rightLabel": "CBA Macro",
+              "descriptionMoreURL": ""
+            }, {
+              "description": "Expands to: \"prefix\\addons\\component\\path\"",
+              "snippet": "PATHTOEF(${1:path})$0",
+              "rightLabel": "CBA Macro",
+              "descriptionMoreURL": ""
+            }, {
+              "description": "Expands to: \"\"prefix\\addons\\component\\path\"\"",
+              "snippet": "QPATHTOF(${1:path})$0",
+              "rightLabel": "CBA Macro",
+              "descriptionMoreURL": ""
+            }, {
+              "description": "Expands to: \"\"prefix\\addons\\component\\path\"\"",
+              "snippet": "QPATHTOEF(${1:path})$0",
+              "rightLabel": "CBA Macro",
+              "descriptionMoreURL": ""
             }, {
               "description": "Expands to: \"STR_prefix_component_string\"",
               "snippet": "LSTRING(${1:string})$0",

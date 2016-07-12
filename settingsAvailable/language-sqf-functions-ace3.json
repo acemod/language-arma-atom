@@ -19,13 +19,6 @@
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/cargo/functions/fnc_makeLoadable.sqf"
             },
             {
-              "text": "ace_common_fnc_addEventHandler",
-              "rightLabel": "ACE3 Function",
-              "type": "function",
-              "description": "Add an event handler.",
-              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_addEventHandler.sqf"
-            },
-            {
               "text": "ace_common_fnc_addMapMarkerCreatedEventHandler",
               "rightLabel": "ACE3 Function",
               "type": "function",
@@ -425,13 +418,6 @@
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getTurretIndex.sqf"
             },
             {
-              "text": "ace_common_fnc_getTurrets",
-              "rightLabel": "ACE3 Function",
-              "type": "function",
-              "description": "Get all turret indicies of a vehicle type.",
-              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getTurrets.sqf"
-            },
-            {
               "text": "ace_common_fnc_getTurretsFFV",
               "rightLabel": "ACE3 Function",
               "type": "function",
@@ -542,13 +528,6 @@
               "type": "function",
               "description": "Returns a value depending on current zoom level.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getZoom.sqf"
-            },
-            {
-              "text": "ace_common_fnc_globalEvent",
-              "rightLabel": "ACE3 Function",
-              "type": "function",
-              "description": "Execute a global event on all clients, including self.",
-              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_globalEvent.sqf"
             },
             {
               "text": "ace_common_fnc_hadamardProduct",
@@ -740,13 +719,6 @@
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_numberToString.sqf"
             },
             {
-              "text": "ace_common_fnc_objectEvent",
-              "rightLabel": "ACE3 Function",
-              "type": "function",
-              "description": "Execute an event where object is local.\r\nIf local there is no network traffic/delay (Unlike targetEvent).",
-              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_objectEvent.sqf"
-            },
-            {
               "text": "ace_common_fnc_player",
               "rightLabel": "ACE3 Function",
               "type": "function",
@@ -775,25 +747,11 @@
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_progressBar.sqf"
             },
             {
-              "text": "ace_common_fnc_removeAllEventHandlers",
-              "rightLabel": "ACE3 Function",
-              "type": "function",
-              "description": "Remove all events of a certain event type.",
-              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_removeAllEventHandlers.sqf"
-            },
-            {
               "text": "ace_common_fnc_removeBinocularMagazine",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Removes the magazine of the units rangefinder.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_removeBinocularMagazine.sqf"
-            },
-            {
-              "text": "ace_common_fnc_removeEventHandler",
-              "rightLabel": "ACE3 Function",
-              "type": "function",
-              "description": "Remove an event handler.",
-              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_removeEventHandler.sqf"
             },
             {
               "text": "ace_common_fnc_removeMapMarkerCreatedEventHandler",
@@ -822,13 +780,6 @@
               "type": "function",
               "description": "Send a request to an unit and execute code based upon results.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_sendRequest.sqf"
-            },
-            {
-              "text": "ace_common_fnc_serverEvent",
-              "rightLabel": "ACE3 Function",
-              "type": "function",
-              "description": "Execute a event only on the server.",
-              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_serverEvent.sqf"
             },
             {
               "text": "ace_common_fnc_setAllGear",
@@ -948,13 +899,6 @@
               "type": "function",
               "description": "Stack group switches. Will always trace back to original group.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_switchToGroupSide.sqf"
-            },
-            {
-              "text": "ace_common_fnc_targetEvent",
-              "rightLabel": "ACE3 Function",
-              "type": "function",
-              "description": "Execute a event only on specific clients.",
-              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_targetEvent.sqf"
             },
             {
               "text": "ace_common_fnc_toBin",
@@ -1188,6 +1132,13 @@
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/explosives/functions/fnc_triggerType.sqf"
             },
             {
+              "text": "ace_fastroping_fnc_deployAI",
+              "rightLabel": "ACE3 Function",
+              "type": "function",
+              "description": "Auomatically deploy a helicopter filled with AI units.",
+              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/fastroping/functions/fnc_deployAI.sqf"
+            },
+            {
               "text": "ace_goggles_fnc_applyDirtEffect",
               "rightLabel": "ACE3 Function",
               "type": "function",
@@ -1300,13 +1251,6 @@
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/medical/functions/fnc_addHeartRateAdjustment.sqf"
             },
             {
-              "text": "ace_medical_fnc_addToInjuredCollection",
-              "rightLabel": "ACE3 Function",
-              "type": "function",
-              "description": "Enabled the vitals loop for a unit.",
-              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/medical/functions/fnc_addToInjuredCollection.sqf"
-            },
-            {
               "text": "ace_medical_fnc_addToLog",
               "rightLabel": "ACE3 Function",
               "type": "function",
@@ -1326,6 +1270,13 @@
               "type": "function",
               "description": "Adds new condition for the unconscious state. Conditions are not actively checked for units unless unit is in unconscious state.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/medical/functions/fnc_addUnconsciousCondition.sqf"
+            },
+            {
+              "text": "ace_medical_fnc_addVitalLoop",
+              "rightLabel": "ACE3 Function",
+              "type": "function",
+              "description": "Enabled the vitals loop for a unit.",
+              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/medical/functions/fnc_addVitalLoop.sqf"
             },
             {
               "text": "ace_medical_fnc_adjustPainLevel",
@@ -1482,6 +1433,13 @@
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/medical/functions/fnc_setUnconscious.sqf"
             },
             {
+              "text": "ace_medical_fnc_showBloodEffect",
+              "rightLabel": "ACE3 Function",
+              "type": "function",
+              "description": "Does the blood screen effect, just like BIS_fnc_bloodeffect, but in non-sheduled environment.",
+              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/medical/functions/fnc_showBloodEffect.sqf"
+            },
+            {
               "text": "ace_medical_fnc_treatment",
               "rightLabel": "ACE3 Function",
               "type": "function",
@@ -1599,6 +1557,13 @@
               "type": "function",
               "description": "Unload current magazine from static weapon using a timer.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/mk6mortar/functions/fnc_unloadMagazineTimer.sqf"
+            },
+            {
+              "text": "ace_nametags_fnc_setFactionRankIcons",
+              "rightLabel": "ACE3 Function",
+              "type": "function",
+              "description": "Sets a custom set of icons for a specified faction.",
+              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/nametags/functions/fnc_setFactionRankIcons.sqf"
             },
             {
               "text": "ace_parachute_fnc_showAltimeter",
@@ -1804,6 +1769,20 @@
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/switchunits/functions/fnc_switchUnit.sqf"
             },
             {
+              "text": "ace_tagging_fnc_tag",
+              "rightLabel": "ACE3 Function",
+              "type": "function",
+              "description": "Creates a tag on a wall that is on the closest surface within 2m on front of the unit.",
+              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/tagging/functions/fnc_tag.sqf"
+            },
+            {
+              "text": "ace_ui_fnc_setElementVisibility",
+              "rightLabel": "ACE3 Function",
+              "type": "function",
+              "description": "Setter for toggling advanced element visibility.",
+              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/ui/functions/fnc_setElementVisibility.sqf"
+            },
+            {
               "text": "ace_vehiclelock_fnc_addKeyForVehicle",
               "rightLabel": "ACE3 Function",
               "type": "function",
@@ -1821,7 +1800,7 @@
               "text": "ace_vehiclelock_fnc_setVehicleLockEH",
               "rightLabel": "ACE3 Function",
               "type": "function",
-              "description": "Sets a vehicle lock state because of a \"VehicleLock_SetVehicleLock\" event.",
+              "description": "Sets a vehicle lock state because of a \"ace_vehiclelock_setVehicleLock\" event.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/vehiclelock/functions/fnc_setVehicleLockEH.sqf"
             },
             {
