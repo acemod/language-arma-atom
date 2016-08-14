@@ -3,6 +3,7 @@
   "name": "Arma Config",
   "fileTypes": [
     "cfg",
+    "sqe",
     "sqm",
     "ext",
     "cpp",

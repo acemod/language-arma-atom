@@ -4,6 +4,7 @@ This packages adds syntax highlighting and auto-completions for SQF files in Ato
 
 Support for the following file types used by the Real Virtuality engine has been added:
 - sqf
+- sqe
 - sqm
 - cpp
 - hpp
