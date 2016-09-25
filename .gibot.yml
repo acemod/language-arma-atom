@@ -46,6 +46,7 @@ stages:
       - wontfix
       - information required
       - marked for cleanup
+      - inactive
     comment:
       - 'Hello @acemod/maintainers. This ticket has been open for over {days} days without any activity.'
     action:
