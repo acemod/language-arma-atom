@@ -71,7 +71,7 @@
               "text": "ace_common_fnc_blurScreen",
               "rightLabel": "ACE3 Function",
               "type": "function",
-              "description": "",
+              "description": "Blurs screen.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_blurScreen.sqf"
             },
             {
@@ -173,32 +173,11 @@
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_execNextFrame.sqf"
             },
             {
-              "text": "ace_common_fnc_filter",
-              "rightLabel": "ACE3 Function",
-              "type": "function",
-              "description": "Filters array and removes every element not fitting the condition.",
-              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_filter.sqf"
-            },
-            {
               "text": "ace_common_fnc_getAllDefinedSetVariables",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Returns an 2d array of all variables that have been set on the object.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getAllDefinedSetVariables.sqf"
-            },
-            {
-              "text": "ace_common_fnc_getAllGear",
-              "rightLabel": "ACE3 Function",
-              "type": "function",
-              "description": "Returns an array containing all items of a given unit.",
-              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getAllGear.sqf"
-            },
-            {
-              "text": "ace_common_fnc_getCaptivityStatus",
-              "rightLabel": "ACE3 Function",
-              "type": "function",
-              "description": "Return the captivity status of an unit.",
-              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getCaptivityStatus.sqf"
             },
             {
               "text": "ace_common_fnc_getChildren",
@@ -269,13 +248,6 @@
               "type": "function",
               "description": "Returns the the first intersection with an object between two positions. @todo rewrite using lineIntersectsSurfaces?.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getFirstTerrainIntersection.sqf"
-            },
-            {
-              "text": "ace_common_fnc_getForceWalkStatus",
-              "rightLabel": "ACE3 Function",
-              "type": "function",
-              "description": "Returns reasons why the unit is forceWalk-ing.",
-              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getForceWalkStatus.sqf"
             },
             {
               "text": "ace_common_fnc_getGunner",
@@ -572,13 +544,6 @@
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_hideUnit.sqf"
             },
             {
-              "text": "ace_common_fnc_insertionSort",
-              "rightLabel": "ACE3 Function",
-              "type": "function",
-              "description": "Sorts an array of numbers.",
-              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_insertionSort.sqf"
-            },
-            {
               "text": "ace_common_fnc_interpolateFromArray",
               "rightLabel": "ACE3 Function",
               "type": "function",
@@ -591,13 +556,6 @@
               "type": "function",
               "description": "Check if given unit is in a transitional animation.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_inTransitionAnim.sqf"
-            },
-            {
-              "text": "ace_common_fnc_isAutoWind",
-              "rightLabel": "ACE3 Function",
-              "type": "function",
-              "description": "Check if wind is set on auto.\r\nArguments\r\nNone\r\nReturn Value:\r\nThis mission has automatic wind? <BOOL>.",
-              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_isAutoWind.sqf"
             },
             {
               "text": "ace_common_fnc_isAwake",
@@ -677,13 +635,6 @@
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_loadPersonLocal.sqf"
             },
             {
-              "text": "ace_common_fnc_map",
-              "rightLabel": "ACE3 Function",
-              "type": "function",
-              "description": "Applies given code to every element in an array, LIKE SOMETHING SQF SHOULD HAVE BY DEFAULT. <- :kappa:.",
-              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_map.sqf"
-            },
-            {
               "text": "ace_common_fnc_monitor",
               "rightLabel": "ACE3 Function",
               "type": "function",
@@ -717,6 +668,13 @@
               "type": "function",
               "description": "Converts a number to a string without losing as much precission as str or format.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_numberToString.sqf"
+            },
+            {
+              "text": "ace_common_fnc_playConfigSound3D",
+              "rightLabel": "ACE3 Function",
+              "type": "function",
+              "description": "Plays a sound defined in CfgSounds using playSound3D, with global effect.",
+              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_playConfigSound3D.sqf"
             },
             {
               "text": "ace_common_fnc_player",
@@ -782,20 +740,6 @@
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_sendRequest.sqf"
             },
             {
-              "text": "ace_common_fnc_setAllGear",
-              "rightLabel": "ACE3 Function",
-              "type": "function",
-              "description": "Applies gear to unit. It must be called in the machine in which the unit is local.",
-              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_setAllGear.sqf"
-            },
-            {
-              "text": "ace_common_fnc_setCaptivityStatus",
-              "rightLabel": "ACE3 Function",
-              "type": "function",
-              "description": "Set the captivity status of an unit. This allows the handling of more than one reason to set a unit captive.",
-              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_setCaptivityStatus.sqf"
-            },
-            {
               "text": "ace_common_fnc_setDefinedVariable",
               "rightLabel": "ACE3 Function",
               "type": "function",
@@ -808,13 +752,6 @@
               "type": "function",
               "description": "Disables the user input. Works stacked.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_setDisableUserInputStatus.sqf"
-            },
-            {
-              "text": "ace_common_fnc_setForceWalkStatus",
-              "rightLabel": "ACE3 Function",
-              "type": "function",
-              "description": "Sets the forceWalk status of an unit. This allows the handling of more than one reason to set forceWalk.\r\nUnit will force walk …",
-              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_setForceWalkStatus.sqf"
             },
             {
               "text": "ace_common_fnc_setHearingCapability",
@@ -883,7 +820,7 @@
               "text": "ace_common_fnc_stringRemoveWhiteSpace",
               "rightLabel": "ACE3 Function",
               "type": "function",
-              "description": "Removes white spaces from string.",
+              "description": "Removes whitespace from a string.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_stringRemoveWhiteSpace.sqf"
             },
             {
@@ -1216,6 +1153,20 @@
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/goggles/functions/fnc_removeRainEffect.sqf"
             },
             {
+              "text": "ace_interact_menu_fnc_addActionToClass",
+              "rightLabel": "ACE3 Function",
+              "type": "function",
+              "description": "Insert an ACE action to a class, under a certain path.",
+              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/interact_menu/functions/fnc_addActionToClass.sqf"
+            },
+            {
+              "text": "ace_interact_menu_fnc_createAction",
+              "rightLabel": "ACE3 Function",
+              "type": "function",
+              "description": "Creates an isolated ACE action.",
+              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/interact_menu/functions/fnc_createAction.sqf"
+            },
+            {
               "text": "ace_logistics_wirecutter_fnc_interactEH",
               "rightLabel": "ACE3 Function",
               "type": "function",
@@ -1382,20 +1333,6 @@
               "type": "function",
               "description": "Replaces vanilla items with ACE ones.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/medical/functions/fnc_itemCheck.sqf"
-            },
-            {
-              "text": "ace_medical_fnc_onWoundUpdateRequest",
-              "rightLabel": "ACE3 Function",
-              "type": "function",
-              "description": "Handles an wound update request.",
-              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/medical/functions/fnc_onWoundUpdateRequest.sqf"
-            },
-            {
-              "text": "ace_medical_fnc_requestWoundSync",
-              "rightLabel": "ACE3 Function",
-              "type": "function",
-              "description": "Ask for the latest wound information.",
-              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/medical/functions/fnc_requestWoundSync.sqf"
             },
             {
               "text": "ace_medical_fnc_selectionNameToNumber",
@@ -1767,6 +1704,13 @@
               "type": "function",
               "description": "Switches to the new given player unit.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/switchunits/functions/fnc_switchUnit.sqf"
+            },
+            {
+              "text": "ace_tagging_fnc_addCustomTag",
+              "rightLabel": "ACE3 Function",
+              "type": "function",
+              "description": "Adds custom tag. Has to be executed on one machine only.",
+              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/tagging/functions/fnc_addCustomTag.sqf"
             },
             {
               "text": "ace_tagging_fnc_tag",

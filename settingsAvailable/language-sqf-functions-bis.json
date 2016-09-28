@@ -4327,7 +4327,7 @@
               "text": "BIS_fnc_setTask",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Set a task parameters.",
+              "description": "Set task parameters.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_setTask"
             },
             {
@@ -4432,7 +4432,7 @@
               "text": "BIS_fnc_sideColor",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Returns side color in RGBA format.",
+              "description": "Returns colour of define side either as Array in format RGBA or the name of the colour as String.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_sideColor"
             },
             {
@@ -5181,7 +5181,7 @@
               "text": "BIS_fnc_weaponAddon",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Return addon from CghPatches to which a given weapon class belongs to.",
+              "description": "Return addon from CfgPatches to which a given weapon class belongs to.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_weaponAddon"
             },
             {
