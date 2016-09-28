@@ -92,7 +92,7 @@
               "descriptionMoreURL": ""
             }, {
               "description": "Expands to: \"prefix\\addons\\component\\path\"",
-              "snippet": "PATHTOEF(${1:path})$0",
+              "snippet": "PATHTOEF(${1:component},${2:path})$0",
               "rightLabel": "CBA Macro",
               "descriptionMoreURL": ""
             }, {
@@ -102,7 +102,7 @@
               "descriptionMoreURL": ""
             }, {
               "description": "Expands to: \"\"prefix\\addons\\component\\path\"\"",
-              "snippet": "QPATHTOEF(${1:path})$0",
+              "snippet": "QPATHTOEF(${1:component},${2:path})$0",
               "rightLabel": "CBA Macro",
               "descriptionMoreURL": ""
             }, {
