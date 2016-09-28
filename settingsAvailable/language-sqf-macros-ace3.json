@@ -109,6 +109,22 @@
               "snippet": "HASHLIST_SET(${1:hashList},${2:index},${3:hash})$0",
               "rightLabel": "ACE3 Macro",
               "descriptionMoreURL": "http://ace3mod.com/wiki/development/coding-guidelines.html#hashlists"
+            }, {
+              "description": "Expands to class _xx_weapon {name = \"weapon\"; count = count;}",
+              "snippet": "MACRO_ADDWEAPON(${1:weapon},${2:count});$0",
+              "rightLabel": "ACE3 Macro"
+            }, {
+              "description": "Expands to class _xx_item {name = \"item\"; count = count;}",
+              "snippet": "MACRO_ADDITEM(${1:item},${2:count});$0",
+              "rightLabel": "ACE3 Macro"
+            }, {
+              "description": "Expands to class _xx_magazine {name = \"magazine\"; count = count;}",
+              "snippet": "MACRO_ADDMAGAZINE(${1:magazine},${2:count});$0",
+              "rightLabel": "ACE3 Macro"
+            }, {
+              "description": "Expands to class _xx_backpack {name = \"backpack\"; count = count;}",
+              "snippet": "MACRO_ADDBACKPACK(${1:backpack},${2:count});$0",
+              "rightLabel": "ACE3 Macro"
             }
           ]
         }
