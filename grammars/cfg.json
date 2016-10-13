@@ -22,6 +22,10 @@
       "end": "\""
     },
     {
+      "name": "string.localized.sqf",
+      "match": "\\$STR[a-zA-Z_]*"
+    },
+    {
       "include": "source.cpp"
     }
   ]
