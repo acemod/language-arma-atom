@@ -26,13 +26,6 @@
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_addMapMarkerCreatedEventHandler.sqf"
             },
             {
-              "text": "ace_common_fnc_addScrollWheelEventHandler",
-              "rightLabel": "ACE3 Function",
-              "type": "function",
-              "description": "Add an event handler that executes every time the scroll wheel is used. This is needed, because adding a MouseZ display event …",
-              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_addScrollWheelEventHandler.sqf"
-            },
-            {
               "text": "ace_common_fnc_addSyncedEventHandler",
               "rightLabel": "ACE3 Function",
               "type": "function",
@@ -54,18 +47,25 @@
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_ambientBrightness.sqf"
             },
             {
+              "text": "ace_common_fnc_arithmeticGetResult",
+              "rightLabel": "ACE3 Function",
+              "type": "function",
+              "description": "Gets arithmetic result from a set.",
+              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_arithmeticGetResult.sqf"
+            },
+            {
+              "text": "ace_common_fnc_arithmeticSetSource",
+              "rightLabel": "ACE3 Function",
+              "type": "function",
+              "description": "Adds or removes a source to an arithmetic set.",
+              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_arithmeticSetSource.sqf"
+            },
+            {
               "text": "ace_common_fnc_binarizeNumber",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Get a binary equivalent of a decimal number.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_binarizeNumber.sqf"
-            },
-            {
-              "text": "ace_common_fnc_binocularMagazine",
-              "rightLabel": "ACE3 Function",
-              "type": "function",
-              "description": "Returns the magazine of the units rangefinder.",
-              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_binocularMagazine.sqf"
             },
             {
               "text": "ace_common_fnc_blurScreen",
@@ -166,13 +166,6 @@
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_dropBackpack.sqf"
             },
             {
-              "text": "ace_common_fnc_execNextFrame",
-              "rightLabel": "ACE3 Function",
-              "type": "function",
-              "description": "Executes a code on the next frame.",
-              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_execNextFrame.sqf"
-            },
-            {
               "text": "ace_common_fnc_getAllDefinedSetVariables",
               "rightLabel": "ACE3 Function",
               "type": "function",
@@ -199,20 +192,6 @@
               "type": "function",
               "description": "Get the gunner config of a vehicles turret.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getConfigGunner.sqf"
-            },
-            {
-              "text": "ace_common_fnc_getConfigType",
-              "rightLabel": "ACE3 Function",
-              "type": "function",
-              "description": "Determins type of item. Can be CfgMagaines, CfgWeapons or CfgGlasses.",
-              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getConfigType.sqf"
-            },
-            {
-              "text": "ace_common_fnc_getConfigTypeObject",
-              "rightLabel": "ACE3 Function",
-              "type": "function",
-              "description": "Determins type of object. Can be CfgVehicles or CfgAmmo.",
-              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getConfigTypeObject.sqf"
             },
             {
               "text": "ace_common_fnc_getDefinedVariableDefault",
@@ -705,25 +684,11 @@
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_progressBar.sqf"
             },
             {
-              "text": "ace_common_fnc_removeBinocularMagazine",
-              "rightLabel": "ACE3 Function",
-              "type": "function",
-              "description": "Removes the magazine of the units rangefinder.",
-              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_removeBinocularMagazine.sqf"
-            },
-            {
               "text": "ace_common_fnc_removeMapMarkerCreatedEventHandler",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Remove a map marker creation event handler.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_removeMapMarkerCreatedEventHandler.sqf"
-            },
-            {
-              "text": "ace_common_fnc_removeScrollWheelEventHandler",
-              "rightLabel": "ACE3 Function",
-              "type": "function",
-              "description": "Remove a scroll wheel event handler.",
-              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_removeScrollWheelEventHandler.sqf"
             },
             {
               "text": "ace_common_fnc_sanitizeString",
@@ -901,11 +866,18 @@
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_useMagazine.sqf"
             },
             {
-              "text": "ace_common_fnc_waitAndExecute",
+              "text": "ace_common_fnc_watchVariable",
               "rightLabel": "ACE3 Function",
               "type": "function",
-              "description": "Executes a code once with a given game time delay, using a PFH.",
-              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_waitAndExecute.sqf"
+              "description": "Shows multiple watched variables on the main display (for easy debugging).",
+              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_watchVariable.sqf"
+            },
+            {
+              "text": "ace_dogtags_fnc_disableFactionDogtags",
+              "rightLabel": "ACE3 Function",
+              "type": "function",
+              "description": "Disable this faction from using dogtags.",
+              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/dogtags/functions/fnc_disableFactionDogtags.sqf"
             },
             {
               "text": "ace_dragging_fnc_setCarryable",
@@ -1172,6 +1144,13 @@
               "type": "function",
               "description": "When interact_menu starts rendering (from \"interact_keyDown\" event).",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/logistics_wirecutter/functions/fnc_interactEH.sqf"
+            },
+            {
+              "text": "ace_map_gestures_fnc_addGroupColorMapping",
+              "rightLabel": "ACE3 Function",
+              "type": "function",
+              "description": "Adds a group id color mapping.",
+              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/map_gestures/functions/fnc_addGroupColorMapping.sqf"
             },
             {
               "text": "ace_medical_fnc_actionPlaceInBodyBag",

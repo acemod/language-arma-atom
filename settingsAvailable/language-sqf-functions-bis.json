@@ -106,7 +106,7 @@
               "text": "BIS_fnc_addScriptedEventHandler",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Add scripted event handler.",
+              "description": "Adds scripted event handler and returns id.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_addScriptedEventHandler"
             },
             {
@@ -533,7 +533,7 @@
               "text": "BIS_fnc_callScriptedEventHandler",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Call scripted event handlers.",
+              "description": "Calls all the codes assigned to scripted event handler with given name.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_callScriptedEventHandler"
             },
             {
@@ -3697,7 +3697,7 @@
               "text": "BIS_fnc_removeAllScriptedEventHandlers",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Remove all scripted event handlers of given type.",
+              "description": "Removes all scripted event handler with given name.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_removeAllScriptedEventHandlers"
             },
             {
@@ -3760,7 +3760,7 @@
               "text": "BIS_fnc_removeScriptedEventHandler",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Remove scripted event handler.",
+              "description": "Removes scripted event handler with given name and id.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_removeScriptedEventHandler"
             },
             {
@@ -4572,7 +4572,7 @@
               "text": "BIS_fnc_spotter",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Spotter reprting target distance to sniper.",
+              "description": "Spotter reporting target distance to sniper.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_spotter"
             },
             {

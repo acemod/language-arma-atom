@@ -5,1453 +5,1453 @@
         "CBAfunctions": {
           "suggestions": [
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_actionArgument-sqf.html#CBA_fnc_actionArgument",
               "type": "function",
               "description": "Used to call the code parsed in the addaction argument.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_actionArgument-sqf.html#CBA_fnc_actionArgument",
-              "text": "CBA_fnc_actionArgument"
+              "text": "CBA_fnc_actionArgument",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_addBackpackCargo-sqf.html#CBA_fnc_addBackpackCargo",
               "type": "function",
               "description": "Add backpack(s) to vehicle cargo.Function which verifies existence of _item and _container, returns false in case of trouble, or when able to add _item to _container true in case of success.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_addBackpackCargo-sqf.html#CBA_fnc_addBackpackCargo",
-              "text": "CBA_fnc_addBackpackCargo"
+              "text": "CBA_fnc_addBackpackCargo",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_addBinocularMagazine-sqf.html#CBA_fnc_addBinocularMagazine",
               "type": "function",
               "description": "Adds a magazine to the units rangefinder.Note that this breaks the unique magazine ids due to the usage of setUnitLoadout.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_addBinocularMagazine-sqf.html#CBA_fnc_addBinocularMagazine",
-              "text": "CBA_fnc_addBinocularMagazine"
+              "text": "CBA_fnc_addBinocularMagazine",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/events/fnc_addBISEventHandler-sqf.html#CBA_fnc_addBISEventHandler",
               "type": "function",
               "description": "Adds an event handler with arguments.Additional arguments are passed as _thisArgs.\u00a0 The ID is passed as _thisID.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/events/fnc_addBISEventHandler-sqf.html#CBA_fnc_addBISEventHandler",
-              "text": "CBA_fnc_addBISEventHandler"
+              "text": "CBA_fnc_addBISEventHandler",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/xeh/fnc_addClassEventHandler-sqf.html#CBA_fnc_addClassEventHandler",
               "type": "function",
               "description": "Add an eventhandler to a class and all children.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/xeh/fnc_addClassEventHandler-sqf.html#CBA_fnc_addClassEventHandler",
-              "text": "CBA_fnc_addClassEventHandler"
+              "text": "CBA_fnc_addClassEventHandler",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/events/fnc_addDisplayHandler-sqf.html#CBA_fnc_addDisplayHandler",
               "type": "function",
               "description": "Adds an action to the main display.They are reapplied after loading a save game.\u00a0 Actions only persist for the mission and are removed after restart.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/events/fnc_addDisplayHandler-sqf.html#CBA_fnc_addDisplayHandler",
-              "text": "CBA_fnc_addDisplayHandler"
+              "text": "CBA_fnc_addDisplayHandler",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/events/fnc_addEventHandler-sqf.html#CBA_fnc_addEventHandler",
               "type": "function",
               "description": "Registers an event handler for a specific CBA event.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/events/fnc_addEventHandler-sqf.html#CBA_fnc_addEventHandler",
-              "text": "CBA_fnc_addEventHandler"
+              "text": "CBA_fnc_addEventHandler",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/events/fnc_addEventHandlerArgs-sqf.html#CBA_fnc_addEventHandlerArgs",
               "type": "function",
               "description": "Registers an event handler for a specific CBA event with arguments.A event added with this function will have the following variables defined_thisArguments passed by function calling the events.\u00a0 <ANY>_thisArgsArguments added to event by this function.\u00a0 <ANY>_thisIdSame as the return value of this function.\u00a0 <NUMBER>_thisTypeName of the event.\u00a0 (Same as _eventName passed to this function) STRING_thisFncPiece of code added to the event by this function <CODE>",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/events/fnc_addEventHandlerArgs-sqf.html#CBA_fnc_addEventHandlerArgs",
-              "text": "CBA_fnc_addEventHandlerArgs"
+              "text": "CBA_fnc_addEventHandlerArgs",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_addItem-sqf.html#CBA_fnc_addItem",
               "type": "function",
               "description": "Add an item to a unit.Function which verifies existence of _item and _unit, returns false in case of trouble, or when able to add _item to _unit true in case of success.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_addItem-sqf.html#CBA_fnc_addItem",
-              "text": "CBA_fnc_addItem"
+              "text": "CBA_fnc_addItem",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_addItemCargo-sqf.html#CBA_fnc_addItemCargo",
               "type": "function",
               "description": "Add item(s) to vehicle cargo.Function which verifies existence of _item and _container, returns false in case of trouble, or when able to add _item to _container true in case of success.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_addItemCargo-sqf.html#CBA_fnc_addItemCargo",
-              "text": "CBA_fnc_addItemCargo"
+              "text": "CBA_fnc_addItemCargo",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/keybinding/fnc_addKeybind-sqf.html#CBA_fnc_addKeybind",
               "type": "function",
               "description": "Adds or updates the keybind handler for a specified mod action, and associates a function with that keybind being pressed.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/keybinding/fnc_addKeybind-sqf.html#CBA_fnc_addKeybind",
-              "text": "CBA_fnc_addKeybind"
+              "text": "CBA_fnc_addKeybind",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/keybinding/fnc_addKeybindToFleximenu-sqf.html#CBA_fnc_addKeybindToFleximenu",
               "type": "function",
               "description": "Adds or updates the keybind handler for a defined Fleximenu and creates that Fleximenu.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/keybinding/fnc_addKeybindToFleximenu-sqf.html#CBA_fnc_addKeybindToFleximenu",
-              "text": "CBA_fnc_addKeybindToFleximenu"
+              "text": "CBA_fnc_addKeybindToFleximenu",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/events/fnc_addKeyHandler-sqf.html#CBA_fnc_addKeyHandler",
               "type": "function",
               "description": "Adds an action to a keybind.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/events/fnc_addKeyHandler-sqf.html#CBA_fnc_addKeyHandler",
-              "text": "CBA_fnc_addKeyHandler"
+              "text": "CBA_fnc_addKeyHandler",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/events/fnc_addKeyHandlerFromConfig-sqf.html#CBA_fnc_addKeyHandlerFromConfig",
               "type": "function",
               "description": "Adds an action to a keybind from config.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/events/fnc_addKeyHandlerFromConfig-sqf.html#CBA_fnc_addKeyHandlerFromConfig",
-              "text": "CBA_fnc_addKeyHandlerFromConfig"
+              "text": "CBA_fnc_addKeyHandlerFromConfig",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_addMagazine-sqf.html#CBA_fnc_addMagazine",
               "type": "function",
               "description": "Add magazine to a vehicle/unit.The function also verifies existence of _item and _unit, returns false in case of trouble, or true when able to add _item to _unit.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_addMagazine-sqf.html#CBA_fnc_addMagazine",
-              "text": "CBA_fnc_addMagazine"
+              "text": "CBA_fnc_addMagazine",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_addMagazineCargo-sqf.html#CBA_fnc_addMagazineCargo",
               "type": "function",
               "description": "Add magazine(s) to a vehicle\u2019s cargo.Function which verifies existence of _item and _container, returns false in case of trouble, or when able to add _item to _container true in case of success.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_addMagazineCargo-sqf.html#CBA_fnc_addMagazineCargo",
-              "text": "CBA_fnc_addMagazineCargo"
+              "text": "CBA_fnc_addMagazineCargo",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_addPerFrameHandler-sqf.html#CBA_fnc_addPerFrameHandler",
               "type": "function",
               "description": "Add a handler that will execute every frame, or every x number of seconds.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_addPerFrameHandler-sqf.html#CBA_fnc_addPerFrameHandler",
-              "text": "CBA_fnc_addPerFrameHandler"
+              "text": "CBA_fnc_addPerFrameHandler",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_addPlayerAction-sqf.html#CBA_fnc_addPlayerAction",
               "type": "function",
               "description": "Adds persistent action to the player.The action will be available in vehicles and after respawn or teamswitch.Remove action with CBA_fnc_removePlayerAction.\u00a0 Do not use standard removeAction command with these player-action indices!",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_addPlayerAction-sqf.html#CBA_fnc_addPlayerAction",
-              "text": "CBA_fnc_addPlayerAction"
+              "text": "CBA_fnc_addPlayerAction",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/events/fnc_addPlayerEventHandler-sqf.html#CBA_fnc_addPlayerEventHandler",
               "type": "function",
               "description": "Adds a player event handler.Possible events\u201dunit\u201dplayer controlled unit changed\u201dweapon\u201dcurrently selected weapon change\u201dloadout\u201dplayers loadout changed\u201dvehicle\u201dplayers current vehicle changed\u201dturret\u201dposition in vehicle changed\u201dvisionMode\u201dplayer changed to normal/night/thermal view\u201dcameraView\u201dcamera mode changed (\u201cInternal\u201d, \u201cExternal\u201d, \u201cGunner\u201d etc.)\u201dvisibleMap\u201dopened or closed map",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/events/fnc_addPlayerEventHandler-sqf.html#CBA_fnc_addPlayerEventHandler",
-              "text": "CBA_fnc_addPlayerEventHandler"
+              "text": "CBA_fnc_addPlayerEventHandler",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/ai/fnc_addWaypoint-sqf.html#CBA_fnc_addWaypoint",
               "type": "function",
               "description": "A function used to add a waypoint to a group.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/ai/fnc_addWaypoint-sqf.html#CBA_fnc_addWaypoint",
-              "text": "CBA_fnc_addWaypoint"
+              "text": "CBA_fnc_addWaypoint",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_addWeapon-sqf.html#CBA_fnc_addWeapon",
               "type": "function",
               "description": "Add a weapon to a unit.\u00a0 Unit has to be local.Function which verifies existence of _item and _unit, returns false in case of trouble, or when able to add _item to _unit true in case of success.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_addWeapon-sqf.html#CBA_fnc_addWeapon",
-              "text": "CBA_fnc_addWeapon"
+              "text": "CBA_fnc_addWeapon",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_addWeaponCargo-sqf.html#CBA_fnc_addWeaponCargo",
               "type": "function",
               "description": "Add weapon(s) to vehicle cargo.Function which verifies existence of _item and _container, returns false in case of trouble, or when able to add _item to _container true in case of success.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_addWeaponCargo-sqf.html#CBA_fnc_addWeaponCargo",
-              "text": "CBA_fnc_addWeaponCargo"
+              "text": "CBA_fnc_addWeaponCargo",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/diagnostic/fnc_benchmarkFunction-sqf.html#CBA_fnc_benchmarkFunction",
               "type": "function",
               "description": "Benchmarks a function to see how long it will take to execute.Recommended to run with small number of iterations first and build up, to prevent locking up the machine.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/diagnostic/fnc_benchmarkFunction-sqf.html#CBA_fnc_benchmarkFunction",
-              "text": "CBA_fnc_benchmarkFunction"
+              "text": "CBA_fnc_benchmarkFunction",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_binocularMagazine-sqf.html#CBA_fnc_binocularMagazine",
               "type": "function",
               "description": "Returns the magazine of the units rangefinder.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_binocularMagazine-sqf.html#CBA_fnc_binocularMagazine",
-              "text": "CBA_fnc_binocularMagazine"
+              "text": "CBA_fnc_binocularMagazine",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_canUseWeapon-sqf.html#CBA_fnc_canUseWeapon",
               "type": "function",
               "description": "Checks if the unit can currently use a weapon.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_canUseWeapon-sqf.html#CBA_fnc_canUseWeapon",
-              "text": "CBA_fnc_canUseWeapon"
+              "text": "CBA_fnc_canUseWeapon",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/strings/fnc_capitalize-sqf.html#CBA_fnc_capitalize",
               "type": "function",
               "description": "Upper case the first letter of the string, lower case the rest.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/strings/fnc_capitalize-sqf.html#CBA_fnc_capitalize",
-              "text": "CBA_fnc_capitalize"
+              "text": "CBA_fnc_capitalize",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/help/fnc_setCreditsLine-sqf.html#CBA_help_fnc_setCreditsLine",
               "type": "function",
               "description": "Picks a random CfgPatches entry with an \u201cauthor\u201d entry and displays author, version and URL in the main menu and ingame in the pause menu.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/help/fnc_setCreditsLine-sqf.html#CBA_help_fnc_setCreditsLine",
-              "text": "CBA_help_fnc_setCreditsLine"
+              "text": "CBA_help_fnc_setCreditsLine",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/help/fnc_setVersionLine-sqf.html#CBA_help_fnc_setVersionLine",
               "type": "function",
               "description": "Displays all CfgPatches with a \u201cversionDesc\u201d entry in the main menu.Mods are cycled automatically every 3 seconds or can be browsed using LMB and RMB.\u00a0 Double clicking executes the script in \u201cversionAct\u201d.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/help/fnc_setVersionLine-sqf.html#CBA_help_fnc_setVersionLine",
-              "text": "CBA_help_fnc_setVersionLine"
+              "text": "CBA_help_fnc_setVersionLine",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/statemachine/fnc_addState-sqf.html#CBA_statemachine_fnc_addState",
               "type": "function",
               "description": "Adds a state to a state machine.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/statemachine/fnc_addState-sqf.html#CBA_statemachine_fnc_addState",
-              "text": "CBA_statemachine_fnc_addState"
+              "text": "CBA_statemachine_fnc_addState",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/statemachine/fnc_addTransition-sqf.html#CBA_statemachine_fnc_addTransition",
               "type": "function",
               "description": "Creates a transition between two states.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/statemachine/fnc_addTransition-sqf.html#CBA_statemachine_fnc_addTransition",
-              "text": "CBA_statemachine_fnc_addTransition"
+              "text": "CBA_statemachine_fnc_addTransition",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/statemachine/fnc_clockwork-sqf.html#CBA_statemachine_fnc_clockwork",
               "type": "function",
               "description": "Clockwork which runs all state machines.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/statemachine/fnc_clockwork-sqf.html#CBA_statemachine_fnc_clockwork",
-              "text": "CBA_statemachine_fnc_clockwork"
+              "text": "CBA_statemachine_fnc_clockwork",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/statemachine/fnc_create-sqf.html#CBA_statemachine_fnc_create",
               "type": "function",
               "description": "Creates a state machine.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/statemachine/fnc_create-sqf.html#CBA_statemachine_fnc_create",
-              "text": "CBA_statemachine_fnc_create"
+              "text": "CBA_statemachine_fnc_create",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/statemachine/fnc_createFromConfig-sqf.html#CBA_statemachine_fnc_createFromConfig",
               "type": "function",
               "description": "Creates a state machine from a config class.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/statemachine/fnc_createFromConfig-sqf.html#CBA_statemachine_fnc_createFromConfig",
-              "text": "CBA_statemachine_fnc_createFromConfig"
+              "text": "CBA_statemachine_fnc_createFromConfig",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/statemachine/fnc_delete-sqf.html#CBA_statemachine_fnc_delete",
               "type": "function",
               "description": "Deletes a state machine.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/statemachine/fnc_delete-sqf.html#CBA_statemachine_fnc_delete",
-              "text": "CBA_statemachine_fnc_delete"
+              "text": "CBA_statemachine_fnc_delete",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/statemachine/fnc_toString-sqf.html#CBA_statemachine_fnc_toString",
               "type": "function",
               "description": "Creates a readable string representation of a state machine.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/statemachine/fnc_toString-sqf.html#CBA_statemachine_fnc_toString",
-              "text": "CBA_statemachine_fnc_toString"
+              "text": "CBA_statemachine_fnc_toString",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/statemachine/fnc_updateList-sqf.html#CBA_statemachine_fnc_updateList",
               "type": "function",
               "description": "Manually updates the list of a state machine.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/statemachine/fnc_updateList-sqf.html#CBA_statemachine_fnc_updateList",
-              "text": "CBA_statemachine_fnc_updateList"
+              "text": "CBA_statemachine_fnc_updateList",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/events/fnc_changeKeyHandler-sqf.html#CBA_fnc_changeKeyHandler",
               "type": "function",
               "description": "Changes the key of a key handler.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/events/fnc_changeKeyHandler-sqf.html#CBA_fnc_changeKeyHandler",
-              "text": "CBA_fnc_changeKeyHandler"
+              "text": "CBA_fnc_changeKeyHandler",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/ai/fnc_clearWaypoints-sqf.html#CBA_fnc_clearWaypoints",
               "type": "function",
               "description": "A function used to correctly clear all waypoints from a group.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/ai/fnc_clearWaypoints-sqf.html#CBA_fnc_clearWaypoints",
-              "text": "CBA_fnc_clearWaypoints"
+              "text": "CBA_fnc_clearWaypoints",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/jr/fnc_compatibleItems-sqf.html#CBA_fnc_compatibleItems",
               "type": "function",
               "description": "Return all compatible weapon attachments.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/jr/fnc_compatibleItems-sqf.html#CBA_fnc_compatibleItems",
-              "text": "CBA_fnc_compatibleItems"
+              "text": "CBA_fnc_compatibleItems",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_createMarker-sqf.html#CBA_fnc_createMarker",
               "type": "function",
               "description": "Creates a marker all at once.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_createMarker-sqf.html#CBA_fnc_createMarker",
-              "text": "CBA_fnc_createMarker"
+              "text": "CBA_fnc_createMarker",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_createNamespace-sqf.html#CBA_fnc_createNamespace",
               "type": "function",
               "description": "Creates a namespace.\u00a0 Used to store and read variables via setVariable and getVariable.The Namespace is destroyed after the mission ends. getVariable ARRAY is not supported.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_createNamespace-sqf.html#CBA_fnc_createNamespace",
-              "text": "CBA_fnc_createNamespace"
+              "text": "CBA_fnc_createNamespace",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_createTrigger-sqf.html#CBA_fnc_createTrigger",
               "type": "function",
               "description": "Create a trigger all at once.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_createTrigger-sqf.html#CBA_fnc_createTrigger",
-              "text": "CBA_fnc_createTrigger"
+              "text": "CBA_fnc_createTrigger",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_currentMagazineIndex-sqf.html#CBA_fnc_currentMagazineIndex",
               "type": "function",
               "description": "Finds out the magazine ID of the currently loaded magazine of given unit.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_currentMagazineIndex-sqf.html#CBA_fnc_currentMagazineIndex",
-              "text": "CBA_fnc_currentMagazineIndex"
+              "text": "CBA_fnc_currentMagazineIndex",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_currentUnit-sqf.html#CBA_fnc_currentUnit",
               "type": "function",
               "description": "Returns the controlled unit.\u00a0 (\u201cplayer\u201d or remote controlled unit via zeus)",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_currentUnit-sqf.html#CBA_fnc_currentUnit",
-              "text": "CBA_fnc_currentUnit"
+              "text": "CBA_fnc_currentUnit",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/diagnostic/fnc_debug-sqf.html#CBA_fnc_debug",
               "type": "function",
               "description": "General Purpose Debug Message WriterHandles very long messages without losing text or crashing the game.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/diagnostic/fnc_debug-sqf.html#CBA_fnc_debug",
-              "text": "CBA_fnc_debug"
+              "text": "CBA_fnc_debug",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_deleteEntity-sqf.html#CBA_fnc_deleteEntity",
               "type": "function",
               "description": "A function used to delete entities",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_deleteEntity-sqf.html#CBA_fnc_deleteEntity",
-              "text": "CBA_fnc_deleteEntity"
+              "text": "CBA_fnc_deleteEntity",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_deleteNamespace-sqf.html#CBA_fnc_deleteNamespace",
               "type": "function",
               "description": "Deletes a namespace created with CBA_fnc_createNamespace.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_deleteNamespace-sqf.html#CBA_fnc_deleteNamespace",
-              "text": "CBA_fnc_deleteNamespace"
+              "text": "CBA_fnc_deleteNamespace",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_directCall-sqf.html#CBA_fnc_directCall",
               "type": "function",
               "description": "Executes a piece of code in unscheduled environment.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_directCall-sqf.html#CBA_fnc_directCall",
-              "text": "CBA_fnc_directCall"
+              "text": "CBA_fnc_directCall",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_dropItem-sqf.html#CBA_fnc_dropItem",
               "type": "function",
               "description": "Drops an item.Function which verifies existence of _item and _unit, returns false in case of trouble, or when able to remove _item from _unit true in case of success",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_dropItem-sqf.html#CBA_fnc_dropItem",
-              "text": "CBA_fnc_dropItem"
+              "text": "CBA_fnc_dropItem",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_dropMagazine-sqf.html#CBA_fnc_dropMagazine",
               "type": "function",
               "description": "Drops a magazine.Function which verifies existence of _item and _unit, returns false in case of trouble, or when able to remove _item from _unit true in case of success.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_dropMagazine-sqf.html#CBA_fnc_dropMagazine",
-              "text": "CBA_fnc_dropMagazine"
+              "text": "CBA_fnc_dropMagazine",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_dropWeapon-sqf.html#CBA_fnc_dropWeapon",
               "type": "function",
               "description": "Drops a weapon.Function which verifies existence of _item and _unit, returns false in case of trouble, or when able to remove _item from _unit true in case of success",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_dropWeapon-sqf.html#CBA_fnc_dropWeapon",
-              "text": "CBA_fnc_dropWeapon"
+              "text": "CBA_fnc_dropWeapon",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/diagnostic/fnc_error-sqf.html#CBA_fnc_error",
               "type": "function",
               "description": "Logs an error message to the RPT log.Should not be used directly, but rather via macros (ERROR(), ERROR_WITH_TITLE() or the Assertions).",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/diagnostic/fnc_error-sqf.html#CBA_fnc_error",
-              "text": "CBA_fnc_error"
+              "text": "CBA_fnc_error",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_execNextFrame-sqf.html#CBA_fnc_execNextFrame",
               "type": "function",
               "description": "Executes a code once in non sched environment on the next frame.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_execNextFrame-sqf.html#CBA_fnc_execNextFrame",
-              "text": "CBA_fnc_execNextFrame"
+              "text": "CBA_fnc_execNextFrame",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/arrays/fnc_filter-sqf.html#CBA_fnc_filter",
               "type": "function",
               "description": "Filter each element of an array via a function.Data passed to the function on each iteration,_x - Element of _array.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/arrays/fnc_filter-sqf.html#CBA_fnc_filter",
-              "text": "CBA_fnc_filter"
+              "text": "CBA_fnc_filter",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/strings/fnc_find-sqf.html#CBA_fnc_find",
               "type": "function",
               "description": "Finds a string within another string.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/strings/fnc_find-sqf.html#CBA_fnc_find",
-              "text": "CBA_fnc_find"
+              "text": "CBA_fnc_find",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_findEntity-sqf.html#CBA_fnc_findEntity",
               "type": "function",
               "description": "A function used to find out the first entity of parsed type in a nearEntitys call",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_findEntity-sqf.html#CBA_fnc_findEntity",
-              "text": "CBA_fnc_findEntity"
+              "text": "CBA_fnc_findEntity",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/arrays/fnc_findMax-sqf.html#CBA_fnc_findMax",
               "type": "function",
               "description": "Find largest numeric value with index in an array.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/arrays/fnc_findMax-sqf.html#CBA_fnc_findMax",
-              "text": "CBA_fnc_findMax"
+              "text": "CBA_fnc_findMax",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/arrays/fnc_findMin-sqf.html#CBA_fnc_findMin",
               "type": "function",
               "description": "Find smallest numeric value with index in an array.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/arrays/fnc_findMin-sqf.html#CBA_fnc_findMin",
-              "text": "CBA_fnc_findMin"
+              "text": "CBA_fnc_findMin",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/arrays/fnc_findNil-sqf.html#CBA_fnc_findNil",
               "type": "function",
               "description": "A function that returns the index of the first empty (nil) entry in an array.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/arrays/fnc_findNil-sqf.html#CBA_fnc_findNil",
-              "text": "CBA_fnc_findNil"
+              "text": "CBA_fnc_findNil",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/arrays/fnc_findNull-sqf.html#CBA_fnc_findNull",
               "type": "function",
               "description": "A function that returns the index of the first null entry in an array.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/arrays/fnc_findNull-sqf.html#CBA_fnc_findNull",
-              "text": "CBA_fnc_findNull"
+              "text": "CBA_fnc_findNull",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/arrays/fnc_findTypeName-sqf.html#CBA_fnc_findTypeName",
               "type": "function",
               "description": "Returns the index of the first entry of the given type in an array.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/arrays/fnc_findTypeName-sqf.html#CBA_fnc_findTypeName",
-              "text": "CBA_fnc_findTypeName"
+              "text": "CBA_fnc_findTypeName",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/arrays/fnc_findTypeOf-sqf.html#CBA_fnc_findTypeOf",
               "type": "function",
               "description": "Returns the index of the first entry of a given type in an array.The type argument is either an object or a class name string.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/arrays/fnc_findTypeOf-sqf.html#CBA_fnc_findTypeOf",
-              "text": "CBA_fnc_findTypeOf"
+              "text": "CBA_fnc_findTypeOf",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/strings/fnc_floatToString-sqf.html#CBA_fnc_floatToString",
               "type": "function",
               "description": "Returns a higher precision string representation of a IEEE 754 floating point number than the str function.This function is as barebones as possible.\u00a0 Inline macro version of this function can be used with FLOAT_TO_STRING(num).Limitations",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/strings/fnc_floatToString-sqf.html#CBA_fnc_floatToString",
-              "text": "CBA_fnc_floatToString"
+              "text": "CBA_fnc_floatToString",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/strings/fnc_formatElapsedTime-sqf.html#CBA_fnc_formatElapsedTime",
               "type": "function",
               "description": "Formats time in seconds according to a format.Intended to show time elapsed, rather than time-of-day.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/strings/fnc_formatElapsedTime-sqf.html#CBA_fnc_formatElapsedTime",
-              "text": "CBA_fnc_formatElapsedTime"
+              "text": "CBA_fnc_formatElapsedTime",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/strings/fnc_formatNumber-sqf.html#CBA_fnc_formatNumber",
               "type": "function",
               "description": "Formats a number to a minimum integer width and to a specific number of decimal places.The formatting includes padding with 0s and correct rounding.\u00a0 Numbers are always displayed fully, never being condensed using an exponent (e.g. the number 1.234e9 would be given as \u201c1234000000\u201d).Additionally, if required, it will separate the integer part of the number with the appropriate thousands seperators as, for example, \u201c21,002\u201d or \u201c1,000,000\u201d.LimitationsAlthough the function works up to a point and will display the passed number correctly, due to the extremely limited accuracy of floating point values used within ArmA (presumably just single-precision / 32 bit), the output might not be as EXPECTED after about eight significant figures.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/strings/fnc_formatNumber-sqf.html#CBA_fnc_formatNumber",
-              "text": "CBA_fnc_formatNumber"
+              "text": "CBA_fnc_formatNumber",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_getAlive-sqf.html#CBA_fnc_getAlive",
               "type": "function",
               "description": "A function used to find out who is alive in an array or a group.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_getAlive-sqf.html#CBA_fnc_getAlive",
-              "text": "CBA_fnc_getAlive"
+              "text": "CBA_fnc_getAlive",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_getAnimType-sqf.html#CBA_fnc_getAnimType",
               "type": "function",
               "description": "Used to determine which weapon unit is currently holding and return proper animation type.Main types are for pistol, rifle and no weapon.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_getAnimType-sqf.html#CBA_fnc_getAnimType",
-              "text": "CBA_fnc_getAnimType"
+              "text": "CBA_fnc_getAnimType",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_getArg-sqf.html#CBA_fnc_getArg",
               "type": "function",
               "description": "Get default named argument from list.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_getArg-sqf.html#CBA_fnc_getArg",
-              "text": "CBA_fnc_getArg"
+              "text": "CBA_fnc_getArg",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/arrays/fnc_getArrayDiff-sqf.html#CBA_fnc_getArrayDiff",
               "type": "function",
               "description": "A function used to return the differences between two arrays.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/arrays/fnc_getArrayDiff-sqf.html#CBA_fnc_getArrayDiff",
-              "text": "CBA_fnc_getArrayDiff"
+              "text": "CBA_fnc_getArrayDiff",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/arrays/fnc_getArrayElements-sqf.html#CBA_fnc_getArrayElements",
               "type": "function",
               "description": "A function used to return the element counts in an array.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/arrays/fnc_getArrayElements-sqf.html#CBA_fnc_getArrayElements",
-              "text": "CBA_fnc_getArrayElements"
+              "text": "CBA_fnc_getArrayElements",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_getAspectRatio-sqf.html#CBA_fnc_getAspectRatio",
               "type": "function",
               "description": "Used to determine the Aspect ratio of the screen.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_getAspectRatio-sqf.html#CBA_fnc_getAspectRatio",
-              "text": "CBA_fnc_getAspectRatio"
+              "text": "CBA_fnc_getAspectRatio",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_getConfigEntry-sqf.html#CBA_fnc_getConfigEntry",
               "type": "function",
               "description": "Gets a configuration entry.Will check if _cfg exists, and will return either the config value, or supplied default value.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_getConfigEntry-sqf.html#CBA_fnc_getConfigEntry",
-              "text": "CBA_fnc_getConfigEntry"
+              "text": "CBA_fnc_getConfigEntry",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_getDistance-sqf.html#CBA_fnc_getDistance",
               "type": "function",
               "description": "A function used to find out the distance between two positions.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_getDistance-sqf.html#CBA_fnc_getDistance",
-              "text": "CBA_fnc_getDistance"
+              "text": "CBA_fnc_getDistance",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_getFirer-sqf.html#CBA_fnc_getFirer",
               "type": "function",
               "description": "A function used to find out which unit exactly fired.Replacement for gunner, on multi-turret vehicles.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_getFirer-sqf.html#CBA_fnc_getFirer",
-              "text": "CBA_fnc_getFirer"
+              "text": "CBA_fnc_getFirer",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_getFov-sqf.html#CBA_fnc_getFov",
               "type": "function",
               "description": "Get current camera\u2019s vertical field of view in radians and zoom.Zoom is relative to specified config FOV, defaults to 0.7 (vehicle driver initFov).",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_getFov-sqf.html#CBA_fnc_getFov",
-              "text": "CBA_fnc_getFov"
+              "text": "CBA_fnc_getFov",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_getGroup-sqf.html#CBA_fnc_getGroup",
               "type": "function",
               "description": "A function used to find out the group of an object.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_getGroup-sqf.html#CBA_fnc_getGroup",
-              "text": "CBA_fnc_getGroup"
+              "text": "CBA_fnc_getGroup",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_getGroupIndex-sqf.html#CBA_fnc_getGroupIndex",
               "type": "function",
               "description": "Finds out the actual ID number of a person within his group as assigned by the game and used in the squad leader\u2019s command menu.This is not just the order within the units of his group (this order can change due to players joining and leaving the game, deaths or promotions).Inspired by the OFP function, squadNumber.sqf, by General Barron (http://www.ofpec.com/ed_depot/index_new.php?action=details&id=139&page=1&game=OFP&type=fu&cat=xyz)",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_getGroupIndex-sqf.html#CBA_fnc_getGroupIndex",
-              "text": "CBA_fnc_getGroupIndex"
+              "text": "CBA_fnc_getGroupIndex",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_getItemConfig-sqf.html#CBA_fnc_getItemConfig",
               "type": "function",
               "description": "A function used to return the config of an item.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_getItemConfig-sqf.html#CBA_fnc_getItemConfig",
-              "text": "CBA_fnc_getItemConfig"
+              "text": "CBA_fnc_getItemConfig",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/keybinding/fnc_getKeybind-sqf.html#CBA_fnc_getKeybind",
               "type": "function",
               "description": "Checks if a particular mod has already registered a keybind handler for the specified action.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/keybinding/fnc_getKeybind-sqf.html#CBA_fnc_getKeybind",
-              "text": "CBA_fnc_getKeybind"
+              "text": "CBA_fnc_getKeybind",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_getMagazineIndex-sqf.html#CBA_fnc_getMagazineIndex",
               "type": "function",
               "description": "Finds out the magazine ID of all magazines of given type in the inventory of given unit.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_getMagazineIndex-sqf.html#CBA_fnc_getMagazineIndex",
-              "text": "CBA_fnc_getMagazineIndex"
+              "text": "CBA_fnc_getMagazineIndex",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/network/fnc_getMarkerPersistent-sqf.html#CBA_fnc_getMarkerPersistent",
               "type": "function",
               "description": "Checks if a global marker is persistent for JIP players.Always returns false unless called on the server.Set/unset persistency with CBA_fnc_setMarkerPersistent.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/network/fnc_getMarkerPersistent-sqf.html#CBA_fnc_getMarkerPersistent",
-              "text": "CBA_fnc_getMarkerPersistent"
+              "text": "CBA_fnc_getMarkerPersistent",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_getMuzzles-sqf.html#CBA_fnc_getMuzzles",
               "type": "function",
               "description": "Gets the list of possible muzzles for a weapon.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_getMuzzles-sqf.html#CBA_fnc_getMuzzles",
-              "text": "CBA_fnc_getMuzzles"
+              "text": "CBA_fnc_getMuzzles",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_getNearest-sqf.html#CBA_fnc_getNearest",
               "type": "function",
               "description": "Find out the nearest entity parsed in an array to a position.Compares the distance between entity\u2019s in the parsed array.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_getNearest-sqf.html#CBA_fnc_getNearest",
-              "text": "CBA_fnc_getNearest"
+              "text": "CBA_fnc_getNearest",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_getNearestBuilding-sqf.html#CBA_fnc_getNearestBuilding",
               "type": "function",
               "description": "Find the nearest building and number of building positions available.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_getNearestBuilding-sqf.html#CBA_fnc_getNearestBuilding",
-              "text": "CBA_fnc_getNearestBuilding"
+              "text": "CBA_fnc_getNearestBuilding",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_getObjectConfig-sqf.html#CBA_fnc_getObjectConfig",
               "type": "function",
               "description": "A function used to return the config of an object or class name.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_getObjectConfig-sqf.html#CBA_fnc_getObjectConfig",
-              "text": "CBA_fnc_getObjectConfig"
+              "text": "CBA_fnc_getObjectConfig",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_getPos-sqf.html#CBA_fnc_getPos",
               "type": "function",
               "description": "A function used to get the position of an entity.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_getPos-sqf.html#CBA_fnc_getPos",
-              "text": "CBA_fnc_getPos"
+              "text": "CBA_fnc_getPos",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/modules/fnc_getPosFromString-sqf.html#CBA_fnc_getPosFromString",
               "type": "function",
               "description": "A function used to get the position of an item when passed as a string.Designed with modules in mind since information can, presently, only be passed as a string or scalar.\u00a0 The type name needs to be passed along with the item so the function knows how to extract the desired position.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/modules/fnc_getPosFromString-sqf.html#CBA_fnc_getPosFromString",
-              "text": "CBA_fnc_getPosFromString"
+              "text": "CBA_fnc_getPosFromString",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_getSharedGroup-sqf.html#CBA_fnc_getSharedGroup",
               "type": "function",
               "description": "Returns existing group on side, or newly created group when not existent.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_getSharedGroup-sqf.html#CBA_fnc_getSharedGroup",
-              "text": "CBA_fnc_getSharedGroup"
+              "text": "CBA_fnc_getSharedGroup",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_getTerrainProfile-sqf.html#CBA_fnc_getTerrainProfile",
               "type": "function",
               "description": "A function used to find the terrain profile between two positions",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_getTerrainProfile-sqf.html#CBA_fnc_getTerrainProfile",
-              "text": "CBA_fnc_getTerrainProfile"
+              "text": "CBA_fnc_getTerrainProfile",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_getTurret-sqf.html#CBA_fnc_getTurret",
               "type": "function",
               "description": "A function used to find out which config turret is turretpath.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_getTurret-sqf.html#CBA_fnc_getTurret",
-              "text": "CBA_fnc_getTurret"
+              "text": "CBA_fnc_getTurret",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_getUISize-sqf.html#CBA_fnc_getUISize",
               "type": "function",
               "description": "Used to determine the UI size of the screen.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_getUISize-sqf.html#CBA_fnc_getUISize",
-              "text": "CBA_fnc_getUISize"
+              "text": "CBA_fnc_getUISize",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_getUnitAnim-sqf.html#CBA_fnc_getUnitAnim",
               "type": "function",
               "description": "Get information about a unit\u2019s stance and speed.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_getUnitAnim-sqf.html#CBA_fnc_getUnitAnim",
-              "text": "CBA_fnc_getUnitAnim"
+              "text": "CBA_fnc_getUnitAnim",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_getUnitDeathAnim-sqf.html#CBA_fnc_getUnitDeathAnim",
               "type": "function",
               "description": "Get death animation for a unit.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_getUnitDeathAnim-sqf.html#CBA_fnc_getUnitDeathAnim",
-              "text": "CBA_fnc_getUnitDeathAnim"
+              "text": "CBA_fnc_getUnitDeathAnim",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_getVolume-sqf.html#CBA_fnc_getVolume",
               "type": "function",
               "description": "Return the volume of an object based on the object\u2019s model\u2019s bounding box.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_getVolume-sqf.html#CBA_fnc_getVolume",
-              "text": "CBA_fnc_getVolume"
+              "text": "CBA_fnc_getVolume",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_getWeaponModes-sqf.html#CBA_fnc_getWeaponModes",
               "type": "function",
               "description": "Gets the list of possible modes for a weapon.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_getWeaponModes-sqf.html#CBA_fnc_getWeaponModes",
-              "text": "CBA_fnc_getWeaponModes"
+              "text": "CBA_fnc_getWeaponModes",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/events/fnc_globalEvent-sqf.html#CBA_fnc_globalEvent",
               "type": "function",
               "description": "Raises a CBA event on all machines, including the local one.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/events/fnc_globalEvent-sqf.html#CBA_fnc_globalEvent",
-              "text": "CBA_fnc_globalEvent"
+              "text": "CBA_fnc_globalEvent",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/events/fnc_globalEventJIP-sqf.html#CBA_fnc_globalEventJIP",
               "type": "function",
               "description": "Raises a CBA event on all machines.Event is put on a stack that is executed on every future JIP machine.\u00a0 Stack can be overwritten by using the same JIP-Stack-ID.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/events/fnc_globalEventJIP-sqf.html#CBA_fnc_globalEventJIP",
-              "text": "CBA_fnc_globalEventJIP"
+              "text": "CBA_fnc_globalEventJIP",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/network/fnc_globalExecute-sqf.html#CBA_fnc_globalExecute",
               "type": "function",
               "description": "",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/network/fnc_globalExecute-sqf.html#CBA_fnc_globalExecute",
-              "text": "CBA_fnc_globalExecute"
+              "text": "CBA_fnc_globalExecute",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/network/fnc_globalSay-sqf.html#CBA_fnc_globalSay",
               "type": "function",
               "description": "Says sound on all client computer.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/network/fnc_globalSay-sqf.html#CBA_fnc_globalSay",
-              "text": "CBA_fnc_globalSay"
+              "text": "CBA_fnc_globalSay",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/network/fnc_globalSay3d-sqf.html#CBA_fnc_globalSay3d",
               "type": "function",
               "description": "Says sound on all client computer in 3D.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/network/fnc_globalSay3d-sqf.html#CBA_fnc_globalSay3d",
-              "text": "CBA_fnc_globalSay3d"
+              "text": "CBA_fnc_globalSay3d",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/hashes/fnc_hashCreate-sqf.html#CBA_fnc_hashCreate",
               "type": "function",
               "description": "Check if a Hash has a value defined for a key.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/hashes/fnc_hashCreate-sqf.html#CBA_fnc_hashCreate",
-              "text": "CBA_fnc_hashCreate"
+              "text": "CBA_fnc_hashCreate",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/hashes/fnc_hashEachPair-sqf.html#CBA_fnc_hashEachPair",
               "type": "function",
               "description": "Iterate through all keys and values in a Hash.Data passed to the function on each iteration,_key - Key from the Hash._value - The value from the Hash corresponding to _key.See CBA_fnc_hashCreate.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/hashes/fnc_hashEachPair-sqf.html#CBA_fnc_hashEachPair",
-              "text": "CBA_fnc_hashEachPair"
+              "text": "CBA_fnc_hashEachPair",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/hashes/fnc_hashGet-sqf.html#CBA_fnc_hashGet",
               "type": "function",
               "description": "Gets a value for a given key from a Hash.See CBA_fnc_hashCreate.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/hashes/fnc_hashGet-sqf.html#CBA_fnc_hashGet",
-              "text": "CBA_fnc_hashGet"
+              "text": "CBA_fnc_hashGet",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/hashes/fnc_hashHasKey-sqf.html#CBA_fnc_hashHasKey",
               "type": "function",
               "description": "Check if a Hash has a value defined for a key.See CBA_fnc_hashCreate.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/hashes/fnc_hashHasKey-sqf.html#CBA_fnc_hashHasKey",
-              "text": "CBA_fnc_hashHasKey"
+              "text": "CBA_fnc_hashHasKey",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/hashes/fnc_hashRem-sqf.html#CBA_fnc_hashRem",
               "type": "function",
               "description": "Removes given key from given Hash.See CBA_fnc_hashCreate.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/hashes/fnc_hashRem-sqf.html#CBA_fnc_hashRem",
-              "text": "CBA_fnc_hashRem"
+              "text": "CBA_fnc_hashRem",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/hashes/fnc_hashSet-sqf.html#CBA_fnc_hashSet",
               "type": "function",
               "description": "Sets a value for a given key in a Hash.See CBA_fnc_hashCreate.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/hashes/fnc_hashSet-sqf.html#CBA_fnc_hashSet",
-              "text": "CBA_fnc_hashSet"
+              "text": "CBA_fnc_hashSet",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_headDir-sqf.html#CBA_fnc_headDir",
               "type": "function",
               "description": "Get the direction of a unit\u2019s head.For anyone except the local player,    the head is assumed to be facing straight forward.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_headDir-sqf.html#CBA_fnc_headDir",
-              "text": "CBA_fnc_headDir"
+              "text": "CBA_fnc_headDir",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_inArea-sqf.html#CBA_fnc_inArea",
               "type": "function",
               "description": "A function used to determine if a position is within a zone.The \u201cposition\u201d can be given as a marker name, an object, location, group or a position array.The zone is specificed either as a marker name or a trigger.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_inArea-sqf.html#CBA_fnc_inArea",
-              "text": "CBA_fnc_inArea"
+              "text": "CBA_fnc_inArea",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_inheritsFrom-sqf.html#CBA_fnc_inheritsFrom",
               "type": "function",
               "description": "Checks whether a config entry inherits, directly or indirectly, from another one.For objects, it is probably simpler to use the isKindOf command.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_inheritsFrom-sqf.html#CBA_fnc_inheritsFrom",
-              "text": "CBA_fnc_inheritsFrom"
+              "text": "CBA_fnc_inheritsFrom",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/arrays/fnc_inject-sqf.html#CBA_fnc_inject",
               "type": "function",
               "description": "Accumulates a value by passing elements of an array \u201cthrough\u201d a function.Data passed to the function on each iteration,_accumulator - Value passed from last iteration, set to _initial for the first iteration._x - Element of _array.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/arrays/fnc_inject-sqf.html#CBA_fnc_inject",
-              "text": "CBA_fnc_inject"
+              "text": "CBA_fnc_inject",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_isAlive-sqf.html#CBA_fnc_isAlive",
               "type": "function",
               "description": "A function used to find out if the group or object is alive.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_isAlive-sqf.html#CBA_fnc_isAlive",
-              "text": "CBA_fnc_isAlive"
+              "text": "CBA_fnc_isAlive",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/hashes/fnc_isHash-sqf.html#CBA_fnc_isHash",
               "type": "function",
               "description": "Check if a value is a Hash data structure.See CBA_fnc_hashCreate.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/hashes/fnc_isHash-sqf.html#CBA_fnc_isHash",
-              "text": "CBA_fnc_isHash"
+              "text": "CBA_fnc_isHash",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_isPerson-sqf.html#CBA_fnc_isPerson",
               "type": "function",
               "description": "Checks if an object is a personsoldier or civilian.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_isPerson-sqf.html#CBA_fnc_isPerson",
-              "text": "CBA_fnc_isPerson"
+              "text": "CBA_fnc_isPerson",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/xeh/fnc_isRecompileEnabled-sqf.html#CBA_fnc_isRecompileEnabled",
               "type": "function",
               "description": "Check if recompiling is enabled.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/xeh/fnc_isRecompileEnabled-sqf.html#CBA_fnc_isRecompileEnabled",
-              "text": "CBA_fnc_isRecompileEnabled"
+              "text": "CBA_fnc_isRecompileEnabled",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/xeh/fnc_isScheduled-sqf.html#CBA_fnc_isScheduled",
               "type": "function",
               "description": "Check if the current scope is running in scheduled or unscheduled environment.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/xeh/fnc_isScheduled-sqf.html#CBA_fnc_isScheduled",
-              "text": "CBA_fnc_isScheduled"
+              "text": "CBA_fnc_isScheduled",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
-              "type": "function",
-              "description": "Checks whether a unit is turned out in a vehicle or not.",
               "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_isTurnedOut-sqf.html#CBA_fnc_isTurnedOut",
-              "text": "CBA_fnc_isTurnedOut"
-            },
-            {
-              "rightLabel": "CBA Function",
               "type": "function",
               "description": "Checks whether a unit is turned out in a vehicle or not.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_isUnitGetOutAnim-sqf.html#CBA_fnc_isUnitGetOutAnim",
-              "text": "CBA_fnc_isUnitGetOutAnim"
+              "text": "CBA_fnc_isTurnedOut",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_isUnitGetOutAnim-sqf.html#CBA_fnc_isUnitGetOutAnim",
+              "type": "function",
+              "description": "Checks whether a unit is turned out in a vehicle or not.",
+              "text": "CBA_fnc_isUnitGetOutAnim",
+              "rightLabel": "CBA Function"
+            },
+            {
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/arrays/fnc_join-sqf.html#CBA_fnc_join",
               "type": "function",
               "description": "Joins an array of values into a single string.Eeach value is joined around a separator string.\u00a0 Inverse of CBA_fnc_split.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/arrays/fnc_join-sqf.html#CBA_fnc_join",
-              "text": "CBA_fnc_join"
+              "text": "CBA_fnc_join",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/strings/fnc_leftTrim-sqf.html#CBA_fnc_leftTrim",
               "type": "function",
               "description": "Trims white-space (space, tab, newline) from the left end of a string.See CBA_fnc_rightTrim and CBA_fnc_trim.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/strings/fnc_leftTrim-sqf.html#CBA_fnc_leftTrim",
-              "text": "CBA_fnc_leftTrim"
+              "text": "CBA_fnc_leftTrim",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/events/fnc_localEvent-sqf.html#CBA_fnc_localEvent",
               "type": "function",
               "description": "Raises a CBA event on the local machine.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/events/fnc_localEvent-sqf.html#CBA_fnc_localEvent",
-              "text": "CBA_fnc_localEvent"
+              "text": "CBA_fnc_localEvent",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/diagnostic/fnc_log-sqf.html#CBA_fnc_log",
               "type": "function",
               "description": "Logs a message to the RPT log.Should not be used directly, but rather via macro (LOG()).This function is unaffected by the debug level (DEBUG_MODE_x).",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/diagnostic/fnc_log-sqf.html#CBA_fnc_log",
-              "text": "CBA_fnc_log"
+              "text": "CBA_fnc_log",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_mapDirTo-sqf.html#CBA_fnc_mapDirTo",
               "type": "function",
               "description": "Gets the direction between two map grid references.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_mapDirTo-sqf.html#CBA_fnc_mapDirTo",
-              "text": "CBA_fnc_mapDirTo"
+              "text": "CBA_fnc_mapDirTo",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_mapGridToPos-sqf.html#CBA_fnc_mapGridToPos",
               "type": "function",
               "description": "Converts a 2, 4, 6, 8, or 10 digit grid reference into a Position.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_mapGridToPos-sqf.html#CBA_fnc_mapGridToPos",
-              "text": "CBA_fnc_mapGridToPos"
+              "text": "CBA_fnc_mapGridToPos",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_mapRelPos-sqf.html#CBA_fnc_mapRelPos",
               "type": "function",
               "description": "Find a position relative to a known position on the map.Passing strings in for the Northing and Easting is the preferred way.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_mapRelPos-sqf.html#CBA_fnc_mapRelPos",
-              "text": "CBA_fnc_mapRelPos"
+              "text": "CBA_fnc_mapRelPos",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_modelHeadDir-sqf.html#CBA_fnc_modelHeadDir",
               "type": "function",
               "description": "Get the direction of any unit\u2019s head.This can be used on any character model provided it has the \u201cneck\u201d and \u201cpilot\u201d mem points defined in the model.This works for proxy models as well!",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_modelHeadDir-sqf.html#CBA_fnc_modelHeadDir",
-              "text": "CBA_fnc_modelHeadDir"
+              "text": "CBA_fnc_modelHeadDir",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/modules/fnc_moduleAttack-sqf.html#CBA_fnc_moduleAttack",
               "type": "function",
               "description": "A function for commanding a group to attack a location with information parsed from a module.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/modules/fnc_moduleAttack-sqf.html#CBA_fnc_moduleAttack",
-              "text": "CBA_fnc_moduleAttack"
+              "text": "CBA_fnc_moduleAttack",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/modules/fnc_moduleDefend-sqf.html#CBA_fnc_moduleDefend",
               "type": "function",
               "description": "A function for commanding a group to defend a location with information parsed from a module.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/modules/fnc_moduleDefend-sqf.html#CBA_fnc_moduleDefend",
-              "text": "CBA_fnc_moduleDefend"
+              "text": "CBA_fnc_moduleDefend",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/modules/fnc_modulePatrol-sqf.html#CBA_fnc_modulePatrol",
               "type": "function",
               "description": "A function for commanding a group to patrol a location with information parsed from a module.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/modules/fnc_modulePatrol-sqf.html#CBA_fnc_modulePatrol",
-              "text": "CBA_fnc_modulePatrol"
+              "text": "CBA_fnc_modulePatrol",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_nearPlayer-sqf.html#CBA_fnc_nearPlayer",
               "type": "function",
               "description": "Check whether these are any players within a certain distance of a unit.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_nearPlayer-sqf.html#CBA_fnc_nearPlayer",
-              "text": "CBA_fnc_nearPlayer"
+              "text": "CBA_fnc_nearPlayer",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_northingReversed-sqf.html#CBA_fnc_northingReversed",
               "type": "function",
               "description": "Checks if the maps northing is reversed (like Chernarus & Utes, or any map pre-OA)",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_northingReversed-sqf.html#CBA_fnc_northingReversed",
-              "text": "CBA_fnc_northingReversed"
+              "text": "CBA_fnc_northingReversed",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_objectRandom-sqf.html#CBA_fnc_objectRandom",
               "type": "function",
               "description": "Creates a \u201crandom\u201d number 0-9 based on an object\u2019s velocity",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_objectRandom-sqf.html#CBA_fnc_objectRandom",
-              "text": "CBA_fnc_objectRandom"
+              "text": "CBA_fnc_objectRandom",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/events/fnc_ownerEvent-sqf.html#CBA_fnc_ownerEvent",
               "type": "function",
               "description": "Raises a CBA event on the target client ID\u2019s machine.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/events/fnc_ownerEvent-sqf.html#CBA_fnc_ownerEvent",
-              "text": "CBA_fnc_ownerEvent"
+              "text": "CBA_fnc_ownerEvent",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/hashes/fnc_parseYAML-sqf.html#CBA_fnc_parseYAML",
               "type": "function",
               "description": "Parses a YAML file into a nested array/Hash structure.See also: <CBA_fnc_dataPath>",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/hashes/fnc_parseYAML-sqf.html#CBA_fnc_parseYAML",
-              "text": "CBA_fnc_parseYAML"
+              "text": "CBA_fnc_parseYAML",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/diagnostic/fnc_peek-sqf.html#CBA_fnc_peek",
               "type": "function",
               "description": "Peek at variable on the server.To receive the variable content back, you will have to [\u201ccba_diagnostics_receive_peak\u201d, {_this call myFunction}] call CBA_fnc_addEventHandler;",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/diagnostic/fnc_peek-sqf.html#CBA_fnc_peek",
-              "text": "CBA_fnc_peek"
+              "text": "CBA_fnc_peek",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_players-sqf.html#CBA_fnc_players",
               "type": "function",
               "description": "Reports all (human) player objects.\u00a0 Does not include headless client entities.Unlike \u201cBIS_fnc_listPlayers\u201d, this function will not report the game logics of headless clients.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_players-sqf.html#CBA_fnc_players",
-              "text": "CBA_fnc_players"
+              "text": "CBA_fnc_players",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/vectors/fnc_polar2vect-sqf.html#CBA_fnc_polar2vect",
               "type": "function",
               "description": "Creates a vector based on a inputted magnitude, direction and elevation",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/vectors/fnc_polar2vect-sqf.html#CBA_fnc_polar2vect",
-              "text": "CBA_fnc_polar2vect"
+              "text": "CBA_fnc_polar2vect",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/network/fnc_publicVariable-sqf.html#CBA_fnc_publicVariable",
               "type": "function",
               "description": "CBA_fnc_publicVariable does only broadcast the new value if it doesn\u2019t exist in missionNamespace or the new value is different to the one in missionNamespace.Checks also for different types.\u00a0 Nil as value gets always broadcasted.Should reduce network traffic.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/network/fnc_publicVariable-sqf.html#CBA_fnc_publicVariable",
-              "text": "CBA_fnc_publicVariable"
+              "text": "CBA_fnc_publicVariable",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_randPos-sqf.html#CBA_fnc_randPos",
               "type": "function",
               "description": "A function used to randomize a position around a given center",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_randPos-sqf.html#CBA_fnc_randPos",
-              "text": "CBA_fnc_randPos"
+              "text": "CBA_fnc_randPos",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_randPosArea-sqf.html#CBA_fnc_randPosArea",
               "type": "function",
               "description": "Find a random (uniformly distributed) position within the given area.You can CBA_fnc_randPos to find a position within a simple radius.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_randPosArea-sqf.html#CBA_fnc_randPosArea",
-              "text": "CBA_fnc_randPosArea"
+              "text": "CBA_fnc_randPosArea",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/events/fnc_readKeyFromConfig-sqf.html#CBA_fnc_readKeyFromConfig",
               "type": "function",
               "description": "Reads key setting from config.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/events/fnc_readKeyFromConfig-sqf.html#CBA_fnc_readKeyFromConfig",
-              "text": "CBA_fnc_readKeyFromConfig"
+              "text": "CBA_fnc_readKeyFromConfig",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_realHeight-sqf.html#CBA_fnc_realHeight",
               "type": "function",
               "description": "Real z coordinate of an object, for placing stuff on roofs, etc.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_realHeight-sqf.html#CBA_fnc_realHeight",
-              "text": "CBA_fnc_realHeight"
+              "text": "CBA_fnc_realHeight",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/keybinding/fnc_registerKeybind-sqf.html#CBA_fnc_registerKeybind",
               "type": "function",
               "description": "",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/keybinding/fnc_registerKeybind-sqf.html#CBA_fnc_registerKeybind",
-              "text": "CBA_fnc_registerKeybind"
+              "text": "CBA_fnc_registerKeybind",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/keybinding/fnc_registerKeybindModPrettyName-sqf.html#CBA_fnc_registerKeybindModPrettyName",
               "type": "function",
               "description": "Associates a pretty name to a keybinding mod entry.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/keybinding/fnc_registerKeybindModPrettyName-sqf.html#CBA_fnc_registerKeybindModPrettyName",
-              "text": "CBA_fnc_registerKeybindModPrettyName"
+              "text": "CBA_fnc_registerKeybindModPrettyName",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/keybinding/fnc_registerKeybindToFleximenu-sqf.html#CBA_fnc_registerKeybindToFleximenu",
               "type": "function",
               "description": "Adds or updates the keybind handler for a defined Fleximenu and creates that Fleximenu.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/keybinding/fnc_registerKeybindToFleximenu-sqf.html#CBA_fnc_registerKeybindToFleximenu",
-              "text": "CBA_fnc_registerKeybindToFleximenu"
+              "text": "CBA_fnc_registerKeybindToFleximenu",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/arrays/fnc_reject-sqf.html#CBA_fnc_reject",
               "type": "function",
               "description": "Reject array elements for which the block returns true",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/arrays/fnc_reject-sqf.html#CBA_fnc_reject",
-              "text": "CBA_fnc_reject"
+              "text": "CBA_fnc_reject",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/events/fnc_remoteEvent-sqf.html#CBA_fnc_remoteEvent",
               "type": "function",
               "description": "Raises a CBA event on all machines, except the local one.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/events/fnc_remoteEvent-sqf.html#CBA_fnc_remoteEvent",
-              "text": "CBA_fnc_remoteEvent"
+              "text": "CBA_fnc_remoteEvent",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_removeBackpackCargo-sqf.html#CBA_fnc_removeBackpackCargo",
               "type": "function",
               "description": "Removes specific backpack(s) from local cargo space.Warning: Backpack\u2019s inventory information is lost.Use <CBA_fnc_removeBackpackCargoGlobal> if you want to remove the backpack(s) in global cargo space.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_removeBackpackCargo-sqf.html#CBA_fnc_removeBackpackCargo",
-              "text": "CBA_fnc_removeBackpackCargo"
+              "text": "CBA_fnc_removeBackpackCargo",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_removeBinocularMagazine-sqf.html#CBA_fnc_removeBinocularMagazine",
               "type": "function",
               "description": "Removes the magazine of the units rangefinder.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_removeBinocularMagazine-sqf.html#CBA_fnc_removeBinocularMagazine",
-              "text": "CBA_fnc_removeBinocularMagazine"
+              "text": "CBA_fnc_removeBinocularMagazine",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/events/fnc_removeDisplayHandler-sqf.html#CBA_fnc_removeDisplayHandler",
               "type": "function",
               "description": "Removes an action from the main display.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/events/fnc_removeDisplayHandler-sqf.html#CBA_fnc_removeDisplayHandler",
-              "text": "CBA_fnc_removeDisplayHandler"
+              "text": "CBA_fnc_removeDisplayHandler",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/events/fnc_removeEventHandler-sqf.html#CBA_fnc_removeEventHandler",
               "type": "function",
               "description": "Removes an event handler previously registered with CBA_fnc_addEventHandler.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/events/fnc_removeEventHandler-sqf.html#CBA_fnc_removeEventHandler",
-              "text": "CBA_fnc_removeEventHandler"
+              "text": "CBA_fnc_removeEventHandler",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_removeItem-sqf.html#CBA_fnc_removeItem",
               "type": "function",
               "description": "Remove an item.Function which verifies existence of _item and _unit, returns false in case of trouble, or when able to remove _item from _unit true in case of success.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_removeItem-sqf.html#CBA_fnc_removeItem",
-              "text": "CBA_fnc_removeItem"
+              "text": "CBA_fnc_removeItem",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_removeItemCargo-sqf.html#CBA_fnc_removeItemCargo",
               "type": "function",
               "description": "Removes specific item(s) from local cargo space.Use <CBA_fnc_removeItemCargoGlobal> if you want to remove the item(s) in global cargo space.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_removeItemCargo-sqf.html#CBA_fnc_removeItemCargo",
-              "text": "CBA_fnc_removeItemCargo"
+              "text": "CBA_fnc_removeItemCargo",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/events/fnc_removeKeyHandler-sqf.html#CBA_fnc_removeKeyHandler",
               "type": "function",
               "description": "Removes an action from a keybind.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/events/fnc_removeKeyHandler-sqf.html#CBA_fnc_removeKeyHandler",
-              "text": "CBA_fnc_removeKeyHandler"
+              "text": "CBA_fnc_removeKeyHandler",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_removeMagazine-sqf.html#CBA_fnc_removeMagazine",
               "type": "function",
               "description": "Remove a magazine.Function which verifies existence of _item and _unit, returns false in case of trouble, or when able to remove _item from _unit true in case of success.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_removeMagazine-sqf.html#CBA_fnc_removeMagazine",
-              "text": "CBA_fnc_removeMagazine"
+              "text": "CBA_fnc_removeMagazine",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_removeMagazineCargo-sqf.html#CBA_fnc_removeMagazineCargo",
               "type": "function",
               "description": "Removes specific magazine(s) from local cargo space.Warning: Magazine\u2019s ammo count is lost and becomes full.Use <CBA_fnc_removeMagazineCargoGlobal> if you want to remove the magazine(s) in global cargo space.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_removeMagazineCargo-sqf.html#CBA_fnc_removeMagazineCargo",
-              "text": "CBA_fnc_removeMagazineCargo"
+              "text": "CBA_fnc_removeMagazineCargo",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_removePerFrameHandler-sqf.html#CBA_fnc_removePerFrameHandler",
               "type": "function",
               "description": "Remove a handler that you have added using CBA_fnc_addPerFrameHandler.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_removePerFrameHandler-sqf.html#CBA_fnc_removePerFrameHandler",
-              "text": "CBA_fnc_removePerFrameHandler"
+              "text": "CBA_fnc_removePerFrameHandler",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_removePlayerAction-sqf.html#CBA_fnc_removePlayerAction",
               "type": "function",
               "description": "Removes player action previously added with CBA_fnc_addPlayerAction.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_removePlayerAction-sqf.html#CBA_fnc_removePlayerAction",
-              "text": "CBA_fnc_removePlayerAction"
+              "text": "CBA_fnc_removePlayerAction",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/events/fnc_removePlayerEventHandler-sqf.html#CBA_fnc_removePlayerEventHandler",
               "type": "function",
               "description": "Removes a player event handler.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/events/fnc_removePlayerEventHandler-sqf.html#CBA_fnc_removePlayerEventHandler",
-              "text": "CBA_fnc_removePlayerEventHandler"
+              "text": "CBA_fnc_removePlayerEventHandler",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_removeWeapon-sqf.html#CBA_fnc_removeWeapon",
               "type": "function",
               "description": "Remove a weapon.Function which verifies existence of _item and _unit, returns false in case of trouble, or when able to remove _item from _unit true in case of success.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_removeWeapon-sqf.html#CBA_fnc_removeWeapon",
-              "text": "CBA_fnc_removeWeapon"
+              "text": "CBA_fnc_removeWeapon",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_removeWeaponCargo-sqf.html#CBA_fnc_removeWeaponCargo",
               "type": "function",
               "description": "Removes specific weapon(s) from local cargo space.Warning: Weapon\u2019s attachments are lost.Use <CBA_fnc_removeWeaponCargoGlobal> if you want to remove the weapon(s) in global cargo space.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_removeWeaponCargo-sqf.html#CBA_fnc_removeWeaponCargo",
-              "text": "CBA_fnc_removeWeaponCargo"
+              "text": "CBA_fnc_removeWeaponCargo",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/strings/fnc_replace-sqf.html#CBA_fnc_replace",
               "type": "function",
               "description": "Replaces substrings within a string.\u00a0 Case-dependent.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/strings/fnc_replace-sqf.html#CBA_fnc_replace",
-              "text": "CBA_fnc_replace"
+              "text": "CBA_fnc_replace",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/strings/fnc_rightTrim-sqf.html#CBA_fnc_rightTrim",
               "type": "function",
               "description": "Trims white-space (space, tab, newline) from the right end of a string.See CBA_fnc_leftTrim and CBA_fnc_trim.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/strings/fnc_rightTrim-sqf.html#CBA_fnc_rightTrim",
-              "text": "CBA_fnc_rightTrim"
+              "text": "CBA_fnc_rightTrim",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/vectors/fnc_scaleVect-sqf.html#CBA_fnc_scaleVect",
               "type": "function",
               "description": "scales a specified vector by a specified factor.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/vectors/fnc_scaleVect-sqf.html#CBA_fnc_scaleVect",
-              "text": "CBA_fnc_scaleVect"
+              "text": "CBA_fnc_scaleVect",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/vectors/fnc_scaleVectTo-sqf.html#CBA_fnc_scaleVectTo",
               "type": "function",
               "description": "scales a vector so that its new Magnitude is equivalent to a specified value.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/vectors/fnc_scaleVectTo-sqf.html#CBA_fnc_scaleVectTo",
-              "text": "CBA_fnc_scaleVectTo"
+              "text": "CBA_fnc_scaleVectTo",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/ai/fnc_searchNearby-sqf.html#CBA_fnc_searchNearby",
               "type": "function",
               "description": "A function for a group to search a nearby building.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/ai/fnc_searchNearby-sqf.html#CBA_fnc_searchNearby",
-              "text": "CBA_fnc_searchNearby"
+              "text": "CBA_fnc_searchNearby",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/arrays/fnc_select-sqf.html#CBA_fnc_select",
               "type": "function",
               "description": "Select array elements for which the block returns true",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/arrays/fnc_select-sqf.html#CBA_fnc_select",
-              "text": "CBA_fnc_select"
+              "text": "CBA_fnc_select",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_selectWeapon-sqf.html#CBA_fnc_selectWeapon",
               "type": "function",
               "description": "Selects a weapon including correctly selecting a weapon mode of specified.Has to be executed on the machine where the unit is local.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_selectWeapon-sqf.html#CBA_fnc_selectWeapon",
-              "text": "CBA_fnc_selectWeapon"
+              "text": "CBA_fnc_selectWeapon",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/events/fnc_serverEvent-sqf.html#CBA_fnc_serverEvent",
               "type": "function",
               "description": "Raises a CBA event on the server machine.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/events/fnc_serverEvent-sqf.html#CBA_fnc_serverEvent",
-              "text": "CBA_fnc_serverEvent"
+              "text": "CBA_fnc_serverEvent",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_setHeight-sqf.html#CBA_fnc_setHeight",
               "type": "function",
               "description": "A function used to set the height of an object",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_setHeight-sqf.html#CBA_fnc_setHeight",
-              "text": "CBA_fnc_setHeight"
+              "text": "CBA_fnc_setHeight",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/network/fnc_setMarkerPersistent-sqf.html#CBA_fnc_setMarkerPersistent",
               "type": "function",
               "description": "Sets or unsets JIP persistency on a global marker.Will broadcast event to server, if function is called on a clientQuery persistency with CBA_fnc_getMarkerPersistent.Please note, this function currently only fully works with markers created on the server, due to client markers being deleted when the client disconnects.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/network/fnc_setMarkerPersistent-sqf.html#CBA_fnc_setMarkerPersistent",
-              "text": "CBA_fnc_setMarkerPersistent"
+              "text": "CBA_fnc_setMarkerPersistent",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_setPos-sqf.html#CBA_fnc_setPos",
               "type": "function",
               "description": "A function used to set the position of an entity.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_setPos-sqf.html#CBA_fnc_setPos",
-              "text": "CBA_fnc_setPos"
+              "text": "CBA_fnc_setPos",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/network/fnc_setVarNet-sqf.html#CBA_fnc_setVarNet",
               "type": "function",
               "description": "Same as setVariable [\u201cname\u201d,var, true] but only broadcasts when the value of var is different to the one which is already saved in the variable space.Checks also for different types.\u00a0 Nil as value gets always broadcasted.Should reduce network traffic.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/network/fnc_setVarNet-sqf.html#CBA_fnc_setVarNet",
-              "text": "CBA_fnc_setVarNet"
+              "text": "CBA_fnc_setVarNet",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/arrays/fnc_shuffle-sqf.html#CBA_fnc_shuffle",
               "type": "function",
               "description": "Shuffles an array\u2019s contents into random order, returning a new array.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/arrays/fnc_shuffle-sqf.html#CBA_fnc_shuffle",
-              "text": "CBA_fnc_shuffle"
+              "text": "CBA_fnc_shuffle",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/vectors/fnc_simplifyAngle-sqf.html#CBA_fnc_simplifyAngle",
               "type": "function",
               "description": "Returns an equivalent angle to the specified angle in the range 0 to 360.If the input angle is in the range 0 to 360, it will be returned unchanged.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/vectors/fnc_simplifyAngle-sqf.html#CBA_fnc_simplifyAngle",
-              "text": "CBA_fnc_simplifyAngle"
+              "text": "CBA_fnc_simplifyAngle",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/vectors/fnc_simplifyAngle180-sqf.html#CBA_fnc_simplifyAngle180",
               "type": "function",
               "description": "Returns an equivalent angle to the specified angle in the range -180 to 180.If the input angle is in the range -180 to 180, it will be returned unchanged.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/vectors/fnc_simplifyAngle180-sqf.html#CBA_fnc_simplifyAngle180",
-              "text": "CBA_fnc_simplifyAngle180"
+              "text": "CBA_fnc_simplifyAngle180",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/arrays/fnc_sortNestedArray-sqf.html#CBA_fnc_sortNestedArray",
               "type": "function",
               "description": "Used to sort a nested array from lowest to highest using quick sort.Sorting is based on the specified column, which must have numerical data.\u00a0 Original array is modified.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/arrays/fnc_sortNestedArray-sqf.html#CBA_fnc_sortNestedArray",
-              "text": "CBA_fnc_sortNestedArray"
+              "text": "CBA_fnc_sortNestedArray",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/strings/fnc_split-sqf.html#CBA_fnc_split",
               "type": "function",
               "description": "Splits a string into substrings using a separator.\u00a0 Inverse of CBA_fnc_join.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/strings/fnc_split-sqf.html#CBA_fnc_split",
-              "text": "CBA_fnc_split"
+              "text": "CBA_fnc_split",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/strings/fnc_strLen-sqf.html#CBA_fnc_strLen",
               "type": "function",
               "description": "Counts the number of characters in a string.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/strings/fnc_strLen-sqf.html#CBA_fnc_strLen",
-              "text": "CBA_fnc_strLen"
+              "text": "CBA_fnc_strLen",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/strings/fnc_substr-sqf.html#CBA_fnc_substr",
               "type": "function",
               "description": "Retrieves a substring of this instance.The substring starts at a specified character position and has a specified length.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/strings/fnc_substr-sqf.html#CBA_fnc_substr",
-              "text": "CBA_fnc_substr"
+              "text": "CBA_fnc_substr",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/strings/fnc_substring-sqf.html#CBA_fnc_substring",
               "type": "function",
               "description": "Extracts the index-based substring from a string.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/strings/fnc_substring-sqf.html#CBA_fnc_substring",
-              "text": "CBA_fnc_substring"
+              "text": "CBA_fnc_substring",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_switchPlayer-sqf.html#CBA_fnc_switchPlayer",
               "type": "function",
               "description": "Switch player to another unit.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_switchPlayer-sqf.html#CBA_fnc_switchPlayer",
-              "text": "CBA_fnc_switchPlayer"
+              "text": "CBA_fnc_switchPlayer",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/events/fnc_targetEvent-sqf.html#CBA_fnc_targetEvent",
               "type": "function",
               "description": "Raises a CBA event on all machines where this object or at least one of these objects are local.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/events/fnc_targetEvent-sqf.html#CBA_fnc_targetEvent",
-              "text": "CBA_fnc_targetEvent"
+              "text": "CBA_fnc_targetEvent",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/ai/fnc_taskAttack-sqf.html#CBA_fnc_taskAttack",
               "type": "function",
               "description": "A function for a group to attack a parsed location.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/ai/fnc_taskAttack-sqf.html#CBA_fnc_taskAttack",
-              "text": "CBA_fnc_taskAttack"
+              "text": "CBA_fnc_taskAttack",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/ai/fnc_taskDefend-sqf.html#CBA_fnc_taskDefend",
               "type": "function",
               "description": "A function for a group to defend a parsed location.Groups will mount nearby static machine guns and bunker in nearby buildings.\u00a0 They may also patrol the radius unless otherwise specified.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/ai/fnc_taskDefend-sqf.html#CBA_fnc_taskDefend",
-              "text": "CBA_fnc_taskDefend"
+              "text": "CBA_fnc_taskDefend",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/ai/fnc_taskPatrol-sqf.html#CBA_fnc_taskPatrol",
               "type": "function",
               "description": "A function for a group to randomly patrol a parsed radius and location.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/ai/fnc_taskPatrol-sqf.html#CBA_fnc_taskPatrol",
-              "text": "CBA_fnc_taskPatrol"
+              "text": "CBA_fnc_taskPatrol",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/ai/fnc_taskSearchArea-sqf.html#CBA_fnc_taskSearchArea",
               "type": "function",
               "description": "Given group will indefinitely randomly search the given marker/trigger area.Will also perform random building searches.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/ai/fnc_taskSearchArea-sqf.html#CBA_fnc_taskSearchArea",
-              "text": "CBA_fnc_taskSearchArea"
+              "text": "CBA_fnc_taskSearchArea",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/diagnostic/fnc_test-sqf.html#CBA_fnc_test",
               "type": "function",
               "description": "Runs unit tests for an addon or component.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/diagnostic/fnc_test-sqf.html#CBA_fnc_test",
-              "text": "CBA_fnc_test"
+              "text": "CBA_fnc_test",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/strings/fnc_trim-sqf.html#CBA_fnc_trim",
               "type": "function",
               "description": "Trims white-space (space, tab, newline) from the both ends of a string.See CBA_fnc_leftTrim and CBA_fnc_rightTrim.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/strings/fnc_trim-sqf.html#CBA_fnc_trim",
-              "text": "CBA_fnc_trim"
+              "text": "CBA_fnc_trim",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_turretDir-sqf.html#CBA_fnc_turretDir",
               "type": "function",
               "description": "Reports azimuth and inclination of a vehicles turret.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_turretDir-sqf.html#CBA_fnc_turretDir",
-              "text": "CBA_fnc_turretDir"
+              "text": "CBA_fnc_turretDir",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_turretPath-sqf.html#CBA_fnc_turretPath",
               "type": "function",
               "description": "Get a unit\u2019s turret path in the current vehicle.Reverse version of the turretUnit scripting command.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_turretPath-sqf.html#CBA_fnc_turretPath",
-              "text": "CBA_fnc_turretPath"
+              "text": "CBA_fnc_turretPath",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_turretPathWeapon-sqf.html#CBA_fnc_turretPathWeapon",
               "type": "function",
               "description": "Get the turret path belonging to a weapon of given vehicle.Reverse version of the weaponsTurret scripting command.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_turretPathWeapon-sqf.html#CBA_fnc_turretPathWeapon",
-              "text": "CBA_fnc_turretPathWeapon"
+              "text": "CBA_fnc_turretPathWeapon",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/vectors/fnc_vect2polar-sqf.html#CBA_fnc_vect2Polar",
               "type": "function",
               "description": "",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/vectors/fnc_vect2polar-sqf.html#CBA_fnc_vect2Polar",
-              "text": "CBA_fnc_vect2Polar"
+              "text": "CBA_fnc_vect2Polar",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/vectors/fnc_vectAdd-sqf.html#CBA_fnc_vectAdd",
               "type": "function",
               "description": "Returns the sum of two vectors.\u00a0  Vectors can be 2D or 3D",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/vectors/fnc_vectAdd-sqf.html#CBA_fnc_vectAdd",
-              "text": "CBA_fnc_vectAdd"
+              "text": "CBA_fnc_vectAdd",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/vectors/fnc_vectCross-sqf.html#CBA_fnc_vectCross",
               "type": "function",
               "description": "Returns the cross product vector of two vectors.Vectors must both be three dimensional.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/vectors/fnc_vectCross-sqf.html#CBA_fnc_vectCross",
-              "text": "CBA_fnc_vectCross"
+              "text": "CBA_fnc_vectCross",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/vectors/fnc_vectCross2D-sqf.html#CBA_fnc_vectCross2D",
               "type": "function",
               "description": "Returns the cross product vector of two 2D vectors.The result is an integer value (positive or negative), representing the magnitude of the height component.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/vectors/fnc_vectCross2D-sqf.html#CBA_fnc_vectCross2D",
-              "text": "CBA_fnc_vectCross2D"
+              "text": "CBA_fnc_vectCross2D",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/vectors/fnc_vectDir-sqf.html#CBA_fnc_vectDir",
               "type": "function",
               "description": "Returns the angle of a vector with the given i and k coordinates in the range 0 to 360.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/vectors/fnc_vectDir-sqf.html#CBA_fnc_vectDir",
-              "text": "CBA_fnc_vectDir"
+              "text": "CBA_fnc_vectDir",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/vectors/fnc_vectDot-sqf.html#CBA_fnc_vectDot",
               "type": "function",
               "description": "Returns the dot product of two vectors.\u00a0 Vectors can be either two or three dimesions, but they must be the same dimension.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/vectors/fnc_vectDot-sqf.html#CBA_fnc_vectDot",
-              "text": "CBA_fnc_vectDot"
+              "text": "CBA_fnc_vectDot",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/vectors/fnc_vectElev-sqf.html#CBA_fnc_vectElev",
               "type": "function",
               "description": "Returns the angle of elevation of a 3D vector with the given i, j and k coordinates in the range -90 to 90.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/vectors/fnc_vectElev-sqf.html#CBA_fnc_vectElev",
-              "text": "CBA_fnc_vectElev"
+              "text": "CBA_fnc_vectElev",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/vectors/fnc_vectMagn-sqf.html#CBA_fnc_vectMagn",
               "type": "function",
               "description": "Returns the magnitude of a 3D vector with the given i, j and k coordinates.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/vectors/fnc_vectMagn-sqf.html#CBA_fnc_vectMagn",
-              "text": "CBA_fnc_vectMagn"
+              "text": "CBA_fnc_vectMagn",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/vectors/fnc_vectMagn2D-sqf.html#CBA_fnc_vectMagn2D",
               "type": "function",
               "description": "Returns the magnitude of a vector with the given i and k coordinates or the magnitude of the i and k components of a 3D vector.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/vectors/fnc_vectMagn2D-sqf.html#CBA_fnc_vectMagn2D",
-              "text": "CBA_fnc_vectMagn2D"
+              "text": "CBA_fnc_vectMagn2D",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/vectors/fnc_vectRotate2D-sqf.html#CBA_fnc_vectRotate2D",
               "type": "function",
               "description": "Rotates a 2D vector around a given center.For rotating of a vector from its origin, use BIS_fnc_rotateVector2D",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/vectors/fnc_vectRotate2D-sqf.html#CBA_fnc_vectRotate2D",
-              "text": "CBA_fnc_vectRotate2D"
+              "text": "CBA_fnc_vectRotate2D",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/vectors/fnc_vectSubtract-sqf.html#CBA_fnc_vectSubtract",
               "type": "function",
               "description": "Returns the difference of two vectors.\u00a0  Vectors can be 2D or 3D.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/vectors/fnc_vectSubtract-sqf.html#CBA_fnc_vectSubtract",
-              "text": "CBA_fnc_vectSubtract"
+              "text": "CBA_fnc_vectSubtract",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_vehicleRole-sqf.html#CBA_fnc_vehicleRole",
               "type": "function",
               "description": "Get a unit\u2019s role in its current vehicle.Used because assignedVehicleRole reports the role assigned by the group leader instead of the current position.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_vehicleRole-sqf.html#CBA_fnc_vehicleRole",
-              "text": "CBA_fnc_vehicleRole"
+              "text": "CBA_fnc_vehicleRole",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_viewDir-sqf.html#CBA_fnc_viewDir",
               "type": "function",
               "description": "Reports azimuth and inclination of a units head or weapon direction.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_viewDir-sqf.html#CBA_fnc_viewDir",
-              "text": "CBA_fnc_viewDir"
+              "text": "CBA_fnc_viewDir",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_waitAndExecute-sqf.html#CBA_fnc_waitAndExecute",
               "type": "function",
               "description": "Executes a code once in unscheduled environment with a given game time delay.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_waitAndExecute-sqf.html#CBA_fnc_waitAndExecute",
-              "text": "CBA_fnc_waitAndExecute"
+              "text": "CBA_fnc_waitAndExecute",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_waitUntilAndExecute-sqf.html#CBA_fnc_waitUntilAndExecute",
               "type": "function",
               "description": "Executes a code once in unscheduled environment after a condition is true.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_waitUntilAndExecute-sqf.html#CBA_fnc_waitUntilAndExecute",
-              "text": "CBA_fnc_waitUntilAndExecute"
+              "text": "CBA_fnc_waitUntilAndExecute",
+              "rightLabel": "CBA Function"
             },
             {
-              "rightLabel": "CBA Function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_weaponComponents-sqf.html#CBA_fnc_weaponComponents",
               "type": "function",
               "description": "Reports class name of base weapon without attachments and all attachments belonging to a pre equipped weapon.Base weapon and attachments are reported in lower case capitalization.\u00a0 Fixed version of BIS_fnc_weaponComponents.",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_weaponComponents-sqf.html#CBA_fnc_weaponComponents",
-              "text": "CBA_fnc_weaponComponents"
+              "text": "CBA_fnc_weaponComponents",
+              "rightLabel": "CBA Function"
             }
           ]
         }
