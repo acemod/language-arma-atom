@@ -666,7 +666,7 @@
               "text": "BIS_fnc_configPath",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Return config path to given entry.",
+              "description": "Returns config path to given entry in given format.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_configPath"
             },
             {
@@ -1856,7 +1856,7 @@
               "text": "BIS_fnc_findSafePos",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Function to retrieve and dynamic position in the world according to several parameters.",
+              "description": "This function generates position on a map according to several given parameters (see diagram): The position pos will be …",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_findSafePos"
             },
             {
@@ -2073,7 +2073,7 @@
               "text": "BIS_fnc_getParamValue",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Return value of mission param defined in Description.ext.",
+              "description": "Returns the value of mission param given by the class name.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_getParamValue"
             },
             {
@@ -2437,7 +2437,7 @@
               "text": "BIS_fnc_initVehicle",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "This function aims to simplify the way to customize vehicles.",
+              "description": "This function aims to simplify the way to customise vehicles.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_initVehicle"
             },
             {
@@ -2472,7 +2472,7 @@
               "text": "BIS_fnc_inTrigger",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Detects whether a position is within the trigger area of the given trigger.",
+              "description": "Detects whether position is within area (Since Arma 3 v1.57 an engine solution is available inArea) or calculates distance to …",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_inTrigger"
             },
             {
@@ -3102,7 +3102,7 @@
               "text": "BIS_fnc_moveToRespawnPosition",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Move a unit to the respawn position.",
+              "description": "Move given unit to given respawn position.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_moveToRespawnPosition"
             },
             {
@@ -3389,7 +3389,7 @@
               "text": "BIS_fnc_packStaticWeapon",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Function which uses a weapon team to pack a static weapon such as the HMG or Mortar.",
+              "description": "This function will make weapon team pack a static weapon.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_packStaticWeapon"
             },
             {
@@ -3501,7 +3501,7 @@
               "text": "BIS_fnc_playVideo",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Plays in-game video.",
+              "description": "Plays in-game video with a range of options.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_playVideo"
             },
             {
@@ -3522,7 +3522,7 @@
               "text": "BIS_fnc_position",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Return position.",
+              "description": "Returns PositionAGL, unless passed argument is Array, then the same array is returned.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_position"
             },
             {
@@ -5048,7 +5048,7 @@
               "text": "BIS_fnc_unpackStaticWeapon",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Function which uses a weapon team to pack a static weapon such as the HMG or Mortar.",
+              "description": "This function will move given support team to the given weapon position.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_unpackStaticWeapon"
             },
             {

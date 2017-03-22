@@ -1594,6 +1594,13 @@
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/repair/functions/fnc_useItems.sqf"
             },
             {
+              "text": "ace_scopes_fnc_getBoreHeight",
+              "rightLabel": "ACE3 Function",
+              "type": "function",
+              "description": "Gets the bore height of the weapon & optic combination with the given weapon index.",
+              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/scopes/functions/fnc_getBoreHeight.sqf"
+            },
+            {
               "text": "ace_slideshow_fnc_createSlideshow",
               "rightLabel": "ACE3 Function",
               "type": "function",
@@ -1739,6 +1746,13 @@
               "type": "function",
               "description": "Select the next grenade.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/weaponselect/functions/fnc_selectNextGrenade.sqf"
+            },
+            {
+              "text": "ace_zeus_fnc_showMessage",
+              "rightLabel": "ACE3 Function",
+              "type": "function",
+              "description": "Shows a zeus message through the BIS function, handles localization.\r\nIf multiple args are given, they get formatted.",
+              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/zeus/functions/fnc_showMessage.sqf"
             }
           ]
         }
