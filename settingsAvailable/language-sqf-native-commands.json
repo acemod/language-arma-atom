@@ -721,7 +721,7 @@
               "type": "function",
               "leftLabel": "varName ",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/addPublicVariableEventHandler",
-              "description": "This event handler will detect if a missionNamespace variable (it is attached to) has been broadcast over network with publicVariable, publicVariableClient or publicVariableServer commands and will execute EH code upon detection. Arguments passed to the code in _this array are:\n\n_this select 0: String - broadcast variable name (same variable name EH is attached to)\n_this select 1: Anything - broadcast variable value \n\nPlease note:\n* EH works only in Multiplayer environment.\n* EH will not fire on the machine that executed broadcast command, only on the machines that receive the broadcast.\n* The value of broadcast variable can be exactly the same, it is the actual broadcast that triggers EH not the change in variable.\n\n\n\n\n\n \n\n  Alt syntax of this command doesn't work as intended",
+              "description": "This event handler will detect if a missionNamespace variable (it is attached to) has been broadcast over network with publicVariable, publicVariableClient or publicVariableServer commands and will execute EH code upon detection. Arguments passed to the code in _this array are:\n\n_this select 0: String - broadcast variable name (same variable name EH is attached to)\n_this select 1: Anything - broadcast variable value \n_this select 2: Object, Group - target the variable got set on with setVariable  (see: alternative syntax)\n\nPlease note:\n* EH works only in Multiplayer environment.\n* EH will not fire on the machine that executed broadcast command, only on the machines that receive the broadcast.\n* The value of broadcast variable can be exactly the same, it is the actual broadcast that triggers EH not the change in variable.\n\n\n\n\n\n \n\n  Alt syntax of this command doesn't work as intended",
               "snippet": "addPublicVariableEventHandler ${2:code}$0"
             },
             {
@@ -729,7 +729,7 @@
               "type": "function",
               "leftLabel": "varName ",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/addPublicVariableEventHandler",
-              "description": "This event handler will detect if a missionNamespace variable (it is attached to) has been broadcast over network with publicVariable, publicVariableClient or publicVariableServer commands and will execute EH code upon detection. Arguments passed to the code in _this array are:\n\n_this select 0: String - broadcast variable name (same variable name EH is attached to)\n_this select 1: Anything - broadcast variable value \n\nPlease note:\n* EH works only in Multiplayer environment.\n* EH will not fire on the machine that executed broadcast command, only on the machines that receive the broadcast.\n* The value of broadcast variable can be exactly the same, it is the actual broadcast that triggers EH not the change in variable.\n\n\n\n\n\n \n\n  Alt syntax of this command doesn't work as intended",
+              "description": "This event handler will detect if a missionNamespace variable (it is attached to) has been broadcast over network with publicVariable, publicVariableClient or publicVariableServer commands and will execute EH code upon detection. Arguments passed to the code in _this array are:\n\n_this select 0: String - broadcast variable name (same variable name EH is attached to)\n_this select 1: Anything - broadcast variable value \n_this select 2: Object, Group - target the variable got set on with setVariable  (see: alternative syntax)\n\nPlease note:\n* EH works only in Multiplayer environment.\n* EH will not fire on the machine that executed broadcast command, only on the machines that receive the broadcast.\n* The value of broadcast variable can be exactly the same, it is the actual broadcast that triggers EH not the change in variable.\n\n\n\n\n\n \n\n  Alt syntax of this command doesn't work as intended",
               "snippet": "addPublicVariableEventHandler ${2:[${3:target}, ${4:code}]}$0"
             },
             {
@@ -895,6 +895,14 @@
             {
               "rightLabel": "SQF Command",
               "type": "function",
+              "leftLabel": "(Number) = ",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/admin",
+              "description": "This is dedicated server command, which queries the admin state of any client on the network by their client (owner) id. Possible results are:\n 1 - client is admin that is voted in\n 2 - client is admin that is logged in\nIn all other cases it returns 0. To self check the admin state of a local client, use BIS_fnc_admin.",
+              "snippet": "admin ${1:ownerID}$0"
+            },
+            {
+              "rightLabel": "SQF Command",
+              "type": "function",
               "leftLabel": "(Object) = ",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/agent",
               "description": "Return a person for a given agent.",
@@ -939,6 +947,14 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/airDensityRTD",
               "description": "Returns air density in given altitude",
               "snippet": "airDensityRTD ${1:altitude}$0"
+            },
+            {
+              "rightLabel": "SQF Command",
+              "type": "function",
+              "leftLabel": "(Number) = ",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/airplaneThrottle",
+              "description": "Returns throttle position. Works only on player's vehicle.",
+              "snippet": "airplaneThrottle ${1:airplane}$0"
             },
             {
               "rightLabel": "SQF Command",
@@ -1215,6 +1231,14 @@
             {
               "rightLabel": "SQF Command",
               "type": "function",
+              "leftLabel": "(Number, Boolean) = ",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/ammoOnPylon",
+              "description": "Returns ammo count on given pylon.\nReturns false (Bool) on failure.",
+              "text": "vehicle"
+            },
+            {
+              "rightLabel": "SQF Command",
+              "type": "function",
               "leftLabel": "(Boolean) = a ",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/and",
               "description": "Returns true only if both conditions are true. In case of the alternative syntax, lazy evaluation is used (if left operand is false, evaluation of the right side is skipped completely).",
@@ -1239,6 +1263,14 @@
             {
               "rightLabel": "SQF Command",
               "type": "function",
+              "leftLabel": "vehicle ",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/animateBay",
+              "description": "Force animation of bay to given state, -1 for reset to engine handling, can cause weapon inoperative, because weapon is released when bay state =1.",
+              "snippet": "animateBay [pylon name/index, anim phase]$0"
+            },
+            {
+              "rightLabel": "SQF Command",
+              "type": "function",
               "leftLabel": "object ",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/animateDoor",
               "description": "Animates a door on a vehicle. Animation is defined in config file in CfgVehicles ->  AnimationSources. Wanted animation phase is set with phase param. This command works only on animation sources with \"door\" controller. Door_L in the example below can be animated with animateDoor but not CargoRamp_Open: heli animateDoor [\"Door_L\", 1];\nclass AnimationSources\n{\n\tclass CargoRamp_Open\n\t{\n\t\tsource = \"user\";\n\t\tanimPeriod = 5;\n\t\tinitPhase = 0;\n\t};\n\tclass Door_L\n\t{\n\t\tsource = \"door\";\n\t\tanimPeriod = 1.6;\n\t};\n};\nTo animate doors or other sources that have \"user\" controller, use animate command, or even better, animateSource (recommended). Sources with \"hit\" controller can be animated with setHitPointDamage command applied to the name contained in hitpoint property. For availability of animation sources and their controller types see: createVehicle/vehicles",
@@ -1247,9 +1279,17 @@
             {
               "rightLabel": "SQF Command",
               "type": "function",
+              "leftLabel": "vehicle ",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/animatePylon",
+              "description": "Force animation of pylon to given state, -1 for reset to engine handling, can cause weapon inoperative, because weapon is released  when pylon state =1.",
+              "snippet": "animatePylon [pylon name/index, anim phase]$0"
+            },
+            {
+              "rightLabel": "SQF Command",
+              "type": "function",
               "leftLabel": "object ",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/animateSource",
-              "description": "Process an animation of the object. If animate uses class name from CfgModels Animations, animateSource uses name defined by source property. This allows to use just one command on a bunch of animations related to the same source simultaneously. Since Arma 3 v1.65.138459 speed of animation can be altered with coefficient.\n\nA class with the same source name should also be present in main config in CfgVehicles AnimationSources and have to be bound to the \"user\" controller for the command to work. If in order to animate door in example below using animate command it would require 2 calls:\n\nhouse animate [\"Door_1_rot\", 1];\n\nhouse animate [\"Door_Handle_1_rot\", 1];\n\nWith animateSource this would require only 1 (provided everything is configured correctly):\n\nhouse animateSource [\"Door_1_source\", 1];\n\n// model.cfg\n....\nclass Animations\n{\n\tclass Door_1_rot\n\t{\n\t\ttype = rotation;\n\t\tsource = Door_1_source;\n\t\tselection = Door_1;\n\t\taxis = Door_1_axis;\n\t\tmemory = 1;\n\t\tminValue = 0.1;\n\t\tmaxValue = 1;\n\t\tangle0 = 0;\n\t\tangle1 = (rad 110);\n\t};\n\tclass Door_Handle_1_rot\n\t{\n\t\ttype = rotation;\n\t\tsource = Door_1_source;\n\t\tselection = Door_Handle_1;\n\t\taxis = Door_Handle_1_axis;\n\t\tmemory = 1;\n\t\tminValue = 0;\n\t\tmaxValue = 0.1;\n\t\tangle0 = 0;\n\t\tangle1 = (rad -50);\n\t};\n};\n...\n\u00a0\n// config.cpp\n...\nclass AnimationSources\n{\n\tclass Door_1_source\n\t{\n\t\tsource = \"user\";\n\t\tanimPeriod = 2;\n\t\tinitPhase = 0;\n\t};\n};\n... \nIf you don't know much about model config you can use this page createVehicle/vehicles for reference. Some of the AnimationSources are listed with the class names of the available assets in Arma 3. If it says \"user\", the chances are it could work with animateSource (see example 2).\n\n\n\n\n\n \n\n  It is recommended that animateSource command is used instead of animate whenever is possible, as it is more efficient and optimized for MP\n\n\n\n\n\n \n\n  Mixing animateSource command with animate command to animate the same part can lead to unexpected behavior",
+              "description": "Process an animation of the object. If animate uses class name from CfgModels Animations, animateSource uses name defined by source property. This allows to use just one command on a bunch of animations related to the same source simultaneously. Since Arma 3 v1.65.138459 speed of animation can be altered with coefficient.\n\nA class with the same source name should also be present in main config in CfgVehicles AnimationSources and have to be bound to the \"user\" controller for the command to work. If in order to animate door in example below using animate command it would require 2 calls:\n\nhouse animate [\"Door_1_rot\", 1];\n\nhouse animate [\"Door_Handle_1_rot\", 1];\n\nWith animateSource this would require only 1 (provided everything is configured correctly):\n\nhouse animateSource [\"Door_1_sound_source\", 1];\n\n// model.cfg\n....\nclass Animations\n{\n\tclass Door_1_rot\n\t{\n\t\ttype = rotation;\n\t\tsource = Door_1_sound_source;\n\t\tselection = Door_1;\n\t\taxis = Door_1_axis;\n\t\tmemory = 1;\n\t\tminValue = 0.1;\n\t\tmaxValue = 1;\n\t\tangle0 = 0;\n\t\tangle1 = (rad 110);\n\t};\n\tclass Door_Handle_1_rot\n\t{\n\t\ttype = rotation;\n\t\tsource = Door_1_noSound_source;\n\t\tselection = Door_Handle_1;\n\t\taxis = Door_Handle_1_axis;\n\t\tmemory = 1;\n\t\tminValue = 0;\n\t\tmaxValue = 0.1;\n\t\tangle0 = 0;\n\t\tangle1 = (rad -50);\n\t};\n};\n...\n\u00a0\n// config.cpp\n...\nclass AnimationSources\n{\n        class Door_1_sound_source\n        {\n\t        source = \"user\";\n\t        initPhase = 0;\n\t        animPeriod = 1;\n\t        sound = \"GenericDoorsSound\";\n\t        soundPosition = \"Door_1_trigger\";\n        };\n};\n... \nIf you don't know much about model config you can use this page createVehicle/vehicles for reference. Some of the AnimationSources are listed with the class names of the available assets in Arma 3. If it says \"user\", the chances are it could work with animateSource (see example 2).\n\n\n\n\n\n \n\n  It is recommended that animateSource command is used instead of animate whenever is possible, as it is more efficient and optimized for MP\n\n\n\n\n\n \n\n  Mixing animateSource command with animate command to animate the same part can lead to unexpected behavior",
               "snippet": "animateSource ${2:[${3:source}, ${4:phase}, ${5:speed}]}$0"
             },
             {
@@ -1825,7 +1865,7 @@
               "type": "function",
               "leftLabel": "(String) = extension ",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/callExtension",
-              "description": "Calls custom .dll also known as Extension. The name of the extension is the name of the extension .dll without \".dll\" part (or without \"_x64.dll\" part on 64-bit Arma). For example if the file is 'myExtension.dll' the name of the extension will be \"myExtension\". For 64-bit extensions, the name of the extension doesn't need to change and is still \"myExtension\". The game will automatically look for 'myExtension_x64.dll' when you use 64-bit Arma exe.\n\nThis command is blocking, meaning that the game will wait for the extension to return before continuing. This may cause FPS drop if extension is not optimised. If extension takes too long, consider making asynchronous extension, where the result of the work of the extension is collected in a separate call.\n\nCurrently there is no limit how much data you can send to the extension. However there is a limit on how much data you can return from extension in one call. The limit is known to the extension and is passed in  int outputSize. The limit may or may not change in the future and is currently 10240 bytes. It is up to extension designer to handle multipart results if returned data exceeds output limit.\n\nSince Arma 3 v1.67 it is possible to pass array of arguments to extensions. The array of arguments could be anything and all elements will be converted to strings, however you might want to only send simple types like Booleans, Strings, Numbers and Arrays of all of the above. There is currently a limit on how many arguments can be sent and it is 1024. However an argument could be an Array itself, in this case extension maker will have to provide additional methods for parsing such arguments.\n\nPossible error codes:\n 101: SYNTAX_ERROR_WRONG_PARAMS_SIZE\n 102: SYNTAX_ERROR_WRONG_PARAMS_TYPE\n 201: PARAMS_ERROR_TOO_MANY_ARGS\n 301: EXECUTION_WARNING_TAKES_TOO_LONG\nEach error will have entry in .rpt file with more details.\n\nFor more information see Extensions.",
+              "description": "Calls custom .dll also known as Extension. The name of the extension is the name of the extension .dll without \".dll\" part (or without \"_x64.dll\" part on 64-bit Arma). For example if the file is 'myExtension.dll' the name of the extension will be \"myExtension\". For 64-bit extensions, the name of the extension doesn't need to change and is still \"myExtension\". The game will automatically look for 'myExtension_x64.dll' when you use 64-bit Arma exe.\n\nThis command is blocking, meaning that the game will wait for the extension to return before continuing. This may cause FPS drop if extension is not optimised. If extension takes too long, consider making asynchronous extension, where the result of the work of the extension is collected in a separate call.\n\nCurrently there is no limit how much data you can send to the extension. However there is a limit on how much data you can return from extension in one call. The limit is known to the extension and is passed in  int outputSize. The limit may or may not change in the future and is currently 10240 bytes. It is up to extension designer to handle multipart results if returned data exceeds output limit.\n\nSince Arma 3 v1.67 it is possible to pass array of arguments to extensions. The array of arguments could be anything and all elements will be converted to strings, however you might want to only send simple types like Booleans, Strings, Numbers and Arrays of all of the above. There is currently a limit on how many arguments can be sent and it is 1024. However an argument could be an Array itself, in this case extension maker will have to provide additional methods for parsing such arguments.\n\nPossible error codes:\n 101: SYNTAX_ERROR_WRONG_PARAMS_SIZE\n 102: SYNTAX_ERROR_WRONG_PARAMS_TYPE\n 201: PARAMS_ERROR_TOO_MANY_ARGS\n 301: EXECUTION_WARNING_TAKES_TOO_LONG\nEach error will have entry in .rpt file with more details.\n\nSince Arma 3 v1.69, RVExtensionVersion interface (see source code example below) has been added, which is called by the engine on extension load and expects extension version. This interface is designed to work with both, Linux and Windows. The max buffer size is 32 bytes. The version information will then appear in .rpt file like so:\n19:06:36 CallExtension loaded: test_extension (.\\test_extension.dll) [1.0.0.1]\n\nFor more information see Extensions.",
               "snippet": "callExtension ${2:function}$0"
             },
             {
@@ -1833,7 +1873,7 @@
               "type": "function",
               "leftLabel": "(Array, Code, String, Number) = extension ",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/callExtension",
-              "description": "Calls custom .dll also known as Extension. The name of the extension is the name of the extension .dll without \".dll\" part (or without \"_x64.dll\" part on 64-bit Arma). For example if the file is 'myExtension.dll' the name of the extension will be \"myExtension\". For 64-bit extensions, the name of the extension doesn't need to change and is still \"myExtension\". The game will automatically look for 'myExtension_x64.dll' when you use 64-bit Arma exe.\n\nThis command is blocking, meaning that the game will wait for the extension to return before continuing. This may cause FPS drop if extension is not optimised. If extension takes too long, consider making asynchronous extension, where the result of the work of the extension is collected in a separate call.\n\nCurrently there is no limit how much data you can send to the extension. However there is a limit on how much data you can return from extension in one call. The limit is known to the extension and is passed in  int outputSize. The limit may or may not change in the future and is currently 10240 bytes. It is up to extension designer to handle multipart results if returned data exceeds output limit.\n\nSince Arma 3 v1.67 it is possible to pass array of arguments to extensions. The array of arguments could be anything and all elements will be converted to strings, however you might want to only send simple types like Booleans, Strings, Numbers and Arrays of all of the above. There is currently a limit on how many arguments can be sent and it is 1024. However an argument could be an Array itself, in this case extension maker will have to provide additional methods for parsing such arguments.\n\nPossible error codes:\n 101: SYNTAX_ERROR_WRONG_PARAMS_SIZE\n 102: SYNTAX_ERROR_WRONG_PARAMS_TYPE\n 201: PARAMS_ERROR_TOO_MANY_ARGS\n 301: EXECUTION_WARNING_TAKES_TOO_LONG\nEach error will have entry in .rpt file with more details.\n\nFor more information see Extensions.",
+              "description": "Calls custom .dll also known as Extension. The name of the extension is the name of the extension .dll without \".dll\" part (or without \"_x64.dll\" part on 64-bit Arma). For example if the file is 'myExtension.dll' the name of the extension will be \"myExtension\". For 64-bit extensions, the name of the extension doesn't need to change and is still \"myExtension\". The game will automatically look for 'myExtension_x64.dll' when you use 64-bit Arma exe.\n\nThis command is blocking, meaning that the game will wait for the extension to return before continuing. This may cause FPS drop if extension is not optimised. If extension takes too long, consider making asynchronous extension, where the result of the work of the extension is collected in a separate call.\n\nCurrently there is no limit how much data you can send to the extension. However there is a limit on how much data you can return from extension in one call. The limit is known to the extension and is passed in  int outputSize. The limit may or may not change in the future and is currently 10240 bytes. It is up to extension designer to handle multipart results if returned data exceeds output limit.\n\nSince Arma 3 v1.67 it is possible to pass array of arguments to extensions. The array of arguments could be anything and all elements will be converted to strings, however you might want to only send simple types like Booleans, Strings, Numbers and Arrays of all of the above. There is currently a limit on how many arguments can be sent and it is 1024. However an argument could be an Array itself, in this case extension maker will have to provide additional methods for parsing such arguments.\n\nPossible error codes:\n 101: SYNTAX_ERROR_WRONG_PARAMS_SIZE\n 102: SYNTAX_ERROR_WRONG_PARAMS_TYPE\n 201: PARAMS_ERROR_TOO_MANY_ARGS\n 301: EXECUTION_WARNING_TAKES_TOO_LONG\nEach error will have entry in .rpt file with more details.\n\nSince Arma 3 v1.69, RVExtensionVersion interface (see source code example below) has been added, which is called by the engine on extension load and expects extension version. This interface is designed to work with both, Linux and Windows. The max buffer size is 32 bytes. The version information will then appear in .rpt file like so:\n19:06:36 CallExtension loaded: test_extension (.\\test_extension.dll) [1.0.0.1]\n\nFor more information see Extensions.",
               "snippet": "callExtension ${2:[${3:function}, ${4:arguments}]}$0"
             },
             {
@@ -1993,7 +2033,7 @@
               "type": "function",
               "leftLabel": "camera ",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/camPrepareFov",
-              "description": "Prepares the camera field of view (zoom). The default zoom level is 0.7, 0.01 is the nearest and 2 the furthest zoom value. The angle of the field of view is atan(FOV)*2 radians when in 4:3 aspect ratio. Needs the call of camCommitPrepared to be conducted.",
+              "description": "Prepares the camera field of view (zoom). The default zoom level is 0.75, 0.01 is the nearest and 2 the furthest zoom value. The angle of the field of view is atan(FOV)*2 radians when in 4:3 aspect ratio. Needs the call of camCommitPrepared to be conducted.",
               "snippet": "camPrepareFov ${2:fieldOfView}$0"
             },
             {
@@ -2065,7 +2105,7 @@
               "type": "function",
               "leftLabel": "camera ",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/camSetFocus",
-              "description": "focusRange is in format [distance,blur]. Sets the camera focus blur. It does not automatically commit changes.",
+              "description": "Sets camera focus range in format [distance, blur]. blur param - sets the camera focus blur. It does not automatically commit changes (see camCommit). Use [-1, -1] to disable focus completely.",
               "snippet": "camSetFocus ${2:focusRange}$0"
             },
             {
@@ -2073,7 +2113,7 @@
               "type": "function",
               "leftLabel": "camera ",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/camSetFov",
-              "description": "Set the zoom level (Field Of View) of the given camera.\n\nThe zoom level is from 0.01 for the nearest and 2 for the furthest zoom value, with a default zoom level of 0.7\n\nThe angle of the field of view is atan(FOV)*2 radians when in 4:3 aspect ratio.",
+              "description": "Set the zoom level (Field Of View) of the given camera.\n\nThe zoom level is from 0.01 for the nearest and 2 for the furthest zoom value, with a default zoom level of 0.75\n\nThe angle of the field of view is atan(FOV)*2 radians when in 4:3 aspect ratio.",
               "snippet": "camSetFov ${2:level}$0"
             },
             {
@@ -2823,9 +2863,17 @@
             {
               "rightLabel": "SQF Command",
               "type": "function",
+              "leftLabel": "vehicle ",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/confirmSensorTarget",
+              "description": "Sets for which Side the entity becomes a \"confirmed hostile\" target - a target that becomes highlighted red on the sensors display.",
+              "snippet": "confirmSensorTarget ${2:[${3:side}, ${4:isConfirmed}]}$0"
+            },
+            {
+              "rightLabel": "SQF Command",
+              "type": "function",
               "leftLabel": "(Boolean) = person ",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/connectTerminalToUAV",
-              "description": "Connect person with UAV terminal to UAV unit. UAV Terminal item needs to be assigned to GPS slot.",
+              "description": "Connect person with UAV terminal to UAV unit. UAV Terminal item needs to be assigned to GPS slot. If UAV is already connected to another terminal, this new connection will fail.",
               "snippet": "connectTerminalToUAV ${2:uav}$0"
             },
             {
@@ -3041,8 +3089,8 @@
               "type": "function",
               "leftLabel": "",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/createGearDialog",
-              "description": "Opens gear dialog for given unit.",
-              "snippet": "CreateGearDialog ${1:[${2:unit},${3:resource}]}$0"
+              "description": "Opens gear dialog for given unit. Alternatively use action command:\nplayer action [\"Gear\", player];",
+              "snippet": "createGearDialog ${1:[${2:unit}, ${3:resource}]}$0"
             },
             {
               "rightLabel": "SQF Command",
@@ -3161,7 +3209,7 @@
               "type": "function",
               "leftLabel": "(Object) = ",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/createSoundSource",
-              "description": "Creates a sound source of the given type (type is the name of the subclass of CfgVehicles which is pointing to the sound defined in CfgSFX). If the markers array contains several marker names, the position of a random one is used, otherwise, the given position is used. The sound source is placed inside a circle with this position as its center and placement as its radius. Some of the vanilla classes pre-configured in Arma 3:\n \"Sound_Alarm\"\n \"Sound_Alarm2\"\n \"Sound_BattlefieldExplosions\"\n \"Sound_BattlefieldFirefight\"\n \"Sound_Fire\"\n \"Sound_SmokeWreck1\"\n \"Sound_SparklesWreck1\"\n \"Sound_SparklesWreck2\"\n \"Sound_Stream\"",
+              "description": "Creates a sound source of the given type (type is the name of the subclass of CfgVehicles which is pointing to the sound defined in CfgSFX). If the markers array contains several marker names, the position of a random one is used, otherwise, the given position is used. The sound source is placed inside a circle with this position as its center and placement as its radius. Some of the vanilla classes pre-configured in Arma 3:\n \"Sound_Alarm\"\n \"Sound_Alarm2\"\n \"Sound_BattlefieldExplosions\"\n \"Sound_BattlefieldFirefight\"\n \"Sound_Fire\"\n \"Sound_SmokeWreck1\"\n \"Sound_SparklesWreck1\"\n \"Sound_SparklesWreck2\"\n \"Sound_Stream\"\nSince Arma 3 v1.69.141183 it is possible to define sounds for use with createSoundSource in mission config. As mentioned earlier, the sounds needed for this command should be defined inside CfgVehicles class, which itself references CfgSFX class. If given class searched in main config and is not found, the search will continue in description.ext. Here is an example of suitable mission config definition:\n\n// description.ext\n\u00a0\nclass CfgSFX\n{\n\tclass MyOwl\n\t{\n\t\tsound0[] = {\"@A3\\Sounds_F\\environment\\animals\\birds\\owl1\", db-10, 1.0, 1000, 0.2, 0, 15, 30};  // path to addon sound\n\t\tsound1[] = {\"@A3\\Sounds_F\\environment\\animals\\birds\\owl2\", db-10, 1.0, 1000, 0.2, 0, 15, 30};  // path to addon sound\n\t\tsound2[] = {\"@A3\\Sounds_F\\environment\\animals\\birds\\owl3\", db-10, 1.0, 1000, 0.2, 0, 15, 30};  // path to addon sound\n\t\tsounds[] = {sound0, sound1, sound2};\n\t\tempty[] = {\"\", 0, 0, 0, 0, 0, 0, 0};\n\t};\n};\n\u00a0\nclass CfgVehicles\n{\n\tclass MyOwlSound // class name to be used with createSoundSource\n\t{\n\t\tsound = \"MyOwl\"; // reference to CfgSFX class\n\t};\n};\n_owl = createSoundSource [\"MyOwlSound\", position player, [], 0];\nNote that the sound created by createSoundSource will always be looping. Also when CfgSFX sound definition contains more than 1 sound, there is no guarantee that the sound played will be the same on every PC in Multiplayer.",
               "snippet": "createSoundSource ${1:[${2:type}, ${3:position}, ${4:markers}, ${5:placement}]}$0"
             },
             {
@@ -3191,18 +3239,10 @@
             {
               "rightLabel": "SQF Command",
               "type": "function",
-              "leftLabel": "(Object) = ",
+              "leftLabel": "",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/createTrigger",
-              "description": "Creates a sensor (trigger) of the given type and at the given position. The type must be a class name in CfgNonAIVehicles or CfgVehicles with simulation = detector. An array containing all units that have activated the trigger is available via list triggerobj. Created triggers can be deleted using deleteVehicle.\n\nNOTE1: Since Arma 3 v1.43.129935 triggers can be created locally on clients using the alternative syntax.\nNOTE2: Since Arma 3 v1.53.132440 triggers can be disabled/enabled using enableSimulation command.\n\nTriggers are created with default params, which are:\n a - 50.0\n b - 50.0\n angle - 0\n rectangular - false\n activationBy - None\n activationType - Present\n repeating - false\n timeoutMin - 0\n timeoutMid - 0\n timeoutMax - 0\n interruptable - true\n type - None\n text - \"\"\n name - \"\"\n expCond - \"this\"\n expActiv - \"\"\n expDesactiv - \"\"",
-              "snippet": "createTrigger ${1:[${2:type}, ${3:position}, makeGlobal]}$0"
-            },
-            {
-              "rightLabel": "SQF Command",
-              "type": "function",
-              "leftLabel": "type ",
-              "descriptionMoreURL": "http://community.bistudio.com/wiki/createUnit",
-              "description": "Create unit of a class that's defined in CfgVehicles.\n\nThe Group parameter MUST be an existing group or the unit won't be created.",
-              "snippet": "createUnit ${2:[${3:position}, ${4:group}, ${5:init}, ${6:skill}, ${7:rank}]}$0"
+              "description": "Creates a sensor (trigger) of the given type and at the given position. The type must be a class name in CfgNonAIVehicles or CfgVehicles with simulation = detector. An array containing all units that have activated the trigger is available via list triggerobj. Created triggers can be deleted using deleteVehicle.\n\nNOTE1: Since Arma 3 v1.43.129935 triggers can be created locally on clients setting optional param makeGlobal to false\nNOTE2: Since Arma 3 v1.53.132440 triggers can be disabled/enabled using enableSimulation command\n\nTriggers are created with default params, which are:\n a: 50.0\n b: 50.0\n c: -1\n angle: 0\n rectangular: false\n activationBy: None\n activationType: Present\n repeating: false\n timeoutMin: 0\n timeoutMid: 0\n timeoutMax: 0\n interruptable: true\n type: None\n text: \"\"\n name: \"\"\n expCond: \"this\"\n expActiv: \"\"\n expDesactiv: \"\"",
+              "snippet": "createTrigger ${1:[${2:type}, ${3:position}, ${4:makeGlobal}]}$0"
             },
             {
               "rightLabel": "SQF Command",
@@ -3211,6 +3251,14 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/createUnit",
               "description": "Create unit of a class that's defined in CfgVehicles.\n\nThe Group parameter MUST be an existing group or the unit won't be created.",
               "snippet": "createUnit ${2:[${3:type}, ${4:position}, ${5:markers}, ${6:placement}, ${7:special}]}$0"
+            },
+            {
+              "rightLabel": "SQF Command",
+              "type": "function",
+              "leftLabel": "type ",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/createUnit",
+              "description": "Create unit of a class that's defined in CfgVehicles.\n\nThe Group parameter MUST be an existing group or the unit won't be created.",
+              "snippet": "createUnit ${2:[${3:position}, ${4:group}, ${5:init}, ${6:skill}, ${7:rank}]}$0"
             },
             {
               "rightLabel": "SQF Command",
@@ -3251,6 +3299,94 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/crew",
               "description": "Returns the crew (both dead and alive) of the given vehicle.",
               "snippet": "crew ${1:vehicleName}$0"
+            },
+            {
+              "rightLabel": "SQF Command",
+              "type": "function",
+              "leftLabel": "(Array) = ",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/ctAddHeader",
+              "description": "Adds a header line of controls according to the HeaderTemplate class. It returns an array containing header index and array of created controls in a format [<headerIndex>, [<control0>, <control1>...<control n>]].\n\nNote that rows and headers are indexed separately.",
+              "snippet": "ctAddHeader ${1:Control}$0"
+            },
+            {
+              "rightLabel": "SQF Command",
+              "type": "function",
+              "leftLabel": "(Array) = ",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/ctAddRow",
+              "description": "Adds one row of controls according to the RowTemplate class. It returns an array containing row index and array of created controls in a format [<rowIndex>, [<control0>, <control1>...<control n>]].\n\nNote that rows and headers are indexed separately.",
+              "snippet": "ctAddRow ${1:Control}$0"
+            },
+            {
+              "rightLabel": "SQF Command",
+              "type": "function",
+              "leftLabel": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/ctClear",
+              "description": "Removes all the lines from the RscControlsTable. Returns Nothing.",
+              "snippet": "ctClear ${1:Control}$0"
+            },
+            {
+              "rightLabel": "SQF Command",
+              "type": "function",
+              "leftLabel": "(Number) = ",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/ctCurSel",
+              "description": "Returns index of the selected row. Will take only rows, but not headers into account.",
+              "snippet": "ctCurSel ${1:Control}$0"
+            },
+            {
+              "rightLabel": "SQF Command",
+              "type": "function",
+              "leftLabel": "(String) = ",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/ctData",
+              "description": "Returns metadata (string) associated with a particular row of RscControlsTable.",
+              "snippet": "ctData ${1:Control}$0"
+            },
+            {
+              "rightLabel": "SQF Command",
+              "type": "function",
+              "leftLabel": "(Array) = ",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/ctFindHeaderRows",
+              "description": "Takes index of a header as a parameter. Returns array of indices of rows under this header.",
+              "text": "Control"
+            },
+            {
+              "rightLabel": "SQF Command",
+              "type": "function",
+              "leftLabel": "(Number) = ",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/ctFindRowHeader",
+              "description": "Takes index of a row as a parameter. Returns index of the closest header above this row.",
+              "text": "Control"
+            },
+            {
+              "rightLabel": "SQF Command",
+              "type": "function",
+              "leftLabel": "(Array) = ",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/ctHeaderControls",
+              "description": "Returns array of controls on the header with the given index.",
+              "text": "Control"
+            },
+            {
+              "rightLabel": "SQF Command",
+              "type": "function",
+              "leftLabel": "(Number) = ",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/ctHeaderCount",
+              "description": "Returns number of headers (rows not included) in the RscControlsTable.",
+              "snippet": "ctHeaderCount ${1:Control}$0"
+            },
+            {
+              "rightLabel": "SQF Command",
+              "type": "function",
+              "leftLabel": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/ctRemoveHeaders",
+              "description": "Takes array of header indices as a parameter and removes headers with those indices. Indices of remaining headers will be recomputed.",
+              "text": "Control"
+            },
+            {
+              "rightLabel": "SQF Command",
+              "type": "function",
+              "leftLabel": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/ctRemoveRows",
+              "description": "Takes array of row indices as a parameter and removes rows with those indices. Indices of remaining rows will be recomputed.",
+              "text": "Control"
             },
             {
               "rightLabel": "SQF Command",
@@ -3305,8 +3441,16 @@
               "type": "function",
               "leftLabel": "(Boolean) = ",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/ctrlChecked",
-              "description": "Returns the current state of checkbox (CT_CHECKBOXES, Type 7).",
+              "description": "Returns the current state of given checkbox in checkboxes control (CT_CHECKBOXES, type = 7;). Since Arma 3 v1.71.141591 it is possible to query multiple checkboxes by providing checkbox index. For more information see DialogControls-CheckBoxes. \nNote: The \"onCheckBoxesSelChanged\" control EH returns the control, index of changed checkbox and its current checked state. The checked state however is not a Boolean but Number 0 or 1. To convert ctrlChecked command output into number as well, use parseNumber command.",
               "snippet": "ctrlChecked ${1:control}$0"
+            },
+            {
+              "rightLabel": "SQF Command",
+              "type": "function",
+              "leftLabel": "(Boolean) = control ",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/ctrlChecked",
+              "description": "Returns the current state of given checkbox in checkboxes control (CT_CHECKBOXES, type = 7;). Since Arma 3 v1.71.141591 it is possible to query multiple checkboxes by providing checkbox index. For more information see DialogControls-CheckBoxes. \nNote: The \"onCheckBoxesSelChanged\" control EH returns the control, index of changed checkbox and its current checked state. The checked state however is not a Boolean but Number 0 or 1. To convert ctrlChecked command output into number as well, use parseNumber command.",
+              "snippet": "ctrlChecked ${2:index}$0"
             },
             {
               "rightLabel": "SQF Command",
@@ -3337,7 +3481,7 @@
               "type": "function",
               "leftLabel": "(Control) = display ",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/ctrlCreate",
-              "description": "Creates new control in given display. Some of the common controls that can be used with this command:\n RscText - simple text box\n RscTextMulti - simple multiline text box\n RscPicture - simple picture box\n RscPictureKeepAspect - picture box that doesn't stretch picture\n RscEdit - input box\n RscEditMulti - multiline input box\n RscTree - tree view control\n RscTreeSearch - searchable tree view control (see Example 4)\n RscVideo - picture control with autostart for video texture (see BIS_fnc_playVideo)\n RscVideoKeepAspect - picture control for video to keep original video aspect ratio",
+              "description": "Creates new control in given display. Some of the common controls that can be used with this command:\n RscText - simple text box\n RscTextMulti - simple multiline text box\n RscPicture - simple picture box\n RscPictureKeepAspect - picture box that doesn't stretch picture\n RscEdit - input box\n RscEditMulti - multiline input box\n RscTree - tree view control\n RscTreeSearch - searchable tree view control (see Example 4)\n RscVideo - picture control with autostart for video texture (see BIS_fnc_playVideo)\n RscVideoKeepAspect - picture control for video to keep original video aspect ratio\n\nNOTE: Since Arma 3 v1.69.141213 ctrlCreate will also search for control class in mission config, if search in the main config failed. This means one can now define classes in mission config and use them with ctrlCreate",
               "snippet": "ctrlCreate ${2:[${3:class}, ${4:idc}, ${5:controlsGroup}]}$0"
             },
             {
@@ -3599,7 +3743,7 @@
             {
               "rightLabel": "SQF Command",
               "type": "function",
-              "leftLabel": "display ",
+              "leftLabel": "control ",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/ctrlSetBackgroundColor",
               "description": "Sets background color of given control.",
               "snippet": "ctrlSetBackgroundColor ${2:color}$0"
@@ -3609,8 +3753,16 @@
               "type": "function",
               "leftLabel": "control ",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/ctrlSetChecked",
-              "description": "Sets checked state of checkbox (CT_CHECKBOXES, Type 7).",
-              "snippet": "ctrlSetChecked ${2:bool}$0"
+              "description": "Sets checked state of a checkbox in checkboxes control (CT_CHECKBOXES, type = 7;). Since Arma 3 v1.71.141591 it is possible to check checkbox with given index in multiple checkboxes set-up. For more information see DialogControls-CheckBoxes.",
+              "snippet": "ctrlSetChecked ${2:checked}$0"
+            },
+            {
+              "rightLabel": "SQF Command",
+              "type": "function",
+              "leftLabel": "control ",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/ctrlSetChecked",
+              "description": "Sets checked state of a checkbox in checkboxes control (CT_CHECKBOXES, type = 7;). Since Arma 3 v1.71.141591 it is possible to check checkbox with given index in multiple checkboxes set-up. For more information see DialogControls-CheckBoxes.",
+              "snippet": "ctrlSetChecked ${2:[${3:index}, ${4:checked}]}$0"
             },
             {
               "rightLabel": "SQF Command",
@@ -3935,7 +4087,7 @@
             {
               "rightLabel": "SQF Command",
               "type": "function",
-              "leftLabel": "display ",
+              "leftLabel": "control ",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/ctrlSetTooltipColorBox",
               "description": "Sets tooltip border color of given control. Color is in format Color.",
               "snippet": "ctrlSetTooltipColorBox ${2:color}$0"
@@ -3943,7 +4095,7 @@
             {
               "rightLabel": "SQF Command",
               "type": "function",
-              "leftLabel": "display ",
+              "leftLabel": "control ",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/ctrlSetTooltipColorShade",
               "description": "Sets tooltip background color of given control. Color is in format Color.",
               "snippet": "ctrlSetTooltipColorShade ${2:color}$0"
@@ -4019,6 +4171,70 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/ctrlVisible",
               "description": "Returns if a control of the currently active user dialog is shown or not. Read Dialog Control for more information about user dialogs and controls.",
               "snippet": "ctrlVisible ${1:idc}$0"
+            },
+            {
+              "rightLabel": "SQF Command",
+              "type": "function",
+              "leftLabel": "(Array) = ",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/ctRowControls",
+              "description": "Returns array of controls on the row with the given index.",
+              "text": "Control"
+            },
+            {
+              "rightLabel": "SQF Command",
+              "type": "function",
+              "leftLabel": "(Number) = ",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/ctRowCount",
+              "description": "Returns number of rows (headers not included) in the RscControlsTable.",
+              "snippet": "ctRowCount ${1:Control}$0"
+            },
+            {
+              "rightLabel": "SQF Command",
+              "type": "function",
+              "leftLabel": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/ctSetCurSel",
+              "description": "Selects the line with the given index. Will take only rows, but not headers into account. -1 deselects all. Returns Nothing.",
+              "text": "Control"
+            },
+            {
+              "rightLabel": "SQF Command",
+              "type": "function",
+              "leftLabel": "Control ",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/ctSetData",
+              "description": "Associates metadata (string) with the row determined by the index. Returns Nothing.",
+              "snippet": "ctSetData [[[Number]], String]$0"
+            },
+            {
+              "rightLabel": "SQF Command",
+              "type": "function",
+              "leftLabel": "Control ",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/ctSetHeaderTemplate",
+              "description": "Takes config path to the new header template. Clears the whole RscControlsTable and sets the new header template.",
+              "snippet": "ctSetHeaderTemplate ${2:Config}$0"
+            },
+            {
+              "rightLabel": "SQF Command",
+              "type": "function",
+              "leftLabel": "Control ",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/ctSetRowTemplate",
+              "description": "Takes config path to the new row template. Clears the whole RscControlsTable and sets the new row template (Deleting all rows and headers is easier to implement than replacing the rows and filling them with new data. IDCs could overflow etc.).",
+              "snippet": "ctSetRowTemplate ${2:Config}$0"
+            },
+            {
+              "rightLabel": "SQF Command",
+              "type": "function",
+              "leftLabel": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/ctSetValue",
+              "description": "Associates metadata (number) with the row determined by the index. Returns Nothing.",
+              "text": "Control"
+            },
+            {
+              "rightLabel": "SQF Command",
+              "type": "function",
+              "leftLabel": "(Number) = ",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/ctValue",
+              "description": "Returns metadata (number) associated with a particular row of RscControlsTable.",
+              "snippet": "ctValue ${1:Control}$0"
             },
             {
               "rightLabel": "SQF Command",
@@ -4713,7 +4929,7 @@
               "type": "function",
               "leftLabel": "",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/diag%20drawMode",
-              "description": "Activates specific debug visualization.",
+              "description": "Activates specific debug visualization.\n\n\n\n\n \n\n Command is only available when using Arma 3 Diagnostics Exe on Dev-Branch.",
               "snippet": "diag_drawMode ${1:type}$0"
             },
             {
@@ -4761,7 +4977,7 @@
               "type": "function",
               "leftLabel": "(Array) = ",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/diag%20list",
-              "description": "Returns an array of all diag modes available in the game.",
+              "description": "Returns an array of all diag modes available in the game.\n\n\n\n\n \n\n Command is only available when using Arma 3 Diagnostics Exe on Dev-Branch.",
               "text": "diag_list"
             },
             {
@@ -4785,7 +5001,7 @@
               "type": "function",
               "leftLabel": "",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/diag%20mergeConfigFile",
-              "description": "Adjust configs on-the-fly without the need of restarting the game (by merging the given config file into the main config in memory). Location is relative to the Userdir (default) or mission directory depending on the the value of UserDir [FileName,UserDir]. \nDoesn't work with cfgAmmo & few other classes. Merging config file means also that you can't delete parameters through diag_mergeConfigFile. Changes applied by diag_mergeConfigFile are applied to all new entities so restart of mission is not necessarily  required - spawning vehicle again or changing back forth weapon should usually do the trick.",
+              "description": "Adjust configs on-the-fly without the need of restarting the game (by merging the given config file into the main config in memory). Location is relative to the Userdir (default) or mission directory depending on the the value of UserDir [FileName,UserDir]. \nDoesn't work with cfgAmmo & few other classes. (Since 1.69, cfgAmmo should be mergeable!) Merging config file means also that you can't delete parameters through diag_mergeConfigFile. Changes applied by diag_mergeConfigFile are applied to all new entities so restart of mission is not necessarily  required - spawning vehicle again or changing back forth weapon should usually do the trick.\n\n\n\n\n \n\n Command is only available when using Arma 3 Diagnostics Exe on Dev-Branch.",
               "snippet": "diag_mergeConfigFile [\"PathToConfigOnDrive\"]$0"
             },
             {
@@ -4793,8 +5009,16 @@
               "type": "function",
               "leftLabel": "",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/diag%20recordTurretLimits",
-              "description": "Start recording tool for creating turret aiming limits.",
+              "description": "Start recording tool for creating turret aiming limits.\n\n\n\n\n \n\n Command is only available when using Arma 3 Diagnostics Exe on Dev-Branch.",
               "text": "diag_recordTurretLimits"
+            },
+            {
+              "rightLabel": "SQF Command",
+              "type": "function",
+              "leftLabel": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/diag%20resetShapes",
+              "description": "Reload models on-the-fly without the need of restarting the game. Changes applied by diag_resetShapes are applied to all new entities so restart of mission is not necessarily  required - spawning vehicle again or changing back forth weapon should usually do the trick. It works only with \"-FilePatching\" in combination with local data. Command will reload only models present in local data.\n\n\nLimitation - you can't reload cfgSkeletons (Which is inside model.cfg)\n\n\n\n\n \n\n Command is only available when using Arma 3 Diagnostics Exe on Dev-Branch.",
+              "text": "diag_resetShapes"
             },
             {
               "rightLabel": "SQF Command",
@@ -5175,7 +5399,7 @@
             {
               "rightLabel": "SQF Command",
               "type": "function",
-              "leftLabel": "unit(s) ",
+              "leftLabel": "unit ",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/doTarget",
               "description": "Order the given unit(s) to target the given target (without radio messages).",
               "snippet": "doTarget ${2:target}$0"
@@ -6095,10 +6319,10 @@
             {
               "rightLabel": "SQF Command",
               "type": "function",
-              "leftLabel": "(Array) = center ",
+              "leftLabel": "(Boolean) = center ",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/findEmptyPositionReady",
-              "description": "Check if findEmptyPosition can be called without waiting for files.",
-              "snippet": "findEmptyPositionReady ${2:[radius,maxDistance]}$0"
+              "description": "Check if findEmptyPosition command can be called without waiting for files.",
+              "snippet": "findEmptyPositionReady [radius,maxDistance]$0"
             },
             {
               "rightLabel": "SQF Command",
@@ -6371,6 +6595,14 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/forEachMemberTeam",
               "description": "Executes the given command recursively for each team that is a member of the given team. For just agents use forEachMemberAgent. For both teams and agents use forEachMember.",
               "snippet": "forEachMemberTeam ${2:team}$0"
+            },
+            {
+              "rightLabel": "SQF Command",
+              "type": "function",
+              "leftLabel": "group ",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/forgetTarget",
+              "description": "Resets info group has about target",
+              "snippet": "forgetTarget ${2:target}$0"
             },
             {
               "rightLabel": "SQF Command",
@@ -6832,9 +7064,9 @@
               "rightLabel": "SQF Command",
               "type": "function",
               "leftLabel": "(Number) = ",
-              "descriptionMoreURL": "http://community.bistudio.com/wiki/getCustomAimingCoef",
-              "description": "Returns custom aiming coefficient for weapon sway",
-              "snippet": "getCustomAimingCoef ${1:unit}$0"
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/getCustomAimCoef",
+              "description": "Returns aimPrecision from animation state with custom value that will directly affects weapon sway size and speed.",
+              "snippet": "getCustomAimCoef ${1:unit}$0"
             },
             {
               "rightLabel": "SQF Command",
@@ -6935,6 +7167,14 @@
             {
               "rightLabel": "SQF Command",
               "type": "function",
+              "leftLabel": "(String) = ",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/getForcedFlagTexture",
+              "description": "A getter for forceFlagTexture. Forced texture is different from your normal flag texture, which can be retrieved with flagTexture",
+              "snippet": "getForcedFlagTexture ${1:object}$0"
+            },
+            {
+              "rightLabel": "SQF Command",
+              "type": "function",
               "leftLabel": "(Number) = side1 ",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/getFriend",
               "description": "Returns if sides are friendly or hostile. For a value smaller than 0.6 it results in being enemy, otherwise it's friendly. See also Side relations.",
@@ -6975,9 +7215,9 @@
             {
               "rightLabel": "SQF Command",
               "type": "function",
-              "leftLabel": "(Array) = ",
+              "leftLabel": "(Array, String, Number, Boolean) = ",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/getGroupIconParams",
-              "description": "Returns group icons params. [color,text,scale,visible]",
+              "description": "Returns group icons params used for command bar drawing such as color, text, scale, visibility, waypoint visibility, waypoint color.",
               "snippet": "getGroupIconParams ${1:group}$0"
             },
             {
@@ -7047,9 +7287,9 @@
             {
               "rightLabel": "SQF Command",
               "type": "function",
-              "leftLabel": "(Array, Position) = ",
+              "leftLabel": "(Array) = ",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/getMarkerPos",
-              "description": "Returns the position of a given marker. [x,y,z]\n\nArgument 3 (height above ground) is always zero.\n\nIf a non-existing marker is referenced the values returned are [0,0,0].",
+              "description": "Returns the position of a given marker in format [x,y,0]. Array element 3 (height above ground) is always zero. If a non-existing marker is referenced the values returned are [0,0,0].",
               "snippet": "getMarkerPos ${1:markerName}$0"
             },
             {
@@ -7359,6 +7599,14 @@
             {
               "rightLabel": "SQF Command",
               "type": "function",
+              "leftLabel": "(Array, String) = ",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/getPylonMagazines",
+              "description": "Return array of magazines on pylons",
+              "snippet": "getPylonMagazines ${1:vehicle}$0"
+            },
+            {
+              "rightLabel": "SQF Command",
+              "type": "function",
               "leftLabel": "(Number) = object ",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/getRelDir",
               "description": "Returns direction, which is relative to object's current direction, from given object to another object or position in the range from 0 to 360, the equivalent of BIS_fnc_relativeDirTo.",
@@ -7497,8 +7745,16 @@
               "type": "function",
               "leftLabel": "(Array) = ",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/getUnitLoadout",
-              "description": "Returns an array with all assigned items, weapons, containers and their stored items.\nDetailed explanation of the returned array: Talk:getUnitLoadout\n\n\n\n\n\n \n\n This command is not final and might be changed in a near future.",
+              "description": "Returns an array with all assigned items, weapons, containers and their stored items.\nDetailed explanation of the returned array: Talk:getUnitLoadout\n\n\n\n\n \n\n This command is not final and might be changed in a near future.",
               "snippet": "getUnitLoadout ${1:unit}$0"
+            },
+            {
+              "rightLabel": "SQF Command",
+              "type": "function",
+              "leftLabel": "(Array) = ",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/getUnitLoadout",
+              "description": "Returns an array with all assigned items, weapons, containers and their stored items.\nDetailed explanation of the returned array: Talk:getUnitLoadout\n\n\n\n\n \n\n This command is not final and might be changed in a near future.",
+              "snippet": "getUnitLoadout ${1:class}$0"
             },
             {
               "rightLabel": "SQF Command",
@@ -9027,158 +9283,6 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/laserTarget",
               "description": "Returns laser target object created by given unit (gunner in vehicle or on foot) when using \"Laserdesignator\" or another laser targeting device. Laser target object is global and can be retrieved from any PC.",
               "snippet": "laserTarget ${1:unitName}$0"
-            },
-            {
-              "rightLabel": "SQF Command",
-              "type": "function",
-              "leftLabel": "(Array) = ",
-              "descriptionMoreURL": "http://community.bistudio.com/wiki/ctAddHeader",
-              "description": "Adds a header line of controls according to the HeaderTemplate class. It returns an array containing header index and array of created controls in a format [<headerIndex>, [<control0>, <control1>...<control n>]].\n\nNote that rows and headers are indexed separately.",
-              "snippet": "ctAddHeader ${1:Control}$0"
-            },
-            {
-              "rightLabel": "SQF Command",
-              "type": "function",
-              "leftLabel": "(Array) = ",
-              "descriptionMoreURL": "http://community.bistudio.com/wiki/ctAddRow",
-              "description": "Adds one row of controls according to the RowTemplate class. It returns an array containing row index and array of created controls in a format [<rowIndex>, [<control0>, <control1>...<control n>]].\n\nNote that rows and headers are indexed separately.",
-              "snippet": "ctAddRow ${1:Control}$0"
-            },
-            {
-              "rightLabel": "SQF Command",
-              "type": "function",
-              "leftLabel": "",
-              "descriptionMoreURL": "http://community.bistudio.com/wiki/ctClear",
-              "description": "Removes all the lines from the RscControlsTable. Returns Nothing.",
-              "snippet": "ctClear ${1:Control}$0"
-            },
-            {
-              "rightLabel": "SQF Command",
-              "type": "function",
-              "leftLabel": "(Number) = ",
-              "descriptionMoreURL": "http://community.bistudio.com/wiki/ctCurSel",
-              "description": "Returns index of the selected row. Will take only rows, but not headers into account.",
-              "snippet": "ctCurSel ${1:Control}$0"
-            },
-            {
-              "rightLabel": "SQF Command",
-              "type": "function",
-              "leftLabel": "(String) = ",
-              "descriptionMoreURL": "http://community.bistudio.com/wiki/ctData",
-              "description": "Returns metadata (string) associated with a particular row of RscControlsTable.",
-              "snippet": "ctData ${1:Control}$0"
-            },
-            {
-              "rightLabel": "SQF Command",
-              "type": "function",
-              "leftLabel": "(Array) = ",
-              "descriptionMoreURL": "http://community.bistudio.com/wiki/ctFindHeaderRows",
-              "description": "Takes index of a header as a parameter. Returns array of indices of rows under this header.",
-              "text": "Control"
-            },
-            {
-              "rightLabel": "SQF Command",
-              "type": "function",
-              "leftLabel": "(Number) = ",
-              "descriptionMoreURL": "http://community.bistudio.com/wiki/ctFindRowHeader",
-              "description": "Takes index of a row as a parameter. Returns index of the closest header above this row.",
-              "text": "Control"
-            },
-            {
-              "rightLabel": "SQF Command",
-              "type": "function",
-              "leftLabel": "(Array) = ",
-              "descriptionMoreURL": "http://community.bistudio.com/wiki/ctHeaderControls",
-              "description": "Returns array of controls on the header with the given index.",
-              "text": "Control"
-            },
-            {
-              "rightLabel": "SQF Command",
-              "type": "function",
-              "leftLabel": "(Number) = ",
-              "descriptionMoreURL": "http://community.bistudio.com/wiki/ctHeaderCount",
-              "description": "Returns number of headers (rows not included) in the RscControlsTable.",
-              "snippet": "ctHeaderCount ${1:Control}$0"
-            },
-            {
-              "rightLabel": "SQF Command",
-              "type": "function",
-              "leftLabel": "",
-              "descriptionMoreURL": "http://community.bistudio.com/wiki/ctRemoveHeaders",
-              "description": "Takes array of header indices as a parameter and removes headers with those indices. Indices of remaining headers will be recomputed.",
-              "text": "Control"
-            },
-            {
-              "rightLabel": "SQF Command",
-              "type": "function",
-              "leftLabel": "",
-              "descriptionMoreURL": "http://community.bistudio.com/wiki/ctRemoveRows",
-              "description": "Takes array of row indices as a parameter and removes rows with those indices. Indices of remaining rows will be recomputed.",
-              "text": "Control"
-            },
-            {
-              "rightLabel": "SQF Command",
-              "type": "function",
-              "leftLabel": "(Array) = ",
-              "descriptionMoreURL": "http://community.bistudio.com/wiki/ctRowControls",
-              "description": "Returns array of controls on the row with the given index.",
-              "text": "Control"
-            },
-            {
-              "rightLabel": "SQF Command",
-              "type": "function",
-              "leftLabel": "(Number) = ",
-              "descriptionMoreURL": "http://community.bistudio.com/wiki/ctRowCount",
-              "description": "Returns number of rows (headers not included) in the RscControlsTable.",
-              "snippet": "ctRowCount ${1:Control}$0"
-            },
-            {
-              "rightLabel": "SQF Command",
-              "type": "function",
-              "leftLabel": "",
-              "descriptionMoreURL": "http://community.bistudio.com/wiki/ctSetCurSel",
-              "description": "Selects the line with the given index. Will take only rows, but not headers into account. -1 deselects all. Returns Nothing.",
-              "text": "Control"
-            },
-            {
-              "rightLabel": "SQF Command",
-              "type": "function",
-              "leftLabel": "Control ",
-              "descriptionMoreURL": "http://community.bistudio.com/wiki/ctSetData",
-              "description": "Associates metadata (string) with the row determined by the index. Returns Nothing.",
-              "snippet": "ctSetData [ Number, String ]$0"
-            },
-            {
-              "rightLabel": "SQF Command",
-              "type": "function",
-              "leftLabel": "Control ",
-              "descriptionMoreURL": "http://community.bistudio.com/wiki/ctSetHeaderTemplate",
-              "description": "Takes config path to the new header template. Clears the whole RscControlsTable and sets the new header template.",
-              "snippet": "ctSetHeaderTemplate ${2:Config}$0"
-            },
-            {
-              "rightLabel": "SQF Command",
-              "type": "function",
-              "leftLabel": "Control ",
-              "descriptionMoreURL": "http://community.bistudio.com/wiki/ctSetRowTemplate",
-              "description": "Takes config path to the new row template. Clears the whole RscControlsTable and sets the new row template (Deleting all rows and headers is easier to implement than replacing the rows and filling them with new data. IDCs could overflow etc.).",
-              "snippet": "ctSetRowTemplate ${2:Config}$0"
-            },
-            {
-              "rightLabel": "SQF Command",
-              "type": "function",
-              "leftLabel": "",
-              "descriptionMoreURL": "http://community.bistudio.com/wiki/ctSetValue",
-              "description": "Associates metadata (number) with the row determined by the index. Returns Nothing.",
-              "text": "Control"
-            },
-            {
-              "rightLabel": "SQF Command",
-              "type": "function",
-              "leftLabel": "(Number) = ",
-              "descriptionMoreURL": "http://community.bistudio.com/wiki/ctValue",
-              "description": "Returns metadata (number) associated with a particular row of RscControlsTable.",
-              "snippet": "ctValue ${1:Control}$0"
             },
             {
               "rightLabel": "SQF Command",
@@ -10935,10 +11039,26 @@
             {
               "rightLabel": "SQF Command",
               "type": "function",
+              "leftLabel": "(Array) = obj ",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/modelToWorldVisualWorld",
+              "description": "Converts position from object model space to world space in render time.",
+              "snippet": "modelToWorldVisualWorld ${2:modelPos}$0"
+            },
+            {
+              "rightLabel": "SQF Command",
+              "type": "function",
+              "leftLabel": "(Array) = obj ",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/modelToWorldWorld",
+              "description": "Converts position from object model space to world space (usable by setPosWorld for example).",
+              "snippet": "modelToWorldWorld ${2:modelPos}$0"
+            },
+            {
+              "rightLabel": "SQF Command",
+              "type": "function",
               "leftLabel": "(Array) = ",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/modParams",
-              "description": "Returns list of mod paramters according to given options, values are in same order as the given options. Available options: name, picture, logo, logoOver, logoSmall, tooltip, tooltipowned, action, actionName, overview, hidePicture, hideName, defaultMod, serverOnly, active",
-              "snippet": "modParams [${1:modClass}, ${2:options}]$0"
+              "description": "Returns list of mod parameters according to given options, values are in same order as the given options. Available options: \n \"name\": String - name to be shown (Arma 3 instead of A3, etc.)\n \"picture\": String - picture shown in Mod Launcher\n \"logo\": String -  logo to be shown in Main Menu\n \"logoOver\": String - logo to be shown in Main Menu when mouse is over\n \"logoSmall\": String - small version of logo, prepared for drawing small icons\n \"tooltip\": String - tooltip to be shown on mouse over \n \"tooltipOwned\": String - tooltip to be shown on mouse over the icon when DLC is owned by player\n \"action\": String - url to be triggered when mod button is clicked\n \"actionName\": String - what to put on Action Button\n \"overview\": String - overview text visible in expansion menu\n \"hidePicture\": Boolean - do not show mod picture icon in the main menu mod list\n \"hideName\": Boolean - do not show mod name in the main menu mod list\n \"defaultMod\": Boolean - default mods cannot be moved or disabled by Mod Launcher\n \"serverOnly\": Boolean - mod doesn't have to be installed on client in order to play on server with this mod running\n \"active\": Boolean - active mod (activated through command line or stored in profile by mod launcher)",
+              "snippet": "modParams ${1:[${2:modClass}, ${3:options}]}$0"
             },
             {
               "rightLabel": "SQF Command",
@@ -10969,7 +11089,7 @@
               "type": "function",
               "leftLabel": "group ",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/move",
-              "description": "Creates a move waypoint on the given position (format Position or Position2D) and makes it the currently active group waypoint.",
+              "description": "Let group move to given position (format Position or Position2D) without waypoint. Active waypoints will be ignored when command is used.",
               "snippet": "move ${2:position}$0"
             },
             {
@@ -11209,15 +11329,15 @@
               "type": "function",
               "leftLabel": "(Array) = ",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/nearestObjects",
-              "description": "Returns a list of nearest objects of the given types to the given position or object, within the specified distance. If more than one object is found they will be ordered according to distance2D to the object (i.e. the closest one will be first in the array). Alternatively, you use nearObjects command, which doesn't sort results. \n\nposition can use the format:\n\n[[x,y,z], [\"ClassName\",...], radius]\n\nor\n\n[object, [\"ClassName\",...], radius]\n\n\nTo use it without any ClassName filter:\n\n[object or position, [], radius].\n\n\nA list of ClassName types (Tanks eg) can be found in CfgVehicles\n\nSince Arma 3 v1.65.138818 it is possible to switch search and sorting mode between 2D and 3D",
-              "snippet": "nearestObjects ${1:[${2:position}, ${3:types}, ${4:radius}, ${5:3Dmode}]}$0"
+              "description": "Returns a list of nearest objects of the given types to the given position or object, within the specified distance. If more than one object is found they will be ordered by proximity, the closest one will be first in the array. Alternatively, you use nearObjects command, which doesn't sort results. \n\nposition can use the format:\n\n[[x,y,z], [\"ClassName\",...], radius]\n\nor\n\n[object, [\"ClassName\",...], radius]\n\n\nTo use it without any ClassName filter:\n\n[object or position, [], radius].\n\n\nA list of ClassName types (Tanks eg) can be found in CfgVehicles\n\nSince Arma 3 v1.65.138818 it is possible to switch search and sorting mode between 2D and 3D",
+              "snippet": "nearestObjects ${1:[${2:position}, ${3:types}, ${4:radius}, ${5:2Dmode}]}$0"
             },
             {
               "rightLabel": "SQF Command",
               "type": "function",
               "leftLabel": "(Array) = ",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/nearestTerrainObjects",
-              "description": "Returns a list of nearest terrain objects of the given types to the given position or object, within the specified distance. If more than one object is found they will be ordered according to 3D distance to the object (i.e. the closest one will be first in the array). \nIn contrast to nearestObjects this command returns terrain placed objects like trees, rocks and buildings which don't necessarily need an associated config class.\n\nposition can use the format:\n\n[[x,y,z], [\"Type\",...], radius]\n\nor\n\n[object, [\"Type\",...], radius]\n\n\nTo use it without any type filter:\n\n[object or position, [], radius]\n\n\nPossible type names:\"TREE\", \"SMALL TREE\", \"BUSH\", \"BUILDING\", \"HOUSE\", \"FOREST BORDER\", \"FOREST TRIANGLE\", \"FOREST SQUARE\", \"CHURCH\", \"CHAPEL\", \"CROSS\", \"ROCK\", \"BUNKER\", \"FORTRESS\", \"FOUNTAIN\", \"VIEW-TOWER\", \"LIGHTHOUSE\", \"QUAY\", \"FUELSTATION\", \"HOSPITAL\", \"FENCE\", \"WALL\", \"HIDE\", \"BUSSTOP\", \"ROAD\", \"FOREST\", \"TRANSMITTER\", \"STACK\", \"RUIN\", \"TOURISM\", \"WATERTOWER\", \"TRACK\", \"MAIN ROAD\", \"ROCKS\", \"POWER LINES\", \"RAILWAY\", \"POWERSOLAR\", \"POWERWAVE\", \"POWERWIND\", \"SHIPWRECK\", \"TRAIL\"\n\nSince Arma 3 v1.61.136035 it is possible to switch the sorting algorithm off by providing optional param, which significantly increases the performance of this command, especially if the search is performed with large radius.\n\nSince Arma 3 v1.65.138818 it is possible to switch search and sorting mode between 2D and 3D",
+              "description": "Returns a list of nearest terrain objects of the given types to the given position or object, within the specified distance. If more than one object is found they will be ordered according to 3D distance to the object (i.e. the closest one will be first in the array). \nIn contrast to nearestObjects this command returns terrain placed objects like trees, rocks and buildings which don't necessarily need an associated config class.\n\nposition can use the format:\n\n[[x,y,z], [\"Type\",...], radius]\n\nor\n\n[object, [\"Type\",...], radius]\n\n\nTo use it without any type filter:\n\n[object or position, [], radius]\n\n\nPossible type names:\"TREE\", \"SMALL TREE\", \"BUSH\", \"BUILDING\", \"HOUSE\", \"FOREST BORDER\", \"FOREST TRIANGLE\", \"FOREST SQUARE\", \"CHURCH\", \"CHAPEL\", \"CROSS\", \"BUNKER\", \"FORTRESS\", \"FOUNTAIN\", \"VIEW-TOWER\", \"LIGHTHOUSE\", \"QUAY\", \"FUELSTATION\", \"HOSPITAL\", \"FENCE\", \"WALL\", \"HIDE\", \"BUSSTOP\", \"ROAD\", \"FOREST\", \"TRANSMITTER\", \"STACK\", \"RUIN\", \"TOURISM\", \"WATERTOWER\", \"TRACK\", \"MAIN ROAD\", \"ROCK\", \"ROCKS\", \"POWER LINES\", \"RAILWAY\", \"POWERSOLAR\", \"POWERWAVE\", \"POWERWIND\", \"SHIPWRECK\", \"TRAIL\"\n\nSince Arma 3 v1.61.136035 it is possible to switch the sorting algorithm off by providing optional param, which significantly increases the performance of this command, especially if the search is performed with large radius.\n\nSince Arma 3 v1.65.138818 it is possible to switch search and sorting mode between 2D and 3D",
               "snippet": "nearestTerrainObjects ${1:[${2:position}, ${3:types}, ${4:radius}, ${5:sort}, ${6:2Dmode}]}$0"
             },
             {
@@ -12593,7 +12713,7 @@
               "type": "function",
               "leftLabel": "(Anything, String) = params ",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/remoteExec",
-              "description": "Asks server to execute given scripted function or script command. The environment chosen for the execution is as follows:\n Scripted function - scheduled environment (suspension is allowed, i.e. spawn, execVM). \n Script command - unscheduled environment (suspension is NOT allowed).  \nremoteExec can also be used in SP (the same restrictions apply both to SP and MP). For more information about the usage, security features and advanced jip techniques check the remote execution dedicated section.",
+              "description": "Asks server to execute given scripted function or script command on given target PC. The environment chosen for the execution is as follows:\n Scripted function - scheduled environment (suspension is allowed, i.e. spawn, execVM). \n Script command - unscheduled environment (suspension is NOT allowed).  \nremoteExec can also be used in SP (the same restrictions apply both to SP and MP). For more information about the usage, security features and advanced jip techniques check the remote execution dedicated section.",
               "snippet": "remoteExec ${2:[${3:functionName}, targets, ${4:JIP}]}$0"
             },
             {
@@ -12601,8 +12721,16 @@
               "type": "function",
               "leftLabel": "(Anything, String) = params ",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/remoteExecCall",
-              "description": "Asks server to execute given scripted function or script command. The environment chosen for the execution is as follows:\n Scripted function - unscheduled environment (suspension is NOT allowed).\n Script command - unscheduled environment (suspension is NOT allowed).  \nremoteExecCall can also be used in SP (the same restrictions apply both to SP and MP). For more information about the usage, security features and advanced jip techniques check the remote execution dedicated section.\n\n\n\n\n \nWhile it is true that this function executes the desired scripted command/function by calling it, it does not mean remoteExecCall itself will be executed right away. Therefore, calling remoteExecCall is by no means a replacement for calling scripted commands/functions directly.\nExample:\nremoteExecCall [\"func1\"]; call func2; // func2 can be executed sooner than func1\ncall func1; call func2; // func2 will always execute after func1.",
+              "description": "Asks server to execute given scripted function or script command on given target PC. The environment chosen for the execution is as follows:\n Scripted function - unscheduled environment (suspension is NOT allowed).\n Script command - unscheduled environment (suspension is NOT allowed).  \nremoteExecCall can also be used in SP (the same restrictions apply both to SP and MP). For more information about the usage, security features and advanced jip techniques check the remote execution dedicated section.\n\n\n\n\n \nWhile it is true that this function executes the desired scripted command/function by calling it, it does not mean remoteExecCall itself will be executed right away. Therefore, calling remoteExecCall is by no means a replacement for calling scripted commands/functions directly.\nExample:\nremoteExecCall [\"func1\"]; call func2; // func2 can be executed sooner than func1\ncall func1; call func2; // func2 will always execute after func1.",
               "snippet": "remoteExecCall ${2:[${3:functionName}, targets, ${4:JIP}]}$0"
+            },
+            {
+              "rightLabel": "SQF Command",
+              "type": "function",
+              "leftLabel": "(Number) = ",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/remoteExecutedOwner",
+              "description": "Returns clientOwner of the PC, which initiated Remote Execution call. If used in SP or outside of remote executed context, the command returns 0. To check if the context was remote executed or remote executed from JIP queue, use isRemoteExecuted and isRemoteExecutedJIP",
+              "text": "remoteExecutedOwner"
             },
             {
               "rightLabel": "SQF Command",
@@ -13075,6 +13203,22 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/removeWeapon",
               "description": "Remove weapon from a unit. The unit must be local to the computer where command is executed. For a global version of this command see removeWeaponGlobal.\n\nNote: It is possible to create invalid combinations with this command (ie, attempting to remove a weapon that a unit does not possess). When doing so, application behaviour is undefined.",
               "snippet": "removeWeapon ${2:weapon}$0"
+            },
+            {
+              "rightLabel": "SQF Command",
+              "type": "function",
+              "leftLabel": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/removeWeaponAttachmentCargo",
+              "description": "Remove attachment linked to a weapon from the vehicle cargo space. \n\n\n\n\n \n\n This is unoffical documentation. All Information here is as it exists in the Engine. It might not reflect the reality.",
+              "snippet": "removeWeaponAttachmentCargo ${2:[weaponID,creatorID,\"attachment\"]}$0"
+            },
+            {
+              "rightLabel": "SQF Command",
+              "type": "function",
+              "leftLabel": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/removeWeaponCargo",
+              "description": "Remove weapon from the vehicle cargo space.\n\n\n\n\n \n\n This is unoffical documentation. All Information here is as it exists in the Engine. It might not reflect the reality.",
+              "snippet": "removeWeaponCargo ${2:[weaponID,creatorID]}$0"
             },
             {
               "rightLabel": "SQF Command",
@@ -13905,7 +14049,7 @@
               "type": "function",
               "leftLabel": "(Boolean) = ",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/serverCommand",
-              "description": "Executes a server command on the server. In order to be able to execute admin command the user must be logged in as admin. Commands available for non-admin users are: #login, #vote and #userlist. Which command is available can be detected with serverCommandAvailable and whether or not it can be executed with serverCommandExecutable.NOTE: This command must be executed from UI event handler (ctrlAddEventHandler, displayAddEventHandler), such as onButtonDown or other User_Interface_Event_Handlers.\nAs of Arma 3 v1.39 serverCommand can be used on dedicated server and headless clients. This requires a password, both set in server.cfg and passed to the command itself.",
+              "description": "Executes a server command. Which command is available for execution can be found with serverCommandAvailable and whether or not it can be executed with serverCommandExecutable. \n\nIf serverCommand is executed on a client, it must be executed from UI event handler (ctrlAddEventHandler, displayAddEventHandler), such as onButtonDown or other User_Interface_Event_Handlers. \n\nAs of Arma 3 v1.39 serverCommand can be used on dedicated server and headless clients. This requires a password, both set in server.cfg and passed to the command itself (See Alt Syntax).",
               "snippet": "serverCommand ${1:command}$0"
             },
             {
@@ -13913,7 +14057,7 @@
               "type": "function",
               "leftLabel": "(Boolean) = password ",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/serverCommand",
-              "description": "Executes a server command on the server. In order to be able to execute admin command the user must be logged in as admin. Commands available for non-admin users are: #login, #vote and #userlist. Which command is available can be detected with serverCommandAvailable and whether or not it can be executed with serverCommandExecutable.NOTE: This command must be executed from UI event handler (ctrlAddEventHandler, displayAddEventHandler), such as onButtonDown or other User_Interface_Event_Handlers.\nAs of Arma 3 v1.39 serverCommand can be used on dedicated server and headless clients. This requires a password, both set in server.cfg and passed to the command itself.",
+              "description": "Executes a server command. Which command is available for execution can be found with serverCommandAvailable and whether or not it can be executed with serverCommandExecutable. \n\nIf serverCommand is executed on a client, it must be executed from UI event handler (ctrlAddEventHandler, displayAddEventHandler), such as onButtonDown or other User_Interface_Event_Handlers. \n\nAs of Arma 3 v1.39 serverCommand can be used on dedicated server and headless clients. This requires a password, both set in server.cfg and passed to the command itself (See Alt Syntax).",
               "snippet": "serverCommand ${2:command}$0"
             },
             {
@@ -13921,7 +14065,7 @@
               "type": "function",
               "leftLabel": "(Boolean) = ",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/serverCommandAvailable",
-              "description": "Returns true if the serverCommand can be performed on the machine, false if not. serverCommand can be executed only from User Interface Event Handlers, so calling this command elsewhere may return true even if serverCommand would have no effect.",
+              "description": "Returns true if given serverCommand is available on current machine, false if not. Here is the general table of availability of Arma 3 server commands:\n\n Available to anyone\n#login, #userlist,  #beclient,  #vote\n Available to any admin (voted in / logged in) or server host\n#kick, #debug\n Available to logged in admin or server host\n#lock, #unlock, #maxping, #maxdesync, #maxpacketloss\n Available to any admin (voted in / logged in)\n#logout, #restart, #mission, #missions, #reassign, #monitor, #init\n Available to logged in admin\n#shutdown, #restartserver, #exec, #beserver, #monitords, #logentities, #exportjipqueue\n Available to logged in admin on certain game builds\n#captureframe, #enabletest, #disabletest\nTo check if server command could be executed in current environment use serverCommandExecutable. For more information on what each server command does, see Multiplayer Server Commands.\nNOTE: When password variant of serverCommand is used on dedicated server, the table above does not apply as everything is available to it.",
               "snippet": "serverCommandAvailable ${1:command}$0"
             },
             {
@@ -14007,6 +14151,22 @@
             {
               "rightLabel": "SQF Command",
               "type": "function",
+              "leftLabel": "objects ",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/set3DENLogicType",
+              "description": "Sets the new type of Logic object(s). For other objects use set3DENObjectType",
+              "snippet": "set3DENLogicType ${2:classname}$0"
+            },
+            {
+              "rightLabel": "SQF Command",
+              "type": "function",
+              "leftLabel": "(Boolean) = ",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/set3DENMissionAttribute",
+              "description": "Set scenario attribute.\n\nAn attribute is identified by its property (data when it's engine-drive attribute) value in config. For the list of all attributes with their properties, see Setting Attributes.\n\n\n\n\n\n\u00a0!\n\n Attributes are available only within the Eden Editor workspace. You cannot access them in scenario preview or exported scenario!",
+              "snippet": "set3DENMissionAttribute [<${2:class}>,<${3:value}>]$0"
+            },
+            {
+              "rightLabel": "SQF Command",
+              "type": "function",
               "leftLabel": "(Boolean) = ",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/set3DENMissionAttributes",
               "description": "Set scenario attributes.\n\nAn attribute is identified by its property (data when it's engine-drive attribute) value in config. For the list of all attributes with their properties, see Setting Attributes.\n\n\n\n\n\n\u00a0!\n\n Attributes are available only within the Eden Editor workspace. You cannot access them in scenario preview or exported scenario!",
@@ -14025,7 +14185,7 @@
               "type": "function",
               "leftLabel": "objects ",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/set3DENObjectType",
-              "description": "Sets the classname of one or more given Eden Editor objects.",
+              "description": "Sets the classname of one or more given Eden Editor objects. For Logic objects use set3DENLogicType",
               "snippet": "set3DENObjectType ${2:classname}$0"
             },
             {
@@ -14051,6 +14211,14 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/setActualCollectiveRTD",
               "description": "Sets the collective pitch control to a specific position, regardless of input devices (until those are changed).\n 0: collective fully down\n ~0.7: approximate stable hover position\n 1: collective fully up",
               "snippet": "setActualCollectiveRTD ${2:value}$0"
+            },
+            {
+              "rightLabel": "SQF Command",
+              "type": "function",
+              "leftLabel": "airplane ",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/setAirplaneThrottle",
+              "description": "Sets a wanted throttle position, works only on player's vehicle.",
+              "snippet": "setAirplaneThrottle ${2:value}$0"
             },
             {
               "rightLabel": "SQF Command",
@@ -14083,6 +14251,22 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/setAmmoCargo",
               "description": "Set amount of ammo resources in cargo space of a rearm vehicle. Ammo resource is used to resupply vehicles that take ammo. Soldiers use individual magazines instead. Amount: 1 is full cargo.\n\nThe actual quantity to work with is determined by the model's class in CfgVehicles",
               "snippet": "setAmmoCargo ${2:ammoCargo}$0"
+            },
+            {
+              "rightLabel": "SQF Command",
+              "type": "function",
+              "leftLabel": "vehicle ",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/setAmmoOnPylon",
+              "description": "Set count of ammo in magazine on pylon",
+              "snippet": "setAmmoOnPylon ${2:[pylon name/index, ammo count]}$0"
+            },
+            {
+              "rightLabel": "SQF Command",
+              "type": "function",
+              "leftLabel": "unit ",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/setAnimAimPrecision",
+              "description": "Set aimPrecision value of the current animation state (parameter aimPrecision)",
+              "snippet": "setAnimAimPrecision ${2:value}$0"
             },
             {
               "rightLabel": "SQF Command",
@@ -14224,9 +14408,9 @@
               "rightLabel": "SQF Command",
               "type": "function",
               "leftLabel": "Bool ",
-              "descriptionMoreURL": "http://community.bistudio.com/wiki/setCamUseTi",
-              "description": "Activates thermal vision. Mode index defines what sort of thermal vision it is:\n 0 - White Hot\n 1 - Black Hot\n 2 - Light Green Hot / Darker Green cold\n 3 - Black Hot / Darker Green cold\n 4 - Light Red Hot /Darker Red Cold\n 5 - Black Hot / Darker Red Cold\n 6 - White Hot . Darker Red Col\n 7 - Thermal (Shade of Red and Green, Bodies are white) \nThis command only works with camCreate created camera that is currently the main camera for the player (see example).",
-              "snippet": "setCamUseTi ${2:modeIndex}$0"
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/setCamUseTI",
+              "description": "Activates thermal vision. Mode index defines what sort of thermal vision it is:\n 0 - White Hot\n 1 - Black Hot\n 2 - Light Green Hot / Darker Green cold\n 3 - Black Hot / Darker Green cold\n 4 - Light Red Hot /Darker Red Cold\n 5 - Black Hot / Darker Red Cold\n 6 - White Hot . Darker Red Cold\n 7 - Thermal (Shade of Red and Green, Bodies are white) \nThis command only works with camCreate created camera that is currently the main camera for the player (see example).",
+              "snippet": "setCamUseTI ${2:modeIndex}$0"
             },
             {
               "rightLabel": "SQF Command",
@@ -14283,6 +14467,14 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/setCompassOscillation",
               "description": "Sets compass oscillation.",
               "snippet": "setCompassOscillation ${1:[${2:angle}, ${3:frequencyMin}, ${4:frequencyMax}]}$0"
+            },
+            {
+              "rightLabel": "SQF Command",
+              "type": "function",
+              "leftLabel": "vehicle ",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/setConvoySeparation",
+              "description": "Sets the distance to keep to following vehicle.",
+              "snippet": "setConvoySeparation ${2:distance}$0"
             },
             {
               "rightLabel": "SQF Command",
@@ -14539,6 +14731,14 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/setFatigue",
               "description": "Sets the person's fatigue, from 0 to 1.",
               "snippet": "setFatigue ${2:value}$0"
+            },
+            {
+              "rightLabel": "SQF Command",
+              "type": "function",
+              "leftLabel": "(Boolean) = object ",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/setFeatureType",
+              "description": "Enable/disable object as a feature/landmark. Possible feature types:\n 0 - Feature disabled\n 1 - Object is always visible within object view distance\n 2 - Object is always visible within terrain view distance\nThe limit is 500 map/static objects and 200 dynamic objects including config features and auto features (flying helicopters, airplanes). When limit is reached, function returns false.",
+              "snippet": "setFeatureType ${2:type}$0"
             },
             {
               "rightLabel": "SQF Command",
@@ -15169,7 +15369,7 @@
               "type": "function",
               "leftLabel": "object ",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/setObjectTexture",
-              "description": "Textures object selection with texture named in array. \n\nArray has the form [selectionNumber, \"Texture\"].\n\nThe selection number is defined through the hiddenselection[]={} array in the vehicle's config (starting with 0).\nNOTE: Not all objects could be textured this way. To find out, run getObjectTextures command on an object. Empty array [] usually indicates it cannot be textured.",
+              "description": "Textures object selection with texture named in array. \n\nArray has the form [selectionNumber, \"Texture\"].\n\nThe selection number is defined through the hiddenselection[]={} array in the vehicle's config (starting with 0).\nNOTES: \n Not all objects could be textured this way. To find out, run getObjectTextures command on an object. Empty array [] usually indicates it cannot be textured.\n All textures must have resolution 2^x / 2^y (e.g. 16 / 16, 16 / 32, 64 / 256, 512 / 512, etc). The largest texture size commonly supported by graphics cards and RV engine is 4096x4096",
               "snippet": "setObjectTexture ${2:[${3:selectionNumber},${4:texture}]}$0"
             },
             {
@@ -15177,7 +15377,7 @@
               "type": "function",
               "leftLabel": "obj ",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/setObjectTextureGlobal",
-              "description": "Set the texture of the given selection on all computers in a network session. NOTES: \n Do not put global commands such this one into init field in editor and expect it to work in Multiplayer. See Talk:setObjectTextureGlobal for the explanation.\n Not all objects could be textured this way. To find out, run getObjectTextures command on an object. Empty array [] usually indicates it cannot be textured.",
+              "description": "Set the texture of the given selection on all computers in a network session. NOTES: \n Do not put global commands such this one into init field in editor and expect it to work in Multiplayer. See Talk:setObjectTextureGlobal for the explanation.\n Not all objects could be textured this way. To find out, run getObjectTextures command on an object. Empty array [] usually indicates it cannot be textured.\n All textures must have resolution 2^x / 2^y (e.g. 16 / 16, 16 / 32, 64 / 256, 512 / 512, etc). The largest texture size commonly supported by graphics cards and RV engine is 4096x4096",
               "snippet": "setObjectTextureGlobal [${3:selection}, ${4:texture}]$0"
             },
             {
@@ -15383,6 +15583,22 @@
             {
               "rightLabel": "SQF Command",
               "type": "function",
+              "leftLabel": "(Boolean) = vehicle ",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/setPylonLoadOut",
+              "description": "Will add missile to vehicle pylon, TransportPylonsComponent in config is required",
+              "snippet": "setPylonLoadOut [pylon name/index, magazine name, forced, turret]$0"
+            },
+            {
+              "rightLabel": "SQF Command",
+              "type": "function",
+              "leftLabel": "vehicle ",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/setPylonsPriority",
+              "description": "Overrides default pylons priorities",
+              "snippet": "setPylonsPriority [priority pylon1, priority pylon2, ...]$0"
+            },
+            {
+              "rightLabel": "SQF Command",
+              "type": "function",
               "leftLabel": "index ",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/setRadioMsg",
               "description": "Sets radio trigger menu title text (0 -> 0 -> map radio). Use \"NULL\" to disable radio slot. Use \"\" to restore default title",
@@ -15513,7 +15729,7 @@
               "type": "function",
               "leftLabel": "task ",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/setSimpleTaskType",
-              "description": "Attach type to the simple task.",
+              "description": "Attach type to the simple task. See Default Task Types.",
               "snippet": "setSimpleTaskType ${1:task}$0"
             },
             {
@@ -15903,6 +16119,14 @@
             {
               "rightLabel": "SQF Command",
               "type": "function",
+              "leftLabel": "vehicle ",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/setUserMFDvalue",
+              "description": "Store user value in MFD, limit is 10, user0...user9.",
+              "snippet": "setUserMFDvalue [${2:index}, ${3:value}]$0"
+            },
+            {
+              "rightLabel": "SQF Command",
+              "type": "function",
               "leftLabel": "varspace ",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/setVariable",
               "description": "Set variable to given value in the variable space of given element.\n\nTo remove a variable, set it to nil (e.g. player setVariable [\"varname\", nil];).\n\nWhen variable is set on Task, it is not actually set on task itself, but on FSM attached to the task. So if there is no FSM setVariable will not work.\n\nAll available variable spaces which support setVariable:\n Namespace setVariable Array\n Object setVariable Array\n Group setVariable Array\n Team_Member setVariable Array\n Task setVariable Array\n Location setVariable Array\n Control setVariable Array (since Arma 3 v1.55.133553)\n Display setVariable Array (since Arma 3 v1.55.133553)\n\n\n\n\n\n \n\n In Arma 3 it is possible to broadcast nil value",
@@ -16007,34 +16231,34 @@
             {
               "rightLabel": "SQF Command",
               "type": "function",
-              "leftLabel": "",
+              "leftLabel": "vehicle ",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/setVehicleReceiveRemoteTargets",
               "description": "Sets that the vehicle will be able to receive targets acquired by someone else via datalink from the Side center.",
-              "text": "vehicle"
-            },
-            {
-              "rightLabel": "SQF Command",
-              "type": "function",
-              "leftLabel": "",
-              "descriptionMoreURL": "http://community.bistudio.com/wiki/setVehicleReportOwnPosition",
-              "description": "Sets that the vehicle will share its own position via datalink to the Side center.",
-              "text": "vehicle"
-            },
-            {
-              "rightLabel": "SQF Command",
-              "type": "function",
-              "leftLabel": "",
-              "descriptionMoreURL": "http://community.bistudio.com/wiki/setVehicleReportRemoteTargets",
-              "description": "Sets that the vehicle will share targets that were acquired by its own sensors via datalink to the Side center.",
-              "text": "vehicle"
+              "snippet": "setVehicleReceiveRemoteTargets ${2:bool}$0"
             },
             {
               "rightLabel": "SQF Command",
               "type": "function",
               "leftLabel": "vehicle ",
-              "descriptionMoreURL": "http://community.bistudio.com/wiki/setVehicleTiPars",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/setVehicleReportOwnPosition",
+              "description": "Sets that the vehicle will share its own position via datalink to the Side center.",
+              "snippet": "setVehicleReportOwnPosition ${2:report}$0"
+            },
+            {
+              "rightLabel": "SQF Command",
+              "type": "function",
+              "leftLabel": "vehicle ",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/setVehicleReportRemoteTargets",
+              "description": "Sets that the vehicle will share targets that were acquired by its own sensors via datalink to the Side center.",
+              "snippet": "setVehicleReportRemoteTargets ${2:bool}$0"
+            },
+            {
+              "rightLabel": "SQF Command",
+              "type": "function",
+              "leftLabel": "vehicle ",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/setVehicleTIPars",
               "description": "Sets the \"heat\" state of different vehicle parts (for TI detection).  This allows simulation of heated up parts of a vehicle without it actually having to utilize them. (0: cold, 1: hot)",
-              "snippet": "setVehicleTiPars [${2:engine}, ${3:wheels}, ${4:weapon}]$0"
+              "snippet": "setVehicleTIPars ${2:[${3:engine}, ${4:wheels}, ${5:weapon}]}$0"
             },
             {
               "rightLabel": "SQF Command",
@@ -18239,9 +18463,9 @@
             {
               "rightLabel": "SQF Command",
               "type": "function",
-              "leftLabel": "(Array) = ",
+              "leftLabel": "(Array, Object, String) = ",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/UAVControl",
-              "description": "Get array with unit connected to vehicle and position in that vehicle.",
+              "description": "Returns array with current operator of UAV and his vehicle role in UAV.",
               "snippet": "UAVControl ${1:uav}$0"
             },
             {

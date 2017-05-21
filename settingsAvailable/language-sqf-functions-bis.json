@@ -12,6 +12,160 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_3Dcredits"
             },
             {
+              "text": "BIS_fnc_3DENCamera",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_3DENCamera"
+            },
+            {
+              "text": "BIS_fnc_3DENControlsHint",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_3DENControlsHint"
+            },
+            {
+              "text": "BIS_fnc_3DENDiagCreateList",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_3DENDiagCreateList"
+            },
+            {
+              "text": "BIS_fnc_3DENDiagFonts",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_3DENDiagFonts"
+            },
+            {
+              "text": "BIS_fnc_3DENDiagMouseControl",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_3DENDiagMouseControl"
+            },
+            {
+              "text": "BIS_fnc_3DENDrawLocations",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_3DENDrawLocations"
+            },
+            {
+              "text": "BIS_fnc_3DENEntityMenu",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_3DENEntityMenu"
+            },
+            {
+              "text": "BIS_fnc_3DENExportAttributes",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_3DENExportAttributes"
+            },
+            {
+              "text": "BIS_fnc_3DENExportOldSQM",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_3DENExportOldSQM"
+            },
+            {
+              "text": "BIS_fnc_3DENExportTerrainBuilder",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_3DENExportTerrainBuilder"
+            },
+            {
+              "text": "BIS_fnc_3DENFlashlight",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_3DENFlashlight"
+            },
+            {
+              "text": "BIS_fnc_3DENGrid",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_3DENGrid"
+            },
+            {
+              "text": "BIS_fnc_3DENIntel",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_3DENIntel"
+            },
+            {
+              "text": "BIS_fnc_3DENInterface",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_3DENInterface"
+            },
+            {
+              "text": "BIS_fnc_3DENListLocations",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_3DENListLocations"
+            },
+            {
+              "text": "BIS_fnc_3DENMissionPreview",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_3DENMissionPreview"
+            },
+            {
+              "text": "BIS_fnc_3DENModuleDescription",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_3DENModuleDescription"
+            },
+            {
+              "text": "BIS_fnc_3DENShowMessage",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_3DENShowMessage"
+            },
+            {
+              "text": "BIS_fnc_3DENStatusBar",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_3DENStatusBar"
+            },
+            {
+              "text": "BIS_fnc_3DENToolbar",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_3DENToolbar"
+            },
+            {
+              "text": "BIS_fnc_3DENTutorial",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_3DENTutorial"
+            },
+            {
+              "text": "BIS_fnc_3DENVisionMode",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Toggle or set 3DEN vision mode.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_3DENVisionMode"
+            },
+            {
               "text": "BIS_fnc_AAN",
               "rightLabel": "BIS Function",
               "type": "function",
@@ -201,6 +355,41 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_advHintCredits"
             },
             {
+              "text": "BIS_fnc_advHintFormat",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Return formatted texts of a CfgHints hint.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_advHintFormat"
+            },
+            {
+              "text": "BIS_fnc_AircraftCatapultLaunch",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "- On demand function to invoke acceleration of aircraft (vehicle).",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_AircraftCatapultLaunch"
+            },
+            {
+              "text": "BIS_fnc_AircraftSystemsInit",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "- Init function to invoke scripted features required for Jets DLC content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_AircraftSystemsInit"
+            },
+            {
+              "text": "BIS_fnc_AircraftTailhook",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_AircraftTailhook"
+            },
+            {
+              "text": "BIS_fnc_AircraftWingStateCheck",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "- This function is designed to prevent take off with folded wings on the Jets DLC aircraft that have such useraction/function …",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_AircraftWingStateCheck"
+            },
+            {
               "text": "BIS_fnc_alignTabs",
               "rightLabel": "BIS Function",
               "type": "function",
@@ -227,6 +416,34 @@
               "type": "function",
               "description": "Play set of ambient animations on given unit AND allows the unit to leave the ambient state and engage enemy or move away.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_ambientAnimCombat"
+            },
+            {
+              "text": "BIS_fnc_EXP_camp_playSubtitles",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Displays the given subtitles at the correctly defined moments.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_EXP_camp_playSubtitles"
+            },
+            {
+              "text": "BIS_fnc_initSliderValue",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Iniitialises a slider attribute control within the Eden Editor.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_initSliderValue"
+            },
+            {
+              "text": "BIS_fnc_showSubtitle",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Displays a subtitle at the bottom of the screen.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_showSubtitle"
+            },
+            {
+              "text": "BIS_fnc_weaponAddon",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Return addon from CfgPatches to which a given weapon class belongs to.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_weaponAddon"
             },
             {
               "text": "BIS_fnc_ambientAnimGetParams",
@@ -292,11 +509,25 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_animalBehaviour"
             },
             {
+              "text": "BIS_fnc_animalRandomization",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_animalRandomization"
+            },
+            {
               "text": "BIS_fnc_animalSiteSpawn",
               "rightLabel": "BIS Function",
               "type": "function",
               "description": "Create an area that spawns animals.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_animalSiteSpawn"
+            },
+            {
+              "text": "BIS_fnc_animateFlag",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Smoothly animates given flag from current position on the flag pole to the given position.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_animateFlag"
             },
             {
               "text": "BIS_fnc_animateTaskWaypoint",
@@ -325,6 +556,13 @@
               "type": "function",
               "description": "Returns true if all of the passed data elements are of the same type and value.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_areEqual"
+            },
+            {
+              "text": "BIS_fnc_areEqualNotNil",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_areEqualNotNil"
             },
             {
               "text": "BIS_fnc_areFriendly",
@@ -418,6 +656,20 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_assignPlayerRole"
             },
             {
+              "text": "BIS_fnc_attachToRelative",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Attaches object 1 to object 2, while preserving object 1 initial position and orientation against object 2.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_attachToRelative"
+            },
+            {
+              "text": "BIS_fnc_baseVehicle",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Return base vehicle (i.e., vehicle which is not jsut derivative of other with different texturesd / animations).",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_baseVehicle"
+            },
+            {
               "text": "BIS_fnc_baseWeapon",
               "rightLabel": "BIS Function",
               "type": "function",
@@ -439,11 +691,123 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_basicTask"
             },
             {
+              "text": "BIS_fnc_3DENNotification",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Show notification in the Eden Editor.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_3DENNotification"
+            },
+            {
+              "text": "BIS_fnc_adjustSimpleObject",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Adjust simple object vertical position, animations and selection according to provided data.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_adjustSimpleObject"
+            },
+            {
+              "text": "BIS_fnc_createSimpleObject",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Creates non-simulated framerate and network performance friendly object - a simple object - and applies different adjustments …",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_createSimpleObject"
+            },
+            {
               "text": "BIS_fnc_openFieldManual",
               "rightLabel": "BIS Function",
               "type": "function",
               "description": "Opens Field Manual in briefing (SP, MP Server, MP Client) and players's map or journal.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_openFieldManual"
+            },
+            {
+              "text": "BIS_fnc_replaceWithSimpleObject",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Replaces object with simple object.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_replaceWithSimpleObject"
+            },
+            {
+              "text": "BIS_fnc_sideColor",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Returns colour of define side either as Array in format RGBA or the name of the colour as String.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_sideColor"
+            },
+            {
+              "text": "BIS_fnc_simpleObjectData",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Get complete data needed for simple object creation.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_simpleObjectData"
+            },
+            {
+              "text": "BIS_fnc_switchLamp",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Switch streetlamp on/off.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_switchLamp"
+            },
+            {
+              "text": "BIS_fnc_bitflagsCheck",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Checks if one or more flags are set in the given flagset, represented with decimal or hexadecimal number (Hexadecimal number …",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_bitflagsCheck"
+            },
+            {
+              "text": "BIS_fnc_bitflagsFlip",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Flips one or more flags (set gets unset and vice versa) in the given flagset, represented with decimal or hexadecimal number …",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_bitflagsFlip"
+            },
+            {
+              "text": "BIS_fnc_bitflagsSet",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Sets one or more flags in the given flagset, represented with decimal or hexadecimal number (Hexadecimal number representation …",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_bitflagsSet"
+            },
+            {
+              "text": "BIS_fnc_bitflagsToArray",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Returns array with all bit flags which are set in the given flagset Limitations: Due to various limitations of the Real …",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_bitflagsToArray"
+            },
+            {
+              "text": "BIS_fnc_bitflagsUnset",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Unsets one or more flags in the given flagset, represented with decimal or hexadecimal number (Hexadecimal number …",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_bitflagsUnset"
+            },
+            {
+              "text": "BIS_fnc_bitwiseAND",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Performs bitwise AND operation on two decimal or hexadecimal unsigned 24 bit integers (Hexadecimal number representation is …",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_bitwiseAND"
+            },
+            {
+              "text": "BIS_fnc_bitwiseNOT",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Performs bitwise NOT operation on decimal or hexadecimal unsigned 24 bit integer (Hexadecimal number representation is simply …",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_bitwiseNOT"
+            },
+            {
+              "text": "BIS_fnc_bitwiseOR",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Performs bitwise OR operation on two decimal or hexadecimal unsigned 24 bit integers (Hexadecimal number representation is …",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_bitwiseOR"
+            },
+            {
+              "text": "BIS_fnc_bitwiseXOR",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Performs bitwise XOR operation on two decimal or hexadecimal unsigned 24 bit integers (Hexadecimal number representation is …",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_bitwiseXOR"
             },
             {
               "text": "BIS_fnc_blackIn",
@@ -556,6 +920,90 @@
               "type": "function",
               "description": "",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_camFollow"
+            },
+            {
+              "text": "BIS_fnc_cargoTurretIndex",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_cargoTurretIndex"
+            },
+            {
+              "text": "BIS_fnc_Carrier01AnimateDeflectors",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "- On demand function to invoke set of animations associated with carrier catapult jet blast deflector.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_Carrier01AnimateDeflectors"
+            },
+            {
+              "text": "BIS_fnc_Carrier01CatapultActionAdd",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_Carrier01CatapultActionAdd"
+            },
+            {
+              "text": "BIS_fnc_Carrier01CatapultActionRemove",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_Carrier01CatapultActionRemove"
+            },
+            {
+              "text": "BIS_fnc_Carrier01CatapultID",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_Carrier01CatapultID"
+            },
+            {
+              "text": "BIS_fnc_Carrier01CatapultLockTo",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_Carrier01CatapultLockTo"
+            },
+            {
+              "text": "BIS_fnc_Carrier01CrewInAnim",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_Carrier01CrewInAnim"
+            },
+            {
+              "text": "BIS_fnc_Carrier01CrewPlayAnim",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_Carrier01CrewPlayAnim"
+            },
+            {
+              "text": "BIS_fnc_Carrier01EdenDelete",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "- This is a sub function designed to delete dynamic aircrfat carrier in EDEN editor.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_Carrier01EdenDelete"
+            },
+            {
+              "text": "BIS_fnc_Carrier01EdenInit",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "- This is a sub function designed to assemble dynamic aircrfat carrier in EDEN editor.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_Carrier01EdenInit"
+            },
+            {
+              "text": "BIS_fnc_Carrier01Init",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_Carrier01Init"
+            },
+            {
+              "text": "BIS_fnc_Carrier01PosUpdate",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "- This is a sub function designed to update dynamic aircraft carriers position in EDEN editor.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_Carrier01PosUpdate"
             },
             {
               "text": "BIS_fnc_changeSupportRadioChannel",
@@ -682,6 +1130,13 @@
               "type": "function",
               "description": "Finds duplicities in array of strings and consolidates it to the array of sub-arrays.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_consolidateArray"
+            },
+            {
+              "text": "BIS_fnc_controlConfigs",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Return config paths to all display controls.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_controlConfigs"
             },
             {
               "text": "BIS_fnc_convertUnits",
@@ -971,6 +1426,20 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_damagePulsing"
             },
             {
+              "text": "BIS_fnc_DataTerminalAnimate",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "--- A script function for animating \"Land_DataTerminal_01_F\" --- To open terminal: [box, 3] call BIS_fnc_DataTerminalAnimate …",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_DataTerminalAnimate"
+            },
+            {
+              "text": "BIS_fnc_DataTerminalColor",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_DataTerminalColor"
+            },
+            {
               "text": "BIS_fnc_dbClassCheck",
               "rightLabel": "BIS Function",
               "type": "function",
@@ -1125,6 +1594,20 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_dbValueSet"
             },
             {
+              "text": "BIS_fnc_decodeFlags",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Decodes a single scalar into array of unique binary flags with indexes between 0-15.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_decodeFlags"
+            },
+            {
+              "text": "BIS_fnc_deleteCounter",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_deleteCounter"
+            },
+            {
               "text": "BIS_fnc_deleteInventory",
               "rightLabel": "BIS Function",
               "type": "function",
@@ -1137,6 +1620,13 @@
               "type": "function",
               "description": "Delete task.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_deleteTask"
+            },
+            {
+              "text": "BIS_fnc_deleteVehicleCrew",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_deleteVehicleCrew"
             },
             {
               "text": "BIS_fnc_destroyCity",
@@ -1368,6 +1858,13 @@
               "type": "function",
               "description": "Function which returns vector direction from pos1 to pos2.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_dirTo"
+            },
+            {
+              "text": "BIS_fnc_disableLoading",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Disables the load/restart button.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_disableLoading"
             },
             {
               "text": "BIS_fnc_disableSaving",
@@ -1608,11 +2105,102 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_effectPlankton"
             },
             {
+              "text": "BIS_fnc_EGObjectiveVisualizer",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_EGObjectiveVisualizer"
+            },
+            {
+              "text": "BIS_fnc_EGObjectiveVisualizerDraw",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Do not serialize this script.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_EGObjectiveVisualizerDraw"
+            },
+            {
+              "text": "BIS_fnc_EGSpectator",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Spectator instance Returns: Multiple values / none Examples: [\"Initialize\", [player]] call BIS_fnc_EGSpectator; \t Initializes …",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_EGSpectator"
+            },
+            {
+              "text": "BIS_fnc_EGSpectatorCamera",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Spectator camera framework Returns: Multiple values / none Event Handlers: EGSpectator_OnCameraModeChanged Notes: Not to be …",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_EGSpectatorCamera"
+            },
+            {
+              "text": "BIS_fnc_EGSpectatorCameraPrepareTarget",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_EGSpectatorCameraPrepareTarget"
+            },
+            {
+              "text": "BIS_fnc_EGSpectatorCameraResetTarget",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_EGSpectatorCameraResetTarget"
+            },
+            {
+              "text": "BIS_fnc_EGSpectatorCameraSetTarget",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_EGSpectatorCameraSetTarget"
+            },
+            {
+              "text": "BIS_fnc_EGSpectatorCameraTick",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_EGSpectatorCameraTick"
+            },
+            {
+              "text": "BIS_fnc_EGSpectatorDraw2D",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_EGSpectatorDraw2D"
+            },
+            {
+              "text": "BIS_fnc_EGSpectatorDraw3D",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_EGSpectatorDraw3D"
+            },
+            {
+              "text": "BIS_fnc_EGSpectatorGetUnitsToDraw",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_EGSpectatorGetUnitsToDraw"
+            },
+            {
+              "text": "BIS_fnc_EjectionSeatRelease",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "- This function is designed as part of set of functions to implement semi-authenthic ejection system on fixed wing aircrfat …",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_EjectionSeatRelease"
+            },
+            {
               "text": "BIS_fnc_enableSaving",
               "rightLabel": "BIS Function",
               "type": "function",
               "description": "Controls the enabling of saving.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_enableSaving"
+            },
+            {
+              "text": "BIS_fnc_encodeFlags",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_encodeFlags"
             },
             {
               "text": "BIS_fnc_endLoadingScreen",
@@ -1627,6 +2215,20 @@
               "type": "function",
               "description": "Ends mission with a fade effect.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_endMission"
+            },
+            {
+              "text": "BIS_fnc_endMissionServer",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Ends the mission properly for all players in a multiplayer environment.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_endMissionServer"
+            },
+            {
+              "text": "BIS_fnc_weaponComponents",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Returns array with classname of the parent weapon (without attachments), followed by classnames of all its attachments.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_weaponComponents"
             },
             {
               "text": "BIS_fnc_enemyDetected",
@@ -1748,6 +2350,13 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_exportCfgWeapons"
             },
             {
+              "text": "BIS_fnc_exportConfigHierarchy",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_exportConfigHierarchy"
+            },
+            {
               "text": "BIS_fnc_exportCuratorCostTable",
               "rightLabel": "BIS Function",
               "type": "function",
@@ -1776,6 +2385,13 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_exportGroupFormations"
             },
             {
+              "text": "BIS_fnc_exportGUIBaseClasses",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Export GUI macros and base classes.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_exportGUIBaseClasses"
+            },
+            {
               "text": "BIS_fnc_exportInventory",
               "rightLabel": "BIS Function",
               "type": "function",
@@ -1788,6 +2404,13 @@
               "type": "function",
               "description": "Export terrain height map to BiTXT (Universal Bistudio TXT) file, which can be imported to Object Builder.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_exportMapToBiTXT"
+            },
+            {
+              "text": "BIS_fnc_exportVehicle",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Export vehicle settings.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_exportVehicle"
             },
             {
               "text": "BIS_fnc_fadeEffect",
@@ -1818,11 +2441,25 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_feedbackMain"
             },
             {
+              "text": "BIS_fnc_ffvUpdate",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Update Firing From Vehicle feature depending on condition defined in turret's config.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_ffvUpdate"
+            },
+            {
               "text": "BIS_fnc_filterString",
               "rightLabel": "BIS Function",
               "type": "function",
               "description": "Removes characters from a string based on the list of allowed characters.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_filterString"
+            },
+            {
+              "text": "BIS_fnc_findAllNestedElements",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_findAllNestedElements"
             },
             {
               "text": "BIS_fnc_findExtreme",
@@ -1865,6 +2502,27 @@
               "type": "function",
               "description": "Return number of completed curator challenges.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_finishCuratorChallenge"
+            },
+            {
+              "text": "BIS_fnc_fireSupport",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Mortar/artillery fire support.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_fireSupport"
+            },
+            {
+              "text": "BIS_fnc_fireSupportCluster",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Virtual fire support - cluster shell Select 0 - ARRAY or OBJECT or STRING: Target position ([x,y,z] or Object or \"Marker\").",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_fireSupportCluster"
+            },
+            {
+              "text": "BIS_fnc_fireSupportVirtual",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Virtual fire support of artillery/mortar unit.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_fireSupportVirtual"
             },
             {
               "text": "BIS_fnc_fixDate",
@@ -1951,6 +2609,13 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_functionsDebug"
             },
             {
+              "text": "BIS_fnc_garage3DEN",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_garage3DEN"
+            },
+            {
               "text": "BIS_fnc_GC",
               "rightLabel": "BIS Function",
               "type": "function",
@@ -1984,6 +2649,27 @@
               "type": "function",
               "description": "Geometric Mean Returns the geometric mean (weighted average) of an array of numbers.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_geometricMean"
+            },
+            {
+              "text": "BIS_fnc_getAngleDelta",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Returns the smallest difference between 2 angles in degrees.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_getAngleDelta"
+            },
+            {
+              "text": "BIS_fnc_getArea",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Extracts area information from trigger, marker, location or array.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_getArea"
+            },
+            {
+              "text": "BIS_fnc_getCfg",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Smart-return config (extension for BIS_fnc_getCfgXXXX functions) Remark(s): Can by called 2 ways:  1st way - passing config …",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_getCfg"
             },
             {
               "text": "BIS_fnc_getCfgData",
@@ -2063,11 +2749,39 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_getIDD"
             },
             {
+              "text": "BIS_fnc_getIntersectionsUnderCursor",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Returns intersections under cursor.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_getIntersectionsUnderCursor"
+            },
+            {
               "text": "BIS_fnc_getLineDist",
               "rightLabel": "BIS Function",
               "type": "function",
               "description": "This function returns the distance between two sections of a straight line.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_getLineDist"
+            },
+            {
+              "text": "BIS_fnc_getName",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_getName"
+            },
+            {
+              "text": "BIS_fnc_getNetMode",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Returns one of the following net.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_getNetMode"
+            },
+            {
+              "text": "BIS_fnc_getObjectBBD",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_getObjectBBD"
             },
             {
               "text": "BIS_fnc_getParamValue",
@@ -2133,6 +2847,13 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_getUnitInsignia"
             },
             {
+              "text": "BIS_fnc_getVehicleCustomization",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Return vehicle customization settings.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_getVehicleCustomization"
+            },
+            {
               "text": "BIS_fnc_getVirtualBackpackCargo",
               "rightLabel": "BIS Function",
               "type": "function",
@@ -2166,6 +2887,13 @@
               "type": "function",
               "description": "Returns the highest number out of the passed set.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_greatestNum"
+            },
+            {
+              "text": "BIS_fnc_gridToPos",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Converts grid coordinates to world position.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_gridToPos"
             },
             {
               "text": "BIS_fnc_groupFromNetId",
@@ -2329,6 +3057,13 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_help"
             },
             {
+              "text": "BIS_fnc_highlightControl",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_highlightControl"
+            },
+            {
               "text": "BIS_fnc_HUDLimits",
               "rightLabel": "BIS Function",
               "type": "function",
@@ -2371,6 +3106,13 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_infoText"
             },
             {
+              "text": "BIS_fnc_initAmmoBox",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "--- Get default values.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_initAmmoBox"
+            },
+            {
               "text": "BIS_fnc_initCuratorAttribute",
               "rightLabel": "BIS Function",
               "type": "function",
@@ -2390,6 +3132,13 @@
               "type": "function",
               "description": "Init intel object.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_initIntelObject"
+            },
+            {
+              "text": "BIS_fnc_initListNBoxSorting",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_initListNBoxSorting"
             },
             {
               "text": "BIS_fnc_initModules",
@@ -2439,6 +3188,20 @@
               "type": "function",
               "description": "This function aims to simplify the way to customise vehicles.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_initVehicle"
+            },
+            {
+              "text": "BIS_fnc_initVehicleCrew",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Moves units into vehicle seats.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_initVehicleCrew"
+            },
+            {
+              "text": "BIS_fnc_initVehicleKart",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Set the number of the given kart [KartName, NN] call bis_fnc_initVehicleKart.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_initVehicleKart"
             },
             {
               "text": "BIS_fnc_initVirtualUnit",
@@ -2749,11 +3512,39 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_KMLimport"
             },
             {
+              "text": "BIS_fnc_lerp",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Linear floating point interpolation.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_lerp"
+            },
+            {
+              "text": "BIS_fnc_limitAmmunition",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Limits the number of magazines carried by individual unit.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_limitAmmunition"
+            },
+            {
+              "text": "BIS_fnc_limitItems",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Keeps or removes unit's items (including NVGs and binocular/designator) based on probability user sets.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_limitItems"
+            },
+            {
               "text": "BIS_fnc_limitSupport",
               "rightLabel": "BIS Function",
               "type": "function",
               "description": "Limits support runs during a mission.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_limitSupport"
+            },
+            {
+              "text": "BIS_fnc_limitWeaponItems",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Keeps or remove unit's weapon attachments based on probability user sets.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_limitWeaponItems"
             },
             {
               "text": "BIS_fnc_linearConversion",
@@ -2868,6 +3659,13 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_loadInventory"
             },
             {
+              "text": "BIS_fnc_loadVehicle",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Load vehicle look.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_loadVehicle"
+            },
+            {
               "text": "BIS_fnc_localize",
               "rightLabel": "BIS Function",
               "type": "function",
@@ -2922,6 +3720,13 @@
               "type": "function",
               "description": "Returns the lowest number out of the passed set.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_lowestNum"
+            },
+            {
+              "text": "BIS_fnc_magazinesEntityType",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Return object's magazines as defined in config.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_magazinesEntityType"
             },
             {
               "text": "BIS_fnc_magnitude",
@@ -3076,6 +3881,20 @@
               "type": "function",
               "description": "Returns time in seconds until the mission end.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_missionTimeLeft"
+            },
+            {
+              "text": "BIS_fnc_ModuleMPTypeGroundSupport",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Debug log.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_ModuleMPTypeGroundSupport"
+            },
+            {
+              "text": "BIS_fnc_ModuleMPTypeGroundSupportBase",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_ModuleMPTypeGroundSupportBase"
             },
             {
               "text": "BIS_fnc_monthDays",
@@ -3393,6 +4212,20 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_packStaticWeapon"
             },
             {
+              "text": "BIS_fnc_holdActionAdd",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Adds an action to an object which requires the user to hold a key to perform the action.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_holdActionAdd"
+            },
+            {
+              "text": "BIS_fnc_holdActionRemove",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Removes a hold action.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_holdActionRemove"
+            },
+            {
               "text": "BIS_fnc_param",
               "rightLabel": "BIS Function",
               "type": "function",
@@ -3435,6 +4268,69 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_paramRespawnTickets"
             },
             {
+              "text": "BIS_fnc_paramReviveBleedOutDuration",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Grabs server param into global variable.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_paramReviveBleedOutDuration"
+            },
+            {
+              "text": "BIS_fnc_paramReviveDuration",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Grabs server param into global variable.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_paramReviveDuration"
+            },
+            {
+              "text": "BIS_fnc_paramReviveForceRespawnDuration",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Grabs server param into global variable.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_paramReviveForceRespawnDuration"
+            },
+            {
+              "text": "BIS_fnc_paramReviveMedicSpeedMultiplier",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Grabs server param into global variable.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_paramReviveMedicSpeedMultiplier"
+            },
+            {
+              "text": "BIS_fnc_paramReviveMode",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Grabs server param into global variable.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_paramReviveMode"
+            },
+            {
+              "text": "BIS_fnc_paramReviveRequiredItems",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Grabs server param into global variable.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_paramReviveRequiredItems"
+            },
+            {
+              "text": "BIS_fnc_paramReviveRequiredTrait",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Grabs server param into global variable.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_paramReviveRequiredTrait"
+            },
+            {
+              "text": "BIS_fnc_paramReviveUnconsciousStateMode",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Grabs server param into global variable.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_paramReviveUnconsciousStateMode"
+            },
+            {
+              "text": "BIS_fnc_paramViewDistance",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Set view distance.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_paramViewDistance"
+            },
+            {
               "text": "BIS_fnc_paramWeather",
               "rightLabel": "BIS Function",
               "type": "function",
@@ -3461,6 +4357,27 @@
               "type": "function",
               "description": "Displays Picture in Picture.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_PIP"
+            },
+            {
+              "text": "BIS_fnc_PlaneAiEject",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "- This function is designed as part of set of functions to implement semi-authenthic ejection system on fixed wing aircrfat …",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_PlaneAiEject"
+            },
+            {
+              "text": "BIS_fnc_PlaneEjection",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "- This function is designed to implement semi-authenthic ejection system on fixed wing aircrfat that have such functionality …",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_PlaneEjection"
+            },
+            {
+              "text": "BIS_fnc_PlaneEjectionFX",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "- This function is designed as part of set of functions to implement semi-authenthic ejection system on fixed wing aircrfat …",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_PlaneEjectionFX"
             },
             {
               "text": "BIS_fnc_playEndMusic",
@@ -3627,7 +4544,7 @@
               "text": "BIS_fnc_randomPos",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Selects a random position of given whitelist array in trigger area (uses a position as center position).",
+              "description": "Selects random position according to given params within given area.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_randomPos"
             },
             {
@@ -4044,6 +4961,13 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_saveInventory"
             },
             {
+              "text": "BIS_fnc_saveVehicle",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Save vehicle's params (textures, animations, crew).",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_saveVehicle"
+            },
+            {
               "text": "BIS_fnc_sayMessage",
               "rightLabel": "BIS Function",
               "type": "function",
@@ -4247,11 +5171,25 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_setHeight"
             },
             {
+              "text": "BIS_fnc_setHitPointDamage",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Sets damage to HitPoint with dependency or not (Optional).",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_setHitPointDamage"
+            },
+            {
               "text": "BIS_fnc_setIDCStreamFriendly",
               "rightLabel": "BIS Function",
               "type": "function",
               "description": "Shows or hides UI control according to state of the Stream Friendly UI switch in Game Options.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_setIDCStreamFriendly"
+            },
+            {
+              "text": "BIS_fnc_setIdentity",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Set unit identity.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_setIdentity"
             },
             {
               "text": "BIS_fnc_setMissionStatusSlot",
@@ -4266,6 +5204,13 @@
               "type": "function",
               "description": "Function to set an item in a nested array using a path.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_setNestedElement"
+            },
+            {
+              "text": "BIS_fnc_setObjectRotation",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Set object rotation.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_setObjectRotation"
             },
             {
               "text": "BIS_fnc_setObjectTexture",
@@ -4352,6 +5297,13 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_setUnitInsignia"
             },
             {
+              "text": "BIS_fnc_setVehicleMass",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_setVehicleMass"
+            },
+            {
               "text": "BIS_fnc_shakeCuratorCamera",
               "rightLabel": "BIS Function",
               "type": "function",
@@ -4364,6 +5316,13 @@
               "type": "function",
               "description": "Shake analogue gauges.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_shakeGauges"
+            },
+            {
+              "text": "BIS_fnc_sharedObjectives",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_sharedObjectives"
             },
             {
               "text": "BIS_fnc_showCuratorAttributes",
@@ -4408,6 +5367,146 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_showRespawnMenu"
             },
             {
+              "text": "BIS_fnc_showRespawnMenuDisableItemCheck",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_showRespawnMenuDisableItemCheck"
+            },
+            {
+              "text": "BIS_fnc_showRespawnMenuDisableItemDraw",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_showRespawnMenuDisableItemDraw"
+            },
+            {
+              "text": "BIS_fnc_showRespawnMenuHeader",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_showRespawnMenuHeader"
+            },
+            {
+              "text": "BIS_fnc_showRespawnMenuInventory",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_showRespawnMenuInventory"
+            },
+            {
+              "text": "BIS_fnc_showRespawnMenuInventoryDetails",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_showRespawnMenuInventoryDetails"
+            },
+            {
+              "text": "BIS_fnc_showRespawnMenuInventoryItems",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_showRespawnMenuInventoryItems"
+            },
+            {
+              "text": "BIS_fnc_showRespawnMenuInventoryLimit",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_showRespawnMenuInventoryLimit"
+            },
+            {
+              "text": "BIS_fnc_showRespawnMenuInventoryLimitRefresh",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_showRespawnMenuInventoryLimitRefresh"
+            },
+            {
+              "text": "BIS_fnc_showRespawnMenuInventoryLimitRespawn",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_showRespawnMenuInventoryLimitRespawn"
+            },
+            {
+              "text": "BIS_fnc_showRespawnMenuInventoryList",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_showRespawnMenuInventoryList"
+            },
+            {
+              "text": "BIS_fnc_showRespawnMenuInventoryLoadout",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_showRespawnMenuInventoryLoadout"
+            },
+            {
+              "text": "BIS_fnc_showRespawnMenuInventoryMetadata",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_showRespawnMenuInventoryMetadata"
+            },
+            {
+              "text": "BIS_fnc_showRespawnMenuPosition",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_showRespawnMenuPosition"
+            },
+            {
+              "text": "BIS_fnc_showRespawnMenuPositionList",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_showRespawnMenuPositionList"
+            },
+            {
+              "text": "BIS_fnc_showRespawnMenuPositionMap",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_showRespawnMenuPositionMap"
+            },
+            {
+              "text": "BIS_fnc_showRespawnMenuPositionMapDraw",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "--- Basic information.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_showRespawnMenuPositionMapDraw"
+            },
+            {
+              "text": "BIS_fnc_showRespawnMenuPositionMapHandle",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_showRespawnMenuPositionMapHandle"
+            },
+            {
+              "text": "BIS_fnc_showRespawnMenuPositionMetadata",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_showRespawnMenuPositionMetadata"
+            },
+            {
+              "text": "BIS_fnc_showRespawnMenuPositionName",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_showRespawnMenuPositionName"
+            },
+            {
+              "text": "BIS_fnc_showRespawnMenuPositionRefresh",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_showRespawnMenuPositionRefresh"
+            },
+            {
               "text": "BIS_fnc_showTime",
               "rightLabel": "BIS Function",
               "type": "function",
@@ -4422,18 +5521,18 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_showUnitInfo"
             },
             {
+              "text": "BIS_fnc_showWelcomeScreen",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Show welcome screen.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_showWelcomeScreen"
+            },
+            {
               "text": "BIS_fnc_shutdown",
               "rightLabel": "BIS Function",
               "type": "function",
               "description": "Shut downs the game.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_shutdown"
-            },
-            {
-              "text": "BIS_fnc_sideColor",
-              "rightLabel": "BIS Function",
-              "type": "function",
-              "description": "Returns colour of define side either as Array in format RGBA or the name of the colour as String.",
-              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_sideColor"
             },
             {
               "text": "BIS_fnc_sideID",
@@ -4462,6 +5561,13 @@
               "type": "function",
               "description": "Returns side name.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_sideName"
+            },
+            {
+              "text": "BIS_fnc_sideNameUnlocalized",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_sideNameUnlocalized"
             },
             {
               "text": "BIS_fnc_sideType",
@@ -4520,6 +5626,13 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_sortNum"
             },
             {
+              "text": "BIS_fnc_admin",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Returns the admin state of a client the function is called on.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_admin"
+            },
+            {
               "text": "BIS_fnc_spawn",
               "rightLabel": "BIS Function",
               "type": "function",
@@ -4576,11 +5689,25 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_spotter"
             },
             {
+              "text": "BIS_fnc_stalk",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Continuously set WP of one group to a different group to hunt it.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_stalk"
+            },
+            {
               "text": "BIS_fnc_startLoadingScreen",
               "rightLabel": "BIS Function",
               "type": "function",
               "description": "Register a loading screen.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_startLoadingScreen"
+            },
+            {
+              "text": "BIS_fnc_storeParamsValues",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Parses mission params and stores them into public variable \"BIS_fnc_storeParamsValues_data\" Use BIS_fnc_getParamValue to …",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_storeParamsValues"
             },
             {
               "text": "BIS_fnc_StrategicMapAnimate",
@@ -4618,6 +5745,13 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_subSelect"
             },
             {
+              "text": "BIS_fnc_sunriseSunsetTime",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Calculate sunrise and sunset time.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_sunriseSunsetTime"
+            },
+            {
               "text": "BIS_fnc_supplydrop",
               "rightLabel": "BIS Function",
               "type": "function",
@@ -4637,6 +5771,13 @@
               "type": "function",
               "description": "Swap Variables.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_swapVars"
+            },
+            {
+              "text": "BIS_fnc_synchronizedObjects",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Get all objects of given type directly synchronized to the given object.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_synchronizedObjects"
             },
             {
               "text": "BIS_fnc_target",
@@ -4812,6 +5953,13 @@
               "type": "function",
               "description": "Returns type of given task.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_taskType"
+            },
+            {
+              "text": "BIS_fnc_taskTypeIcon",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_taskTypeIcon"
             },
             {
               "text": "BIS_fnc_taskVar",
@@ -5094,6 +6242,13 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_vectorDiff"
             },
             {
+              "text": "BIS_fnc_vectorDirAndUpRelative",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Returns vectorDirAndUp of object 1 relative to object 2.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_vectorDirAndUpRelative"
+            },
+            {
               "text": "BIS_fnc_vectorFromXToY",
               "rightLabel": "BIS Function",
               "type": "function",
@@ -5120,6 +6275,13 @@
               "type": "function",
               "description": "Detects are available expansions and addons.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_version"
+            },
+            {
+              "text": "BIS_fnc_versionInfo",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_versionInfo"
             },
             {
               "text": "BIS_fnc_VRDrawBorder",
@@ -5157,6 +6319,13 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_VRFadeOut"
             },
             {
+              "text": "BIS_fnc_VRHitpart",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_VRHitpart"
+            },
+            {
               "text": "BIS_fnc_VRSpawnEffect",
               "rightLabel": "BIS Function",
               "type": "function",
@@ -5178,18 +6347,18 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_VRTimer"
             },
             {
-              "text": "BIS_fnc_weaponAddon",
+              "text": "BIS_fnc_weaponDirectionRelative",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Return addon from CfgPatches to which a given weapon class belongs to.",
-              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_weaponAddon"
+              "description": "Returns relative direction vector of given weapon for the given vehicle.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_weaponDirectionRelative"
             },
             {
-              "text": "BIS_fnc_weaponComponents",
+              "text": "BIS_fnc_weaponsEntityType",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Returns array with classname of the parent weapon (without attachments), followed by classnames of all its attachments.",
-              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_weaponComponents"
+              "description": "Return object's weapons as defined in config.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_weaponsEntityType"
             },
             {
               "text": "BIS_fnc_worldArea",

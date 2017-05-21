@@ -125,6 +125,13 @@
             },
             {
               "rightLabel": "CBA Function",
+              "text": "CBA_fnc_addPauseMenuOption",
+              "description": "Adds a menu option to the ESC menu \u201cOptions\u201d tab.",
+              "type": "function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/ui/fnc_addPauseMenuOption-sqf.html#CBA_fnc_addPauseMenuOption"
+            },
+            {
+              "rightLabel": "CBA Function",
               "text": "CBA_fnc_addPerFrameHandler",
               "description": "Add a handler that will execute every frame, or every x number of seconds.",
               "type": "function",
@@ -143,6 +150,13 @@
               "description": "Adds a player event handler.Possible events\u201dunit\u201dplayer controlled unit changed\u201dweapon\u201dcurrently selected weapon change\u201dloadout\u201dplayers loadout changed\u201dvehicle\u201dplayers current vehicle changed\u201dturret\u201dposition in vehicle changed\u201dvisionMode\u201dplayer changed to normal/night/thermal view\u201dcameraView\u201dcamera mode changed (\u201cInternal\u201d, \u201cExternal\u201d, \u201cGunner\u201d etc.)\u201dvisibleMap\u201dopened or closed map",
               "type": "function",
               "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/events/fnc_addPlayerEventHandler-sqf.html#CBA_fnc_addPlayerEventHandler"
+            },
+            {
+              "rightLabel": "CBA Function",
+              "text": "CBA_fnc_addUnitTrackProjectiles",
+              "description": "Adds projectile tracking to a given unit or vehicle.\u00a0 Will show colored lines following a projectile\u2019s path.",
+              "type": "function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/diagnostic/fnc_addUnitTrackProjectiles-sqf.html#CBA_fnc_addUnitTrackProjectiles"
             },
             {
               "rightLabel": "CBA Function",
@@ -167,6 +181,13 @@
             },
             {
               "rightLabel": "CBA Function",
+              "text": "CBA_fnc_allNamespaces",
+              "description": "Reports namespaces created with CBA_fnc_createNamespace.",
+              "type": "function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_allNamespaces-sqf.html#CBA_fnc_allNamespaces"
+            },
+            {
+              "rightLabel": "CBA Function",
               "text": "CBA_fnc_binocularMagazine",
               "description": "Returns the magazine of the units rangefinder.",
               "type": "function",
@@ -188,6 +209,13 @@
             },
             {
               "rightLabel": "CBA Function",
+              "text": "CBA_accessory_fnc_switchAttachment",
+              "description": "Switches weapon accessories for the player.",
+              "type": "function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/accessory/fnc_switchAttachment-sqf.html#CBA_accessory_fnc_switchAttachment"
+            },
+            {
+              "rightLabel": "CBA Function",
               "text": "CBA_help_fnc_setCreditsLine",
               "description": "Picks a random CfgPatches entry with an \u201cauthor\u201d entry and displays author, version and URL in the main menu and ingame in the pause menu.",
               "type": "function",
@@ -196,9 +224,23 @@
             {
               "rightLabel": "CBA Function",
               "text": "CBA_help_fnc_setVersionLine",
-              "description": "Displays all CfgPatches with a \u201cversionDesc\u201d entry in the main menu.Mods are cycled automatically every 3 seconds or can be browsed using LMB and RMB.\u00a0 Double clicking executes the script in \u201cversionAct\u201d.",
+              "description": "Displays all CfgPatches with a \u201cversionDesc\u201d entry in the main menu.Mods are cycled automatically every 4 seconds or can be browsed using LMB and RMB.\u00a0 Double clicking executes the script in \u201cversionAct\u201d.",
               "type": "function",
               "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/help/fnc_setVersionLine-sqf.html#CBA_help_fnc_setVersionLine"
+            },
+            {
+              "rightLabel": "CBA Function",
+              "text": "CBA_removeUnitTrackProjectiles",
+              "description": "Removes projectile tracking from a given unit or vehicle.",
+              "type": "function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/diagnostic/fnc_removeUnitTrackProjectiles-sqf.html#CBA_removeUnitTrackProjectiles"
+            },
+            {
+              "rightLabel": "CBA Function",
+              "text": "CBA_settings_fnc_init",
+              "description": "Creates a new setting for that session.",
+              "type": "function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/settings/fnc_init-sqf.html#CBA_settings_fnc_init"
             },
             {
               "rightLabel": "CBA Function",
@@ -300,10 +342,24 @@
             },
             {
               "rightLabel": "CBA Function",
+              "text": "CBA_fnc_compileEventHandlers",
+              "description": "Compiles all Extended EventHandlers in given config.",
+              "type": "function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/xeh/fnc_compileEventHandlers-sqf.html#CBA_fnc_compileEventHandlers"
+            },
+            {
+              "rightLabel": "CBA Function",
               "text": "CBA_fnc_compileFinal",
               "description": "Defines a function in mission namespace and prevents it from being overwritten.",
               "type": "function",
               "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_compileFinal-sqf.html#CBA_fnc_compileFinal"
+            },
+            {
+              "rightLabel": "CBA Function",
+              "text": "CBA_fnc_compileFunction",
+              "description": "Compiles a function into mission namespace and into ui namespace for caching purposes.\u00a0 Recompiling can be enabled by inserting the CBA_cache_disable.pbo from the optionals folder.",
+              "type": "function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/xeh/fnc_compileFunction-sqf.html#CBA_fnc_compileFunction"
             },
             {
               "rightLabel": "CBA Function",
@@ -315,7 +371,7 @@
             {
               "rightLabel": "CBA Function",
               "text": "CBA_fnc_createNamespace",
-              "description": "Creates a namespace.\u00a0 Used to store and read variables via setVariable and getVariable.The Namespace is destroyed after the mission ends. getVariable ARRAY is not supported.",
+              "description": "Creates a namespace.\u00a0 Used to store and read variables via setVariable and getVariable.The Namespace is destroyed after the mission ends.",
               "type": "function",
               "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_createNamespace-sqf.html#CBA_fnc_createNamespace"
             },
@@ -374,6 +430,13 @@
               "description": "Deletes a PFH object that was previously created via CBA_fnc_createPerFrameHandlerObject",
               "type": "function",
               "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_deletePerFrameHandlerObject-sqf.html#CBA_fnc_deletePerFrameHandlerObject"
+            },
+            {
+              "rightLabel": "CBA Function",
+              "text": "CBA_fnc_deserializeNamespace",
+              "description": "Creates namespace containing all variables stored in a CBA hash.",
+              "type": "function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/hashes/fnc_deserializeNamespace-sqf.html#CBA_fnc_deserializeNamespace"
             },
             {
               "rightLabel": "CBA Function",
@@ -629,6 +692,13 @@
             },
             {
               "rightLabel": "CBA Function",
+              "text": "CBA_fnc_getNonPresetClass",
+              "description": "Get ancestor class of a weapon or container which has no preset attachments/contents.",
+              "type": "function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_getNonPresetClass-sqf.html#CBA_fnc_getNonPresetClass"
+            },
+            {
+              "rightLabel": "CBA Function",
               "text": "CBA_fnc_getObjectConfig",
               "description": "A function used to return the config of an object or class name.",
               "type": "function",
@@ -776,6 +846,13 @@
             },
             {
               "rightLabel": "CBA Function",
+              "text": "CBA_fnc_hashKeys",
+              "description": "Returns all Keys in a Hash.See CBA_fnc_hashCreate.",
+              "type": "function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/hashes/fnc_hashKeys-sqf.html#CBA_fnc_hashKeys"
+            },
+            {
+              "rightLabel": "CBA Function",
               "text": "CBA_fnc_hashRem",
               "description": "Removes given key from given Hash.See CBA_fnc_hashCreate.",
               "type": "function",
@@ -815,6 +892,13 @@
               "description": "Accumulates a value by passing elements of an array \u201cthrough\u201d a function.Data passed to the function on each iteration,_accumulator - Value passed from last iteration, set to _initial for the first iteration._x - Element of _array.",
               "type": "function",
               "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/arrays/fnc_inject-sqf.html#CBA_fnc_inject"
+            },
+            {
+              "rightLabel": "CBA Function",
+              "text": "CBA_fnc_insert",
+              "description": "Inserts an array of elements to given array at the specified index.Modifies the original array (Thanks BaerMitUmlaut)",
+              "type": "function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/arrays/fnc_insert-sqf.html#CBA_fnc_insert"
             },
             {
               "rightLabel": "CBA Function",
@@ -1021,6 +1105,13 @@
             },
             {
               "rightLabel": "CBA Function",
+              "text": "CBA_fnc_registerChatCommand",
+              "description": "Register a custom chat command on the local machine.",
+              "type": "function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/events/fnc_registerChatCommand-sqf.html#CBA_fnc_registerChatCommand"
+            },
+            {
+              "rightLabel": "CBA Function",
               "text": "CBA_fnc_registerKeybind",
               "description": "",
               "type": "function",
@@ -1057,7 +1148,7 @@
             {
               "rightLabel": "CBA Function",
               "text": "CBA_fnc_removeBackpackCargo",
-              "description": "Removes specific backpack(s) from cargo space.Warning: Backpack\u2019s inventory information is lost.",
+              "description": "Removes specific backpack(s) from cargo space.Warning: All weapon attachments/magazines in all backpacks in container will become detached.",
               "type": "function",
               "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_removeBackpackCargo-sqf.html#CBA_fnc_removeBackpackCargo"
             },
@@ -1113,7 +1204,7 @@
             {
               "rightLabel": "CBA Function",
               "text": "CBA_fnc_removeMagazineCargo",
-              "description": "Removes specific magazine(s) from cargo space.Warning: Magazine\u2019s ammo count is lost and becomes full.",
+              "description": "Removes specific magazine(s) from cargo space.",
               "type": "function",
               "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_removeMagazineCargo-sqf.html#CBA_fnc_removeMagazineCargo"
             },
@@ -1155,7 +1246,7 @@
             {
               "rightLabel": "CBA Function",
               "text": "CBA_fnc_removeWeaponCargo",
-              "description": "Removes specific weapon(s) from cargo space.Warning: Weapon\u2019s attachments are lost.",
+              "description": "Removes specific weapon(s) from cargo space.Warning: All weapon attachments/magazines in container will become detached.",
               "type": "function",
               "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_removeWeaponCargo-sqf.html#CBA_fnc_removeWeaponCargo"
             },
@@ -1217,6 +1308,13 @@
             },
             {
               "rightLabel": "CBA Function",
+              "text": "CBA_fnc_serializeNamespace",
+              "description": "Creates CBA hash containing all variables stored in a namespace.",
+              "type": "function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/hashes/fnc_serializeNamespace-sqf.html#CBA_fnc_serializeNamespace"
+            },
+            {
+              "rightLabel": "CBA Function",
               "text": "CBA_fnc_serverEvent",
               "description": "Raises a CBA event on the server machine.",
               "type": "function",
@@ -1253,7 +1351,7 @@
             {
               "rightLabel": "CBA Function",
               "text": "CBA_fnc_shuffle",
-              "description": "Shuffles an array\u2019s contents into random order, returning a new array.",
+              "description": "Shuffles an array\u2019s contents into random order.",
               "type": "function",
               "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/arrays/fnc_shuffle-sqf.html#CBA_fnc_shuffle"
             },
@@ -1330,7 +1428,7 @@
             {
               "rightLabel": "CBA Function",
               "text": "CBA_fnc_taskDefend",
-              "description": "A function for a group to defend a parsed location.Groups will mount nearby static machine guns and bunker in nearby buildings.\u00a0 They may also patrol the radius unless otherwise specified.",
+              "description": "A function for a group to defend a parsed location.Units will mount nearby static machine guns and bunker in nearby buildings.\u00a0 They may also patrol the radius unless otherwise specified.",
               "type": "function",
               "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/ai/fnc_taskDefend-sqf.html#CBA_fnc_taskDefend"
             },
@@ -1484,7 +1582,7 @@
             {
               "rightLabel": "CBA Function",
               "text": "CBA_fnc_waitUntilAndExecute",
-              "description": "Executes a code once in unscheduled environment after a condition is true.",
+              "description": "Executes a code once in unscheduled environment after a condition is true.\u00a0 It\u2019s also possible to add a timeout, in which case a different code is executed.",
               "type": "function",
               "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_waitUntilAndExecute-sqf.html#CBA_fnc_waitUntilAndExecute"
             },
