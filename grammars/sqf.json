@@ -41,7 +41,7 @@
     },
     {
       "name": "keyword.operator.comparison.sqf",
-      "match": "<=|>=|==|<|>|!=|isEqualTo"
+      "match": "<=|>=|==|<|>|!="
     },
     {
       "name": "keyword.operator.logical.sqf",
