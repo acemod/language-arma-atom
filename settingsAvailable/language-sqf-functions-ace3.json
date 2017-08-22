@@ -12,11 +12,39 @@
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/backpacks/functions/fnc_isBackpack.sqf"
             },
             {
+              "text": "ace_cargo_fnc_loadItem",
+              "rightLabel": "ACE3 Function",
+              "type": "function",
+              "description": "Load object into vehicle.\r\nObjects loaded via classname remain virtual until unloaded.",
+              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/cargo/functions/fnc_loadItem.sqf"
+            },
+            {
               "text": "ace_cargo_fnc_makeLoadable",
               "rightLabel": "ACE3 Function",
               "type": "function",
               "description": "Makes any object loadable.  Needs to be called on all machines.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/cargo/functions/fnc_makeLoadable.sqf"
+            },
+            {
+              "text": "ace_cargo_fnc_setSize",
+              "rightLabel": "ACE3 Function",
+              "type": "function",
+              "description": "Set the cargo size of any object. Has global effect.\r\nAdds the load action menu if necessary.\r\nNegative size makes unloadable.",
+              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/cargo/functions/fnc_setSize.sqf"
+            },
+            {
+              "text": "ace_cargo_fnc_setSpace",
+              "rightLabel": "ACE3 Function",
+              "type": "function",
+              "description": "Set the cargo space of any object. Has global effect.\r\nAdds the cargo action menu if necessary.",
+              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/cargo/functions/fnc_setSpace.sqf"
+            },
+            {
+              "text": "ace_cargo_fnc_unloadItem",
+              "rightLabel": "ACE3 Function",
+              "type": "function",
+              "description": "Unload object from vehicle.",
+              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/cargo/functions/fnc_unloadItem.sqf"
             },
             {
               "text": "ace_common_fnc_addMapMarkerCreatedEventHandler",
@@ -411,6 +439,13 @@
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getVehicleCrew.sqf"
             },
             {
+              "text": "ace_common_fnc_getVehicleIcon",
+              "rightLabel": "ACE3 Function",
+              "type": "function",
+              "description": "Function used to get the vehicle icon for provided object (cached for repeat use).",
+              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_getVehicleIcon.sqf"
+            },
+            {
               "text": "ace_common_fnc_getVehicleUAVCrew",
               "rightLabel": "ACE3 Function",
               "type": "function",
@@ -570,6 +605,13 @@
               "type": "function",
               "description": "Check if the unit is in a building. Will return true if the unit is sitting in a bush.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_isInBuilding.sqf"
+            },
+            {
+              "text": "ace_common_fnc_isMedic",
+              "rightLabel": "ACE3 Function",
+              "type": "function",
+              "description": "Check if a unit is a medic.",
+              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/common/functions/fnc_isMedic.sqf"
             },
             {
               "text": "ace_common_fnc_isModLoaded",
@@ -899,6 +941,13 @@
               "type": "function",
               "description": "Adds an explosive as a clacker item to the passed unit if the unit has the required item.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/explosives/functions/fnc_addClacker.sqf"
+            },
+            {
+              "text": "ace_explosives_fnc_addDetonateHandler",
+              "rightLabel": "ACE3 Function",
+              "type": "function",
+              "description": "Add a explosive detonation handler.\r\nShould be called on all machines.\r\nCode needs to return BOOL: true(allowed …",
+              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/explosives/functions/fnc_addDetonateHandler.sqf"
             },
             {
               "text": "ace_explosives_fnc_addToSpeedDial",
@@ -1489,11 +1538,46 @@
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/parachute/functions/fnc_showAltimeter.sqf"
             },
             {
+              "text": "ace_rearm_fnc_addMagazineToSupply",
+              "rightLabel": "ACE3 Function",
+              "type": "function",
+              "description": "Adds magazines to the supply. [Global Effects].",
+              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/rearm/functions/fnc_addMagazineToSupply.sqf"
+            },
+            {
+              "text": "ace_rearm_fnc_addVehicleMagazinesToSupply",
+              "rightLabel": "ACE3 Function",
+              "type": "function",
+              "description": "Adds all magazines of a vehicle to the supply.",
+              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/rearm/functions/fnc_addVehicleMagazinesToSupply.sqf"
+            },
+            {
               "text": "ace_rearm_fnc_disable",
               "rightLabel": "ACE3 Function",
               "type": "function",
-              "description": "Disables rearm for a vehicle.",
+              "description": "Disables being able to rearm a vehicle's turrets. [Global Effects].",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/rearm/functions/fnc_disable.sqf"
+            },
+            {
+              "text": "ace_rearm_fnc_getSupplyCount",
+              "rightLabel": "ACE3 Function",
+              "type": "function",
+              "description": "Get the supply count.",
+              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/rearm/functions/fnc_getSupplyCount.sqf"
+            },
+            {
+              "text": "ace_rearm_fnc_removeMagazineFromSupply",
+              "rightLabel": "ACE3 Function",
+              "type": "function",
+              "description": "Removes a magazine from the supply.",
+              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/rearm/functions/fnc_removeMagazineFromSupply.sqf"
+            },
+            {
+              "text": "ace_rearm_fnc_setSupplyCount",
+              "rightLabel": "ACE3 Function",
+              "type": "function",
+              "description": "Sets the supply count. [Global Effects].",
+              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/rearm/functions/fnc_setSupplyCount.sqf"
             },
             {
               "text": "ace_refuel_fnc_getFuel",
@@ -1608,32 +1692,46 @@
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/slideshow/functions/fnc_createSlideshow.sqf"
             },
             {
-              "text": "ace_spectator_fnc_interrupt",
+              "text": "ace_spectator_fnc_addLocation",
               "rightLabel": "ACE3 Function",
               "type": "function",
-              "description": "Interrupts the spectator interface for external systems.",
-              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/spectator/functions/fnc_interrupt.sqf"
+              "description": "Add a location that can be seen in spectator view. Local effect.",
+              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/spectator/functions/fnc_addLocation.sqf"
+            },
+            {
+              "text": "ace_spectator_fnc_getCameraAttributes",
+              "rightLabel": "ACE3 Function",
+              "type": "function",
+              "description": "Returns the current spectator camera attributes (see setCameraAttributes for details).",
+              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/spectator/functions/fnc_getCameraAttributes.sqf"
+            },
+            {
+              "text": "ace_spectator_fnc_players",
+              "rightLabel": "ACE3 Function",
+              "type": "function",
+              "description": "Return all of the player entities who are currently in ace spectator.",
+              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/spectator/functions/fnc_players.sqf"
+            },
+            {
+              "text": "ace_spectator_fnc_removeLocation",
+              "rightLabel": "ACE3 Function",
+              "type": "function",
+              "description": "Remove a location that can be seen in spectator view. Local effect.",
+              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/spectator/functions/fnc_removeLocation.sqf"
             },
             {
               "text": "ace_spectator_fnc_setCameraAttributes",
               "rightLabel": "ACE3 Function",
               "type": "function",
-              "description": "Sets the spectator camera attributes as desired\r\nAll values are optional and default to whatever the current value is.",
+              "description": "Sets the spectator camera attributes as desired. Local effect.\r\nAll values are optional and default to no change.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/spectator/functions/fnc_setCameraAttributes.sqf"
             },
             {
               "text": "ace_spectator_fnc_setSpectator",
               "rightLabel": "ACE3 Function",
               "type": "function",
-              "description": "Sets local client to the given spectator state (virtually)\r\nTo physically handle a spectator see …",
+              "description": "Enter/exit spectator mode for the local player\r\nClient will be able to communicate in ACRE/TFAR as appropriate\r\nIf \"hide …",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/spectator/functions/fnc_setSpectator.sqf"
-            },
-            {
-              "text": "ace_spectator_fnc_stageSpectator",
-              "rightLabel": "ACE3 Function",
-              "type": "function",
-              "description": "Sets target unit to the given spectator state (physically)\r\nTo virtually handle a spectator see ace_spectator_fnc_setSpectator …",
-              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/spectator/functions/fnc_stageSpectator.sqf"
             },
             {
               "text": "ace_spectator_fnc_updateCameraModes",
@@ -1643,24 +1741,24 @@
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/spectator/functions/fnc_updateCameraModes.sqf"
             },
             {
-              "text": "ace_spectator_fnc_updateSpectatableSides",
+              "text": "ace_spectator_fnc_updateSides",
               "rightLabel": "ACE3 Function",
               "type": "function",
-              "description": "Adds or removes sides from the selection available to spectate by the local player.\r\nNote that the side filter setting is …",
-              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/spectator/functions/fnc_updateSpectatableSides.sqf"
+              "description": "Adds or removes sides from the selection available to spectate. Local effect.\r\nDefault selection is …",
+              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/spectator/functions/fnc_updateSides.sqf"
             },
             {
               "text": "ace_spectator_fnc_updateUnits",
               "rightLabel": "ACE3 Function",
               "type": "function",
-              "description": "Adds units to spectator whitelist/blacklist and refreshes the filter units.",
+              "description": "Adds and removed units from the spectator list. Local effect.",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/spectator/functions/fnc_updateUnits.sqf"
             },
             {
               "text": "ace_spectator_fnc_updateVisionModes",
               "rightLabel": "ACE3 Function",
               "type": "function",
-              "description": "Adds or removes spectator vision modes from the selection available to the local player.\r\nThe default selection is [-2,-1,0,1 …",
+              "description": "Adds or removes spectator vision modes from the selection available to the local player.\r\nPossible vision modes are:\r\n- -2 …",
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/spectator/functions/fnc_updateVisionModes.sqf"
             },
             {

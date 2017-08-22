@@ -15,14 +15,14 @@
               "text": "BIS_fnc_3DENCamera",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "",
+              "description": "Moves Eden's camera depending on one of two modes.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_3DENCamera"
             },
             {
               "text": "BIS_fnc_3DENControlsHint",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "",
+              "description": "Used by Eden to display control hints for the current Eden operation.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_3DENControlsHint"
             },
             {
@@ -267,7 +267,7 @@
               "text": "BIS_fnc_addStackedEventHandler",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Stack an event handler.",
+              "description": "Stacks an event handler.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_addStackedEventHandler"
             },
             {
@@ -3130,7 +3130,7 @@
               "text": "BIS_fnc_initIntelObject",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Init intel object.",
+              "description": "The function sets up an object as intel retrievable by the players by adding a \"Take Intel\" addAction to it.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_initIntelObject"
             },
             {
@@ -4551,7 +4551,7 @@
               "text": "BIS_fnc_randomPosTrigger",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Selects random position withing trigger area.",
+              "description": "Selects random position within trigger, marker, location area or area defined by array.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_randomPosTrigger"
             },
             {
@@ -4684,7 +4684,7 @@
               "text": "BIS_fnc_removeStackedEventHandler",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Remove a stacked event handler.",
+              "description": "Removes a stacked event handler with specified custom id.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_removeStackedEventHandler"
             },
             {
@@ -5118,7 +5118,7 @@
               "text": "BIS_fnc_selectRandomWeighted",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Function to select a random item from an array, taking into account item weights.",
+              "description": "Selects a random item from an array, taking into account item weight.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_selectRandomWeighted"
             },
             {
@@ -5293,7 +5293,7 @@
               "text": "BIS_fnc_setUnitInsignia",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Set a config defined insignia to be displayed on a unit's uniform.",
+              "description": "Sets unit insignia (e.g., shoulder insignia on soldiers).",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_setUnitInsignia"
             },
             {
