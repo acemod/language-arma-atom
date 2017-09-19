@@ -8,7 +8,7 @@ const chalk = require('chalk')
 const progressBar = require('progress-bar')
 
 const URL_BASE = 'http://community.bistudio.com'
-const URL_FNC = `${URL_BASE}/wiki/Category:Arma_3:_Functions`
+const URL_FNC = `${URL_BASE}/wiki/Category:Arma_3:_Functions?${new Date().getTime()}` // Use timestamp as random get request to get uncached page (BI wiki has issues with caching)
 
 const OUTPUT_FILE_PATH = normalize(`${__dirname}/../../settingsAvailable/language-sqf-functions-bis.json`)
 const GRAMMAR_FILE_PATH = normalize(`${__dirname}/../../grammars/sqf.json`)

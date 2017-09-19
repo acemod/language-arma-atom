@@ -404,6 +404,13 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_allSynchronizedObjects"
             },
             {
+              "text": "BIS_fnc_allTurrets",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Returns all vehicle turrets from config with options.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_allTurrets"
+            },
+            {
               "text": "BIS_fnc_ambientAnim",
               "rightLabel": "BIS Function",
               "type": "function",
@@ -922,6 +929,13 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_camFollow"
             },
             {
+              "text": "BIS_fnc_carAlarm",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Play car alarm effect.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_carAlarm"
+            },
+            {
               "text": "BIS_fnc_cargoTurretIndex",
               "rightLabel": "BIS Function",
               "type": "function",
@@ -1179,6 +1193,13 @@
               "type": "function",
               "description": "Instantiating an object of a certain class.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_createObjectOO"
+            },
+            {
+              "text": "BIS_fnc_createRuin",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Create a building ruin and hide the original object.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_createRuin"
             },
             {
               "text": "BIS_fnc_credits",
@@ -1958,6 +1979,13 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_drawAO"
             },
             {
+              "text": "BIS_fnc_drawArrow",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Draws a static arrow (outline or color filled) on map.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_drawArrow"
+            },
+            {
               "text": "BIS_fnc_drawCuratorDeaths",
               "rightLabel": "BIS Function",
               "type": "function",
@@ -2504,6 +2532,20 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_finishCuratorChallenge"
             },
             {
+              "text": "BIS_fnc_fire",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Makes a unit or a vehicle fire given muzzle.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_fire"
+            },
+            {
+              "text": "BIS_fnc_firedBombDemine",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_firedBombDemine"
+            },
+            {
               "text": "BIS_fnc_fireSupport",
               "rightLabel": "BIS Function",
               "type": "function",
@@ -2719,6 +2761,13 @@
               "type": "function",
               "description": "Return all child classes of given class.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_getCfgSubClasses"
+            },
+            {
+              "text": "BIS_fnc_getCloudletParams",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Return particle params of CfgCloudlets class.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_getCloudletParams"
             },
             {
               "text": "BIS_fnc_getFactions",
@@ -3078,13 +3127,6 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_importImageLinks"
             },
             {
-              "text": "BIS_fnc_inAngleSector",
-              "rightLabel": "BIS Function",
-              "type": "function",
-              "description": "Checks if a position lies within an angle sector.",
-              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_inAngleSector"
-            },
-            {
               "text": "BIS_fnc_incapacitatedEffect",
               "rightLabel": "BIS Function",
               "type": "function",
@@ -3127,11 +3169,25 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_initExpo"
             },
             {
+              "text": "BIS_fnc_initInspectable",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Initialize inspectable object.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_initInspectable"
+            },
+            {
               "text": "BIS_fnc_initIntelObject",
               "rightLabel": "BIS Function",
               "type": "function",
               "description": "The function sets up an object as intel retrievable by the players by adding a \"Take Intel\" addAction to it.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_initIntelObject"
+            },
+            {
+              "text": "BIS_fnc_initLeaflet",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Initialize interactive leaflet.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_initLeaflet"
             },
             {
               "text": "BIS_fnc_initListNBoxSorting",
@@ -5213,6 +5269,13 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_setObjectRotation"
             },
             {
+              "text": "BIS_fnc_setObjectShotParents",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_setObjectShotParents"
+            },
+            {
               "text": "BIS_fnc_setObjectTexture",
               "rightLabel": "BIS Function",
               "type": "function",
@@ -5323,6 +5386,13 @@
               "type": "function",
               "description": "",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_sharedObjectives"
+            },
+            {
+              "text": "BIS_fnc_showAANArticle",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Show AAN article.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_showAANArticle"
             },
             {
               "text": "BIS_fnc_showCuratorAttributes",
@@ -5603,6 +5673,13 @@
               "type": "function",
               "description": "",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_skirmishTrigger"
+            },
+            {
+              "text": "BIS_fnc_smoothStep",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Interpolates between 0 and 1 with smoothing at the limits.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_smoothStep"
             },
             {
               "text": "BIS_fnc_sortAlphabetically",
@@ -6329,7 +6406,7 @@
               "text": "BIS_fnc_VRSpawnEffect",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "VR unit spawn effect.",
+              "description": "VR (unit) spawn effect.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_VRSpawnEffect"
             },
             {
@@ -6373,6 +6450,13 @@
               "type": "function",
               "description": "Let group members fire artillery barrage on waypoint position.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_wpArtillery"
+            },
+            {
+              "text": "BIS_fnc_wpDemine",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_wpDemine"
             },
             {
               "text": "BIS_fnc_wpLand",
