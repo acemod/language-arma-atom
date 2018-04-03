@@ -1,6 +1,6 @@
 {
   "name": "language-arma-atom",
-  "version": "2.13.0",
+  "version": "2.12.0",
   "description": "Syntax highlighting, auto-completions and snippets for sqf and other languages used within the Real Virtuality engine.",
   "keywords": [
     "sqf",
