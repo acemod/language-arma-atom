@@ -3113,6 +3113,13 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_highlightControl"
             },
             {
+              "text": "BIS_fnc_holdKey",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Function that executes a user-defined code when a key has been held down for a long enough time.",
+              "descriptionMoreURL": "https://community.bistudio.com/wiki/BIS_fnc_holdKey"
+            },
+            {
               "text": "BIS_fnc_HUDLimits",
               "rightLabel": "BIS Function",
               "type": "function",
