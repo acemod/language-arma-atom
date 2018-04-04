@@ -41,7 +41,7 @@ let scrapeURL = (url) => {
 */
 let parseFunctionsFromMainTable = (html) => {
   let $ = cheerio.load(html)
-  let root = $('#mw-pages table').first()
+  let root = $('#mw-pages').first()
   let ret = []
   let added = new Set()
 
