@@ -6,7 +6,7 @@ import urllib.request
 import html
 
 fnc_base_url = 'http://cbateam.github.io/CBA_A3/docs/index/'
-fnc_page_names = ['Functions', 'Functions2']
+fnc_page_names = ['Functions', 'Functions2', 'Functions3']
 fncPrefix = 'CBA_fnc_'
 macro_base_url = 'http://cbateam.github.io/CBA_A3/docs/files/main/script_macros_common-hpp.html'
 

@@ -2,6 +2,7 @@ __author__ = 'Simon'
 
 import json
 import re
+import time
 import urllib.request
 
 params = {'format': 'json',
@@ -15,9 +16,9 @@ params = {'format': 'json',
 f = urllib.request.urlopen("https://community.bistudio.com/wikidata/api.php?%s" % urllib.parse.urlencode(params))
 content = json.loads(f.read().decode('utf-8'));
 data = []
-while 'query-continue' in content:
+while 'continue' in content:
   data = data + content['query']['categorymembers']
-  params['cmcontinue'] = content['query-continue']['categorymembers']['cmcontinue']
+  params['cmcontinue'] = content['continue']['cmcontinue']
   f = urllib.request.urlopen("https://community.bistudio.com/wikidata/api.php?%s" % urllib.parse.urlencode(params))
   content = json.loads(f.read().decode('utf-8'));
 
@@ -35,8 +36,11 @@ blacklist = [
 "switch do"]
 
 output = [];
-
+index = 0;
 for item in data:
+  index = index + 1
+  if index % 100 == 1:  # we need to pause in regular intervals to prevent DDos Protection from the Server
+    time.sleep(1)
   if item['title'] not in blacklist:
     print (item['title'])
     params['pageid'] = item['pageid']

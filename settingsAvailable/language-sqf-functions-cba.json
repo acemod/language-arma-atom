@@ -77,7 +77,7 @@
             {
               "rightLabel": "CBA Function",
               "text": "CBA_fnc_addKeybind",
-              "description": "Adds or updates the keybind handler for a specified mod action, and associates a function with that keybind being pressed.This file should be included for readable DIK codes#include \u201c\\a3\\editor_f\\Data\\Scripts\\dikCodes.h\u201dAdditional DIK codes usable with this function0xF0: Left mouse button 0xF1: Right mouse button 0xF2: Middle mouse button 0xF3: Mouse #4 0xF4: Mouse #5 0xF5: Mouse #6 0xF6: Mouse #7 0xF7: Mouse #8 0xF8: Mouse wheel up 0xF9: Mouse wheel down",
+              "description": "Adds or updates the keybind handler for a specified mod action, and associates a function with that keybind being pressed.This file should be included for readable DIK codes#include \u201c\\a3\\ui_f\\hpp\\defineDIKCodes.inc\u201dAdditional DIK codes usable with this function0xF0: Left mouse button 0xF1: Right mouse button 0xF2: Middle mouse button 0xF3: Mouse #4 0xF4: Mouse #5 0xF5: Mouse #6 0xF6: Mouse #7 0xF7: Mouse #8 0xF8: Mouse wheel up 0xF9: Mouse wheel down",
               "type": "function",
               "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/keybinding/fnc_addKeybind-sqf.html#CBA_fnc_addKeybind"
             },
@@ -147,9 +147,16 @@
             {
               "rightLabel": "CBA Function",
               "text": "CBA_fnc_addPlayerEventHandler",
-              "description": "Adds a player event handler.Possible events\u201dunit\u201dplayer controlled unit changed\u201dweapon\u201dcurrently selected weapon change\u201dloadout\u201dplayers loadout changed\u201dvehicle\u201dplayers current vehicle changed\u201dturret\u201dposition in vehicle changed\u201dvisionMode\u201dplayer changed to normal/night/thermal view\u201dcameraView\u201dcamera mode changed (\u201cInternal\u201d, \u201cExternal\u201d, \u201cGunner\u201d etc.)\u201dvisibleMap\u201dopened or closed map\u201dgroup\u201dplayer group changes\u201dleader\u201dleader of player changes",
+              "description": "Adds a player event handler.Possible events\u201dunit\u201dplayer controlled unit changed\u201dweapon\u201dcurrently selected weapon change\u201dloadout\u201dplayers loadout changed\u201dvehicle\u201dplayers current vehicle changed\u201dturret\u201dposition in vehicle changed\u201dvisionMode\u201dplayer changed to normal/night/thermal view\u201dcameraView\u201dcamera mode changed (\u201cInternal\u201d, \u201cExternal\u201d, \u201cGunner\u201d etc.)\u201dfeatureCamera\u201dcamera changed (Curator, Arsenal, Spectator etc.)\u201dvisibleMap\u201dopened or closed map\u201dgroup\u201dplayer group changes\u201dleader\u201dleader of player changes",
               "type": "function",
               "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/events/fnc_addPlayerEventHandler-sqf.html#CBA_fnc_addPlayerEventHandler"
+            },
+            {
+              "rightLabel": "CBA Function",
+              "text": "CBA_fnc_addSetting",
+              "description": "Creates a new setting for that session.",
+              "type": "function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/settings/fnc_addSetting-sqf.html#CBA_fnc_addSetting"
             },
             {
               "rightLabel": "CBA Function",
@@ -181,6 +188,13 @@
             },
             {
               "rightLabel": "CBA Function",
+              "text": "CBA_fnc_addWeaponWithoutItems",
+              "description": "Adds weapon to unit without attachments and without taking a magazine.Does not work on vehicles.\u00a0 Attempts to keep magazine ids for unrelated magazines.",
+              "type": "function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_addWeaponWithoutItems-sqf.html#CBA_fnc_addWeaponWithoutItems"
+            },
+            {
+              "rightLabel": "CBA Function",
               "text": "CBA_fnc_allNamespaces",
               "description": "Reports namespaces created with CBA_fnc_createNamespace.",
               "type": "function",
@@ -192,6 +206,13 @@
               "description": "Returns the magazine of the units rangefinder.",
               "type": "function",
               "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_binocularMagazine-sqf.html#CBA_fnc_binocularMagazine"
+            },
+            {
+              "rightLabel": "CBA Function",
+              "text": "CBA_fnc_buildingPositions",
+              "description": "Reports positions of the building including nearby custom building positions.",
+              "type": "function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/ai/fnc_buildingPositions-sqf.html#CBA_fnc_buildingPositions"
             },
             {
               "rightLabel": "CBA Function",
@@ -223,31 +244,24 @@
             },
             {
               "rightLabel": "CBA Function",
-              "text": "CBA_help_fnc_setCreditsLine",
-              "description": "Picks a random CfgPatches entry with an \u201cauthor\u201d entry and displays author, version and URL in the main menu and ingame in the pause menu.",
+              "text": "cba_optics_fnc_setOpticMagnification",
+              "description": "Set magnification of the current optic of the unit.",
               "type": "function",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/help/fnc_setCreditsLine-sqf.html#CBA_help_fnc_setCreditsLine"
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/optics/fnc_setOpticMagnification-sqf.html#cba_optics_fnc_setOpticMagnification"
             },
             {
               "rightLabel": "CBA Function",
-              "text": "CBA_help_fnc_setVersionLine",
-              "description": "Displays all CfgPatches with a \u201cversionDesc\u201d entry in the main menu.Mods are cycled automatically every 4 seconds or can be browsed using LMB and RMB.\u00a0 Double clicking executes the script in \u201cversionAct\u201d.",
+              "text": "cba_optics_fnc_setOpticMagnificationHelper",
+              "description": "Helper function used in config to set the magnification of a zooming optic.",
               "type": "function",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/help/fnc_setVersionLine-sqf.html#CBA_help_fnc_setVersionLine"
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/optics/fnc_setOpticMagnificationHelper-sqf.html#cba_optics_fnc_setOpticMagnificationHelper"
             },
             {
               "rightLabel": "CBA Function",
-              "text": "CBA_removeUnitTrackProjectiles",
-              "description": "Removes projectile tracking from a given unit or vehicle.",
+              "text": "cba_optics_fnc_setOpticMagnificationHelperZeroing",
+              "description": "Helper function used in config to remember the zeroing of a zooming optic.",
               "type": "function",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/diagnostic/fnc_removeUnitTrackProjectiles-sqf.html#CBA_removeUnitTrackProjectiles"
-            },
-            {
-              "rightLabel": "CBA Function",
-              "text": "CBA_settings_fnc_init",
-              "description": "Creates a new setting for that session.",
-              "type": "function",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/settings/fnc_init-sqf.html#CBA_settings_fnc_init"
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/optics/fnc_setOpticMagnificationHelperZeroing-sqf.html#cba_optics_fnc_setOpticMagnificationHelperZeroing"
             },
             {
               "rightLabel": "CBA Function",
@@ -356,6 +370,13 @@
             },
             {
               "rightLabel": "CBA Function",
+              "text": "CBA_fnc_compatibleMagazines",
+              "description": "Retrieves a list of magazines that are compatible with a weapon.",
+              "type": "function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_compatibleMagazines-sqf.html#CBA_fnc_compatibleMagazines"
+            },
+            {
+              "rightLabel": "CBA Function",
               "text": "CBA_fnc_compileEventHandlers",
               "description": "Compiles all Extended EventHandlers in given config.",
               "type": "function",
@@ -430,6 +451,13 @@
               "description": "General Purpose Debug Message WriterHandles very long messages without losing text.",
               "type": "function",
               "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/diagnostic/fnc_debug-sqf.html#CBA_fnc_debug"
+            },
+            {
+              "rightLabel": "CBA Function",
+              "text": "CBA_fnc_decodeURL",
+              "description": "Reverse URL encoded text to readable text.",
+              "type": "function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/strings/fnc_decodeURL-sqf.html#CBA_fnc_decodeURL"
             },
             {
               "rightLabel": "CBA Function",
@@ -566,6 +594,13 @@
             },
             {
               "rightLabel": "CBA Function",
+              "text": "CBA_fnc_firedDisposable",
+              "description": "Handles firing a disposable weapon.",
+              "type": "function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/disposable/fnc_firedDisposable-sqf.html#CBA_fnc_firedDisposable"
+            },
+            {
+              "rightLabel": "CBA Function",
               "text": "CBA_fnc_floatToString",
               "description": "Returns a higher precision string representation of a IEEE 754 floating point number than the str function.This function is as barebones as possible.\u00a0 Inline macro version of this function can be used with FLOAT_TO_STRING(num).Limitations",
               "type": "function",
@@ -584,6 +619,13 @@
               "description": "Formats a number to a minimum integer width and to a specific number of decimal places.The formatting includes padding with 0s and correct rounding.\u00a0 Numbers are always displayed fully, never being condensed using an exponent (e.g. the number 1.234e9 would be given as \u201c1234000000\u201d).Additionally, if required, it will separate the integer part of the number with the appropriate thousands seperators as, for example, \u201c21,002\u201d or \u201c1,000,000\u201d.LimitationsAlthough the function works up to a point and will display the passed number correctly, due to the extremely limited accuracy of floating point values used within ArmA (presumably just single-precision / 32 bit), the output might not be as EXPECTED after about eight significant figures.",
               "type": "function",
               "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/strings/fnc_formatNumber-sqf.html#CBA_fnc_formatNumber"
+            },
+            {
+              "rightLabel": "CBA Function",
+              "text": "CBA_fnc_getActiveFeatureCamera",
+              "description": "Returns active feature camera.Checks for the following feature camerasCuratorArsenal camera (BIS_fnc_arsenal)Nexus Spectator (BIS_fnc_EGSpectator)Establishing shot (BIS_fnc_establishingShot)Splendid camera (BIS_fnc_camera)Animation viewer (BIS_fnc_animViewer)Classic camera (BIS_fnc_cameraOld)And cameras registered via CBA_fnc_registerFeatureCamera.",
+              "type": "function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_getActiveFeatureCamera-sqf.html#CBA_fnc_getActiveFeatureCamera"
             },
             {
               "rightLabel": "CBA Function",
@@ -632,7 +674,7 @@
               "text": "CBA_fnc_getAspectRatio",
               "description": "Used to determine the Aspect ratio of the screen.",
               "type": "function",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_getAspectRatio-sqf.html#CBA_fnc_getAspectRatio"
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/ui/fnc_getAspectRatio-sqf.html#CBA_fnc_getAspectRatio"
             },
             {
               "rightLabel": "CBA Function",
@@ -658,9 +700,9 @@
             {
               "rightLabel": "CBA Function",
               "text": "CBA_fnc_getFov",
-              "description": "Get current camera\u2019s vertical field of view in radians and zoom.Zoom is relative to specified config FOV, defaults to 0.7 (vehicle driver initFov).",
+              "description": "Get current camera\u2019s vertical field of view in radians and zoom.Zoom is relative to specified config FOV, defaults to 0.75 (vehicle driver initFov).",
               "type": "function",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_getFov-sqf.html#CBA_fnc_getFov"
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/ui/fnc_getFov-sqf.html#CBA_fnc_getFov"
             },
             {
               "rightLabel": "CBA Function",
@@ -793,7 +835,7 @@
               "text": "CBA_fnc_getUISize",
               "description": "Used to determine the UI size of the screen.",
               "type": "function",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_getUISize-sqf.html#CBA_fnc_getUISize"
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/ui/fnc_getUISize-sqf.html#CBA_fnc_getUISize"
             },
             {
               "rightLabel": "CBA Function",
@@ -812,7 +854,7 @@
             {
               "rightLabel": "CBA Function",
               "text": "CBA_fnc_getVolume",
-              "description": "Return the volume of an object based on the object\u2019s model\u2019s bounding box.",
+              "description": "Return the volume of the bounding box of an object\u2019s model.\u00a0 The bounding box is retrieved using boundingBoxReal instead of boundingBox with visual clipping type for more precise measurements.",
               "type": "function",
               "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_getVolume-sqf.html#CBA_fnc_getVolume"
             },
@@ -861,7 +903,7 @@
             {
               "rightLabel": "CBA Function",
               "text": "CBA_fnc_hashCreate",
-              "description": "Check if a Hash has a value defined for a key.",
+              "description": "Creates a new Hash",
               "type": "function",
               "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/hashes/fnc_hashCreate-sqf.html#CBA_fnc_hashCreate"
             },
@@ -1008,7 +1050,7 @@
             {
               "rightLabel": "CBA Function",
               "text": "CBA_fnc_isUnitGetOutAnim",
-              "description": "Checks whether a unit is turned out in a vehicle or not.",
+              "description": "Checks whether a unit is turned out in a vehicle or not.DEPRECATED.\u00a0 Use isTurnedOut instead.",
               "type": "function",
               "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_isUnitGetOutAnim-sqf.html#CBA_fnc_isUnitGetOutAnim"
             },
@@ -1022,7 +1064,7 @@
             {
               "rightLabel": "CBA Function",
               "text": "CBA_fnc_leftTrim",
-              "description": "Trims white-space (space, tab, newline) from the left end of a string.See CBA_fnc_rightTrim and CBA_fnc_trim.",
+              "description": "Trims specified characters (all whitespace by default) from the left end of a string.See CBA_fnc_rightTrim and CBA_fnc_trim.",
               "type": "function",
               "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/strings/fnc_leftTrim-sqf.html#CBA_fnc_leftTrim"
             },
@@ -1060,6 +1102,20 @@
               "description": "Find a position relative to a known position on the map.Passing strings in for the Northing and Easting is the preferred way.",
               "type": "function",
               "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_mapRelPos-sqf.html#CBA_fnc_mapRelPos"
+            },
+            {
+              "rightLabel": "CBA Function",
+              "text": "CBA_fnc_matrixProduct3D",
+              "description": "Returns the resulting matrix from the matrix-matrix product.Only accepts 3x3 matrices.DEPRECATED.\u00a0 Use matrixMultiply instead.",
+              "type": "function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/vectors/fnc_matrixProduct3D-sqf.html#CBA_fnc_matrixProduct3D"
+            },
+            {
+              "rightLabel": "CBA Function",
+              "text": "CBA_fnc_matrixTranspose",
+              "description": "Returns the transposed matrix.Accepts any mxn matrix.DEPRECATED.\u00a0 Use matrixTranspose instead.",
+              "type": "function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/vectors/fnc_matrixTranspose-sqf.html#CBA_fnc_matrixTranspose"
             },
             {
               "rightLabel": "CBA Function",
@@ -1105,6 +1161,13 @@
             },
             {
               "rightLabel": "CBA Function",
+              "text": "CBA_fnc_notify",
+              "description": "Display a text message.\u00a0 Multiple incoming messages are queued.",
+              "type": "function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/ui/fnc_notify-sqf.html#CBA_fnc_notify"
+            },
+            {
+              "rightLabel": "CBA Function",
               "text": "CBA_fnc_objectRandom",
               "description": "Creates a \u201crandom\u201d number 0-9 based on an object\u2019s velocity",
               "type": "function",
@@ -1147,10 +1210,24 @@
             },
             {
               "rightLabel": "CBA Function",
+              "text": "CBA_fnc_progressBar",
+              "description": "Opens a progress bar.\u00a0 Closes the currently active progress bar.",
+              "type": "function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/ui/fnc_progressBar-sqf.html#CBA_fnc_progressBar"
+            },
+            {
+              "rightLabel": "CBA Function",
               "text": "CBA_fnc_publicVariable",
               "description": "Broadcast a variables value to all machines.\u00a0 Used to reduce network traffic.Does only broadcast the new value if it doesn\u2019t exist in missionNamespace or if the new value is different to the one in missionNamespace.\u00a0 Nil as value gets always broadcasted.",
               "type": "function",
               "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/network/fnc_publicVariable-sqf.html#CBA_fnc_publicVariable"
+            },
+            {
+              "rightLabel": "CBA Function",
+              "text": "CBA_fnc_randomVector3D",
+              "description": "Returns a 3 dimensional unit vector that is pointing in a random direction.",
+              "type": "function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/vectors/fnc_randomVector3D-sqf.html#CBA_fnc_randomVector3D"
             },
             {
               "rightLabel": "CBA Function",
@@ -1186,6 +1263,13 @@
               "description": "Register a custom chat command on the local machine.",
               "type": "function",
               "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/events/fnc_registerChatCommand-sqf.html#CBA_fnc_registerChatCommand"
+            },
+            {
+              "rightLabel": "CBA Function",
+              "text": "CBA_fnc_registerFeatureCamera",
+              "description": "Registers a feature camera for use with CBA_fnc_getActiveFeatureCamera.",
+              "type": "function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_registerFeatureCamera-sqf.html#CBA_fnc_registerFeatureCamera"
             },
             {
               "rightLabel": "CBA Function",
@@ -1322,6 +1406,13 @@
             },
             {
               "rightLabel": "CBA Function",
+              "text": "CBA_fnc_removeUnitTrackProjectiles",
+              "description": "Removes projectile tracking from a given unit or vehicle.",
+              "type": "function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/diagnostic/fnc_removeUnitTrackProjectiles-sqf.html#CBA_fnc_removeUnitTrackProjectiles"
+            },
+            {
+              "rightLabel": "CBA Function",
               "text": "CBA_fnc_removeWeapon",
               "description": "Remove a weapon.Function which verifies existence of _item and _unit, returns false in case of trouble, or when able to remove _item from _unit true in case of success.",
               "type": "function",
@@ -1351,9 +1442,16 @@
             {
               "rightLabel": "CBA Function",
               "text": "CBA_fnc_rightTrim",
-              "description": "Trims white-space (space, tab, newline) from the right end of a string.See CBA_fnc_leftTrim and CBA_fnc_trim.",
+              "description": "Trims specified characters (all whitespace by default) from the right end of a string.See CBA_fnc_leftTrim and CBA_fnc_trim.",
               "type": "function",
               "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/strings/fnc_rightTrim-sqf.html#CBA_fnc_rightTrim"
+            },
+            {
+              "rightLabel": "CBA Function",
+              "text": "CBA_fnc_sanitizeHTML",
+              "description": "Replaces all < > and & with HTML character codes.",
+              "type": "function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/strings/fnc_sanitizeHTML-sqf.html#CBA_fnc_sanitizeHTML"
             },
             {
               "rightLabel": "CBA Function",
@@ -1382,6 +1480,13 @@
               "description": "Select array elements for which the block returns true",
               "type": "function",
               "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/arrays/fnc_select-sqf.html#CBA_fnc_select"
+            },
+            {
+              "rightLabel": "CBA Function",
+              "text": "CBA_fnc_selectRandomArray",
+              "description": "Select a specified amount of elements from an array without picking the same element multiple times.",
+              "type": "function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/arrays/fnc_selectRandomArray-sqf.html#CBA_fnc_selectRandomArray"
             },
             {
               "rightLabel": "CBA Function",
@@ -1547,7 +1652,7 @@
             {
               "rightLabel": "CBA Function",
               "text": "CBA_fnc_trim",
-              "description": "Trims white-space (space, tab, newline) from the both ends of a string.See CBA_fnc_leftTrim and CBA_fnc_rightTrim.",
+              "description": "Trims specified characters (all whitespace by default) from the both ends of a string.See CBA_fnc_leftTrim and CBA_fnc_rightTrim.",
               "type": "function",
               "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/strings/fnc_trim-sqf.html#CBA_fnc_trim"
             },
@@ -1571,6 +1676,13 @@
               "description": "Get the turret path belonging to a weapon of given vehicle.Reverse version of the weaponsTurret scripting command.",
               "type": "function",
               "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_turretPathWeapon-sqf.html#CBA_fnc_turretPathWeapon"
+            },
+            {
+              "rightLabel": "CBA Function",
+              "text": "CBA_fnc_uniqueUnitItems",
+              "description": "Retrievs a unique list of items in the units inventory.",
+              "type": "function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_uniqueUnitItems-sqf.html#CBA_fnc_uniqueUnitItems"
             },
             {
               "rightLabel": "CBA Function",
@@ -1637,10 +1749,24 @@
             },
             {
               "rightLabel": "CBA Function",
+              "text": "CBA_fnc_vectMap3D",
+              "description": "Returns the resulting vector of the matrix-vector product.Only accepts a 3x3 matrix and 3D vector.",
+              "type": "function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/vectors/fnc_vectMap3D-sqf.html#CBA_fnc_vectMap3D"
+            },
+            {
+              "rightLabel": "CBA Function",
               "text": "CBA_fnc_vectRotate2D",
               "description": "Rotates a 2D vector around a given center.For rotating of a vector from its origin, use BIS_fnc_rotateVector2D",
               "type": "function",
               "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/vectors/fnc_vectRotate2D-sqf.html#CBA_fnc_vectRotate2D"
+            },
+            {
+              "rightLabel": "CBA Function",
+              "text": "CBA_fnc_vectRotate3D",
+              "description": "Rotates the first vector around the second, clockwise by theta degrees.",
+              "type": "function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/vectors/fnc_vectRotate3D-sqf.html#CBA_fnc_vectRotate3D"
             },
             {
               "rightLabel": "CBA Function",
@@ -1673,16 +1799,9 @@
             {
               "rightLabel": "CBA Function",
               "text": "CBA_fnc_waitUntilAndExecute",
-              "description": "Executes a code once in unscheduled environment after a condition is true.\u00a0 It\u2019s also possible to add a timeout, in which case a different code is executed.",
+              "description": "Executes a code once in unscheduled environment after a condition is true.\u00a0 It\u2019s also possible to add a timeout >= 0, in which case a different code is executed.\u00a0 Then it will be waited until _timeout time has elapsed or _condition evaluates to true.",
               "type": "function",
               "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_waitUntilAndExecute-sqf.html#CBA_fnc_waitUntilAndExecute"
-            },
-            {
-              "rightLabel": "CBA Function",
-              "text": "CBA_fnc_waypointGarrison",
-              "description": "Scripted waypoint that makes group garrision nearby buildings and static weapons.",
-              "type": "function",
-              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/ai/fnc_waypointGarrison-sqf.html#CBA_fnc_waypointGarrison"
             },
             {
               "rightLabel": "CBA Function",
@@ -1690,6 +1809,13 @@
               "description": "Reports class name of base weapon without attachments and all attachments belonging to a pre equipped weapon.Base weapon and attachments are reported in lower case capitalization.\u00a0 Fixed version of BIS_fnc_weaponComponents.",
               "type": "function",
               "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/common/fnc_weaponComponents-sqf.html#CBA_fnc_weaponComponents"
+            },
+            {
+              "rightLabel": "CBA Function",
+              "text": "CBA_fnc_weaponEvents",
+              "description": "Execute weapon events framework.class MyWeapon: MyWeapon_base { class EventHandlers { fired = \u201c_this call CBA_fnc_weaponEvents\u201d; }; };",
+              "type": "function",
+              "descriptionMoreURL": "http://cbateam.github.io/CBA_A3/docs/index/../files/events/fnc_weaponEvents-sqf.html#CBA_fnc_weaponEvents"
             }
           ]
         }
