@@ -1,12 +1,14 @@
 'use strict'
 const http = require('http')
-const write = require('fs').writeFile
+var os = require("os")
+const fs = require('fs')
+const write = fs.writeFile
+const appendFileSync = fs.appendFileSync
 const normalize = require('path').normalize
 const request = require('request')
 const cheerio = require('cheerio')
 const chalk = require('chalk')
 const progressBar = require('progress-bar')
-
 const URL_BASE = 'http://community.bistudio.com'
 const URL_FNC = `${URL_BASE}/wiki/Category:Arma_3:_Functions?${new Date().getTime()}` // Use timestamp as random get request to get uncached page (BI wiki has issues with caching)
 
@@ -15,13 +17,12 @@ const GRAMMAR_FILE_PATH = normalize(`${__dirname}/../../grammars/sqf.json`)
 const GRAMMAR_FILE = require(GRAMMAR_FILE_PATH)
 
 const MAX_DESC_LENGTH = 128
-const MAX_REQUEST_RETRIES = 10
+const MAX_REQUEST_RETRIES = 100000
 const ELLIPSIS = String.fromCharCode(8230)
 
 const hardcodedDescriptions = require('./hardcoded_descriptions.json')
-
 // Custom agent for max concurrent requests
-let agent = new http.Agent({maxSockets: 6})
+let agent = new http.Agent({ maxSockets: 1 })
 
 let scrapeURL = (url) => {
   return new Promise((resolve, reject) => {
@@ -34,6 +35,14 @@ let scrapeURL = (url) => {
       resolve(html)
     })
   })
+}
+
+function arrayRemove(arr, value) {
+
+  return arr.filter(function (ele) {
+    return ele != value;
+  });
+
 }
 
 /*
@@ -75,21 +84,31 @@ let parseFunctionsFromMainTable = (html) => {
 let scrapeFunctions = (fncs) => {
   let completed = 0
   let expected = fncs.length
-  let bar = progressBar.create(process.stdout, 20)
+  // let bar = progressBar.create(process.stdout, 20)
   console.info(chalk.green('Retrieving function descriptions\n'))
 
+  let fncDebug = fncs;
+  fs.writeFileSync("./missingFunctions.log", JSON.stringify(fncDebug, null, 2));
   return fncs.map(fnc => {
     return new Promise((resolve, reject) => {
       if (hardcodedDescriptions.hasOwnProperty(fnc.text)) {
+        arrayRemove(fncDebug, fnc);
+        fs.unlinkSync("./missingFunctions.log")
+        fs.writeFileSync("./missingFunctions.log", JSON.stringify(fncDebug, null, 2));
         fnc.description = hardcodedDescriptions[fnc.text]
         completed++
         return resolve()
       }
 
       getFunctionHtml(fnc.descriptionMoreURL)
-      .then(html => {
-        fnc.description = parseFunctionDescription(html)
-        bar.update(++completed / expected)
+        .then(html => {
+        arrayRemove(fncDebug, fnc);
+        fs.unlinkSync("./missingFunctions.log")
+        fs.writeFileSync("./missingFunctions.log", JSON.stringify(fncDebug));
+          fnc.description = parseFunctionDescription(html)
+          ++completed;
+          // bar.update(completed / expected)
+        console.log(" Completed: " + completed  + " Expected: " + expected)
         resolve()
       })
       .catch(e => {
@@ -105,17 +124,16 @@ let scrapeFunctions = (fncs) => {
 let getFunctionHtml = (url) => {
   return new Promise((resolve, reject) => {
     let tryRequest = (amountAttempts) => {
-      scrapeURL(url)
-      .then(html => resolve(html))
-      .catch(e => {
-        if (++amountAttempts >= MAX_REQUEST_RETRIES) {
-          return reject(e)
-        }
-        // increase delay between retries each time, up to 10 sec
-        setTimeout(() => {
-          tryRequest(amountAttempts)
-        }, 1000 * amountAttempts)
-      })
+        appendFileSync("./out.log", url + " try: " + amountAttempts + os.EOL);
+
+        scrapeURL(url)
+        .then(html => {
+            appendFileSync("./out.log", url + " Resolved after trys: " + amountAttempts + os.EOL);
+            resolve(html)
+        })
+        .catch(e => {
+          tryRequest(++amountAttempts)
+        })
     }
     tryRequest(0)
   })

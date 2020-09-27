@@ -33,6 +33,13 @@
               "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/arsenal/functions/fnc_addListBoxItem.sqf"
             },
             {
+              "text": "ace_arsenal_fnc_addSort",
+              "rightLabel": "ACE3 Function",
+              "type": "function",
+              "description": "Add a custom sorting method.",
+              "descriptionMoreURL": "https://github.com/acemod/ACE3/tree/release/addons/arsenal/functions/fnc_addSort.sqf"
+            },
+            {
               "text": "ace_arsenal_fnc_addStat",
               "rightLabel": "ACE3 Function",
               "type": "function",

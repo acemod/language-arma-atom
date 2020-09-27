@@ -5,6 +5,15 @@ import re
 import time
 import urllib.request
 
+def fetch(url):
+  print("Try to get: " + url)
+  try:
+    return urllib.request.urlopen(url)
+  except:
+    print("Failed to get: " + url)
+    time.sleep(5)
+    return fetch(url)
+
 params = {'format': 'json',
           'action': 'query',
           'list': 'categorymembers',
@@ -13,13 +22,15 @@ params = {'format': 'json',
           'cmlimit':500,
           'cmcontinue':0}
 
-f = urllib.request.urlopen("https://community.bistudio.com/wikidata/api.php?%s" % urllib.parse.urlencode(params))
-content = json.loads(f.read().decode('utf-8'));
+f = fetch("https://community.bistudio.com/wikidata/api.php?%s" %
+            urllib.parse.urlencode(params))
+content = json.loads(f.read().decode('utf-8'))
 data = []
 while 'continue' in content:
   data = data + content['query']['categorymembers']
   params['cmcontinue'] = content['continue']['cmcontinue']
-  f = urllib.request.urlopen("https://community.bistudio.com/wikidata/api.php?%s" % urllib.parse.urlencode(params))
+  f = fetch("https://community.bistudio.com/wikidata/api.php?%s" %
+              urllib.parse.urlencode(params))
   content = json.loads(f.read().decode('utf-8'));
 
 data = data + content['query']['categorymembers']
@@ -39,15 +50,13 @@ output = [];
 index = 0;
 for item in data:
   index = index + 1
-  if index % 100 == 1:  # we need to pause in regular intervals to prevent DDos Protection from the Server
-    time.sleep(1)
   if item['title'] not in blacklist:
-    print (item['title'])
     params['pageid'] = item['pageid']
-    f = urllib.request.urlopen("https://community.bistudio.com/wikidata/api.php?%s" % urllib.parse.urlencode(params))
+    f = fetch("https://community.bistudio.com/wikidata/api.php?%s" %
+                urllib.parse.urlencode(params))
     content = json.loads(str(f.read().decode()))['parse']
     text = str(content['text']['*'])
-    rawText = text;
+    rawText = text
 
     description = ''
     description = re.search(r"<dt>Description:</dt>[\s]+<dd>(.+?)</dd>",text,re.DOTALL|re.MULTILINE).group(1);

@@ -15,7 +15,7 @@
               "text": "BIS_fnc_3DENAttributeDoorStates",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "attributeLoad = \"['attributeLoad',get3DENSelected 'object' select 0,_this,_value] call bis_fnc_3DENAttributeDoorStates …",
+              "description": "Internal function used for the Eden Editor Edit Terrain Object module.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_3DENAttributeDoorStates"
             },
             {
@@ -197,49 +197,49 @@
               "text": "BIS_fnc_3den_init",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "3DEN initialization.",
+              "description": "Used internally by the Arma 3 Key Frame Animation system.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_3den_init"
             },
             {
               "text": "BIS_fnc_3den_onKeyDown",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "A keyboard key is pressed in 3DEN.",
+              "description": "Used internally by the Arma 3 Key Frame Animation system.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_3den_onKeyDown"
             },
             {
               "text": "BIS_fnc_3den_onKeyUp",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "A keyboard key is released in 3DEN.",
+              "description": "Used internally by the Arma 3 Key Frame Animation system.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_3den_onKeyUp"
             },
             {
               "text": "BIS_fnc_3den_onMissionLoad",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "3DEN mission loaded.",
+              "description": "Used internally by the Arma 3 Key Frame Animation system.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_3den_onMissionLoad"
             },
             {
               "text": "BIS_fnc_3den_onMissionNew",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "3DEN new mission is created.",
+              "description": "Used internally by the Arma 3 Key Frame Animation system.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_3den_onMissionNew"
             },
             {
               "text": "BIS_fnc_3den_onMissionPreviewEnd",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "3DEN mission preview ends.",
+              "description": "Used internally by the Arma 3 Key Frame Animation system.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_3den_onMissionPreviewEnd"
             },
             {
               "text": "BIS_fnc_3den_onSelectionChange",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "3DEN selected entities changes.",
+              "description": "Used internally by the Arma 3 Key Frame Animation system.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_3den_onSelectionChange"
             },
             {
@@ -428,7 +428,7 @@
               "text": "BIS_fnc_addToPairs",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "",
+              "description": "Adds given value to pair array, stored under unique key.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_addToPairs"
             },
             {
@@ -694,7 +694,7 @@
               "text": "BIS_fnc_ambientPlanes",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "",
+              "description": "Creates ambient airplanes fly-by near airports around the player.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_ambientPlanes"
             },
             {
@@ -1289,7 +1289,7 @@
               "text": "BIS_fnc_calculateDateTime",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Calculate Date Author: Zozo.",
+              "description": "Returns the end datetime if an offset is passed, or the offset between start and end dates.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_calculateDateTime"
             },
             {
@@ -1534,7 +1534,7 @@
               "text": "BIN_fnc_cargoPlatform_01_adjust",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "bin_fnc_cargoPlatform_01_adjust Adjust Military Cargo Platform legs length This content is exclusive to the Arma 3 Contact …",
+              "description": "Adjust Military Cargo Platform legs length in Eden Editor.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIN_fnc_cargoPlatform_01_adjust"
             },
             {
@@ -1555,7 +1555,7 @@
               "text": "BIS_fnc_cargoTurretIndex",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "",
+              "description": "Return cargo index of a person turret and the other way around.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_cargoTurretIndex"
             },
             {
@@ -1681,7 +1681,7 @@
               "text": "BIN_fnc_CBRNHoseInit",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "bin_fnc_CBRNHoseInit.",
+              "description": "Initializes CBRN Hose for given unit.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIN_fnc_CBRNHoseInit"
             },
             {
@@ -1730,7 +1730,7 @@
               "text": "BIS_fnc_clampVector",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Clamps vector between min / max.",
+              "description": "Clamps vector values between provided min/max boundaries.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_clampVector"
             },
             {
@@ -1786,7 +1786,7 @@
               "text": "BIN_fnc_colorHSLtoRGB",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "",
+              "description": "Converts HSL colour format to RGB.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIN_fnc_colorHSLtoRGB"
             },
             {
@@ -1821,7 +1821,7 @@
               "text": "BIS_fnc_commsMenuCreate",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Creates the global communications menu, if it's not already created.",
+              "description": "Creates the global communications menu, if it is not already created.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_commsMenuCreate"
             },
             {
@@ -1856,7 +1856,7 @@
               "text": "BIS_fnc_compatibleMagazines",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "bis_fnc_compatibleMagazines Get all compatibile magazines for selected weapons.",
+              "description": "Get all compatible magazines for selected weapons.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_compatibleMagazines"
             },
             {
@@ -2073,7 +2073,7 @@
               "text": "BIN_fnc_crearAllData",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "",
+              "description": "This function contains no code! This function is part of the Arma 3 Contact expansion only.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIN_fnc_crearAllData"
             },
             {
@@ -2129,7 +2129,7 @@
               "text": "BIS_fnc_createTooltip",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Show group tooltip.",
+              "description": "Shows group tooltip.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_createTooltip"
             },
             {
@@ -2213,7 +2213,7 @@
               "text": "BIS_fnc_ctrlTextHeight",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Resize control according to it's text.",
+              "description": "Resize control according to it is text.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_ctrlTextHeight"
             },
             {
@@ -2591,7 +2591,7 @@
               "text": "BIS_fnc_debugProfile",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Function to purge user profile from unwanted data.",
+              "description": "Purges user profile from unwanted BIS_fnc_diagAAR data.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_debugProfile"
             },
             {
@@ -2619,7 +2619,7 @@
               "text": "BIS_fnc_decodeFlags2",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Decodes a single scalar into array of unique binary flags (zeroes or onces).",
+              "description": "Decodes a single scalar into array of unique binary flags (zeroes or ones).",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_decodeFlags2"
             },
             {
@@ -2654,7 +2654,7 @@
               "text": "BIN_fnc_deconShowerAnimStop",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "bin_fnc_deconShowerAnimStop Delete all sound sources attachted to decon shower in case it's destroyed or deleted.",
+              "description": "bin_fnc_deconShowerAnimStop Delete all sound sources attachted to decon shower in case it is destroyed or deleted.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIN_fnc_deconShowerAnimStop"
             },
             {
@@ -2668,7 +2668,7 @@
               "text": "BIN_fnc_deconShowerDelete",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "bin_fnc_deconShowerDelete Delete all sound sources attachted to decon shower in case it's destroyed or deleted.",
+              "description": "bin_fnc_deconShowerDelete Delete all sound sources attachted to decon shower in case it is destroyed or deleted.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIN_fnc_deconShowerDelete"
             },
             {
@@ -2773,7 +2773,7 @@
               "text": "BIS_fnc_deltaTime",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Calculates and returns delta time.",
+              "description": "Calculates and returns the time's delta between previous and current call to this function.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_deltaTime"
             },
             {
@@ -3274,18 +3274,18 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIN_fnc_dockModule"
             },
             {
-              "text": "BIS_fnc_Door",
+              "text": "BIS_fnc_door",
               "rightLabel": "BIS Function",
               "type": "function",
               "description": "Changes animation phase of given door.",
-              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_Door"
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_door"
             },
             {
-              "text": "BIS_fnc_DoorClose",
+              "text": "BIS_fnc_doorClose",
               "rightLabel": "BIS Function",
               "type": "function",
               "description": "Close a door with an animated doorhandle.",
-              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_DoorClose"
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_doorClose"
             },
             {
               "text": "BIS_fnc_DoorNoHandleClose",
@@ -3295,18 +3295,18 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_DoorNoHandleClose"
             },
             {
-              "text": "BIS_fnc_DoorNoHandleOpen",
+              "text": "BIS_fnc_doorNoHandleOpen",
               "rightLabel": "BIS Function",
               "type": "function",
               "description": "",
-              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_DoorNoHandleOpen"
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_doorNoHandleOpen"
             },
             {
-              "text": "BIS_fnc_DoorOpen",
+              "text": "BIS_fnc_doorOpen",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "",
-              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_DoorOpen"
+              "description": "Open a door with an animated doorhandle.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_doorOpen"
             },
             {
               "text": "BIS_fnc_dotProduct",
@@ -3335,6 +3335,13 @@
               "type": "function",
               "description": "Draws a static arrow (outline or color filled) on map.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_drawArrow"
+            },
+            {
+              "text": "BIS_fnc_drawBoundingBox",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Draws bounding box around given objects.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_drawBoundingBox"
             },
             {
               "text": "BIS_fnc_drawCuratorDeaths",
@@ -3452,7 +3459,7 @@
               "text": "BIS_fnc_easeIn",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "",
+              "description": "Wraps BIS_fnc_lerp.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_easeIn"
             },
             {
@@ -3697,7 +3704,7 @@
               "text": "BIN_fnc_enableSaving",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "",
+              "description": "Sets a variable used in Arma 3 Contact which handels saving.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIN_fnc_enableSaving"
             },
             {
@@ -3802,8 +3809,22 @@
               "text": "BIS_fnc_errorParamsType",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Displays params type error message explaining the problem.",
+              "description": "Displays a parameter type error message (using BIS_fnc_error) explaining the problem.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_errorParamsType"
+            },
+            {
+              "text": "BIS_fnc_escortAI",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_escortAI"
+            },
+            {
+              "text": "BIS_fnc_escortAIHoldAction",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_escortAIHoldAction"
             },
             {
               "text": "BIS_fnc_establishingShot",
@@ -3928,7 +3949,7 @@
               "text": "BIS_fnc_exportCfgHints",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "",
+              "description": "Exports CfgHints to wiki format (see Category:Arma 3: Field Manual).",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_exportCfgHints"
             },
             {
@@ -3963,7 +3984,7 @@
               "text": "BIS_fnc_exportCfgWeapons",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Export list of weapons for Community Wiki.",
+              "description": "Export list of weapons for Community Wiki Arma 3 Assets Category.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_exportCfgWeapons"
             },
             {
@@ -4005,7 +4026,7 @@
               "text": "BIS_fnc_exportGUIBaseClasses",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Export GUI macros and base classes.",
+              "description": "Export GUI macros and base classes.⚠The exported the Eden Editor base classes have several inheritance issues.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_exportGUIBaseClasses"
             },
             {
@@ -4446,7 +4467,7 @@
               "text": "BIS_fnc_findInPairs",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Searches the associative array for the 1st occurance of the key string and returns it's index.",
+              "description": "Searches the associative array for the first occurance of the key string and returns its index.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_findInPairs"
             },
             {
@@ -4656,7 +4677,7 @@
               "text": "BIS_fnc_GCinit",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "",
+              "description": "Initializes Garbage Collection.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_GCinit"
             },
             {
@@ -4887,7 +4908,7 @@
               "text": "BIS_fnc_getCfgDataBool",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Gets a number defined in config]] and retype it into a boolean.",
+              "description": "Gets a number defined in config and retype it into a boolean.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_getCfgDataBool"
             },
             {
@@ -4908,7 +4929,7 @@
               "text": "BIS_fnc_getCfgIsClass",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Return true if it's a class.",
+              "description": "Return true if it is a class.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_getCfgIsClass"
             },
             {
@@ -5318,11 +5339,11 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIN_fnc_getTXScanWorldBounds"
             },
             {
-              "text": "BIS_fnc_getUnitByUid",
+              "text": "BIS_fnc_getUnitByUID",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Returns object belonging to given player UID.",
-              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_getUnitByUid"
+              "description": "Returns player-controlled unit (if any) according to the provided player UID.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_getUnitByUID"
             },
             {
               "text": "BIS_fnc_getUnitInsignia",
@@ -5433,7 +5454,7 @@
               "text": "BIS_fnc_GUIeditor",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "",
+              "description": "Opens the Arma 3 User Interface Editor.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_GUIeditor"
             },
             {
@@ -5447,7 +5468,7 @@
               "text": "BIS_fnc_GUIgrid",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Returns grid params and stores it into uiNameSpace.",
+              "description": "Returns grid params and stores it into uiNamespace.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_GUIgrid"
             },
             {
@@ -5468,7 +5489,7 @@
               "text": "BIS_fnc_guiMessage",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Shows customized native message box to user.",
+              "description": "GUI message in Arma 3 Shows customized native message box to user.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_guiMessage"
             },
             {
@@ -5503,7 +5524,7 @@
               "text": "BIS_fnc_halt",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Halts current function and all it's parents and logs an error message.",
+              "description": "Halts current function and all it is parents and logs an error message.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_halt"
             },
             {
@@ -6525,7 +6546,7 @@
               "text": "BIS_fnc_kbTopicConfig",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "",
+              "description": "Reads the configs to return a matching config >> CfgSentences >> missionName >> topic entry.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_kbTopicConfig"
             },
             {
@@ -6805,7 +6826,7 @@
               "text": "BIS_fnc_laptopPlayVideo",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Plays a video on the screen of old laptop.",
+              "description": "Plays an easter egg video on the screen of an old laptop.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_laptopPlayVideo"
             },
             {
@@ -7057,7 +7078,7 @@
               "text": "BIS_fnc_logFormatServer",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Display debug message.",
+              "description": "Logs (using diag_log) a debug message (profileName, playerUID, _fnc_scriptName, provided text) to server's .RPT.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_logFormatServer"
             },
             {
@@ -7127,7 +7148,7 @@
               "text": "BIS_fnc_mapAnimAdd",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Same as mapAnimAdd but with possibility for non linear zoom and position interpolation modes.",
+              "description": "Similar to mapAnimAdd, yet it provides additional parameters to allow for a non-linear zoom and various position interpolation …",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_mapAnimAdd"
             },
             {
@@ -7302,14 +7323,14 @@
               "text": "BIS_fnc_missionConversationsLocal",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "",
+              "description": "ⓘThis function is blank and does nothing.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_missionConversationsLocal"
             },
             {
               "text": "BIS_fnc_missionFlow",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "FSM for internal use.",
+              "description": "This function is automatically run in post-init (by CfgFunctions declaration).",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_missionFlow"
             },
             {
@@ -7344,7 +7365,7 @@
               "text": "BIS_fnc_missionTasksLocal",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "",
+              "description": "ⓘThis function is blank and does nothing.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_missionTasksLocal"
             },
             {
@@ -7582,7 +7603,7 @@
               "text": "BIS_fnc_objectHeight",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Return object height defined by it's bounding box and ev.",
+              "description": "Return object height defined by it is bounding box and ev.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_objectHeight"
             },
             {
@@ -7633,6 +7654,461 @@
               "type": "function",
               "description": "Return a unique object variable.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_objectVar"
+            },
+            {
+              "text": "BIS_fnc_OMSetForecastLimit",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OMSetForecastLimit"
+            },
+            {
+              "text": "BIS_fnc_OMWeatherManagerCore",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OMWeatherManagerCore"
+            },
+            {
+              "text": "BIS_fnc_OMWeatherManagerMain",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OMWeatherManagerMain"
+            },
+            {
+              "text": "BIS_fnc_OMWeatherManagerRain",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OMWeatherManagerRain"
+            },
+            {
+              "text": "BIS_fnc_OMWeatherReport",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OMWeatherReport"
+            },
+            {
+              "text": "BIS_fnc_OMWeatherUICalc",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OMWeatherUICalc"
+            },
+            {
+              "text": "BIS_fnc_OM_addLoadedEH",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OM_addLoadedEH"
+            },
+            {
+              "text": "BIS_fnc_OM_allInfectedDeadCode",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OM_allInfectedDeadCode"
+            },
+            {
+              "text": "BIS_fnc_OM_AS_ShowStaticText",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OM_AS_ShowStaticText"
+            },
+            {
+              "text": "BIS_fnc_OM_BuildSectorsData",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OM_BuildSectorsData"
+            },
+            {
+              "text": "BIS_fnc_OM_camera",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OM_camera"
+            },
+            {
+              "text": "BIS_fnc_OM_conversation",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OM_conversation"
+            },
+            {
+              "text": "BIS_fnc_OM_createConversation",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OM_createConversation"
+            },
+            {
+              "text": "BIS_fnc_OM_credits",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OM_credits"
+            },
+            {
+              "text": "BIS_fnc_OM_Epicentrum",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OM_Epicentrum"
+            },
+            {
+              "text": "BIS_fnc_OM_EXEC",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OM_EXEC"
+            },
+            {
+              "text": "BIS_fnc_OM_HandleMapControls",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OM_HandleMapControls"
+            },
+            {
+              "text": "BIS_fnc_OM_infectedGroupHandle",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OM_infectedGroupHandle"
+            },
+            {
+              "text": "BIS_fnc_OM_init",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OM_init"
+            },
+            {
+              "text": "BIS_fnc_OM_medicineDeliveredCode",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OM_medicineDeliveredCode"
+            },
+            {
+              "text": "BIS_fnc_OM_medicineRanOutCode",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OM_medicineRanOutCode"
+            },
+            {
+              "text": "BIS_fnc_OM_moduleActionQueue",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OM_moduleActionQueue"
+            },
+            {
+              "text": "BIS_fnc_OM_moduleAwareness",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OM_moduleAwareness"
+            },
+            {
+              "text": "BIS_fnc_OM_moduleCheckpoint_checkAngleToObject",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OM_moduleCheckpoint_checkAngleToObject"
+            },
+            {
+              "text": "BIS_fnc_OM_moduleCheckpoint_checkDistanceFromObject",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OM_moduleCheckpoint_checkDistanceFromObject"
+            },
+            {
+              "text": "BIS_fnc_OM_moduleCheckpoint_handleStates",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OM_moduleCheckpoint_handleStates"
+            },
+            {
+              "text": "BIS_fnc_OM_moduleCheckpoint_intersect",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OM_moduleCheckpoint_intersect"
+            },
+            {
+              "text": "BIS_fnc_OM_moduleCheckpoint_navigateVehicleToCheck",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OM_moduleCheckpoint_navigateVehicleToCheck"
+            },
+            {
+              "text": "BIS_fnc_OM_moduleCheckpoint_playAnim",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OM_moduleCheckpoint_playAnim"
+            },
+            {
+              "text": "BIS_fnc_OM_moduleDepot",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OM_moduleDepot"
+            },
+            {
+              "text": "BIS_fnc_OM_moduleEconomy",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OM_moduleEconomy"
+            },
+            {
+              "text": "BIS_fnc_OM_moduleFastTravel",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OM_moduleFastTravel"
+            },
+            {
+              "text": "BIS_fnc_OM_moduleMarket",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OM_moduleMarket"
+            },
+            {
+              "text": "BIS_fnc_OM_ModuleQuest_defend",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OM_ModuleQuest_defend"
+            },
+            {
+              "text": "BIS_fnc_OM_ModuleQuest_destroyObject",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OM_ModuleQuest_destroyObject"
+            },
+            {
+              "text": "BIS_fnc_OM_moduleRadio",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OM_moduleRadio"
+            },
+            {
+              "text": "BIS_fnc_OM_moduleRandomConversation",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OM_moduleRandomConversation"
+            },
+            {
+              "text": "BIS_fnc_OM_moduleReputation",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OM_moduleReputation"
+            },
+            {
+              "text": "BIS_fnc_OM_moduleRestPoint",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OM_moduleRestPoint"
+            },
+            {
+              "text": "BIS_fnc_OM_moduleSmartMarkers",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OM_moduleSmartMarkers"
+            },
+            {
+              "text": "BIS_fnc_OM_ModuleSyndikatAgent",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OM_ModuleSyndikatAgent"
+            },
+            {
+              "text": "BIS_fnc_OM_ModuleSyndikatTeam",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OM_ModuleSyndikatTeam"
+            },
+            {
+              "text": "BIS_fnc_OM_Module_initSmallValueSilder",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Initialize slider with edit box showing its value supporting small decimal numbers.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OM_Module_initSmallValueSilder"
+            },
+            {
+              "text": "BIS_fnc_OM_pause",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OM_pause"
+            },
+            {
+              "text": "BIS_fnc_OM_phone_addCall",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OM_phone_addCall"
+            },
+            {
+              "text": "BIS_fnc_OM_phone_addContact",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OM_phone_addContact"
+            },
+            {
+              "text": "BIS_fnc_OM_phone_core",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OM_phone_core"
+            },
+            {
+              "text": "BIS_fnc_OM_phone_customSectionInit",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OM_phone_customSectionInit"
+            },
+            {
+              "text": "BIS_fnc_OM_phone_customSectionShow",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OM_phone_customSectionShow"
+            },
+            {
+              "text": "BIS_fnc_OM_phone_customSectionWeatherShow",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OM_phone_customSectionWeatherShow"
+            },
+            {
+              "text": "BIS_fnc_OM_phone_getDiaryListIndexByName",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OM_phone_getDiaryListIndexByName"
+            },
+            {
+              "text": "BIS_fnc_OM_phone_incomingCall",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OM_phone_incomingCall"
+            },
+            {
+              "text": "BIS_fnc_OM_phone_menuHandler",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OM_phone_menuHandler"
+            },
+            {
+              "text": "BIS_fnc_OM_phone_menuInit",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OM_phone_menuInit"
+            },
+            {
+              "text": "BIS_fnc_OM_phone_removeCall",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OM_phone_removeCall"
+            },
+            {
+              "text": "BIS_fnc_OM_phone_SMS",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OM_phone_SMS"
+            },
+            {
+              "text": "BIS_fnc_OM_phone_SMSSend",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OM_phone_SMSSend"
+            },
+            {
+              "text": "BIS_fnc_OM_saveGame",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "Saves the game - simply calls saveGame.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OM_saveGame"
+            },
+            {
+              "text": "BIS_fnc_OM_savingEnabled",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OM_savingEnabled"
+            },
+            {
+              "text": "BIS_fnc_OM_SectorGetSectors",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OM_SectorGetSectors"
+            },
+            {
+              "text": "BIS_fnc_OM_sellEquipment",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OM_sellEquipment"
+            },
+            {
+              "text": "BIS_fnc_OM_SentryDrone",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OM_SentryDrone"
+            },
+            {
+              "text": "BIS_fnc_OM_skip",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OM_skip"
+            },
+            {
+              "text": "BIS_fnc_OM_warnCriticalCode",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OM_warnCriticalCode"
+            },
+            {
+              "text": "BIS_fnc_OM_warnMildCode",
+              "rightLabel": "BIS Function",
+              "type": "function",
+              "description": "This function is used by the Arma 3 Apex: Old Man content.",
+              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_OM_warnMildCode"
             },
             {
               "text": "BIS_fnc_onDiaryChanged",
@@ -7967,7 +8443,7 @@
               "text": "BIS_fnc_phoneticalWord",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Convert integer to NATO phonetical alphabet word (e.g.",
+              "description": "Convert number to NATO phonetical alphabet word (e.g.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_phoneticalWord"
             },
             {
@@ -8009,7 +8485,7 @@
               "text": "BIS_fnc_playEndMusic",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Play mission end music (when it's nearing the end).",
+              "description": "Play mission end music (when it is nearing the end).",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_playEndMusic"
             },
             {
@@ -8506,7 +8982,7 @@
               "text": "BIS_fnc_recompile",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Recompiles all functions.",
+              "description": "Can be used to recompile functions.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_recompile"
             },
             {
@@ -8597,7 +9073,7 @@
               "text": "BIS_fnc_removeFromPairs",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Removes an item from pair array.",
+              "description": "Removes an item from pair array modifying original array.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_removeFromPairs"
             },
             {
@@ -8709,14 +9185,14 @@
               "text": "BIS_fnc_respawnBase",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "",
+              "description": "ⓘThis function contains no code.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_respawnBase"
             },
             {
               "text": "BIS_fnc_respawnConfirm",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "",
+              "description": "Shows a message box which the user needs to accept in order to respawn.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_respawnConfirm"
             },
             {
@@ -8737,7 +9213,7 @@
               "text": "BIS_fnc_respawnGroup",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "",
+              "description": "Camera script used by the \"group respawn\" template - when the player dies and gets transferred to the new group member.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_respawnGroup"
             },
             {
@@ -8758,21 +9234,21 @@
               "text": "BIS_fnc_respawnMenuInventory",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "",
+              "description": "Handles respawn inventory menu.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_respawnMenuInventory"
             },
             {
               "text": "BIS_fnc_respawnMenuPosition",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "",
+              "description": "Shows or hides respawn menu.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_respawnMenuPosition"
             },
             {
               "text": "BIS_fnc_respawnMenuSpectator",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "",
+              "description": "Handles the spectator mode.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_respawnMenuSpectator"
             },
             {
@@ -9416,7 +9892,7 @@
               "text": "BIN_fnc_savingEnabled",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "",
+              "description": "Returns value of missionNamespace getVariable [\"bin_enableSaving\",true] This function is part of the Arma 3 Contact expansion …",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIN_fnc_savingEnabled"
             },
             {
@@ -9864,7 +10340,7 @@
               "text": "BIS_fnc_setHitPointDamage",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Sets damage to HitPoint with dependency or not (Optional).",
+              "description": "Sets damage to HitPoint with dependency or not.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_setHitPointDamage"
             },
             {
@@ -10095,7 +10571,7 @@
               "text": "BIS_fnc_setToPairs",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Sets an item in pair array to given value.",
+              "description": "Works similar to the BIS_fnc_addToPairs but it doesn't try to add values.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_setToPairs"
             },
             {
@@ -10676,7 +11152,7 @@
               "text": "BIS_fnc_spawnEnemy",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Spawns enemies around a player according to array of enemy classes.",
+              "description": "Constantly spawns enemies around a player according to array of enemy classes.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_spawnEnemy"
             },
             {
@@ -11159,7 +11635,7 @@
               "text": "BIS_fnc_timeline_finish",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Called when timeline finishes playing (reaches it's end).",
+              "description": "Called when timeline finishes playing (reaches it is end).",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_timeline_finish"
             },
             {
@@ -12437,13 +12913,6 @@
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_wpLand"
             },
             {
-              "text": "BIS_fnc_wpLand_TKOH",
-              "rightLabel": "BIS Function",
-              "type": "function",
-              "description": "LAND custom waypoint.",
-              "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_wpLand_TKOH"
-            },
-            {
               "text": "BIN_fnc_wpMoveFast",
               "rightLabel": "BIS Function",
               "type": "function",
@@ -12482,7 +12951,7 @@
               "text": "BIS_fnc_zoomLock",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Function that locks the camera in place when the map is open.",
+              "description": "Locks the camera in place when the map is open.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_zoomLock"
             },
             {
@@ -12510,7 +12979,7 @@
               "text": "BIS_fnc_zzRotate",
               "rightLabel": "BIS Function",
               "type": "function",
-              "description": "Rotate objects around given center about given angle.",
+              "description": "This function is non functional in Arma 3 because of undefined variables.",
               "descriptionMoreURL": "http://community.bistudio.com/wiki/BIS_fnc_zzRotate"
             }
           ]
